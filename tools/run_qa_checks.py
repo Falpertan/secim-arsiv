@@ -19,7 +19,7 @@ DATA_FILES = [
     "data/aggregates/parti_ilceler.json",
     "data/aggregates/meta_iller.json",
     "data/aggregates/meta_ilceler.json",
-    "data/aggregates/ilce_demografi_ozet.json",
+    "data/aggregates/ilce_demografi_ozet.json.gz",
     "data/aggregates/tr_demografi_ozet.json",
     "data/aggregates/demografi_iller_manifest.json",
     "data/core/geo.json",

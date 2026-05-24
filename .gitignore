@@ -1,6 +1,9 @@
 # Ham demografi — sadece build scriptleri için; site aggregates ile çalışır
 data/demografi/all_demografi.min.json
 
+# Cloudflare Pages 25MB limit — yalnızca .json.gz yayınlanır
+data/aggregates/ilce_demografi_ozet.json
+
 # Eski devir paketi kopyası (zip'ten geldi, siteyi etkilemez)
 _devir_paket/
 devir_paket.zip

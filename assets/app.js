@@ -47,6 +47,23 @@
     return r.json();
   }
 
+  /** JSON veya .json.gz (Cloudflare Pages 25MB limiti için) */
+  async function fetchJSONAuto(path) {
+    const gzPath = path.endsWith('.json') ? path + '.gz' : path;
+    try {
+      const r = await fetch(gzPath);
+      if (!r.ok) throw new Error('gz miss');
+      if (typeof DecompressionStream !== 'undefined' && r.body) {
+        const ds = new DecompressionStream('gzip');
+        const text = await new Response(r.body.pipeThrough(ds)).text();
+        return JSON.parse(text);
+      }
+      throw new Error('no decompression');
+    } catch {
+      return fetchJSON(path);
+    }
+  }
+
   async function loadManifest() {
     if (state.manifest) return state.manifest;
     state.manifest = await fetchJSON('data/manifest.json');
@@ -93,6 +110,7 @@
   window.AT.loadElection   = loadElection;
   window.AT.loadMeta       = loadMeta;
   window.AT.loadDemografi  = loadDemografi;
+  window.AT.fetchJSONAuto  = fetchJSONAuto;
 
   // ─── Format helpers ─────────────────────────────────────
   const fmt = {

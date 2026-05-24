@@ -14,7 +14,7 @@
      data/aggregates/parti_ilceler.json
      data/aggregates/meta_iller.json
      data/aggregates/meta_ilceler.json
-     data/aggregates/ilce_demografi_ozet.json
+     data/aggregates/ilce_demografi_ozet.json.gz  (tarayıcıda açılır)
      data/aggregates/tr_demografi_ozet.json
      data/aggregates/demografi_iller_manifest.json
      data/aggregates/iller_demografi/il_<X>.json (lazy)
@@ -128,7 +128,7 @@
       fetch('data/aggregates/parti_ilceler.json').then(r => r.ok ? r.json() : Promise.reject('parti_ilceler.json: ' + r.status)),
       fetch('data/aggregates/meta_iller.json').then(r => r.ok ? r.json() : Promise.reject('meta_iller.json: ' + r.status)),
       fetch('data/aggregates/meta_ilceler.json').then(r => r.ok ? r.json() : Promise.reject('meta_ilceler.json: ' + r.status)),
-      fetch('data/aggregates/ilce_demografi_ozet.json').then(r => r.ok ? r.json() : Promise.reject('ilce_demografi_ozet.json: ' + r.status)),
+      window.AT.fetchJSONAuto('data/aggregates/ilce_demografi_ozet.json'),
       fetch('data/aggregates/tr_demografi_ozet.json').then(r => r.ok ? r.json() : Promise.reject('tr_demografi_ozet.json: ' + r.status)),
       fetch('data/aggregates/demografi_iller_manifest.json').then(r => r.ok ? r.json() : Promise.reject('demografi_iller_manifest.json: ' + r.status)),
       fetch('data/core/geo.json').then(r => r.ok ? r.json() : Promise.reject('geo.json: ' + r.status)),
