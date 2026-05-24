@@ -1,0 +1,19 @@
+# Ham demografi — sadece build scriptleri için; site aggregates ile çalışır
+data/demografi/all_demografi.min.json
+
+# Eski devir paketi kopyası (zip'ten geldi, siteyi etkilemez)
+_devir_paket/
+devir_paket.zip
+
+# Araç cache / log
+tools/_ysk_repo/
+tools/__pycache__/
+*.log
+*.pyc
+
+# OS / editör
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

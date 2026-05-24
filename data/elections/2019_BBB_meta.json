@@ -1,0 +1,5021 @@
+{
+  "election_id": 3,
+  "election_type_id": 3,
+  "config_key": "2019_BBB",
+  "name": "2019 BBB",
+  "TURKIYE_META": {
+    "toplam_sandik": 143008,
+    "sandiklarda_kayitli_secmen": 44250666,
+    "kayitli_secmen": 44212704,
+    "oy_kullanan_secmen": 37363418,
+    "gecerli_oy": 35930098,
+    "gecersiz_oy": 1433320,
+    "katilim_orani": 84.51
+  },
+  "IL_META": {
+    "ADANA": {
+      "toplam_sandik": 4901,
+      "sandiklarda_kayitli_secmen": 1536508,
+      "kayitli_secmen": 1535332,
+      "oy_kullanan_secmen": 1279796,
+      "gecerli_oy": 1223105,
+      "gecersiz_oy": 56691,
+      "katilim_orani": 83.36
+    },
+    "ANKARA": {
+      "toplam_sandik": 12180,
+      "sandiklarda_kayitli_secmen": 3925129,
+      "kayitli_secmen": 3922163,
+      "oy_kullanan_secmen": 3362641,
+      "gecerli_oy": 3263648,
+      "gecersiz_oy": 98993,
+      "katilim_orani": 85.73
+    },
+    "ANTALYA": {
+      "toplam_sandik": 5437,
+      "sandiklarda_kayitli_secmen": 1708975,
+      "kayitli_secmen": 1707819,
+      "oy_kullanan_secmen": 1456390,
+      "gecerli_oy": 1411011,
+      "gecersiz_oy": 45379,
+      "katilim_orani": 85.28
+    },
+    "AYDIN": {
+      "toplam_sandik": 2754,
+      "sandiklarda_kayitli_secmen": 821282,
+      "kayitli_secmen": 820708,
+      "oy_kullanan_secmen": 709289,
+      "gecerli_oy": 683704,
+      "gecersiz_oy": 25585,
+      "katilim_orani": 86.42
+    },
+    "BALIKESİR": {
+      "toplam_sandik": 3382,
+      "sandiklarda_kayitli_secmen": 942830,
+      "kayitli_secmen": 942088,
+      "oy_kullanan_secmen": 817225,
+      "gecerli_oy": 785432,
+      "gecersiz_oy": 31793,
+      "katilim_orani": 86.75
+    },
+    "BURSA": {
+      "toplam_sandik": 6841,
+      "sandiklarda_kayitli_secmen": 2177764,
+      "kayitli_secmen": 2176696,
+      "oy_kullanan_secmen": 1869050,
+      "gecerli_oy": 1810393,
+      "gecersiz_oy": 58657,
+      "katilim_orani": 85.87
+    },
+    "DENİZLİ": {
+      "toplam_sandik": 2514,
+      "sandiklarda_kayitli_secmen": 755160,
+      "kayitli_secmen": 754368,
+      "oy_kullanan_secmen": 665945,
+      "gecerli_oy": 636308,
+      "gecersiz_oy": 29637,
+      "katilim_orani": 88.28
+    },
+    "DİYARBAKIR": {
+      "toplam_sandik": 3643,
+      "sandiklarda_kayitli_secmen": 1049462,
+      "kayitli_secmen": 1048250,
+      "oy_kullanan_secmen": 824904,
+      "gecerli_oy": 779593,
+      "gecersiz_oy": 45311,
+      "katilim_orani": 78.69
+    },
+    "ERZURUM": {
+      "toplam_sandik": 2284,
+      "sandiklarda_kayitli_secmen": 498556,
+      "kayitli_secmen": 498253,
+      "oy_kullanan_secmen": 405591,
+      "gecerli_oy": 384917,
+      "gecersiz_oy": 20674,
+      "katilim_orani": 81.4
+    },
+    "ESKİŞEHİR": {
+      "toplam_sandik": 2227,
+      "sandiklarda_kayitli_secmen": 651738,
+      "kayitli_secmen": 651356,
+      "oy_kullanan_secmen": 560763,
+      "gecerli_oy": 546269,
+      "gecersiz_oy": 14494,
+      "katilim_orani": 86.09
+    },
+    "GAZİANTEP": {
+      "toplam_sandik": 3981,
+      "sandiklarda_kayitli_secmen": 1228873,
+      "kayitli_secmen": 1227454,
+      "oy_kullanan_secmen": 966758,
+      "gecerli_oy": 917080,
+      "gecersiz_oy": 49678,
+      "katilim_orani": 78.76
+    },
+    "HATAY": {
+      "toplam_sandik": 3421,
+      "sandiklarda_kayitli_secmen": 1068544,
+      "kayitli_secmen": 1067817,
+      "oy_kullanan_secmen": 913730,
+      "gecerli_oy": 888857,
+      "gecersiz_oy": 24873,
+      "katilim_orani": 85.57
+    },
+    "İSTANBUL": {
+      "toplam_sandik": 31186,
+      "sandiklarda_kayitli_secmen": 10570939,
+      "kayitli_secmen": 10560963,
+      "oy_kullanan_secmen": 8865072,
+      "gecerli_oy": 8549822,
+      "gecersiz_oy": 315250,
+      "katilim_orani": 83.94
+    },
+    "İZMİR": {
+      "toplam_sandik": 10161,
+      "sandiklarda_kayitli_secmen": 3253745,
+      "kayitli_secmen": 3250780,
+      "oy_kullanan_secmen": 2740742,
+      "gecerli_oy": 2667297,
+      "gecersiz_oy": 73445,
+      "katilim_orani": 84.31
+    },
+    "KAHRAMANMARAŞ": {
+      "toplam_sandik": 2596,
+      "sandiklarda_kayitli_secmen": 755248,
+      "kayitli_secmen": 754604,
+      "oy_kullanan_secmen": 656611,
+      "gecerli_oy": 624585,
+      "gecersiz_oy": 32026,
+      "katilim_orani": 87.01
+    },
+    "KAYSERİ": {
+      "toplam_sandik": 3191,
+      "sandiklarda_kayitli_secmen": 957078,
+      "kayitli_secmen": 956149,
+      "oy_kullanan_secmen": 820938,
+      "gecerli_oy": 789750,
+      "gecersiz_oy": 31188,
+      "katilim_orani": 85.86
+    },
+    "KOCAELİ": {
+      "toplam_sandik": 4196,
+      "sandiklarda_kayitli_secmen": 1350376,
+      "kayitli_secmen": 1349480,
+      "oy_kullanan_secmen": 1151218,
+      "gecerli_oy": 1098319,
+      "gecersiz_oy": 52899,
+      "katilim_orani": 85.31
+    },
+    "KONYA": {
+      "toplam_sandik": 5044,
+      "sandiklarda_kayitli_secmen": 1522655,
+      "kayitli_secmen": 1521399,
+      "oy_kullanan_secmen": 1285194,
+      "gecerli_oy": 1218037,
+      "gecersiz_oy": 67157,
+      "katilim_orani": 84.47
+    },
+    "MALATYA": {
+      "toplam_sandik": 2089,
+      "sandiklarda_kayitli_secmen": 562216,
+      "kayitli_secmen": 561708,
+      "oy_kullanan_secmen": 464819,
+      "gecerli_oy": 446292,
+      "gecersiz_oy": 18527,
+      "katilim_orani": 82.75
+    },
+    "MANİSA": {
+      "toplam_sandik": 3674,
+      "sandiklarda_kayitli_secmen": 1054034,
+      "kayitli_secmen": 1052970,
+      "oy_kullanan_secmen": 933133,
+      "gecerli_oy": 873021,
+      "gecersiz_oy": 60112,
+      "katilim_orani": 88.62
+    },
+    "MARDİN": {
+      "toplam_sandik": 1837,
+      "sandiklarda_kayitli_secmen": 484657,
+      "kayitli_secmen": 484284,
+      "oy_kullanan_secmen": 390707,
+      "gecerli_oy": 371334,
+      "gecersiz_oy": 19373,
+      "katilim_orani": 80.68
+    },
+    "MERSİN": {
+      "toplam_sandik": 4155,
+      "sandiklarda_kayitli_secmen": 1282874,
+      "kayitli_secmen": 1281570,
+      "oy_kullanan_secmen": 1094234,
+      "gecerli_oy": 1057902,
+      "gecersiz_oy": 36332,
+      "katilim_orani": 85.38
+    },
+    "MUĞLA": {
+      "toplam_sandik": 2389,
+      "sandiklarda_kayitli_secmen": 726497,
+      "kayitli_secmen": 726123,
+      "oy_kullanan_secmen": 627276,
+      "gecerli_oy": 603862,
+      "gecersiz_oy": 23414,
+      "katilim_orani": 86.39
+    },
+    "ORDU": {
+      "toplam_sandik": 2174,
+      "sandiklarda_kayitli_secmen": 581656,
+      "kayitli_secmen": 581352,
+      "oy_kullanan_secmen": 497766,
+      "gecerli_oy": 474904,
+      "gecersiz_oy": 22862,
+      "katilim_orani": 85.62
+    },
+    "SAKARYA": {
+      "toplam_sandik": 2431,
+      "sandiklarda_kayitli_secmen": 717495,
+      "kayitli_secmen": 717122,
+      "oy_kullanan_secmen": 621122,
+      "gecerli_oy": 594535,
+      "gecersiz_oy": 26587,
+      "katilim_orani": 86.61
+    },
+    "SAMSUN": {
+      "toplam_sandik": 3486,
+      "sandiklarda_kayitli_secmen": 971700,
+      "kayitli_secmen": 970988,
+      "oy_kullanan_secmen": 838085,
+      "gecerli_oy": 800171,
+      "gecersiz_oy": 37914,
+      "katilim_orani": 86.31
+    },
+    "ŞANLIURFA": {
+      "toplam_sandik": 3978,
+      "sandiklarda_kayitli_secmen": 1095282,
+      "kayitli_secmen": 1093515,
+      "oy_kullanan_secmen": 893936,
+      "gecerli_oy": 848816,
+      "gecersiz_oy": 45120,
+      "katilim_orani": 81.75
+    },
+    "TEKİRDAĞ": {
+      "toplam_sandik": 2360,
+      "sandiklarda_kayitli_secmen": 750441,
+      "kayitli_secmen": 749926,
+      "oy_kullanan_secmen": 640044,
+      "gecerli_oy": 621778,
+      "gecersiz_oy": 18266,
+      "katilim_orani": 85.35
+    },
+    "TRABZON": {
+      "toplam_sandik": 2215,
+      "sandiklarda_kayitli_secmen": 594912,
+      "kayitli_secmen": 594589,
+      "oy_kullanan_secmen": 497876,
+      "gecerli_oy": 475451,
+      "gecersiz_oy": 22425,
+      "katilim_orani": 83.73
+    },
+    "VAN": {
+      "toplam_sandik": 2281,
+      "sandiklarda_kayitli_secmen": 654040,
+      "kayitli_secmen": 652878,
+      "oy_kullanan_secmen": 512563,
+      "gecerli_oy": 483905,
+      "gecersiz_oy": 28658,
+      "katilim_orani": 78.51
+    }
+  },
+  "ILCE_META": {
+    "ADANA": {
+      "ALADAĞ": {
+        "toplam_sandik": 55,
+        "sandiklarda_kayitli_secmen": 12670,
+        "kayitli_secmen": 12670,
+        "oy_kullanan_secmen": 11997,
+        "gecerli_oy": 11395,
+        "gecersiz_oy": 602,
+        "katilim_orani": 94.69
+      },
+      "CEYHAN": {
+        "toplam_sandik": 386,
+        "sandiklarda_kayitli_secmen": 111614,
+        "kayitli_secmen": 111432,
+        "oy_kullanan_secmen": 96577,
+        "gecerli_oy": 92141,
+        "gecersiz_oy": 4436,
+        "katilim_orani": 86.67
+      },
+      "ÇUKUROVA": {
+        "toplam_sandik": 798,
+        "sandiklarda_kayitli_secmen": 267788,
+        "kayitli_secmen": 267788,
+        "oy_kullanan_secmen": 219864,
+        "gecerli_oy": 215498,
+        "gecersiz_oy": 4366,
+        "katilim_orani": 82.1
+      },
+      "FEKE": {
+        "toplam_sandik": 65,
+        "sandiklarda_kayitli_secmen": 13927,
+        "kayitli_secmen": 13927,
+        "oy_kullanan_secmen": 12956,
+        "gecerli_oy": 12094,
+        "gecersiz_oy": 862,
+        "katilim_orani": 93.03
+      },
+      "İMAMOĞLU": {
+        "toplam_sandik": 69,
+        "sandiklarda_kayitli_secmen": 20534,
+        "kayitli_secmen": 20534,
+        "oy_kullanan_secmen": 18679,
+        "gecerli_oy": 17879,
+        "gecersiz_oy": 800,
+        "katilim_orani": 90.97
+      },
+      "KARAİSALI": {
+        "toplam_sandik": 83,
+        "sandiklarda_kayitli_secmen": 16709,
+        "kayitli_secmen": 16709,
+        "oy_kullanan_secmen": 15777,
+        "gecerli_oy": 15101,
+        "gecersiz_oy": 676,
+        "katilim_orani": 94.42
+      },
+      "KARATAŞ": {
+        "toplam_sandik": 73,
+        "sandiklarda_kayitli_secmen": 17546,
+        "kayitli_secmen": 17546,
+        "oy_kullanan_secmen": 15963,
+        "gecerli_oy": 15555,
+        "gecersiz_oy": 408,
+        "katilim_orani": 90.98
+      },
+      "KOZAN": {
+        "toplam_sandik": 323,
+        "sandiklarda_kayitli_secmen": 93515,
+        "kayitli_secmen": 93385,
+        "oy_kullanan_secmen": 82859,
+        "gecerli_oy": 78064,
+        "gecersiz_oy": 4795,
+        "katilim_orani": 88.73
+      },
+      "POZANTI": {
+        "toplam_sandik": 56,
+        "sandiklarda_kayitli_secmen": 15496,
+        "kayitli_secmen": 15426,
+        "oy_kullanan_secmen": 13616,
+        "gecerli_oy": 12826,
+        "gecersiz_oy": 790,
+        "katilim_orani": 88.27
+      },
+      "SAİMBEYLİ": {
+        "toplam_sandik": 47,
+        "sandiklarda_kayitli_secmen": 11667,
+        "kayitli_secmen": 11667,
+        "oy_kullanan_secmen": 10470,
+        "gecerli_oy": 9821,
+        "gecersiz_oy": 649,
+        "katilim_orani": 89.74
+      },
+      "SARIÇAM": {
+        "toplam_sandik": 362,
+        "sandiklarda_kayitli_secmen": 113127,
+        "kayitli_secmen": 112333,
+        "oy_kullanan_secmen": 98056,
+        "gecerli_oy": 94043,
+        "gecersiz_oy": 4013,
+        "katilim_orani": 87.29
+      },
+      "SEYHAN": {
+        "toplam_sandik": 1627,
+        "sandiklarda_kayitli_secmen": 542125,
+        "kayitli_secmen": 542125,
+        "oy_kullanan_secmen": 435187,
+        "gecerli_oy": 417099,
+        "gecersiz_oy": 18088,
+        "katilim_orani": 80.27
+      },
+      "TUFANBEYLİ": {
+        "toplam_sandik": 61,
+        "sandiklarda_kayitli_secmen": 13083,
+        "kayitli_secmen": 13083,
+        "oy_kullanan_secmen": 11888,
+        "gecerli_oy": 11239,
+        "gecersiz_oy": 649,
+        "katilim_orani": 90.87
+      },
+      "YUMURTALIK": {
+        "toplam_sandik": 53,
+        "sandiklarda_kayitli_secmen": 14343,
+        "kayitli_secmen": 14343,
+        "oy_kullanan_secmen": 13125,
+        "gecerli_oy": 12649,
+        "gecersiz_oy": 476,
+        "katilim_orani": 91.51
+      },
+      "YÜREĞİR": {
+        "toplam_sandik": 843,
+        "sandiklarda_kayitli_secmen": 272364,
+        "kayitli_secmen": 272364,
+        "oy_kullanan_secmen": 222782,
+        "gecerli_oy": 207701,
+        "gecersiz_oy": 15081,
+        "katilim_orani": 81.8
+      }
+    },
+    "ANKARA": {
+      "AKYURT": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 23891,
+        "kayitli_secmen": 23891,
+        "oy_kullanan_secmen": 21566,
+        "gecerli_oy": 20576,
+        "gecersiz_oy": 990,
+        "katilim_orani": 90.27
+      },
+      "ALTINDAĞ": {
+        "toplam_sandik": 751,
+        "sandiklarda_kayitli_secmen": 253248,
+        "kayitli_secmen": 253248,
+        "oy_kullanan_secmen": 212354,
+        "gecerli_oy": 204809,
+        "gecersiz_oy": 7545,
+        "katilim_orani": 83.85
+      },
+      "AYAŞ": {
+        "toplam_sandik": 54,
+        "sandiklarda_kayitli_secmen": 13756,
+        "kayitli_secmen": 13756,
+        "oy_kullanan_secmen": 12976,
+        "gecerli_oy": 12669,
+        "gecersiz_oy": 307,
+        "katilim_orani": 94.33
+      },
+      "BALA": {
+        "toplam_sandik": 111,
+        "sandiklarda_kayitli_secmen": 29218,
+        "kayitli_secmen": 29218,
+        "oy_kullanan_secmen": 25881,
+        "gecerli_oy": 24917,
+        "gecersiz_oy": 964,
+        "katilim_orani": 88.58
+      },
+      "BEYPAZARI": {
+        "toplam_sandik": 161,
+        "sandiklarda_kayitli_secmen": 36558,
+        "kayitli_secmen": 36558,
+        "oy_kullanan_secmen": 32838,
+        "gecerli_oy": 31827,
+        "gecersiz_oy": 1011,
+        "katilim_orani": 89.82
+      },
+      "ÇAMLIDERE": {
+        "toplam_sandik": 59,
+        "sandiklarda_kayitli_secmen": 12521,
+        "kayitli_secmen": 12521,
+        "oy_kullanan_secmen": 11691,
+        "gecerli_oy": 11274,
+        "gecersiz_oy": 417,
+        "katilim_orani": 93.37
+      },
+      "ÇANKAYA": {
+        "toplam_sandik": 2029,
+        "sandiklarda_kayitli_secmen": 680264,
+        "kayitli_secmen": 680264,
+        "oy_kullanan_secmen": 580704,
+        "gecerli_oy": 569574,
+        "gecersiz_oy": 11130,
+        "katilim_orani": 85.36
+      },
+      "ÇUBUK": {
+        "toplam_sandik": 242,
+        "sandiklarda_kayitli_secmen": 63536,
+        "kayitli_secmen": 63536,
+        "oy_kullanan_secmen": 56412,
+        "gecerli_oy": 54299,
+        "gecersiz_oy": 2113,
+        "katilim_orani": 88.79
+      },
+      "ELMADAĞ": {
+        "toplam_sandik": 116,
+        "sandiklarda_kayitli_secmen": 32614,
+        "kayitli_secmen": 32614,
+        "oy_kullanan_secmen": 29821,
+        "gecerli_oy": 28877,
+        "gecersiz_oy": 944,
+        "katilim_orani": 91.44
+      },
+      "ETİMESGUT": {
+        "toplam_sandik": 1186,
+        "sandiklarda_kayitli_secmen": 405522,
+        "kayitli_secmen": 405522,
+        "oy_kullanan_secmen": 344913,
+        "gecerli_oy": 335819,
+        "gecersiz_oy": 9094,
+        "katilim_orani": 85.05
+      },
+      "EVREN": {
+        "toplam_sandik": 16,
+        "sandiklarda_kayitli_secmen": 3124,
+        "kayitli_secmen": 3124,
+        "oy_kullanan_secmen": 2776,
+        "gecerli_oy": 2657,
+        "gecersiz_oy": 119,
+        "katilim_orani": 88.86
+      },
+      "GÖLBAŞI": {
+        "toplam_sandik": 286,
+        "sandiklarda_kayitli_secmen": 89967,
+        "kayitli_secmen": 89967,
+        "oy_kullanan_secmen": 78728,
+        "gecerli_oy": 76332,
+        "gecersiz_oy": 2396,
+        "katilim_orani": 87.51
+      },
+      "GÜDÜL": {
+        "toplam_sandik": 41,
+        "sandiklarda_kayitli_secmen": 8945,
+        "kayitli_secmen": 8945,
+        "oy_kullanan_secmen": 8193,
+        "gecerli_oy": 7921,
+        "gecersiz_oy": 272,
+        "katilim_orani": 91.59
+      },
+      "HAYMANA": {
+        "toplam_sandik": 143,
+        "sandiklarda_kayitli_secmen": 32521,
+        "kayitli_secmen": 32521,
+        "oy_kullanan_secmen": 29139,
+        "gecerli_oy": 27557,
+        "gecersiz_oy": 1582,
+        "katilim_orani": 89.6
+      },
+      "KAHRAMANKAZAN": {
+        "toplam_sandik": 135,
+        "sandiklarda_kayitli_secmen": 36841,
+        "kayitli_secmen": 36841,
+        "oy_kullanan_secmen": 33203,
+        "gecerli_oy": 31864,
+        "gecersiz_oy": 1339,
+        "katilim_orani": 90.13
+      },
+      "KALECİK": {
+        "toplam_sandik": 68,
+        "sandiklarda_kayitli_secmen": 10679,
+        "kayitli_secmen": 10679,
+        "oy_kullanan_secmen": 9966,
+        "gecerli_oy": 9494,
+        "gecersiz_oy": 472,
+        "katilim_orani": 93.32
+      },
+      "KEÇİÖREN": {
+        "toplam_sandik": 1903,
+        "sandiklarda_kayitli_secmen": 646023,
+        "kayitli_secmen": 646023,
+        "oy_kullanan_secmen": 542744,
+        "gecerli_oy": 524975,
+        "gecersiz_oy": 17769,
+        "katilim_orani": 84.01
+      },
+      "KIZILCAHAMAM": {
+        "toplam_sandik": 148,
+        "sandiklarda_kayitli_secmen": 27183,
+        "kayitli_secmen": 27159,
+        "oy_kullanan_secmen": 24863,
+        "gecerli_oy": 24040,
+        "gecersiz_oy": 823,
+        "katilim_orani": 91.55
+      },
+      "MAMAK": {
+        "toplam_sandik": 1323,
+        "sandiklarda_kayitli_secmen": 448084,
+        "kayitli_secmen": 448084,
+        "oy_kullanan_secmen": 383503,
+        "gecerli_oy": 372793,
+        "gecersiz_oy": 10710,
+        "katilim_orani": 85.59
+      },
+      "NALLIHAN": {
+        "toplam_sandik": 124,
+        "sandiklarda_kayitli_secmen": 22455,
+        "kayitli_secmen": 22455,
+        "oy_kullanan_secmen": 20121,
+        "gecerli_oy": 19296,
+        "gecersiz_oy": 825,
+        "katilim_orani": 89.61
+      },
+      "POLATLI": {
+        "toplam_sandik": 302,
+        "sandiklarda_kayitli_secmen": 87070,
+        "kayitli_secmen": 87070,
+        "oy_kullanan_secmen": 73183,
+        "gecerli_oy": 70692,
+        "gecersiz_oy": 2491,
+        "katilim_orani": 84.05
+      },
+      "PURSAKLAR": {
+        "toplam_sandik": 290,
+        "sandiklarda_kayitli_secmen": 97446,
+        "kayitli_secmen": 97446,
+        "oy_kullanan_secmen": 84229,
+        "gecerli_oy": 81314,
+        "gecersiz_oy": 2915,
+        "katilim_orani": 86.44
+      },
+      "SİNCAN": {
+        "toplam_sandik": 1078,
+        "sandiklarda_kayitli_secmen": 357827,
+        "kayitli_secmen": 354893,
+        "oy_kullanan_secmen": 304051,
+        "gecerli_oy": 292952,
+        "gecersiz_oy": 11099,
+        "katilim_orani": 85.67
+      },
+      "ŞEREFLİKOÇHİSAR": {
+        "toplam_sandik": 113,
+        "sandiklarda_kayitli_secmen": 25516,
+        "kayitli_secmen": 25508,
+        "oy_kullanan_secmen": 21261,
+        "gecerli_oy": 20081,
+        "gecersiz_oy": 1180,
+        "katilim_orani": 83.35
+      },
+      "YENİMAHALLE": {
+        "toplam_sandik": 1416,
+        "sandiklarda_kayitli_secmen": 480320,
+        "kayitli_secmen": 480320,
+        "oy_kullanan_secmen": 417525,
+        "gecerli_oy": 407039,
+        "gecersiz_oy": 10486,
+        "katilim_orani": 86.93
+      }
+    },
+    "ANTALYA": {
+      "AKSEKİ": {
+        "toplam_sandik": 63,
+        "sandiklarda_kayitli_secmen": 11243,
+        "kayitli_secmen": 11243,
+        "oy_kullanan_secmen": 9674,
+        "gecerli_oy": 9271,
+        "gecersiz_oy": 403,
+        "katilim_orani": 86.04
+      },
+      "AKSU": {
+        "toplam_sandik": 161,
+        "sandiklarda_kayitli_secmen": 49941,
+        "kayitli_secmen": 49941,
+        "oy_kullanan_secmen": 44513,
+        "gecerli_oy": 42316,
+        "gecersiz_oy": 2197,
+        "katilim_orani": 89.13
+      },
+      "ALANYA": {
+        "toplam_sandik": 668,
+        "sandiklarda_kayitli_secmen": 206895,
+        "kayitli_secmen": 206576,
+        "oy_kullanan_secmen": 172268,
+        "gecerli_oy": 163495,
+        "gecersiz_oy": 8773,
+        "katilim_orani": 83.39
+      },
+      "DEMRE": {
+        "toplam_sandik": 62,
+        "sandiklarda_kayitli_secmen": 19353,
+        "kayitli_secmen": 19353,
+        "oy_kullanan_secmen": 18284,
+        "gecerli_oy": 17654,
+        "gecersiz_oy": 630,
+        "katilim_orani": 94.48
+      },
+      "DÖŞEMEALTI": {
+        "toplam_sandik": 148,
+        "sandiklarda_kayitli_secmen": 44867,
+        "kayitli_secmen": 44344,
+        "oy_kullanan_secmen": 40066,
+        "gecerli_oy": 39007,
+        "gecersiz_oy": 1059,
+        "katilim_orani": 90.35
+      },
+      "ELMALI": {
+        "toplam_sandik": 120,
+        "sandiklarda_kayitli_secmen": 30327,
+        "kayitli_secmen": 30303,
+        "oy_kullanan_secmen": 28215,
+        "gecerli_oy": 27106,
+        "gecersiz_oy": 1109,
+        "katilim_orani": 93.11
+      },
+      "FİNİKE": {
+        "toplam_sandik": 126,
+        "sandiklarda_kayitli_secmen": 36022,
+        "kayitli_secmen": 36022,
+        "oy_kullanan_secmen": 32026,
+        "gecerli_oy": 30801,
+        "gecersiz_oy": 1225,
+        "katilim_orani": 88.91
+      },
+      "GAZİPAŞA": {
+        "toplam_sandik": 137,
+        "sandiklarda_kayitli_secmen": 38414,
+        "kayitli_secmen": 38414,
+        "oy_kullanan_secmen": 35431,
+        "gecerli_oy": 33940,
+        "gecersiz_oy": 1491,
+        "katilim_orani": 92.23
+      },
+      "GÜNDOĞMUŞ": {
+        "toplam_sandik": 35,
+        "sandiklarda_kayitli_secmen": 6985,
+        "kayitli_secmen": 6985,
+        "oy_kullanan_secmen": 6510,
+        "gecerli_oy": 6112,
+        "gecersiz_oy": 398,
+        "katilim_orani": 93.2
+      },
+      "İBRADI": {
+        "toplam_sandik": 13,
+        "sandiklarda_kayitli_secmen": 3009,
+        "kayitli_secmen": 3009,
+        "oy_kullanan_secmen": 2717,
+        "gecerli_oy": 2620,
+        "gecersiz_oy": 97,
+        "katilim_orani": 90.3
+      },
+      "KAŞ": {
+        "toplam_sandik": 161,
+        "sandiklarda_kayitli_secmen": 44158,
+        "kayitli_secmen": 44158,
+        "oy_kullanan_secmen": 40156,
+        "gecerli_oy": 38113,
+        "gecersiz_oy": 2043,
+        "katilim_orani": 90.94
+      },
+      "KEMER": {
+        "toplam_sandik": 90,
+        "sandiklarda_kayitli_secmen": 29653,
+        "kayitli_secmen": 29653,
+        "oy_kullanan_secmen": 25735,
+        "gecerli_oy": 25045,
+        "gecersiz_oy": 690,
+        "katilim_orani": 86.79
+      },
+      "KEPEZ": {
+        "toplam_sandik": 1095,
+        "sandiklarda_kayitli_secmen": 367755,
+        "kayitli_secmen": 367479,
+        "oy_kullanan_secmen": 307426,
+        "gecerli_oy": 299615,
+        "gecersiz_oy": 7811,
+        "katilim_orani": 83.66
+      },
+      "KONYAALTI": {
+        "toplam_sandik": 359,
+        "sandiklarda_kayitli_secmen": 118623,
+        "kayitli_secmen": 118623,
+        "oy_kullanan_secmen": 97702,
+        "gecerli_oy": 96143,
+        "gecersiz_oy": 1559,
+        "katilim_orani": 82.36
+      },
+      "KORKUTELİ": {
+        "toplam_sandik": 156,
+        "sandiklarda_kayitli_secmen": 43282,
+        "kayitli_secmen": 43282,
+        "oy_kullanan_secmen": 39627,
+        "gecerli_oy": 37784,
+        "gecersiz_oy": 1843,
+        "katilim_orani": 91.56
+      },
+      "KUMLUCA": {
+        "toplam_sandik": 165,
+        "sandiklarda_kayitli_secmen": 50457,
+        "kayitli_secmen": 50443,
+        "oy_kullanan_secmen": 45594,
+        "gecerli_oy": 44231,
+        "gecersiz_oy": 1363,
+        "katilim_orani": 90.39
+      },
+      "MANAVGAT": {
+        "toplam_sandik": 522,
+        "sandiklarda_kayitli_secmen": 161447,
+        "kayitli_secmen": 161447,
+        "oy_kullanan_secmen": 140372,
+        "gecerli_oy": 136203,
+        "gecersiz_oy": 4169,
+        "katilim_orani": 86.95
+      },
+      "MURATPAŞA": {
+        "toplam_sandik": 1066,
+        "sandiklarda_kayitli_secmen": 357018,
+        "kayitli_secmen": 357018,
+        "oy_kullanan_secmen": 290013,
+        "gecerli_oy": 284973,
+        "gecersiz_oy": 5040,
+        "katilim_orani": 81.23
+      },
+      "SERİK": {
+        "toplam_sandik": 290,
+        "sandiklarda_kayitli_secmen": 89526,
+        "kayitli_secmen": 89526,
+        "oy_kullanan_secmen": 80061,
+        "gecerli_oy": 76582,
+        "gecersiz_oy": 3479,
+        "katilim_orani": 89.43
+      }
+    },
+    "AYDIN": {
+      "BOZDOĞAN": {
+        "toplam_sandik": 106,
+        "sandiklarda_kayitli_secmen": 26543,
+        "kayitli_secmen": 26543,
+        "oy_kullanan_secmen": 24932,
+        "gecerli_oy": 23817,
+        "gecersiz_oy": 1115,
+        "katilim_orani": 93.93
+      },
+      "BUHARKENT": {
+        "toplam_sandik": 34,
+        "sandiklarda_kayitli_secmen": 9674,
+        "kayitli_secmen": 9674,
+        "oy_kullanan_secmen": 9028,
+        "gecerli_oy": 8580,
+        "gecersiz_oy": 448,
+        "katilim_orani": 93.32
+      },
+      "ÇİNE": {
+        "toplam_sandik": 160,
+        "sandiklarda_kayitli_secmen": 40396,
+        "kayitli_secmen": 40396,
+        "oy_kullanan_secmen": 37623,
+        "gecerli_oy": 35943,
+        "gecersiz_oy": 1680,
+        "katilim_orani": 93.14
+      },
+      "DİDİM": {
+        "toplam_sandik": 194,
+        "sandiklarda_kayitli_secmen": 63272,
+        "kayitli_secmen": 63272,
+        "oy_kullanan_secmen": 49254,
+        "gecerli_oy": 48216,
+        "gecersiz_oy": 1038,
+        "katilim_orani": 77.84
+      },
+      "EFELER": {
+        "toplam_sandik": 661,
+        "sandiklarda_kayitli_secmen": 210897,
+        "kayitli_secmen": 210603,
+        "oy_kullanan_secmen": 180223,
+        "gecerli_oy": 174358,
+        "gecersiz_oy": 5865,
+        "katilim_orani": 85.57
+      },
+      "GERMENCİK": {
+        "toplam_sandik": 113,
+        "sandiklarda_kayitli_secmen": 32245,
+        "kayitli_secmen": 32245,
+        "oy_kullanan_secmen": 29425,
+        "gecerli_oy": 28450,
+        "gecersiz_oy": 975,
+        "katilim_orani": 91.25
+      },
+      "İNCİRLİOVA": {
+        "toplam_sandik": 120,
+        "sandiklarda_kayitli_secmen": 37150,
+        "kayitli_secmen": 37150,
+        "oy_kullanan_secmen": 32789,
+        "gecerli_oy": 31344,
+        "gecersiz_oy": 1445,
+        "katilim_orani": 88.26
+      },
+      "KARACASU": {
+        "toplam_sandik": 64,
+        "sandiklarda_kayitli_secmen": 14946,
+        "kayitli_secmen": 14946,
+        "oy_kullanan_secmen": 13705,
+        "gecerli_oy": 12827,
+        "gecersiz_oy": 878,
+        "katilim_orani": 91.7
+      },
+      "KARPUZLU": {
+        "toplam_sandik": 39,
+        "sandiklarda_kayitli_secmen": 9194,
+        "kayitli_secmen": 9194,
+        "oy_kullanan_secmen": 8726,
+        "gecerli_oy": 8334,
+        "gecersiz_oy": 392,
+        "katilim_orani": 94.91
+      },
+      "KOÇARLI": {
+        "toplam_sandik": 83,
+        "sandiklarda_kayitli_secmen": 19213,
+        "kayitli_secmen": 19213,
+        "oy_kullanan_secmen": 18342,
+        "gecerli_oy": 17826,
+        "gecersiz_oy": 516,
+        "katilim_orani": 95.47
+      },
+      "KÖŞK": {
+        "toplam_sandik": 73,
+        "sandiklarda_kayitli_secmen": 20507,
+        "kayitli_secmen": 20507,
+        "oy_kullanan_secmen": 19092,
+        "gecerli_oy": 18210,
+        "gecersiz_oy": 882,
+        "katilim_orani": 93.1
+      },
+      "KUŞADASI": {
+        "toplam_sandik": 262,
+        "sandiklarda_kayitli_secmen": 85077,
+        "kayitli_secmen": 85077,
+        "oy_kullanan_secmen": 67185,
+        "gecerli_oy": 65695,
+        "gecersiz_oy": 1490,
+        "katilim_orani": 78.97
+      },
+      "KUYUCAK": {
+        "toplam_sandik": 80,
+        "sandiklarda_kayitli_secmen": 21749,
+        "kayitli_secmen": 21749,
+        "oy_kullanan_secmen": 19934,
+        "gecerli_oy": 18909,
+        "gecersiz_oy": 1025,
+        "katilim_orani": 91.65
+      },
+      "NAZİLLİ": {
+        "toplam_sandik": 375,
+        "sandiklarda_kayitli_secmen": 115131,
+        "kayitli_secmen": 114966,
+        "oy_kullanan_secmen": 99100,
+        "gecerli_oy": 94769,
+        "gecersiz_oy": 4331,
+        "katilim_orani": 86.2
+      },
+      "SÖKE": {
+        "toplam_sandik": 292,
+        "sandiklarda_kayitli_secmen": 89599,
+        "kayitli_secmen": 89484,
+        "oy_kullanan_secmen": 76346,
+        "gecerli_oy": 73681,
+        "gecersiz_oy": 2665,
+        "katilim_orani": 85.32
+      },
+      "SULTANHİSAR": {
+        "toplam_sandik": 56,
+        "sandiklarda_kayitli_secmen": 15574,
+        "kayitli_secmen": 15574,
+        "oy_kullanan_secmen": 14211,
+        "gecerli_oy": 13631,
+        "gecersiz_oy": 580,
+        "katilim_orani": 91.25
+      },
+      "YENİPAZAR": {
+        "toplam_sandik": 42,
+        "sandiklarda_kayitli_secmen": 10115,
+        "kayitli_secmen": 10115,
+        "oy_kullanan_secmen": 9374,
+        "gecerli_oy": 9114,
+        "gecersiz_oy": 260,
+        "katilim_orani": 92.67
+      }
+    },
+    "BALIKESİR": {
+      "ALTIEYLÜL": {
+        "toplam_sandik": 433,
+        "sandiklarda_kayitli_secmen": 132095,
+        "kayitli_secmen": 132095,
+        "oy_kullanan_secmen": 115429,
+        "gecerli_oy": 111325,
+        "gecersiz_oy": 4104,
+        "katilim_orani": 87.38
+      },
+      "AYVALIK": {
+        "toplam_sandik": 181,
+        "sandiklarda_kayitli_secmen": 56080,
+        "kayitli_secmen": 56080,
+        "oy_kullanan_secmen": 45849,
+        "gecerli_oy": 43920,
+        "gecersiz_oy": 1929,
+        "katilim_orani": 81.76
+      },
+      "BALYA": {
+        "toplam_sandik": 60,
+        "sandiklarda_kayitli_secmen": 11525,
+        "kayitli_secmen": 11525,
+        "oy_kullanan_secmen": 10787,
+        "gecerli_oy": 10245,
+        "gecersiz_oy": 542,
+        "katilim_orani": 93.6
+      },
+      "BANDIRMA": {
+        "toplam_sandik": 372,
+        "sandiklarda_kayitli_secmen": 115567,
+        "kayitli_secmen": 115419,
+        "oy_kullanan_secmen": 97404,
+        "gecerli_oy": 94262,
+        "gecersiz_oy": 3142,
+        "katilim_orani": 84.39
+      },
+      "BİGADİÇ": {
+        "toplam_sandik": 151,
+        "sandiklarda_kayitli_secmen": 37892,
+        "kayitli_secmen": 37892,
+        "oy_kullanan_secmen": 34784,
+        "gecerli_oy": 33509,
+        "gecersiz_oy": 1275,
+        "katilim_orani": 91.8
+      },
+      "BURHANİYE": {
+        "toplam_sandik": 154,
+        "sandiklarda_kayitli_secmen": 45724,
+        "kayitli_secmen": 45509,
+        "oy_kullanan_secmen": 38236,
+        "gecerli_oy": 36652,
+        "gecersiz_oy": 1584,
+        "katilim_orani": 84.02
+      },
+      "DURSUNBEY": {
+        "toplam_sandik": 162,
+        "sandiklarda_kayitli_secmen": 28896,
+        "kayitli_secmen": 28896,
+        "oy_kullanan_secmen": 26391,
+        "gecerli_oy": 24929,
+        "gecersiz_oy": 1462,
+        "katilim_orani": 91.33
+      },
+      "EDREMİT": {
+        "toplam_sandik": 369,
+        "sandiklarda_kayitli_secmen": 118866,
+        "kayitli_secmen": 118866,
+        "oy_kullanan_secmen": 95328,
+        "gecerli_oy": 91494,
+        "gecersiz_oy": 3834,
+        "katilim_orani": 80.2
+      },
+      "ERDEK": {
+        "toplam_sandik": 94,
+        "sandiklarda_kayitli_secmen": 26848,
+        "kayitli_secmen": 26848,
+        "oy_kullanan_secmen": 22523,
+        "gecerli_oy": 21772,
+        "gecersiz_oy": 751,
+        "katilim_orani": 83.89
+      },
+      "GÖMEÇ": {
+        "toplam_sandik": 37,
+        "sandiklarda_kayitli_secmen": 10685,
+        "kayitli_secmen": 10685,
+        "oy_kullanan_secmen": 9314,
+        "gecerli_oy": 8922,
+        "gecersiz_oy": 392,
+        "katilim_orani": 87.17
+      },
+      "GÖNEN": {
+        "toplam_sandik": 232,
+        "sandiklarda_kayitli_secmen": 59446,
+        "kayitli_secmen": 59446,
+        "oy_kullanan_secmen": 52822,
+        "gecerli_oy": 50729,
+        "gecersiz_oy": 2093,
+        "katilim_orani": 88.86
+      },
+      "HAVRAN": {
+        "toplam_sandik": 73,
+        "sandiklarda_kayitli_secmen": 20781,
+        "kayitli_secmen": 20781,
+        "oy_kullanan_secmen": 19198,
+        "gecerli_oy": 18218,
+        "gecersiz_oy": 980,
+        "katilim_orani": 92.38
+      },
+      "İVRİNDİ": {
+        "toplam_sandik": 114,
+        "sandiklarda_kayitli_secmen": 26523,
+        "kayitli_secmen": 26523,
+        "oy_kullanan_secmen": 25021,
+        "gecerli_oy": 24135,
+        "gecersiz_oy": 886,
+        "katilim_orani": 94.34
+      },
+      "KARESİ": {
+        "toplam_sandik": 430,
+        "sandiklarda_kayitli_secmen": 135578,
+        "kayitli_secmen": 135578,
+        "oy_kullanan_secmen": 118582,
+        "gecerli_oy": 114478,
+        "gecersiz_oy": 4104,
+        "katilim_orani": 87.46
+      },
+      "KEPSUT": {
+        "toplam_sandik": 92,
+        "sandiklarda_kayitli_secmen": 17678,
+        "kayitli_secmen": 17299,
+        "oy_kullanan_secmen": 16665,
+        "gecerli_oy": 15973,
+        "gecersiz_oy": 692,
+        "katilim_orani": 96.34
+      },
+      "MANYAS": {
+        "toplam_sandik": 75,
+        "sandiklarda_kayitli_secmen": 16149,
+        "kayitli_secmen": 16149,
+        "oy_kullanan_secmen": 14550,
+        "gecerli_oy": 13882,
+        "gecersiz_oy": 668,
+        "katilim_orani": 90.1
+      },
+      "MARMARA": {
+        "toplam_sandik": 31,
+        "sandiklarda_kayitli_secmen": 8001,
+        "kayitli_secmen": 8001,
+        "oy_kullanan_secmen": 6728,
+        "gecerli_oy": 6519,
+        "gecersiz_oy": 209,
+        "katilim_orani": 84.09
+      },
+      "SAVAŞTEPE": {
+        "toplam_sandik": 78,
+        "sandiklarda_kayitli_secmen": 14122,
+        "kayitli_secmen": 14122,
+        "oy_kullanan_secmen": 13007,
+        "gecerli_oy": 12414,
+        "gecersiz_oy": 593,
+        "katilim_orani": 92.1
+      },
+      "SINDIRGI": {
+        "toplam_sandik": 124,
+        "sandiklarda_kayitli_secmen": 28952,
+        "kayitli_secmen": 28952,
+        "oy_kullanan_secmen": 27033,
+        "gecerli_oy": 25269,
+        "gecersiz_oy": 1764,
+        "katilim_orani": 93.37
+      },
+      "SUSURLUK": {
+        "toplam_sandik": 120,
+        "sandiklarda_kayitli_secmen": 31422,
+        "kayitli_secmen": 31422,
+        "oy_kullanan_secmen": 27574,
+        "gecerli_oy": 26785,
+        "gecersiz_oy": 789,
+        "katilim_orani": 87.75
+      }
+    },
+    "BURSA": {
+      "BÜYÜKORHAN": {
+        "toplam_sandik": 51,
+        "sandiklarda_kayitli_secmen": 8301,
+        "kayitli_secmen": 8301,
+        "oy_kullanan_secmen": 7808,
+        "gecerli_oy": 7186,
+        "gecersiz_oy": 622,
+        "katilim_orani": 94.06
+      },
+      "GEMLİK": {
+        "toplam_sandik": 261,
+        "sandiklarda_kayitli_secmen": 83319,
+        "kayitli_secmen": 83319,
+        "oy_kullanan_secmen": 70387,
+        "gecerli_oy": 68499,
+        "gecersiz_oy": 1888,
+        "katilim_orani": 84.48
+      },
+      "GÜRSU": {
+        "toplam_sandik": 179,
+        "sandiklarda_kayitli_secmen": 59858,
+        "kayitli_secmen": 59858,
+        "oy_kullanan_secmen": 50322,
+        "gecerli_oy": 48787,
+        "gecersiz_oy": 1535,
+        "katilim_orani": 84.07
+      },
+      "HARMANCIK": {
+        "toplam_sandik": 42,
+        "sandiklarda_kayitli_secmen": 5564,
+        "kayitli_secmen": 5564,
+        "oy_kullanan_secmen": 5228,
+        "gecerli_oy": 4930,
+        "gecersiz_oy": 298,
+        "katilim_orani": 93.96
+      },
+      "İNEGÖL": {
+        "toplam_sandik": 597,
+        "sandiklarda_kayitli_secmen": 186025,
+        "kayitli_secmen": 186025,
+        "oy_kullanan_secmen": 161009,
+        "gecerli_oy": 154414,
+        "gecersiz_oy": 6595,
+        "katilim_orani": 86.55
+      },
+      "İZNİK": {
+        "toplam_sandik": 125,
+        "sandiklarda_kayitli_secmen": 34687,
+        "kayitli_secmen": 34687,
+        "oy_kullanan_secmen": 30809,
+        "gecerli_oy": 29678,
+        "gecersiz_oy": 1131,
+        "katilim_orani": 88.82
+      },
+      "KARACABEY": {
+        "toplam_sandik": 221,
+        "sandiklarda_kayitli_secmen": 63222,
+        "kayitli_secmen": 63222,
+        "oy_kullanan_secmen": 55160,
+        "gecerli_oy": 52926,
+        "gecersiz_oy": 2234,
+        "katilim_orani": 87.25
+      },
+      "KELES": {
+        "toplam_sandik": 49,
+        "sandiklarda_kayitli_secmen": 10512,
+        "kayitli_secmen": 10512,
+        "oy_kullanan_secmen": 9769,
+        "gecerli_oy": 9210,
+        "gecersiz_oy": 559,
+        "katilim_orani": 92.93
+      },
+      "KESTEL": {
+        "toplam_sandik": 160,
+        "sandiklarda_kayitli_secmen": 48217,
+        "kayitli_secmen": 48217,
+        "oy_kullanan_secmen": 42094,
+        "gecerli_oy": 40901,
+        "gecersiz_oy": 1193,
+        "katilim_orani": 87.3
+      },
+      "MUDANYA": {
+        "toplam_sandik": 237,
+        "sandiklarda_kayitli_secmen": 74859,
+        "kayitli_secmen": 74859,
+        "oy_kullanan_secmen": 64611,
+        "gecerli_oy": 63156,
+        "gecersiz_oy": 1455,
+        "katilim_orani": 86.31
+      },
+      "MUSTAFAKEMALPAŞA": {
+        "toplam_sandik": 300,
+        "sandiklarda_kayitli_secmen": 78792,
+        "kayitli_secmen": 78792,
+        "oy_kullanan_secmen": 70353,
+        "gecerli_oy": 67055,
+        "gecersiz_oy": 3298,
+        "katilim_orani": 89.29
+      },
+      "NİLÜFER": {
+        "toplam_sandik": 943,
+        "sandiklarda_kayitli_secmen": 315834,
+        "kayitli_secmen": 314852,
+        "oy_kullanan_secmen": 274310,
+        "gecerli_oy": 269266,
+        "gecersiz_oy": 5044,
+        "katilim_orani": 87.12
+      },
+      "ORHANELİ": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 15809,
+        "kayitli_secmen": 15809,
+        "oy_kullanan_secmen": 14896,
+        "gecerli_oy": 13996,
+        "gecersiz_oy": 900,
+        "katilim_orani": 94.22
+      },
+      "ORHANGAZİ": {
+        "toplam_sandik": 192,
+        "sandiklarda_kayitli_secmen": 59994,
+        "kayitli_secmen": 59994,
+        "oy_kullanan_secmen": 52144,
+        "gecerli_oy": 49989,
+        "gecersiz_oy": 2155,
+        "katilim_orani": 86.92
+      },
+      "OSMANGAZİ": {
+        "toplam_sandik": 1888,
+        "sandiklarda_kayitli_secmen": 631508,
+        "kayitli_secmen": 631508,
+        "oy_kullanan_secmen": 535602,
+        "gecerli_oy": 520732,
+        "gecersiz_oy": 14870,
+        "katilim_orani": 84.81
+      },
+      "YENİŞEHİR": {
+        "toplam_sandik": 156,
+        "sandiklarda_kayitli_secmen": 41171,
+        "kayitli_secmen": 41085,
+        "oy_kullanan_secmen": 36847,
+        "gecerli_oy": 35040,
+        "gecersiz_oy": 1807,
+        "katilim_orani": 89.68
+      },
+      "YILDIRIM": {
+        "toplam_sandik": 1355,
+        "sandiklarda_kayitli_secmen": 460092,
+        "kayitli_secmen": 460092,
+        "oy_kullanan_secmen": 387701,
+        "gecerli_oy": 374628,
+        "gecersiz_oy": 13073,
+        "katilim_orani": 84.27
+      }
+    },
+    "DENİZLİ": {
+      "ACIPAYAM": {
+        "toplam_sandik": 154,
+        "sandiklarda_kayitli_secmen": 44061,
+        "kayitli_secmen": 44061,
+        "oy_kullanan_secmen": 38762,
+        "gecerli_oy": 36124,
+        "gecersiz_oy": 2638,
+        "katilim_orani": 87.97
+      },
+      "BABADAĞ": {
+        "toplam_sandik": 22,
+        "sandiklarda_kayitli_secmen": 5058,
+        "kayitli_secmen": 5058,
+        "oy_kullanan_secmen": 4757,
+        "gecerli_oy": 4447,
+        "gecersiz_oy": 310,
+        "katilim_orani": 94.05
+      },
+      "BAKLAN": {
+        "toplam_sandik": 20,
+        "sandiklarda_kayitli_secmen": 4535,
+        "kayitli_secmen": 4535,
+        "oy_kullanan_secmen": 4277,
+        "gecerli_oy": 4102,
+        "gecersiz_oy": 175,
+        "katilim_orani": 94.31
+      },
+      "BEKİLLİ": {
+        "toplam_sandik": 24,
+        "sandiklarda_kayitli_secmen": 5741,
+        "kayitli_secmen": 5741,
+        "oy_kullanan_secmen": 5269,
+        "gecerli_oy": 4950,
+        "gecersiz_oy": 319,
+        "katilim_orani": 91.78
+      },
+      "BEYAĞAÇ": {
+        "toplam_sandik": 22,
+        "sandiklarda_kayitli_secmen": 5506,
+        "kayitli_secmen": 5506,
+        "oy_kullanan_secmen": 5218,
+        "gecerli_oy": 4951,
+        "gecersiz_oy": 267,
+        "katilim_orani": 94.77
+      },
+      "BOZKURT": {
+        "toplam_sandik": 35,
+        "sandiklarda_kayitli_secmen": 8775,
+        "kayitli_secmen": 8775,
+        "oy_kullanan_secmen": 8049,
+        "gecerli_oy": 7606,
+        "gecersiz_oy": 443,
+        "katilim_orani": 91.73
+      },
+      "BULDAN": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 21129,
+        "kayitli_secmen": 21129,
+        "oy_kullanan_secmen": 19398,
+        "gecerli_oy": 18091,
+        "gecersiz_oy": 1307,
+        "katilim_orani": 91.81
+      },
+      "ÇAL": {
+        "toplam_sandik": 70,
+        "sandiklarda_kayitli_secmen": 15691,
+        "kayitli_secmen": 15691,
+        "oy_kullanan_secmen": 14419,
+        "gecerli_oy": 13486,
+        "gecersiz_oy": 933,
+        "katilim_orani": 91.89
+      },
+      "ÇAMELİ": {
+        "toplam_sandik": 57,
+        "sandiklarda_kayitli_secmen": 15185,
+        "kayitli_secmen": 15185,
+        "oy_kullanan_secmen": 13799,
+        "gecerli_oy": 12989,
+        "gecersiz_oy": 810,
+        "katilim_orani": 90.87
+      },
+      "ÇARDAK": {
+        "toplam_sandik": 28,
+        "sandiklarda_kayitli_secmen": 6973,
+        "kayitli_secmen": 6973,
+        "oy_kullanan_secmen": 6434,
+        "gecerli_oy": 6075,
+        "gecersiz_oy": 359,
+        "katilim_orani": 92.27
+      },
+      "ÇİVRİL": {
+        "toplam_sandik": 174,
+        "sandiklarda_kayitli_secmen": 46228,
+        "kayitli_secmen": 46228,
+        "oy_kullanan_secmen": 41154,
+        "gecerli_oy": 38417,
+        "gecersiz_oy": 2737,
+        "katilim_orani": 89.02
+      },
+      "GÜNEY": {
+        "toplam_sandik": 35,
+        "sandiklarda_kayitli_secmen": 8302,
+        "kayitli_secmen": 8302,
+        "oy_kullanan_secmen": 7935,
+        "gecerli_oy": 7393,
+        "gecersiz_oy": 542,
+        "katilim_orani": 95.58
+      },
+      "HONAZ": {
+        "toplam_sandik": 80,
+        "sandiklarda_kayitli_secmen": 22602,
+        "kayitli_secmen": 21810,
+        "oy_kullanan_secmen": 20766,
+        "gecerli_oy": 19738,
+        "gecersiz_oy": 1028,
+        "katilim_orani": 95.21
+      },
+      "KALE": {
+        "toplam_sandik": 63,
+        "sandiklarda_kayitli_secmen": 15336,
+        "kayitli_secmen": 15336,
+        "oy_kullanan_secmen": 14178,
+        "gecerli_oy": 13445,
+        "gecersiz_oy": 733,
+        "katilim_orani": 92.45
+      },
+      "MERKEZEFENDİ": {
+        "toplam_sandik": 661,
+        "sandiklarda_kayitli_secmen": 218908,
+        "kayitli_secmen": 218908,
+        "oy_kullanan_secmen": 191185,
+        "gecerli_oy": 184598,
+        "gecersiz_oy": 6587,
+        "katilim_orani": 87.34
+      },
+      "PAMUKKALE": {
+        "toplam_sandik": 728,
+        "sandiklarda_kayitli_secmen": 241352,
+        "kayitli_secmen": 241352,
+        "oy_kullanan_secmen": 207171,
+        "gecerli_oy": 199822,
+        "gecersiz_oy": 7349,
+        "katilim_orani": 85.84
+      },
+      "SARAYKÖY": {
+        "toplam_sandik": 84,
+        "sandiklarda_kayitli_secmen": 23104,
+        "kayitli_secmen": 23104,
+        "oy_kullanan_secmen": 21251,
+        "gecerli_oy": 20244,
+        "gecersiz_oy": 1007,
+        "katilim_orani": 91.98
+      },
+      "SERİNHİSAR": {
+        "toplam_sandik": 37,
+        "sandiklarda_kayitli_secmen": 11058,
+        "kayitli_secmen": 11058,
+        "oy_kullanan_secmen": 10321,
+        "gecerli_oy": 9771,
+        "gecersiz_oy": 550,
+        "katilim_orani": 93.34
+      },
+      "TAVAS": {
+        "toplam_sandik": 135,
+        "sandiklarda_kayitli_secmen": 35616,
+        "kayitli_secmen": 35616,
+        "oy_kullanan_secmen": 31602,
+        "gecerli_oy": 30059,
+        "gecersiz_oy": 1543,
+        "katilim_orani": 88.73
+      }
+    },
+    "DİYARBAKIR": {
+      "BAĞLAR": {
+        "toplam_sandik": 718,
+        "sandiklarda_kayitli_secmen": 234623,
+        "kayitli_secmen": 234031,
+        "oy_kullanan_secmen": 175432,
+        "gecerli_oy": 167893,
+        "gecersiz_oy": 7539,
+        "katilim_orani": 74.96
+      },
+      "BİSMİL": {
+        "toplam_sandik": 277,
+        "sandiklarda_kayitli_secmen": 69418,
+        "kayitli_secmen": 69418,
+        "oy_kullanan_secmen": 58266,
+        "gecerli_oy": 55566,
+        "gecersiz_oy": 2700,
+        "katilim_orani": 83.94
+      },
+      "ÇERMİK": {
+        "toplam_sandik": 137,
+        "sandiklarda_kayitli_secmen": 31080,
+        "kayitli_secmen": 31080,
+        "oy_kullanan_secmen": 25290,
+        "gecerli_oy": 23692,
+        "gecersiz_oy": 1598,
+        "katilim_orani": 81.37
+      },
+      "ÇINAR": {
+        "toplam_sandik": 161,
+        "sandiklarda_kayitli_secmen": 39709,
+        "kayitli_secmen": 39709,
+        "oy_kullanan_secmen": 34507,
+        "gecerli_oy": 32727,
+        "gecersiz_oy": 1780,
+        "katilim_orani": 86.9
+      },
+      "ÇÜNGÜŞ": {
+        "toplam_sandik": 47,
+        "sandiklarda_kayitli_secmen": 8114,
+        "kayitli_secmen": 8114,
+        "oy_kullanan_secmen": 7023,
+        "gecerli_oy": 6393,
+        "gecersiz_oy": 630,
+        "katilim_orani": 86.55
+      },
+      "DİCLE": {
+        "toplam_sandik": 97,
+        "sandiklarda_kayitli_secmen": 23661,
+        "kayitli_secmen": 23661,
+        "oy_kullanan_secmen": 20344,
+        "gecerli_oy": 17963,
+        "gecersiz_oy": 2381,
+        "katilim_orani": 85.98
+      },
+      "EĞİL": {
+        "toplam_sandik": 55,
+        "sandiklarda_kayitli_secmen": 14592,
+        "kayitli_secmen": 14592,
+        "oy_kullanan_secmen": 13235,
+        "gecerli_oy": 11547,
+        "gecersiz_oy": 1688,
+        "katilim_orani": 90.7
+      },
+      "ERGANİ": {
+        "toplam_sandik": 293,
+        "sandiklarda_kayitli_secmen": 80910,
+        "kayitli_secmen": 80910,
+        "oy_kullanan_secmen": 64758,
+        "gecerli_oy": 60053,
+        "gecersiz_oy": 4705,
+        "katilim_orani": 80.04
+      },
+      "HANİ": {
+        "toplam_sandik": 68,
+        "sandiklarda_kayitli_secmen": 19352,
+        "kayitli_secmen": 19352,
+        "oy_kullanan_secmen": 15850,
+        "gecerli_oy": 14398,
+        "gecersiz_oy": 1452,
+        "katilim_orani": 81.9
+      },
+      "HAZRO": {
+        "toplam_sandik": 45,
+        "sandiklarda_kayitli_secmen": 10101,
+        "kayitli_secmen": 10101,
+        "oy_kullanan_secmen": 8595,
+        "gecerli_oy": 7964,
+        "gecersiz_oy": 631,
+        "katilim_orani": 85.09
+      },
+      "KAYAPINAR": {
+        "toplam_sandik": 671,
+        "sandiklarda_kayitli_secmen": 221345,
+        "kayitli_secmen": 220725,
+        "oy_kullanan_secmen": 166739,
+        "gecerli_oy": 159684,
+        "gecersiz_oy": 7055,
+        "katilim_orani": 75.54
+      },
+      "KOCAKÖY": {
+        "toplam_sandik": 42,
+        "sandiklarda_kayitli_secmen": 10492,
+        "kayitli_secmen": 10492,
+        "oy_kullanan_secmen": 9285,
+        "gecerli_oy": 8798,
+        "gecersiz_oy": 487,
+        "katilim_orani": 88.5
+      },
+      "KULP": {
+        "toplam_sandik": 97,
+        "sandiklarda_kayitli_secmen": 22904,
+        "kayitli_secmen": 22904,
+        "oy_kullanan_secmen": 19189,
+        "gecerli_oy": 17908,
+        "gecersiz_oy": 1281,
+        "katilim_orani": 83.78
+      },
+      "LİCE": {
+        "toplam_sandik": 88,
+        "sandiklarda_kayitli_secmen": 18059,
+        "kayitli_secmen": 18059,
+        "oy_kullanan_secmen": 15463,
+        "gecerli_oy": 14365,
+        "gecersiz_oy": 1098,
+        "katilim_orani": 85.62
+      },
+      "SİLVAN": {
+        "toplam_sandik": 195,
+        "sandiklarda_kayitli_secmen": 51407,
+        "kayitli_secmen": 51407,
+        "oy_kullanan_secmen": 42460,
+        "gecerli_oy": 39668,
+        "gecersiz_oy": 2792,
+        "katilim_orani": 82.6
+      },
+      "SUR": {
+        "toplam_sandik": 257,
+        "sandiklarda_kayitli_secmen": 67430,
+        "kayitli_secmen": 67430,
+        "oy_kullanan_secmen": 53334,
+        "gecerli_oy": 50531,
+        "gecersiz_oy": 2803,
+        "katilim_orani": 79.1
+      },
+      "YENİŞEHİR": {
+        "toplam_sandik": 395,
+        "sandiklarda_kayitli_secmen": 126265,
+        "kayitli_secmen": 126265,
+        "oy_kullanan_secmen": 95134,
+        "gecerli_oy": 90443,
+        "gecersiz_oy": 4691,
+        "katilim_orani": 75.34
+      }
+    },
+    "ERZURUM": {
+      "AŞKALE": {
+        "toplam_sandik": 102,
+        "sandiklarda_kayitli_secmen": 16285,
+        "kayitli_secmen": 16285,
+        "oy_kullanan_secmen": 14211,
+        "gecerli_oy": 13720,
+        "gecersiz_oy": 491,
+        "katilim_orani": 87.26
+      },
+      "AZİZİYE": {
+        "toplam_sandik": 164,
+        "sandiklarda_kayitli_secmen": 39508,
+        "kayitli_secmen": 39508,
+        "oy_kullanan_secmen": 33215,
+        "gecerli_oy": 31553,
+        "gecersiz_oy": 1662,
+        "katilim_orani": 84.07
+      },
+      "ÇAT": {
+        "toplam_sandik": 59,
+        "sandiklarda_kayitli_secmen": 11232,
+        "kayitli_secmen": 11232,
+        "oy_kullanan_secmen": 9602,
+        "gecerli_oy": 9128,
+        "gecersiz_oy": 474,
+        "katilim_orani": 85.49
+      },
+      "HINIS": {
+        "toplam_sandik": 116,
+        "sandiklarda_kayitli_secmen": 16294,
+        "kayitli_secmen": 16294,
+        "oy_kullanan_secmen": 12933,
+        "gecerli_oy": 11923,
+        "gecersiz_oy": 1010,
+        "katilim_orani": 79.37
+      },
+      "HORASAN": {
+        "toplam_sandik": 129,
+        "sandiklarda_kayitli_secmen": 24351,
+        "kayitli_secmen": 24351,
+        "oy_kullanan_secmen": 20049,
+        "gecerli_oy": 19122,
+        "gecersiz_oy": 927,
+        "katilim_orani": 82.33
+      },
+      "İSPİR": {
+        "toplam_sandik": 122,
+        "sandiklarda_kayitli_secmen": 12759,
+        "kayitli_secmen": 12759,
+        "oy_kullanan_secmen": 10184,
+        "gecerli_oy": 9735,
+        "gecersiz_oy": 449,
+        "katilim_orani": 79.82
+      },
+      "KARAÇOBAN": {
+        "toplam_sandik": 56,
+        "sandiklarda_kayitli_secmen": 13150,
+        "kayitli_secmen": 13150,
+        "oy_kullanan_secmen": 10732,
+        "gecerli_oy": 10036,
+        "gecersiz_oy": 696,
+        "katilim_orani": 81.61
+      },
+      "KARAYAZI": {
+        "toplam_sandik": 100,
+        "sandiklarda_kayitli_secmen": 17101,
+        "kayitli_secmen": 17101,
+        "oy_kullanan_secmen": 13602,
+        "gecerli_oy": 12693,
+        "gecersiz_oy": 909,
+        "katilim_orani": 79.54
+      },
+      "KÖPRÜKÖY": {
+        "toplam_sandik": 54,
+        "sandiklarda_kayitli_secmen": 9684,
+        "kayitli_secmen": 9684,
+        "oy_kullanan_secmen": 8429,
+        "gecerli_oy": 8156,
+        "gecersiz_oy": 273,
+        "katilim_orani": 87.04
+      },
+      "NARMAN": {
+        "toplam_sandik": 58,
+        "sandiklarda_kayitli_secmen": 9514,
+        "kayitli_secmen": 9514,
+        "oy_kullanan_secmen": 8161,
+        "gecerli_oy": 7726,
+        "gecersiz_oy": 435,
+        "katilim_orani": 85.78
+      },
+      "OLTU": {
+        "toplam_sandik": 124,
+        "sandiklarda_kayitli_secmen": 22361,
+        "kayitli_secmen": 22329,
+        "oy_kullanan_secmen": 18840,
+        "gecerli_oy": 17947,
+        "gecersiz_oy": 893,
+        "katilim_orani": 84.37
+      },
+      "OLUR": {
+        "toplam_sandik": 47,
+        "sandiklarda_kayitli_secmen": 5641,
+        "kayitli_secmen": 5641,
+        "oy_kullanan_secmen": 4545,
+        "gecerli_oy": 4183,
+        "gecersiz_oy": 362,
+        "katilim_orani": 80.57
+      },
+      "PALANDÖKEN": {
+        "toplam_sandik": 345,
+        "sandiklarda_kayitli_secmen": 112337,
+        "kayitli_secmen": 112337,
+        "oy_kullanan_secmen": 88055,
+        "gecerli_oy": 83484,
+        "gecersiz_oy": 4571,
+        "katilim_orani": 78.38
+      },
+      "PASİNLER": {
+        "toplam_sandik": 95,
+        "sandiklarda_kayitli_secmen": 18636,
+        "kayitli_secmen": 18636,
+        "oy_kullanan_secmen": 16608,
+        "gecerli_oy": 15891,
+        "gecersiz_oy": 717,
+        "katilim_orani": 89.12
+      },
+      "PAZARYOLU": {
+        "toplam_sandik": 46,
+        "sandiklarda_kayitli_secmen": 3609,
+        "kayitli_secmen": 3609,
+        "oy_kullanan_secmen": 2890,
+        "gecerli_oy": 2762,
+        "gecersiz_oy": 128,
+        "katilim_orani": 80.08
+      },
+      "ŞENKAYA": {
+        "toplam_sandik": 92,
+        "sandiklarda_kayitli_secmen": 13769,
+        "kayitli_secmen": 13769,
+        "oy_kullanan_secmen": 11427,
+        "gecerli_oy": 10818,
+        "gecersiz_oy": 609,
+        "katilim_orani": 82.99
+      },
+      "TEKMAN": {
+        "toplam_sandik": 93,
+        "sandiklarda_kayitli_secmen": 15094,
+        "kayitli_secmen": 15094,
+        "oy_kullanan_secmen": 11555,
+        "gecerli_oy": 10774,
+        "gecersiz_oy": 781,
+        "katilim_orani": 76.55
+      },
+      "TORTUM": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 15120,
+        "kayitli_secmen": 15120,
+        "oy_kullanan_secmen": 13173,
+        "gecerli_oy": 12420,
+        "gecersiz_oy": 753,
+        "katilim_orani": 87.12
+      },
+      "UZUNDERE": {
+        "toplam_sandik": 30,
+        "sandiklarda_kayitli_secmen": 7156,
+        "kayitli_secmen": 7156,
+        "oy_kullanan_secmen": 5880,
+        "gecerli_oy": 5600,
+        "gecersiz_oy": 280,
+        "katilim_orani": 82.17
+      },
+      "YAKUTİYE": {
+        "toplam_sandik": 367,
+        "sandiklarda_kayitli_secmen": 114955,
+        "kayitli_secmen": 114684,
+        "oy_kullanan_secmen": 91500,
+        "gecerli_oy": 87246,
+        "gecersiz_oy": 4254,
+        "katilim_orani": 79.78
+      }
+    },
+    "ESKİŞEHİR": {
+      "ALPU": {
+        "toplam_sandik": 47,
+        "sandiklarda_kayitli_secmen": 9217,
+        "kayitli_secmen": 9217,
+        "oy_kullanan_secmen": 8515,
+        "gecerli_oy": 8182,
+        "gecersiz_oy": 333,
+        "katilim_orani": 92.38
+      },
+      "BEYLİKOVA": {
+        "toplam_sandik": 30,
+        "sandiklarda_kayitli_secmen": 5529,
+        "kayitli_secmen": 5529,
+        "oy_kullanan_secmen": 5064,
+        "gecerli_oy": 4861,
+        "gecersiz_oy": 203,
+        "katilim_orani": 91.59
+      },
+      "ÇİFTELER": {
+        "toplam_sandik": 50,
+        "sandiklarda_kayitli_secmen": 11611,
+        "kayitli_secmen": 11611,
+        "oy_kullanan_secmen": 10207,
+        "gecerli_oy": 9740,
+        "gecersiz_oy": 467,
+        "katilim_orani": 87.91
+      },
+      "GÜNYÜZÜ": {
+        "toplam_sandik": 26,
+        "sandiklarda_kayitli_secmen": 5154,
+        "kayitli_secmen": 5154,
+        "oy_kullanan_secmen": 4802,
+        "gecerli_oy": 4586,
+        "gecersiz_oy": 216,
+        "katilim_orani": 93.17
+      },
+      "HAN": {
+        "toplam_sandik": 17,
+        "sandiklarda_kayitli_secmen": 2018,
+        "kayitli_secmen": 2018,
+        "oy_kullanan_secmen": 1899,
+        "gecerli_oy": 1778,
+        "gecersiz_oy": 121,
+        "katilim_orani": 94.1
+      },
+      "İNÖNÜ": {
+        "toplam_sandik": 25,
+        "sandiklarda_kayitli_secmen": 5542,
+        "kayitli_secmen": 5542,
+        "oy_kullanan_secmen": 5225,
+        "gecerli_oy": 5080,
+        "gecersiz_oy": 145,
+        "katilim_orani": 94.28
+      },
+      "MAHMUDİYE": {
+        "toplam_sandik": 29,
+        "sandiklarda_kayitli_secmen": 6191,
+        "kayitli_secmen": 6191,
+        "oy_kullanan_secmen": 5564,
+        "gecerli_oy": 5315,
+        "gecersiz_oy": 249,
+        "katilim_orani": 89.87
+      },
+      "MİHALGAZİ": {
+        "toplam_sandik": 12,
+        "sandiklarda_kayitli_secmen": 2800,
+        "kayitli_secmen": 2800,
+        "oy_kullanan_secmen": 2626,
+        "gecerli_oy": 2527,
+        "gecersiz_oy": 99,
+        "katilim_orani": 93.79
+      },
+      "MİHALIÇÇIK": {
+        "toplam_sandik": 59,
+        "sandiklarda_kayitli_secmen": 7309,
+        "kayitli_secmen": 7309,
+        "oy_kullanan_secmen": 6564,
+        "gecerli_oy": 6217,
+        "gecersiz_oy": 347,
+        "katilim_orani": 89.81
+      },
+      "ODUNPAZARI": {
+        "toplam_sandik": 921,
+        "sandiklarda_kayitli_secmen": 297881,
+        "kayitli_secmen": 297499,
+        "oy_kullanan_secmen": 255022,
+        "gecerli_oy": 249273,
+        "gecersiz_oy": 5749,
+        "katilim_orani": 85.72
+      },
+      "SARICAKAYA": {
+        "toplam_sandik": 16,
+        "sandiklarda_kayitli_secmen": 4086,
+        "kayitli_secmen": 4086,
+        "oy_kullanan_secmen": 3787,
+        "gecerli_oy": 3673,
+        "gecersiz_oy": 114,
+        "katilim_orani": 92.68
+      },
+      "SEYİTGAZİ": {
+        "toplam_sandik": 67,
+        "sandiklarda_kayitli_secmen": 11193,
+        "kayitli_secmen": 11193,
+        "oy_kullanan_secmen": 10598,
+        "gecerli_oy": 10237,
+        "gecersiz_oy": 361,
+        "katilim_orani": 94.68
+      },
+      "SİVRİHİSAR": {
+        "toplam_sandik": 97,
+        "sandiklarda_kayitli_secmen": 16632,
+        "kayitli_secmen": 16632,
+        "oy_kullanan_secmen": 14808,
+        "gecerli_oy": 14014,
+        "gecersiz_oy": 794,
+        "katilim_orani": 89.03
+      },
+      "TEPEBAŞI": {
+        "toplam_sandik": 831,
+        "sandiklarda_kayitli_secmen": 266575,
+        "kayitli_secmen": 266575,
+        "oy_kullanan_secmen": 226082,
+        "gecerli_oy": 220786,
+        "gecersiz_oy": 5296,
+        "katilim_orani": 84.81
+      }
+    },
+    "GAZİANTEP": {
+      "ARABAN": {
+        "toplam_sandik": 86,
+        "sandiklarda_kayitli_secmen": 20714,
+        "kayitli_secmen": 20714,
+        "oy_kullanan_secmen": 18599,
+        "gecerli_oy": 17286,
+        "gecersiz_oy": 1313,
+        "katilim_orani": 89.79
+      },
+      "İSLAHİYE": {
+        "toplam_sandik": 160,
+        "sandiklarda_kayitli_secmen": 43617,
+        "kayitli_secmen": 43617,
+        "oy_kullanan_secmen": 38515,
+        "gecerli_oy": 36100,
+        "gecersiz_oy": 2415,
+        "katilim_orani": 88.3
+      },
+      "KARKAMIŞ": {
+        "toplam_sandik": 44,
+        "sandiklarda_kayitli_secmen": 6861,
+        "kayitli_secmen": 6861,
+        "oy_kullanan_secmen": 6433,
+        "gecerli_oy": 6200,
+        "gecersiz_oy": 233,
+        "katilim_orani": 93.76
+      },
+      "NİZİP": {
+        "toplam_sandik": 324,
+        "sandiklarda_kayitli_secmen": 88309,
+        "kayitli_secmen": 88298,
+        "oy_kullanan_secmen": 74114,
+        "gecerli_oy": 70299,
+        "gecersiz_oy": 3815,
+        "katilim_orani": 83.94
+      },
+      "NURDAĞI": {
+        "toplam_sandik": 104,
+        "sandiklarda_kayitli_secmen": 26300,
+        "kayitli_secmen": 26300,
+        "oy_kullanan_secmen": 23136,
+        "gecerli_oy": 22153,
+        "gecersiz_oy": 983,
+        "katilim_orani": 87.97
+      },
+      "OĞUZELİ": {
+        "toplam_sandik": 118,
+        "sandiklarda_kayitli_secmen": 20784,
+        "kayitli_secmen": 20784,
+        "oy_kullanan_secmen": 18837,
+        "gecerli_oy": 17749,
+        "gecersiz_oy": 1088,
+        "katilim_orani": 90.63
+      },
+      "ŞAHİNBEY": {
+        "toplam_sandik": 1680,
+        "sandiklarda_kayitli_secmen": 550463,
+        "kayitli_secmen": 550463,
+        "oy_kullanan_secmen": 417369,
+        "gecerli_oy": 397819,
+        "gecersiz_oy": 19550,
+        "katilim_orani": 75.82
+      },
+      "ŞEHİTKAMİL": {
+        "toplam_sandik": 1405,
+        "sandiklarda_kayitli_secmen": 458525,
+        "kayitli_secmen": 457117,
+        "oy_kullanan_secmen": 357363,
+        "gecerli_oy": 337519,
+        "gecersiz_oy": 19844,
+        "katilim_orani": 78.18
+      },
+      "YAVUZELİ": {
+        "toplam_sandik": 60,
+        "sandiklarda_kayitli_secmen": 13300,
+        "kayitli_secmen": 13300,
+        "oy_kullanan_secmen": 12392,
+        "gecerli_oy": 11955,
+        "gecersiz_oy": 437,
+        "katilim_orani": 93.17
+      }
+    },
+    "HATAY": {
+      "ALTINÖZÜ": {
+        "toplam_sandik": 131,
+        "sandiklarda_kayitli_secmen": 36924,
+        "kayitli_secmen": 36898,
+        "oy_kullanan_secmen": 32732,
+        "gecerli_oy": 31447,
+        "gecersiz_oy": 1285,
+        "katilim_orani": 88.71
+      },
+      "ANTAKYA": {
+        "toplam_sandik": 751,
+        "sandiklarda_kayitli_secmen": 241521,
+        "kayitli_secmen": 241521,
+        "oy_kullanan_secmen": 206196,
+        "gecerli_oy": 201323,
+        "gecersiz_oy": 4873,
+        "katilim_orani": 85.37
+      },
+      "ARSUZ": {
+        "toplam_sandik": 205,
+        "sandiklarda_kayitli_secmen": 63276,
+        "kayitli_secmen": 62814,
+        "oy_kullanan_secmen": 54520,
+        "gecerli_oy": 53282,
+        "gecersiz_oy": 1238,
+        "katilim_orani": 86.8
+      },
+      "BELEN": {
+        "toplam_sandik": 76,
+        "sandiklarda_kayitli_secmen": 23768,
+        "kayitli_secmen": 23768,
+        "oy_kullanan_secmen": 20963,
+        "gecerli_oy": 20473,
+        "gecersiz_oy": 490,
+        "katilim_orani": 88.2
+      },
+      "DEFNE": {
+        "toplam_sandik": 336,
+        "sandiklarda_kayitli_secmen": 106813,
+        "kayitli_secmen": 106813,
+        "oy_kullanan_secmen": 90216,
+        "gecerli_oy": 88469,
+        "gecersiz_oy": 1747,
+        "katilim_orani": 84.46
+      },
+      "DÖRTYOL": {
+        "toplam_sandik": 259,
+        "sandiklarda_kayitli_secmen": 83717,
+        "kayitli_secmen": 83717,
+        "oy_kullanan_secmen": 70722,
+        "gecerli_oy": 68277,
+        "gecersiz_oy": 2445,
+        "katilim_orani": 84.48
+      },
+      "ERZİN": {
+        "toplam_sandik": 95,
+        "sandiklarda_kayitli_secmen": 28790,
+        "kayitli_secmen": 28790,
+        "oy_kullanan_secmen": 25153,
+        "gecerli_oy": 24290,
+        "gecersiz_oy": 863,
+        "katilim_orani": 87.37
+      },
+      "HASSA": {
+        "toplam_sandik": 133,
+        "sandiklarda_kayitli_secmen": 37665,
+        "kayitli_secmen": 37665,
+        "oy_kullanan_secmen": 33646,
+        "gecerli_oy": 32150,
+        "gecersiz_oy": 1496,
+        "katilim_orani": 89.33
+      },
+      "İSKENDERUN": {
+        "toplam_sandik": 522,
+        "sandiklarda_kayitli_secmen": 172231,
+        "kayitli_secmen": 172231,
+        "oy_kullanan_secmen": 145970,
+        "gecerli_oy": 142335,
+        "gecersiz_oy": 3635,
+        "katilim_orani": 84.75
+      },
+      "KIRIKHAN": {
+        "toplam_sandik": 256,
+        "sandiklarda_kayitli_secmen": 75413,
+        "kayitli_secmen": 75413,
+        "oy_kullanan_secmen": 64999,
+        "gecerli_oy": 63145,
+        "gecersiz_oy": 1854,
+        "katilim_orani": 86.19
+      },
+      "KUMLU": {
+        "toplam_sandik": 34,
+        "sandiklarda_kayitli_secmen": 8976,
+        "kayitli_secmen": 8976,
+        "oy_kullanan_secmen": 8117,
+        "gecerli_oy": 7905,
+        "gecersiz_oy": 212,
+        "katilim_orani": 90.43
+      },
+      "PAYAS": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 28015,
+        "kayitli_secmen": 28015,
+        "oy_kullanan_secmen": 25450,
+        "gecerli_oy": 24805,
+        "gecersiz_oy": 645,
+        "katilim_orani": 90.84
+      },
+      "REYHANLI": {
+        "toplam_sandik": 191,
+        "sandiklarda_kayitli_secmen": 57488,
+        "kayitli_secmen": 57488,
+        "oy_kullanan_secmen": 47197,
+        "gecerli_oy": 45439,
+        "gecersiz_oy": 1758,
+        "katilim_orani": 82.1
+      },
+      "SAMANDAĞ": {
+        "toplam_sandik": 259,
+        "sandiklarda_kayitli_secmen": 81759,
+        "kayitli_secmen": 81759,
+        "oy_kullanan_secmen": 67379,
+        "gecerli_oy": 65779,
+        "gecersiz_oy": 1600,
+        "katilim_orani": 82.41
+      },
+      "YAYLADAĞI": {
+        "toplam_sandik": 88,
+        "sandiklarda_kayitli_secmen": 22188,
+        "kayitli_secmen": 21949,
+        "oy_kullanan_secmen": 20470,
+        "gecerli_oy": 19738,
+        "gecersiz_oy": 732,
+        "katilim_orani": 93.26
+      }
+    },
+    "İSTANBUL": {
+      "ADALAR": {
+        "toplam_sandik": 39,
+        "sandiklarda_kayitli_secmen": 12608,
+        "kayitli_secmen": 12608,
+        "oy_kullanan_secmen": 10324,
+        "gecerli_oy": 9955,
+        "gecersiz_oy": 369,
+        "katilim_orani": 81.88
+      },
+      "ARNAVUTKÖY": {
+        "toplam_sandik": 524,
+        "sandiklarda_kayitli_secmen": 173036,
+        "kayitli_secmen": 173036,
+        "oy_kullanan_secmen": 146543,
+        "gecerli_oy": 139090,
+        "gecersiz_oy": 7453,
+        "katilim_orani": 84.69
+      },
+      "ATAŞEHİR": {
+        "toplam_sandik": 885,
+        "sandiklarda_kayitli_secmen": 303273,
+        "kayitli_secmen": 303273,
+        "oy_kullanan_secmen": 259282,
+        "gecerli_oy": 251480,
+        "gecersiz_oy": 7802,
+        "katilim_orani": 85.49
+      },
+      "AVCILAR": {
+        "toplam_sandik": 874,
+        "sandiklarda_kayitli_secmen": 300153,
+        "kayitli_secmen": 300153,
+        "oy_kullanan_secmen": 248759,
+        "gecerli_oy": 240662,
+        "gecersiz_oy": 8097,
+        "katilim_orani": 82.88
+      },
+      "BAĞCILAR": {
+        "toplam_sandik": 1453,
+        "sandiklarda_kayitli_secmen": 498314,
+        "kayitli_secmen": 498314,
+        "oy_kullanan_secmen": 415391,
+        "gecerli_oy": 398684,
+        "gecersiz_oy": 16707,
+        "katilim_orani": 83.36
+      },
+      "BAHÇELİEVLER": {
+        "toplam_sandik": 1236,
+        "sandiklarda_kayitli_secmen": 422645,
+        "kayitli_secmen": 422645,
+        "oy_kullanan_secmen": 349444,
+        "gecerli_oy": 336822,
+        "gecersiz_oy": 12622,
+        "katilim_orani": 82.68
+      },
+      "BAKIRKÖY": {
+        "toplam_sandik": 501,
+        "sandiklarda_kayitli_secmen": 168820,
+        "kayitli_secmen": 168420,
+        "oy_kullanan_secmen": 139660,
+        "gecerli_oy": 136590,
+        "gecersiz_oy": 3070,
+        "katilim_orani": 82.92
+      },
+      "BAŞAKŞEHİR": {
+        "toplam_sandik": 779,
+        "sandiklarda_kayitli_secmen": 264503,
+        "kayitli_secmen": 264503,
+        "oy_kullanan_secmen": 222928,
+        "gecerli_oy": 214816,
+        "gecersiz_oy": 8112,
+        "katilim_orani": 84.28
+      },
+      "BAYRAMPAŞA": {
+        "toplam_sandik": 579,
+        "sandiklarda_kayitli_secmen": 197991,
+        "kayitli_secmen": 197991,
+        "oy_kullanan_secmen": 168845,
+        "gecerli_oy": 163993,
+        "gecersiz_oy": 4852,
+        "katilim_orani": 85.28
+      },
+      "BEŞİKTAŞ": {
+        "toplam_sandik": 415,
+        "sandiklarda_kayitli_secmen": 139673,
+        "kayitli_secmen": 139673,
+        "oy_kullanan_secmen": 113836,
+        "gecerli_oy": 111753,
+        "gecersiz_oy": 2083,
+        "katilim_orani": 81.5
+      },
+      "BEYKOZ": {
+        "toplam_sandik": 550,
+        "sandiklarda_kayitli_secmen": 182454,
+        "kayitli_secmen": 182454,
+        "oy_kullanan_secmen": 157216,
+        "gecerli_oy": 151706,
+        "gecersiz_oy": 5510,
+        "katilim_orani": 86.17
+      },
+      "BEYLİKDÜZÜ": {
+        "toplam_sandik": 669,
+        "sandiklarda_kayitli_secmen": 228079,
+        "kayitli_secmen": 228079,
+        "oy_kullanan_secmen": 194146,
+        "gecerli_oy": 188694,
+        "gecersiz_oy": 5452,
+        "katilim_orani": 85.12
+      },
+      "BEYOĞLU": {
+        "toplam_sandik": 502,
+        "sandiklarda_kayitli_secmen": 167012,
+        "kayitli_secmen": 167012,
+        "oy_kullanan_secmen": 135071,
+        "gecerli_oy": 129933,
+        "gecersiz_oy": 5138,
+        "katilim_orani": 80.88
+      },
+      "BÜYÜKÇEKMECE": {
+        "toplam_sandik": 519,
+        "sandiklarda_kayitli_secmen": 174661,
+        "kayitli_secmen": 174661,
+        "oy_kullanan_secmen": 148218,
+        "gecerli_oy": 143270,
+        "gecersiz_oy": 4948,
+        "katilim_orani": 84.86
+      },
+      "ÇATALCA": {
+        "toplam_sandik": 181,
+        "sandiklarda_kayitli_secmen": 56868,
+        "kayitli_secmen": 56868,
+        "oy_kullanan_secmen": 50459,
+        "gecerli_oy": 48238,
+        "gecersiz_oy": 2221,
+        "katilim_orani": 88.73
+      },
+      "ÇEKMEKÖY": {
+        "toplam_sandik": 509,
+        "sandiklarda_kayitli_secmen": 172439,
+        "kayitli_secmen": 172439,
+        "oy_kullanan_secmen": 149884,
+        "gecerli_oy": 143082,
+        "gecersiz_oy": 6802,
+        "katilim_orani": 86.92
+      },
+      "ESENLER": {
+        "toplam_sandik": 900,
+        "sandiklarda_kayitli_secmen": 307019,
+        "kayitli_secmen": 305875,
+        "oy_kullanan_secmen": 258641,
+        "gecerli_oy": 248612,
+        "gecersiz_oy": 10029,
+        "katilim_orani": 84.56
+      },
+      "ESENYURT": {
+        "toplam_sandik": 1631,
+        "sandiklarda_kayitli_secmen": 556619,
+        "kayitli_secmen": 556619,
+        "oy_kullanan_secmen": 456219,
+        "gecerli_oy": 437003,
+        "gecersiz_oy": 19216,
+        "katilim_orani": 81.96
+      },
+      "EYÜPSULTAN": {
+        "toplam_sandik": 825,
+        "sandiklarda_kayitli_secmen": 277158,
+        "kayitli_secmen": 277158,
+        "oy_kullanan_secmen": 235222,
+        "gecerli_oy": 227781,
+        "gecersiz_oy": 7441,
+        "katilim_orani": 84.87
+      },
+      "FATİH": {
+        "toplam_sandik": 838,
+        "sandiklarda_kayitli_secmen": 278133,
+        "kayitli_secmen": 278133,
+        "oy_kullanan_secmen": 222807,
+        "gecerli_oy": 215071,
+        "gecersiz_oy": 7736,
+        "katilim_orani": 80.11
+      },
+      "GAZİOSMANPAŞA": {
+        "toplam_sandik": 1003,
+        "sandiklarda_kayitli_secmen": 343917,
+        "kayitli_secmen": 343917,
+        "oy_kullanan_secmen": 284971,
+        "gecerli_oy": 273742,
+        "gecersiz_oy": 11229,
+        "katilim_orani": 82.86
+      },
+      "GÜNGÖREN": {
+        "toplam_sandik": 608,
+        "sandiklarda_kayitli_secmen": 207741,
+        "kayitli_secmen": 207741,
+        "oy_kullanan_secmen": 171779,
+        "gecerli_oy": 165624,
+        "gecersiz_oy": 6155,
+        "katilim_orani": 82.69
+      },
+      "KADIKÖY": {
+        "toplam_sandik": 1096,
+        "sandiklarda_kayitli_secmen": 372371,
+        "kayitli_secmen": 372371,
+        "oy_kullanan_secmen": 312071,
+        "gecerli_oy": 306274,
+        "gecersiz_oy": 5797,
+        "katilim_orani": 83.81
+      },
+      "KAĞITHANE": {
+        "toplam_sandik": 929,
+        "sandiklarda_kayitli_secmen": 315945,
+        "kayitli_secmen": 315945,
+        "oy_kullanan_secmen": 260619,
+        "gecerli_oy": 250991,
+        "gecersiz_oy": 9628,
+        "katilim_orani": 82.49
+      },
+      "KARTAL": {
+        "toplam_sandik": 1016,
+        "sandiklarda_kayitli_secmen": 346014,
+        "kayitli_secmen": 346014,
+        "oy_kullanan_secmen": 296019,
+        "gecerli_oy": 286557,
+        "gecersiz_oy": 9462,
+        "katilim_orani": 85.55
+      },
+      "KÜÇÜKÇEKMECE": {
+        "toplam_sandik": 1581,
+        "sandiklarda_kayitli_secmen": 539925,
+        "kayitli_secmen": 539925,
+        "oy_kullanan_secmen": 452344,
+        "gecerli_oy": 436379,
+        "gecersiz_oy": 15965,
+        "katilim_orani": 83.78
+      },
+      "MALTEPE": {
+        "toplam_sandik": 1089,
+        "sandiklarda_kayitli_secmen": 371304,
+        "kayitli_secmen": 369473,
+        "oy_kullanan_secmen": 311146,
+        "gecerli_oy": 300229,
+        "gecersiz_oy": 10917,
+        "katilim_orani": 84.21
+      },
+      "PENDİK": {
+        "toplam_sandik": 1436,
+        "sandiklarda_kayitli_secmen": 488959,
+        "kayitli_secmen": 488933,
+        "oy_kullanan_secmen": 410737,
+        "gecerli_oy": 396076,
+        "gecersiz_oy": 14661,
+        "katilim_orani": 84.01
+      },
+      "SANCAKTEPE": {
+        "toplam_sandik": 812,
+        "sandiklarda_kayitli_secmen": 277747,
+        "kayitli_secmen": 277747,
+        "oy_kullanan_secmen": 238010,
+        "gecerli_oy": 227234,
+        "gecersiz_oy": 10776,
+        "katilim_orani": 85.69
+      },
+      "SARIYER": {
+        "toplam_sandik": 753,
+        "sandiklarda_kayitli_secmen": 249257,
+        "kayitli_secmen": 249257,
+        "oy_kullanan_secmen": 210696,
+        "gecerli_oy": 204617,
+        "gecersiz_oy": 6079,
+        "katilim_orani": 84.53
+      },
+      "SİLİVRİ": {
+        "toplam_sandik": 411,
+        "sandiklarda_kayitli_secmen": 127937,
+        "kayitli_secmen": 121512,
+        "oy_kullanan_secmen": 110178,
+        "gecerli_oy": 104941,
+        "gecersiz_oy": 5237,
+        "katilim_orani": 90.67
+      },
+      "SULTANBEYLİ": {
+        "toplam_sandik": 619,
+        "sandiklarda_kayitli_secmen": 212729,
+        "kayitli_secmen": 212729,
+        "oy_kullanan_secmen": 180596,
+        "gecerli_oy": 171464,
+        "gecersiz_oy": 9132,
+        "katilim_orani": 84.89
+      },
+      "SULTANGAZİ": {
+        "toplam_sandik": 1016,
+        "sandiklarda_kayitli_secmen": 348829,
+        "kayitli_secmen": 348829,
+        "oy_kullanan_secmen": 296906,
+        "gecerli_oy": 284695,
+        "gecersiz_oy": 12211,
+        "katilim_orani": 85.12
+      },
+      "ŞİLE": {
+        "toplam_sandik": 115,
+        "sandiklarda_kayitli_secmen": 29285,
+        "kayitli_secmen": 29285,
+        "oy_kullanan_secmen": 26221,
+        "gecerli_oy": 25239,
+        "gecersiz_oy": 982,
+        "katilim_orani": 89.54
+      },
+      "ŞİŞLİ": {
+        "toplam_sandik": 605,
+        "sandiklarda_kayitli_secmen": 203711,
+        "kayitli_secmen": 203711,
+        "oy_kullanan_secmen": 164932,
+        "gecerli_oy": 158404,
+        "gecersiz_oy": 6528,
+        "katilim_orani": 80.96
+      },
+      "TUZLA": {
+        "toplam_sandik": 523,
+        "sandiklarda_kayitli_secmen": 177421,
+        "kayitli_secmen": 177421,
+        "oy_kullanan_secmen": 151151,
+        "gecerli_oy": 145968,
+        "gecersiz_oy": 5183,
+        "katilim_orani": 85.19
+      },
+      "ÜMRANİYE": {
+        "toplam_sandik": 1420,
+        "sandiklarda_kayitli_secmen": 485055,
+        "kayitli_secmen": 485002,
+        "oy_kullanan_secmen": 408119,
+        "gecerli_oy": 394053,
+        "gecersiz_oy": 14066,
+        "katilim_orani": 84.15
+      },
+      "ÜSKÜDAR": {
+        "toplam_sandik": 1190,
+        "sandiklarda_kayitli_secmen": 402474,
+        "kayitli_secmen": 402377,
+        "oy_kullanan_secmen": 340628,
+        "gecerli_oy": 330994,
+        "gecersiz_oy": 9634,
+        "katilim_orani": 84.65
+      },
+      "ZEYTİNBURNU": {
+        "toplam_sandik": 555,
+        "sandiklarda_kayitli_secmen": 188860,
+        "kayitli_secmen": 188860,
+        "oy_kullanan_secmen": 155054,
+        "gecerli_oy": 149106,
+        "gecersiz_oy": 5948,
+        "katilim_orani": 82.1
+      }
+    },
+    "İZMİR": {
+      "ALİAĞA": {
+        "toplam_sandik": 208,
+        "sandiklarda_kayitli_secmen": 65845,
+        "kayitli_secmen": 64515,
+        "oy_kullanan_secmen": 57144,
+        "gecerli_oy": 55358,
+        "gecersiz_oy": 1786,
+        "katilim_orani": 88.57
+      },
+      "BALÇOVA": {
+        "toplam_sandik": 186,
+        "sandiklarda_kayitli_secmen": 60923,
+        "kayitli_secmen": 60923,
+        "oy_kullanan_secmen": 50613,
+        "gecerli_oy": 49731,
+        "gecersiz_oy": 882,
+        "katilim_orani": 83.08
+      },
+      "BAYINDIR": {
+        "toplam_sandik": 125,
+        "sandiklarda_kayitli_secmen": 31538,
+        "kayitli_secmen": 31538,
+        "oy_kullanan_secmen": 28538,
+        "gecerli_oy": 27491,
+        "gecersiz_oy": 1047,
+        "katilim_orani": 90.49
+      },
+      "BAYRAKLI": {
+        "toplam_sandik": 700,
+        "sandiklarda_kayitli_secmen": 236339,
+        "kayitli_secmen": 236339,
+        "oy_kullanan_secmen": 198844,
+        "gecerli_oy": 193965,
+        "gecersiz_oy": 4879,
+        "katilim_orani": 84.14
+      },
+      "BERGAMA": {
+        "toplam_sandik": 313,
+        "sandiklarda_kayitli_secmen": 80474,
+        "kayitli_secmen": 80370,
+        "oy_kullanan_secmen": 71148,
+        "gecerli_oy": 68436,
+        "gecersiz_oy": 2712,
+        "katilim_orani": 88.53
+      },
+      "BEYDAĞ": {
+        "toplam_sandik": 43,
+        "sandiklarda_kayitli_secmen": 10064,
+        "kayitli_secmen": 10064,
+        "oy_kullanan_secmen": 9461,
+        "gecerli_oy": 8976,
+        "gecersiz_oy": 485,
+        "katilim_orani": 94.01
+      },
+      "BORNOVA": {
+        "toplam_sandik": 984,
+        "sandiklarda_kayitli_secmen": 325344,
+        "kayitli_secmen": 325344,
+        "oy_kullanan_secmen": 273264,
+        "gecerli_oy": 266294,
+        "gecersiz_oy": 6970,
+        "katilim_orani": 83.99
+      },
+      "BUCA": {
+        "toplam_sandik": 1087,
+        "sandiklarda_kayitli_secmen": 365061,
+        "kayitli_secmen": 364019,
+        "oy_kullanan_secmen": 297745,
+        "gecerli_oy": 290478,
+        "gecersiz_oy": 7267,
+        "katilim_orani": 81.79
+      },
+      "ÇEŞME": {
+        "toplam_sandik": 109,
+        "sandiklarda_kayitli_secmen": 33778,
+        "kayitli_secmen": 33778,
+        "oy_kullanan_secmen": 27630,
+        "gecerli_oy": 26851,
+        "gecersiz_oy": 779,
+        "katilim_orani": 81.8
+      },
+      "ÇİĞLİ": {
+        "toplam_sandik": 444,
+        "sandiklarda_kayitli_secmen": 148893,
+        "kayitli_secmen": 148893,
+        "oy_kullanan_secmen": 125022,
+        "gecerli_oy": 122415,
+        "gecersiz_oy": 2607,
+        "katilim_orani": 83.97
+      },
+      "DİKİLİ": {
+        "toplam_sandik": 119,
+        "sandiklarda_kayitli_secmen": 35766,
+        "kayitli_secmen": 35766,
+        "oy_kullanan_secmen": 29602,
+        "gecerli_oy": 28706,
+        "gecersiz_oy": 896,
+        "katilim_orani": 82.77
+      },
+      "FOÇA": {
+        "toplam_sandik": 84,
+        "sandiklarda_kayitli_secmen": 25629,
+        "kayitli_secmen": 25629,
+        "oy_kullanan_secmen": 21029,
+        "gecerli_oy": 20371,
+        "gecersiz_oy": 658,
+        "katilim_orani": 82.05
+      },
+      "GAZİEMİR": {
+        "toplam_sandik": 295,
+        "sandiklarda_kayitli_secmen": 99037,
+        "kayitli_secmen": 99037,
+        "oy_kullanan_secmen": 84936,
+        "gecerli_oy": 82968,
+        "gecersiz_oy": 1968,
+        "katilim_orani": 85.76
+      },
+      "GÜZELBAHÇE": {
+        "toplam_sandik": 77,
+        "sandiklarda_kayitli_secmen": 24555,
+        "kayitli_secmen": 24555,
+        "oy_kullanan_secmen": 20362,
+        "gecerli_oy": 19955,
+        "gecersiz_oy": 407,
+        "katilim_orani": 82.92
+      },
+      "KARABAĞLAR": {
+        "toplam_sandik": 1073,
+        "sandiklarda_kayitli_secmen": 360903,
+        "kayitli_secmen": 360903,
+        "oy_kullanan_secmen": 297364,
+        "gecerli_oy": 289807,
+        "gecersiz_oy": 7557,
+        "katilim_orani": 82.39
+      },
+      "KARABURUN": {
+        "toplam_sandik": 35,
+        "sandiklarda_kayitli_secmen": 9062,
+        "kayitli_secmen": 9062,
+        "oy_kullanan_secmen": 7808,
+        "gecerli_oy": 7603,
+        "gecersiz_oy": 205,
+        "katilim_orani": 86.16
+      },
+      "KARŞIYAKA": {
+        "toplam_sandik": 821,
+        "sandiklarda_kayitli_secmen": 275617,
+        "kayitli_secmen": 275617,
+        "oy_kullanan_secmen": 230610,
+        "gecerli_oy": 226485,
+        "gecersiz_oy": 4125,
+        "katilim_orani": 83.67
+      },
+      "KEMALPAŞA": {
+        "toplam_sandik": 256,
+        "sandiklarda_kayitli_secmen": 78621,
+        "kayitli_secmen": 78621,
+        "oy_kullanan_secmen": 69899,
+        "gecerli_oy": 67836,
+        "gecersiz_oy": 2063,
+        "katilim_orani": 88.91
+      },
+      "KINIK": {
+        "toplam_sandik": 87,
+        "sandiklarda_kayitli_secmen": 21693,
+        "kayitli_secmen": 21685,
+        "oy_kullanan_secmen": 20306,
+        "gecerli_oy": 19545,
+        "gecersiz_oy": 761,
+        "katilim_orani": 93.64
+      },
+      "KİRAZ": {
+        "toplam_sandik": 128,
+        "sandiklarda_kayitli_secmen": 33776,
+        "kayitli_secmen": 33776,
+        "oy_kullanan_secmen": 31546,
+        "gecerli_oy": 29027,
+        "gecersiz_oy": 2519,
+        "katilim_orani": 93.4
+      },
+      "KONAK": {
+        "toplam_sandik": 855,
+        "sandiklarda_kayitli_secmen": 275953,
+        "kayitli_secmen": 275953,
+        "oy_kullanan_secmen": 221764,
+        "gecerli_oy": 215874,
+        "gecersiz_oy": 5890,
+        "katilim_orani": 80.36
+      },
+      "MENDERES": {
+        "toplam_sandik": 230,
+        "sandiklarda_kayitli_secmen": 71679,
+        "kayitli_secmen": 71679,
+        "oy_kullanan_secmen": 63262,
+        "gecerli_oy": 61456,
+        "gecersiz_oy": 1806,
+        "katilim_orani": 88.26
+      },
+      "MENEMEN": {
+        "toplam_sandik": 390,
+        "sandiklarda_kayitli_secmen": 123981,
+        "kayitli_secmen": 123717,
+        "oy_kullanan_secmen": 106616,
+        "gecerli_oy": 103826,
+        "gecersiz_oy": 2790,
+        "katilim_orani": 86.18
+      },
+      "NARLIDERE": {
+        "toplam_sandik": 147,
+        "sandiklarda_kayitli_secmen": 49386,
+        "kayitli_secmen": 49386,
+        "oy_kullanan_secmen": 41636,
+        "gecerli_oy": 40802,
+        "gecersiz_oy": 834,
+        "katilim_orani": 84.31
+      },
+      "ÖDEMİŞ": {
+        "toplam_sandik": 362,
+        "sandiklarda_kayitli_secmen": 103370,
+        "kayitli_secmen": 103153,
+        "oy_kullanan_secmen": 89910,
+        "gecerli_oy": 86656,
+        "gecersiz_oy": 3254,
+        "katilim_orani": 87.16
+      },
+      "SEFERİHİSAR": {
+        "toplam_sandik": 108,
+        "sandiklarda_kayitli_secmen": 33238,
+        "kayitli_secmen": 33238,
+        "oy_kullanan_secmen": 28372,
+        "gecerli_oy": 27671,
+        "gecersiz_oy": 701,
+        "katilim_orani": 85.36
+      },
+      "SELÇUK": {
+        "toplam_sandik": 93,
+        "sandiklarda_kayitli_secmen": 28320,
+        "kayitli_secmen": 28320,
+        "oy_kullanan_secmen": 25088,
+        "gecerli_oy": 24248,
+        "gecersiz_oy": 840,
+        "katilim_orani": 88.59
+      },
+      "TİRE": {
+        "toplam_sandik": 234,
+        "sandiklarda_kayitli_secmen": 65977,
+        "kayitli_secmen": 65977,
+        "oy_kullanan_secmen": 57958,
+        "gecerli_oy": 55381,
+        "gecersiz_oy": 2577,
+        "katilim_orani": 87.85
+      },
+      "TORBALI": {
+        "toplam_sandik": 406,
+        "sandiklarda_kayitli_secmen": 127879,
+        "kayitli_secmen": 127879,
+        "oy_kullanan_secmen": 110600,
+        "gecerli_oy": 107476,
+        "gecersiz_oy": 3124,
+        "katilim_orani": 86.49
+      },
+      "URLA": {
+        "toplam_sandik": 162,
+        "sandiklarda_kayitli_secmen": 51044,
+        "kayitli_secmen": 51044,
+        "oy_kullanan_secmen": 42665,
+        "gecerli_oy": 41609,
+        "gecersiz_oy": 1056,
+        "katilim_orani": 83.58
+      }
+    },
+    "KAHRAMANMARAŞ": {
+      "AFŞİN": {
+        "toplam_sandik": 200,
+        "sandiklarda_kayitli_secmen": 55326,
+        "kayitli_secmen": 55326,
+        "oy_kullanan_secmen": 46712,
+        "gecerli_oy": 44165,
+        "gecersiz_oy": 2547,
+        "katilim_orani": 84.43
+      },
+      "ANDIRIN": {
+        "toplam_sandik": 101,
+        "sandiklarda_kayitli_secmen": 25726,
+        "kayitli_secmen": 25726,
+        "oy_kullanan_secmen": 23425,
+        "gecerli_oy": 21849,
+        "gecersiz_oy": 1576,
+        "katilim_orani": 91.06
+      },
+      "ÇAĞLAYANCERİT": {
+        "toplam_sandik": 59,
+        "sandiklarda_kayitli_secmen": 16659,
+        "kayitli_secmen": 16659,
+        "oy_kullanan_secmen": 14680,
+        "gecerli_oy": 14116,
+        "gecersiz_oy": 564,
+        "katilim_orani": 88.12
+      },
+      "DULKADİROĞLU": {
+        "toplam_sandik": 460,
+        "sandiklarda_kayitli_secmen": 141532,
+        "kayitli_secmen": 141065,
+        "oy_kullanan_secmen": 124358,
+        "gecerli_oy": 118155,
+        "gecersiz_oy": 6203,
+        "katilim_orani": 88.16
+      },
+      "EKİNÖZÜ": {
+        "toplam_sandik": 33,
+        "sandiklarda_kayitli_secmen": 8653,
+        "kayitli_secmen": 8653,
+        "oy_kullanan_secmen": 7888,
+        "gecerli_oy": 7655,
+        "gecersiz_oy": 233,
+        "katilim_orani": 91.16
+      },
+      "ELBİSTAN": {
+        "toplam_sandik": 339,
+        "sandiklarda_kayitli_secmen": 95987,
+        "kayitli_secmen": 95835,
+        "oy_kullanan_secmen": 79503,
+        "gecerli_oy": 76557,
+        "gecersiz_oy": 2946,
+        "katilim_orani": 82.96
+      },
+      "GÖKSUN": {
+        "toplam_sandik": 160,
+        "sandiklarda_kayitli_secmen": 39840,
+        "kayitli_secmen": 39840,
+        "oy_kullanan_secmen": 35099,
+        "gecerli_oy": 33171,
+        "gecersiz_oy": 1928,
+        "katilim_orani": 88.1
+      },
+      "NURHAK": {
+        "toplam_sandik": 35,
+        "sandiklarda_kayitli_secmen": 9480,
+        "kayitli_secmen": 9480,
+        "oy_kullanan_secmen": 8060,
+        "gecerli_oy": 7731,
+        "gecersiz_oy": 329,
+        "katilim_orani": 85.02
+      },
+      "ONİKİŞUBAT": {
+        "toplam_sandik": 861,
+        "sandiklarda_kayitli_secmen": 268477,
+        "kayitli_secmen": 268477,
+        "oy_kullanan_secmen": 233043,
+        "gecerli_oy": 222267,
+        "gecersiz_oy": 10776,
+        "katilim_orani": 86.8
+      },
+      "PAZARCIK": {
+        "toplam_sandik": 185,
+        "sandiklarda_kayitli_secmen": 46648,
+        "kayitli_secmen": 46648,
+        "oy_kullanan_secmen": 41223,
+        "gecerli_oy": 39059,
+        "gecersiz_oy": 2164,
+        "katilim_orani": 88.37
+      },
+      "TÜRKOĞLU": {
+        "toplam_sandik": 163,
+        "sandiklarda_kayitli_secmen": 46920,
+        "kayitli_secmen": 46895,
+        "oy_kullanan_secmen": 42620,
+        "gecerli_oy": 39860,
+        "gecersiz_oy": 2760,
+        "katilim_orani": 90.88
+      }
+    },
+    "KAYSERİ": {
+      "AKKIŞLA": {
+        "toplam_sandik": 22,
+        "sandiklarda_kayitli_secmen": 5629,
+        "kayitli_secmen": 5629,
+        "oy_kullanan_secmen": 5267,
+        "gecerli_oy": 4782,
+        "gecersiz_oy": 485,
+        "katilim_orani": 93.57
+      },
+      "BÜNYAN": {
+        "toplam_sandik": 91,
+        "sandiklarda_kayitli_secmen": 22040,
+        "kayitli_secmen": 21553,
+        "oy_kullanan_secmen": 19572,
+        "gecerli_oy": 18620,
+        "gecersiz_oy": 952,
+        "katilim_orani": 90.81
+      },
+      "DEVELİ": {
+        "toplam_sandik": 176,
+        "sandiklarda_kayitli_secmen": 46833,
+        "kayitli_secmen": 46817,
+        "oy_kullanan_secmen": 41371,
+        "gecerli_oy": 39299,
+        "gecersiz_oy": 2072,
+        "katilim_orani": 88.37
+      },
+      "FELAHİYE": {
+        "toplam_sandik": 24,
+        "sandiklarda_kayitli_secmen": 5193,
+        "kayitli_secmen": 5193,
+        "oy_kullanan_secmen": 4176,
+        "gecerli_oy": 3952,
+        "gecersiz_oy": 224,
+        "katilim_orani": 80.42
+      },
+      "HACILAR": {
+        "toplam_sandik": 31,
+        "sandiklarda_kayitli_secmen": 9030,
+        "kayitli_secmen": 9030,
+        "oy_kullanan_secmen": 8315,
+        "gecerli_oy": 8037,
+        "gecersiz_oy": 278,
+        "katilim_orani": 92.08
+      },
+      "İNCESU": {
+        "toplam_sandik": 66,
+        "sandiklarda_kayitli_secmen": 18442,
+        "kayitli_secmen": 18442,
+        "oy_kullanan_secmen": 17139,
+        "gecerli_oy": 16334,
+        "gecersiz_oy": 805,
+        "katilim_orani": 92.93
+      },
+      "KOCASİNAN": {
+        "toplam_sandik": 834,
+        "sandiklarda_kayitli_secmen": 267480,
+        "kayitli_secmen": 267480,
+        "oy_kullanan_secmen": 227633,
+        "gecerli_oy": 219285,
+        "gecersiz_oy": 8348,
+        "katilim_orani": 85.1
+      },
+      "MELİKGAZİ": {
+        "toplam_sandik": 1124,
+        "sandiklarda_kayitli_secmen": 374617,
+        "kayitli_secmen": 374191,
+        "oy_kullanan_secmen": 318294,
+        "gecerli_oy": 306831,
+        "gecersiz_oy": 11463,
+        "katilim_orani": 85.06
+      },
+      "ÖZVATAN": {
+        "toplam_sandik": 20,
+        "sandiklarda_kayitli_secmen": 4228,
+        "kayitli_secmen": 4228,
+        "oy_kullanan_secmen": 3721,
+        "gecerli_oy": 3522,
+        "gecersiz_oy": 199,
+        "katilim_orani": 88.01
+      },
+      "PINARBAŞI": {
+        "toplam_sandik": 146,
+        "sandiklarda_kayitli_secmen": 20679,
+        "kayitli_secmen": 20679,
+        "oy_kullanan_secmen": 18390,
+        "gecerli_oy": 17537,
+        "gecersiz_oy": 853,
+        "katilim_orani": 88.93
+      },
+      "SARIOĞLAN": {
+        "toplam_sandik": 53,
+        "sandiklarda_kayitli_secmen": 12876,
+        "kayitli_secmen": 12876,
+        "oy_kullanan_secmen": 11425,
+        "gecerli_oy": 10778,
+        "gecersiz_oy": 647,
+        "katilim_orani": 88.73
+      },
+      "SARIZ": {
+        "toplam_sandik": 50,
+        "sandiklarda_kayitli_secmen": 8379,
+        "kayitli_secmen": 8379,
+        "oy_kullanan_secmen": 7307,
+        "gecerli_oy": 6936,
+        "gecersiz_oy": 371,
+        "katilim_orani": 87.21
+      },
+      "TALAS": {
+        "toplam_sandik": 321,
+        "sandiklarda_kayitli_secmen": 104805,
+        "kayitli_secmen": 104805,
+        "oy_kullanan_secmen": 86894,
+        "gecerli_oy": 84586,
+        "gecersiz_oy": 2308,
+        "katilim_orani": 82.91
+      },
+      "TOMARZA": {
+        "toplam_sandik": 82,
+        "sandiklarda_kayitli_secmen": 16972,
+        "kayitli_secmen": 16972,
+        "oy_kullanan_secmen": 15351,
+        "gecerli_oy": 14604,
+        "gecersiz_oy": 747,
+        "katilim_orani": 90.45
+      },
+      "YAHYALI": {
+        "toplam_sandik": 98,
+        "sandiklarda_kayitli_secmen": 26597,
+        "kayitli_secmen": 26597,
+        "oy_kullanan_secmen": 23967,
+        "gecerli_oy": 23059,
+        "gecersiz_oy": 908,
+        "katilim_orani": 90.11
+      },
+      "YEŞİLHİSAR": {
+        "toplam_sandik": 53,
+        "sandiklarda_kayitli_secmen": 13278,
+        "kayitli_secmen": 13278,
+        "oy_kullanan_secmen": 12116,
+        "gecerli_oy": 11588,
+        "gecersiz_oy": 528,
+        "katilim_orani": 91.25
+      }
+    },
+    "KOCAELİ": {
+      "BAŞİSKELE": {
+        "toplam_sandik": 217,
+        "sandiklarda_kayitli_secmen": 68801,
+        "kayitli_secmen": 68801,
+        "oy_kullanan_secmen": 60891,
+        "gecerli_oy": 58899,
+        "gecersiz_oy": 1992,
+        "katilim_orani": 88.5
+      },
+      "ÇAYIROVA": {
+        "toplam_sandik": 263,
+        "sandiklarda_kayitli_secmen": 88513,
+        "kayitli_secmen": 88513,
+        "oy_kullanan_secmen": 73451,
+        "gecerli_oy": 70376,
+        "gecersiz_oy": 3075,
+        "katilim_orani": 82.98
+      },
+      "DARICA": {
+        "toplam_sandik": 418,
+        "sandiklarda_kayitli_secmen": 140541,
+        "kayitli_secmen": 140541,
+        "oy_kullanan_secmen": 117753,
+        "gecerli_oy": 112398,
+        "gecersiz_oy": 5355,
+        "katilim_orani": 83.79
+      },
+      "DERİNCE": {
+        "toplam_sandik": 315,
+        "sandiklarda_kayitli_secmen": 103502,
+        "kayitli_secmen": 103502,
+        "oy_kullanan_secmen": 88516,
+        "gecerli_oy": 84808,
+        "gecersiz_oy": 3708,
+        "katilim_orani": 85.52
+      },
+      "DİLOVASI": {
+        "toplam_sandik": 99,
+        "sandiklarda_kayitli_secmen": 31395,
+        "kayitli_secmen": 31395,
+        "oy_kullanan_secmen": 28139,
+        "gecerli_oy": 26661,
+        "gecersiz_oy": 1478,
+        "katilim_orani": 89.63
+      },
+      "GEBZE": {
+        "toplam_sandik": 776,
+        "sandiklarda_kayitli_secmen": 260528,
+        "kayitli_secmen": 260505,
+        "oy_kullanan_secmen": 217842,
+        "gecerli_oy": 205672,
+        "gecersiz_oy": 12170,
+        "katilim_orani": 83.62
+      },
+      "GÖLCÜK": {
+        "toplam_sandik": 362,
+        "sandiklarda_kayitli_secmen": 118019,
+        "kayitli_secmen": 118019,
+        "oy_kullanan_secmen": 100333,
+        "gecerli_oy": 95737,
+        "gecersiz_oy": 4596,
+        "katilim_orani": 85.01
+      },
+      "İZMİT": {
+        "toplam_sandik": 808,
+        "sandiklarda_kayitli_secmen": 257513,
+        "kayitli_secmen": 257513,
+        "oy_kullanan_secmen": 221646,
+        "gecerli_oy": 212159,
+        "gecersiz_oy": 9487,
+        "katilim_orani": 86.07
+      },
+      "KANDIRA": {
+        "toplam_sandik": 179,
+        "sandiklarda_kayitli_secmen": 38260,
+        "kayitli_secmen": 37387,
+        "oy_kullanan_secmen": 34865,
+        "gecerli_oy": 32902,
+        "gecersiz_oy": 1963,
+        "katilim_orani": 93.25
+      },
+      "KARAMÜRSEL": {
+        "toplam_sandik": 142,
+        "sandiklarda_kayitli_secmen": 42975,
+        "kayitli_secmen": 42975,
+        "oy_kullanan_secmen": 35424,
+        "gecerli_oy": 33587,
+        "gecersiz_oy": 1837,
+        "katilim_orani": 82.43
+      },
+      "KARTEPE": {
+        "toplam_sandik": 259,
+        "sandiklarda_kayitli_secmen": 83830,
+        "kayitli_secmen": 83830,
+        "oy_kullanan_secmen": 73572,
+        "gecerli_oy": 70225,
+        "gecersiz_oy": 3347,
+        "katilim_orani": 87.76
+      },
+      "KÖRFEZ": {
+        "toplam_sandik": 358,
+        "sandiklarda_kayitli_secmen": 116499,
+        "kayitli_secmen": 116499,
+        "oy_kullanan_secmen": 98786,
+        "gecerli_oy": 94895,
+        "gecersiz_oy": 3891,
+        "katilim_orani": 84.8
+      }
+    },
+    "KONYA": {
+      "AHIRLI": {
+        "toplam_sandik": 21,
+        "sandiklarda_kayitli_secmen": 3977,
+        "kayitli_secmen": 3977,
+        "oy_kullanan_secmen": 3634,
+        "gecerli_oy": 3379,
+        "gecersiz_oy": 255,
+        "katilim_orani": 91.38
+      },
+      "AKÖREN": {
+        "toplam_sandik": 19,
+        "sandiklarda_kayitli_secmen": 4377,
+        "kayitli_secmen": 4377,
+        "oy_kullanan_secmen": 4106,
+        "gecerli_oy": 3900,
+        "gecersiz_oy": 206,
+        "katilim_orani": 93.81
+      },
+      "AKŞEHİR": {
+        "toplam_sandik": 232,
+        "sandiklarda_kayitli_secmen": 69645,
+        "kayitli_secmen": 69500,
+        "oy_kullanan_secmen": 58424,
+        "gecerli_oy": 55284,
+        "gecersiz_oy": 3140,
+        "katilim_orani": 84.06
+      },
+      "ALTINEKİN": {
+        "toplam_sandik": 48,
+        "sandiklarda_kayitli_secmen": 10191,
+        "kayitli_secmen": 10191,
+        "oy_kullanan_secmen": 9748,
+        "gecerli_oy": 9494,
+        "gecersiz_oy": 254,
+        "katilim_orani": 95.65
+      },
+      "BEYŞEHİR": {
+        "toplam_sandik": 198,
+        "sandiklarda_kayitli_secmen": 53858,
+        "kayitli_secmen": 53858,
+        "oy_kullanan_secmen": 46631,
+        "gecerli_oy": 43302,
+        "gecersiz_oy": 3329,
+        "katilim_orani": 86.58
+      },
+      "BOZKIR": {
+        "toplam_sandik": 90,
+        "sandiklarda_kayitli_secmen": 19535,
+        "kayitli_secmen": 19535,
+        "oy_kullanan_secmen": 17029,
+        "gecerli_oy": 15735,
+        "gecersiz_oy": 1294,
+        "katilim_orani": 87.17
+      },
+      "CİHANBEYLİ": {
+        "toplam_sandik": 136,
+        "sandiklarda_kayitli_secmen": 37552,
+        "kayitli_secmen": 37552,
+        "oy_kullanan_secmen": 30763,
+        "gecerli_oy": 29647,
+        "gecersiz_oy": 1116,
+        "katilim_orani": 81.92
+      },
+      "ÇELTİK": {
+        "toplam_sandik": 29,
+        "sandiklarda_kayitli_secmen": 7593,
+        "kayitli_secmen": 7593,
+        "oy_kullanan_secmen": 6749,
+        "gecerli_oy": 6488,
+        "gecersiz_oy": 261,
+        "katilim_orani": 88.88
+      },
+      "ÇUMRA": {
+        "toplam_sandik": 161,
+        "sandiklarda_kayitli_secmen": 46539,
+        "kayitli_secmen": 46539,
+        "oy_kullanan_secmen": 41648,
+        "gecerli_oy": 39791,
+        "gecersiz_oy": 1857,
+        "katilim_orani": 89.49
+      },
+      "DERBENT": {
+        "toplam_sandik": 16,
+        "sandiklarda_kayitli_secmen": 3424,
+        "kayitli_secmen": 3424,
+        "oy_kullanan_secmen": 3308,
+        "gecerli_oy": 3121,
+        "gecersiz_oy": 187,
+        "katilim_orani": 96.61
+      },
+      "DEREBUCAK": {
+        "toplam_sandik": 21,
+        "sandiklarda_kayitli_secmen": 5293,
+        "kayitli_secmen": 5293,
+        "oy_kullanan_secmen": 4175,
+        "gecerli_oy": 3916,
+        "gecersiz_oy": 259,
+        "katilim_orani": 78.88
+      },
+      "DOĞANHİSAR": {
+        "toplam_sandik": 52,
+        "sandiklarda_kayitli_secmen": 13438,
+        "kayitli_secmen": 13438,
+        "oy_kullanan_secmen": 12089,
+        "gecerli_oy": 10789,
+        "gecersiz_oy": 1300,
+        "katilim_orani": 89.96
+      },
+      "EMİRGAZİ": {
+        "toplam_sandik": 26,
+        "sandiklarda_kayitli_secmen": 5994,
+        "kayitli_secmen": 5994,
+        "oy_kullanan_secmen": 5553,
+        "gecerli_oy": 5153,
+        "gecersiz_oy": 400,
+        "katilim_orani": 92.64
+      },
+      "EREĞLİ": {
+        "toplam_sandik": 344,
+        "sandiklarda_kayitli_secmen": 103913,
+        "kayitli_secmen": 103614,
+        "oy_kullanan_secmen": 89613,
+        "gecerli_oy": 80483,
+        "gecersiz_oy": 9130,
+        "katilim_orani": 86.49
+      },
+      "GÜNEYSINIR": {
+        "toplam_sandik": 30,
+        "sandiklarda_kayitli_secmen": 6885,
+        "kayitli_secmen": 6885,
+        "oy_kullanan_secmen": 6397,
+        "gecerli_oy": 6061,
+        "gecersiz_oy": 336,
+        "katilim_orani": 92.91
+      },
+      "HADİM": {
+        "toplam_sandik": 51,
+        "sandiklarda_kayitli_secmen": 9300,
+        "kayitli_secmen": 9300,
+        "oy_kullanan_secmen": 8367,
+        "gecerli_oy": 7732,
+        "gecersiz_oy": 635,
+        "katilim_orani": 89.97
+      },
+      "HALKAPINAR": {
+        "toplam_sandik": 19,
+        "sandiklarda_kayitli_secmen": 3387,
+        "kayitli_secmen": 3387,
+        "oy_kullanan_secmen": 3113,
+        "gecerli_oy": 2949,
+        "gecersiz_oy": 164,
+        "katilim_orani": 91.91
+      },
+      "HÜYÜK": {
+        "toplam_sandik": 47,
+        "sandiklarda_kayitli_secmen": 13114,
+        "kayitli_secmen": 13114,
+        "oy_kullanan_secmen": 11744,
+        "gecerli_oy": 10922,
+        "gecersiz_oy": 822,
+        "katilim_orani": 89.55
+      },
+      "ILGIN": {
+        "toplam_sandik": 151,
+        "sandiklarda_kayitli_secmen": 41118,
+        "kayitli_secmen": 41118,
+        "oy_kullanan_secmen": 36336,
+        "gecerli_oy": 33943,
+        "gecersiz_oy": 2393,
+        "katilim_orani": 88.37
+      },
+      "KADINHANI": {
+        "toplam_sandik": 102,
+        "sandiklarda_kayitli_secmen": 22905,
+        "kayitli_secmen": 22905,
+        "oy_kullanan_secmen": 21249,
+        "gecerli_oy": 20132,
+        "gecersiz_oy": 1117,
+        "katilim_orani": 92.77
+      },
+      "KARAPINAR": {
+        "toplam_sandik": 120,
+        "sandiklarda_kayitli_secmen": 34294,
+        "kayitli_secmen": 34294,
+        "oy_kullanan_secmen": 31052,
+        "gecerli_oy": 29351,
+        "gecersiz_oy": 1701,
+        "katilim_orani": 90.55
+      },
+      "KARATAY": {
+        "toplam_sandik": 647,
+        "sandiklarda_kayitli_secmen": 211638,
+        "kayitli_secmen": 210973,
+        "oy_kullanan_secmen": 177778,
+        "gecerli_oy": 170004,
+        "gecersiz_oy": 7774,
+        "katilim_orani": 84.27
+      },
+      "KULU": {
+        "toplam_sandik": 127,
+        "sandiklarda_kayitli_secmen": 36456,
+        "kayitli_secmen": 36456,
+        "oy_kullanan_secmen": 26545,
+        "gecerli_oy": 24899,
+        "gecersiz_oy": 1646,
+        "katilim_orani": 72.81
+      },
+      "MERAM": {
+        "toplam_sandik": 703,
+        "sandiklarda_kayitli_secmen": 230573,
+        "kayitli_secmen": 230573,
+        "oy_kullanan_secmen": 194429,
+        "gecerli_oy": 186527,
+        "gecersiz_oy": 7902,
+        "katilim_orani": 84.32
+      },
+      "SARAYÖNÜ": {
+        "toplam_sandik": 73,
+        "sandiklarda_kayitli_secmen": 19499,
+        "kayitli_secmen": 19499,
+        "oy_kullanan_secmen": 17758,
+        "gecerli_oy": 16948,
+        "gecersiz_oy": 810,
+        "katilim_orani": 91.07
+      },
+      "SELÇUKLU": {
+        "toplam_sandik": 1274,
+        "sandiklarda_kayitli_secmen": 429791,
+        "kayitli_secmen": 429791,
+        "oy_kullanan_secmen": 347376,
+        "gecerli_oy": 334374,
+        "gecersiz_oy": 13002,
+        "katilim_orani": 80.82
+      },
+      "SEYDİŞEHİR": {
+        "toplam_sandik": 179,
+        "sandiklarda_kayitli_secmen": 48218,
+        "kayitli_secmen": 48071,
+        "oy_kullanan_secmen": 42828,
+        "gecerli_oy": 39237,
+        "gecersiz_oy": 3591,
+        "katilim_orani": 89.09
+      },
+      "TAŞKENT": {
+        "toplam_sandik": 25,
+        "sandiklarda_kayitli_secmen": 5808,
+        "kayitli_secmen": 5808,
+        "oy_kullanan_secmen": 5431,
+        "gecerli_oy": 5019,
+        "gecersiz_oy": 412,
+        "katilim_orani": 93.51
+      },
+      "TUZLUKÇU": {
+        "toplam_sandik": 24,
+        "sandiklarda_kayitli_secmen": 5798,
+        "kayitli_secmen": 5798,
+        "oy_kullanan_secmen": 5321,
+        "gecerli_oy": 4881,
+        "gecersiz_oy": 440,
+        "katilim_orani": 91.77
+      },
+      "YALIHÜYÜK": {
+        "toplam_sandik": 7,
+        "sandiklarda_kayitli_secmen": 1522,
+        "kayitli_secmen": 1522,
+        "oy_kullanan_secmen": 1334,
+        "gecerli_oy": 1229,
+        "gecersiz_oy": 105,
+        "katilim_orani": 87.65
+      },
+      "YUNAK": {
+        "toplam_sandik": 72,
+        "sandiklarda_kayitli_secmen": 17020,
+        "kayitli_secmen": 17020,
+        "oy_kullanan_secmen": 14666,
+        "gecerli_oy": 13347,
+        "gecersiz_oy": 1319,
+        "katilim_orani": 86.17
+      }
+    },
+    "MALATYA": {
+      "AKÇADAĞ": {
+        "toplam_sandik": 124,
+        "sandiklarda_kayitli_secmen": 27971,
+        "kayitli_secmen": 27971,
+        "oy_kullanan_secmen": 24903,
+        "gecerli_oy": 24089,
+        "gecersiz_oy": 814,
+        "katilim_orani": 89.03
+      },
+      "ARAPGİR": {
+        "toplam_sandik": 70,
+        "sandiklarda_kayitli_secmen": 8699,
+        "kayitli_secmen": 8699,
+        "oy_kullanan_secmen": 7472,
+        "gecerli_oy": 7233,
+        "gecersiz_oy": 239,
+        "katilim_orani": 85.89
+      },
+      "ARGUVAN": {
+        "toplam_sandik": 52,
+        "sandiklarda_kayitli_secmen": 7075,
+        "kayitli_secmen": 7075,
+        "oy_kullanan_secmen": 6381,
+        "gecerli_oy": 6177,
+        "gecersiz_oy": 204,
+        "katilim_orani": 90.19
+      },
+      "BATTALGAZİ": {
+        "toplam_sandik": 643,
+        "sandiklarda_kayitli_secmen": 200445,
+        "kayitli_secmen": 200445,
+        "oy_kullanan_secmen": 161703,
+        "gecerli_oy": 155234,
+        "gecersiz_oy": 6469,
+        "katilim_orani": 80.67
+      },
+      "DARENDE": {
+        "toplam_sandik": 104,
+        "sandiklarda_kayitli_secmen": 21717,
+        "kayitli_secmen": 21717,
+        "oy_kullanan_secmen": 18254,
+        "gecerli_oy": 17633,
+        "gecersiz_oy": 621,
+        "katilim_orani": 84.05
+      },
+      "DOĞANŞEHİR": {
+        "toplam_sandik": 112,
+        "sandiklarda_kayitli_secmen": 29426,
+        "kayitli_secmen": 29426,
+        "oy_kullanan_secmen": 26438,
+        "gecerli_oy": 25454,
+        "gecersiz_oy": 984,
+        "katilim_orani": 89.85
+      },
+      "DOĞANYOL": {
+        "toplam_sandik": 20,
+        "sandiklarda_kayitli_secmen": 3417,
+        "kayitli_secmen": 3417,
+        "oy_kullanan_secmen": 2950,
+        "gecerli_oy": 2791,
+        "gecersiz_oy": 159,
+        "katilim_orani": 86.33
+      },
+      "HEKİMHAN": {
+        "toplam_sandik": 96,
+        "sandiklarda_kayitli_secmen": 18868,
+        "kayitli_secmen": 18868,
+        "oy_kullanan_secmen": 16746,
+        "gecerli_oy": 16142,
+        "gecersiz_oy": 604,
+        "katilim_orani": 88.75
+      },
+      "KALE": {
+        "toplam_sandik": 30,
+        "sandiklarda_kayitli_secmen": 4911,
+        "kayitli_secmen": 4911,
+        "oy_kullanan_secmen": 4287,
+        "gecerli_oy": 4137,
+        "gecersiz_oy": 150,
+        "katilim_orani": 87.29
+      },
+      "KULUNCAK": {
+        "toplam_sandik": 33,
+        "sandiklarda_kayitli_secmen": 7290,
+        "kayitli_secmen": 7290,
+        "oy_kullanan_secmen": 6446,
+        "gecerli_oy": 6220,
+        "gecersiz_oy": 226,
+        "katilim_orani": 88.42
+      },
+      "PÜTÜRGE": {
+        "toplam_sandik": 90,
+        "sandiklarda_kayitli_secmen": 11718,
+        "kayitli_secmen": 11718,
+        "oy_kullanan_secmen": 9489,
+        "gecerli_oy": 9211,
+        "gecersiz_oy": 278,
+        "katilim_orani": 80.98
+      },
+      "YAZIHAN": {
+        "toplam_sandik": 54,
+        "sandiklarda_kayitli_secmen": 12664,
+        "kayitli_secmen": 12664,
+        "oy_kullanan_secmen": 11390,
+        "gecerli_oy": 11059,
+        "gecersiz_oy": 331,
+        "katilim_orani": 89.94
+      },
+      "YEŞİLYURT": {
+        "toplam_sandik": 661,
+        "sandiklarda_kayitli_secmen": 208015,
+        "kayitli_secmen": 207507,
+        "oy_kullanan_secmen": 168360,
+        "gecerli_oy": 160912,
+        "gecersiz_oy": 7448,
+        "katilim_orani": 81.13
+      }
+    },
+    "MANİSA": {
+      "AHMETLİ": {
+        "toplam_sandik": 48,
+        "sandiklarda_kayitli_secmen": 12853,
+        "kayitli_secmen": 12853,
+        "oy_kullanan_secmen": 11821,
+        "gecerli_oy": 11039,
+        "gecersiz_oy": 782,
+        "katilim_orani": 91.97
+      },
+      "AKHİSAR": {
+        "toplam_sandik": 441,
+        "sandiklarda_kayitli_secmen": 131496,
+        "kayitli_secmen": 131316,
+        "oy_kullanan_secmen": 115157,
+        "gecerli_oy": 106122,
+        "gecersiz_oy": 9035,
+        "katilim_orani": 87.69
+      },
+      "ALAŞEHİR": {
+        "toplam_sandik": 275,
+        "sandiklarda_kayitli_secmen": 76218,
+        "kayitli_secmen": 76145,
+        "oy_kullanan_secmen": 69624,
+        "gecerli_oy": 65071,
+        "gecersiz_oy": 4553,
+        "katilim_orani": 91.44
+      },
+      "DEMİRCİ": {
+        "toplam_sandik": 143,
+        "sandiklarda_kayitli_secmen": 30339,
+        "kayitli_secmen": 30339,
+        "oy_kullanan_secmen": 27853,
+        "gecerli_oy": 25720,
+        "gecersiz_oy": 2133,
+        "katilim_orani": 91.81
+      },
+      "GÖLMARMARA": {
+        "toplam_sandik": 46,
+        "sandiklarda_kayitli_secmen": 11495,
+        "kayitli_secmen": 11495,
+        "oy_kullanan_secmen": 10604,
+        "gecerli_oy": 9884,
+        "gecersiz_oy": 720,
+        "katilim_orani": 92.25
+      },
+      "GÖRDES": {
+        "toplam_sandik": 99,
+        "sandiklarda_kayitli_secmen": 22838,
+        "kayitli_secmen": 22838,
+        "oy_kullanan_secmen": 21102,
+        "gecerli_oy": 19485,
+        "gecersiz_oy": 1617,
+        "katilim_orani": 92.4
+      },
+      "KIRKAĞAÇ": {
+        "toplam_sandik": 109,
+        "sandiklarda_kayitli_secmen": 29418,
+        "kayitli_secmen": 29418,
+        "oy_kullanan_secmen": 26377,
+        "gecerli_oy": 24202,
+        "gecersiz_oy": 2175,
+        "katilim_orani": 89.66
+      },
+      "KÖPRÜBAŞI": {
+        "toplam_sandik": 62,
+        "sandiklarda_kayitli_secmen": 10835,
+        "kayitli_secmen": 10835,
+        "oy_kullanan_secmen": 10139,
+        "gecerli_oy": 9367,
+        "gecersiz_oy": 772,
+        "katilim_orani": 93.58
+      },
+      "KULA": {
+        "toplam_sandik": 141,
+        "sandiklarda_kayitli_secmen": 34553,
+        "kayitli_secmen": 34553,
+        "oy_kullanan_secmen": 31520,
+        "gecerli_oy": 29668,
+        "gecersiz_oy": 1852,
+        "katilim_orani": 91.22
+      },
+      "SALİHLİ": {
+        "toplam_sandik": 411,
+        "sandiklarda_kayitli_secmen": 124338,
+        "kayitli_secmen": 124164,
+        "oy_kullanan_secmen": 109602,
+        "gecerli_oy": 104294,
+        "gecersiz_oy": 5308,
+        "katilim_orani": 88.27
+      },
+      "SARIGÖL": {
+        "toplam_sandik": 107,
+        "sandiklarda_kayitli_secmen": 28449,
+        "kayitli_secmen": 28449,
+        "oy_kullanan_secmen": 26650,
+        "gecerli_oy": 24876,
+        "gecersiz_oy": 1774,
+        "katilim_orani": 93.68
+      },
+      "SARUHANLI": {
+        "toplam_sandik": 147,
+        "sandiklarda_kayitli_secmen": 42703,
+        "kayitli_secmen": 42703,
+        "oy_kullanan_secmen": 39047,
+        "gecerli_oy": 36263,
+        "gecersiz_oy": 2784,
+        "katilim_orani": 91.44
+      },
+      "SELENDİ": {
+        "toplam_sandik": 84,
+        "sandiklarda_kayitli_secmen": 16135,
+        "kayitli_secmen": 16135,
+        "oy_kullanan_secmen": 15124,
+        "gecerli_oy": 14210,
+        "gecersiz_oy": 914,
+        "katilim_orani": 93.73
+      },
+      "SOMA": {
+        "toplam_sandik": 284,
+        "sandiklarda_kayitli_secmen": 79860,
+        "kayitli_secmen": 79860,
+        "oy_kullanan_secmen": 70242,
+        "gecerli_oy": 64810,
+        "gecersiz_oy": 5432,
+        "katilim_orani": 87.96
+      },
+      "ŞEHZADELER": {
+        "toplam_sandik": 384,
+        "sandiklarda_kayitli_secmen": 120879,
+        "kayitli_secmen": 120242,
+        "oy_kullanan_secmen": 104260,
+        "gecerli_oy": 97391,
+        "gecersiz_oy": 6869,
+        "katilim_orani": 86.71
+      },
+      "TURGUTLU": {
+        "toplam_sandik": 369,
+        "sandiklarda_kayitli_secmen": 118265,
+        "kayitli_secmen": 118265,
+        "oy_kullanan_secmen": 103302,
+        "gecerli_oy": 97657,
+        "gecersiz_oy": 5645,
+        "katilim_orani": 87.35
+      },
+      "YUNUSEMRE": {
+        "toplam_sandik": 524,
+        "sandiklarda_kayitli_secmen": 163360,
+        "kayitli_secmen": 163360,
+        "oy_kullanan_secmen": 140709,
+        "gecerli_oy": 132962,
+        "gecersiz_oy": 7747,
+        "katilim_orani": 86.13
+      }
+    },
+    "MARDİN": {
+      "ARTUKLU": {
+        "toplam_sandik": 362,
+        "sandiklarda_kayitli_secmen": 103682,
+        "kayitli_secmen": 103353,
+        "oy_kullanan_secmen": 84476,
+        "gecerli_oy": 79802,
+        "gecersiz_oy": 4674,
+        "katilim_orani": 81.74
+      },
+      "DARGEÇİT": {
+        "toplam_sandik": 76,
+        "sandiklarda_kayitli_secmen": 16652,
+        "kayitli_secmen": 16652,
+        "oy_kullanan_secmen": 13823,
+        "gecerli_oy": 13085,
+        "gecersiz_oy": 738,
+        "katilim_orani": 83.01
+      },
+      "DERİK": {
+        "toplam_sandik": 144,
+        "sandiklarda_kayitli_secmen": 35067,
+        "kayitli_secmen": 35067,
+        "oy_kullanan_secmen": 29929,
+        "gecerli_oy": 29065,
+        "gecersiz_oy": 864,
+        "katilim_orani": 85.35
+      },
+      "KIZILTEPE": {
+        "toplam_sandik": 526,
+        "sandiklarda_kayitli_secmen": 144543,
+        "kayitli_secmen": 144543,
+        "oy_kullanan_secmen": 116720,
+        "gecerli_oy": 112747,
+        "gecersiz_oy": 3973,
+        "katilim_orani": 80.75
+      },
+      "MAZIDAĞI": {
+        "toplam_sandik": 92,
+        "sandiklarda_kayitli_secmen": 21047,
+        "kayitli_secmen": 21047,
+        "oy_kullanan_secmen": 18512,
+        "gecerli_oy": 17249,
+        "gecersiz_oy": 1263,
+        "katilim_orani": 87.96
+      },
+      "MİDYAT": {
+        "toplam_sandik": 245,
+        "sandiklarda_kayitli_secmen": 67078,
+        "kayitli_secmen": 67034,
+        "oy_kullanan_secmen": 50713,
+        "gecerli_oy": 47045,
+        "gecersiz_oy": 3668,
+        "katilim_orani": 75.65
+      },
+      "NUSAYBİN": {
+        "toplam_sandik": 231,
+        "sandiklarda_kayitli_secmen": 62369,
+        "kayitli_secmen": 62369,
+        "oy_kullanan_secmen": 47843,
+        "gecerli_oy": 45320,
+        "gecersiz_oy": 2523,
+        "katilim_orani": 76.71
+      },
+      "ÖMERLİ": {
+        "toplam_sandik": 58,
+        "sandiklarda_kayitli_secmen": 9315,
+        "kayitli_secmen": 9315,
+        "oy_kullanan_secmen": 8310,
+        "gecerli_oy": 7812,
+        "gecersiz_oy": 498,
+        "katilim_orani": 89.21
+      },
+      "SAVUR": {
+        "toplam_sandik": 71,
+        "sandiklarda_kayitli_secmen": 16480,
+        "kayitli_secmen": 16480,
+        "oy_kullanan_secmen": 13103,
+        "gecerli_oy": 12186,
+        "gecersiz_oy": 917,
+        "katilim_orani": 79.51
+      },
+      "YEŞİLLİ": {
+        "toplam_sandik": 32,
+        "sandiklarda_kayitli_secmen": 8424,
+        "kayitli_secmen": 8424,
+        "oy_kullanan_secmen": 7278,
+        "gecerli_oy": 7023,
+        "gecersiz_oy": 255,
+        "katilim_orani": 86.4
+      }
+    },
+    "MERSİN": {
+      "AKDENİZ": {
+        "toplam_sandik": 538,
+        "sandiklarda_kayitli_secmen": 175421,
+        "kayitli_secmen": 174761,
+        "oy_kullanan_secmen": 148180,
+        "gecerli_oy": 140568,
+        "gecersiz_oy": 7612,
+        "katilim_orani": 84.79
+      },
+      "ANAMUR": {
+        "toplam_sandik": 182,
+        "sandiklarda_kayitli_secmen": 50354,
+        "kayitli_secmen": 50267,
+        "oy_kullanan_secmen": 45546,
+        "gecerli_oy": 43530,
+        "gecersiz_oy": 2016,
+        "katilim_orani": 90.61
+      },
+      "AYDINCIK": {
+        "toplam_sandik": 33,
+        "sandiklarda_kayitli_secmen": 8596,
+        "kayitli_secmen": 8596,
+        "oy_kullanan_secmen": 8009,
+        "gecerli_oy": 7709,
+        "gecersiz_oy": 300,
+        "katilim_orani": 93.17
+      },
+      "BOZYAZI": {
+        "toplam_sandik": 71,
+        "sandiklarda_kayitli_secmen": 20090,
+        "kayitli_secmen": 20090,
+        "oy_kullanan_secmen": 18287,
+        "gecerli_oy": 17531,
+        "gecersiz_oy": 756,
+        "katilim_orani": 91.03
+      },
+      "ÇAMLIYAYLA": {
+        "toplam_sandik": 27,
+        "sandiklarda_kayitli_secmen": 7264,
+        "kayitli_secmen": 7264,
+        "oy_kullanan_secmen": 6740,
+        "gecerli_oy": 6438,
+        "gecersiz_oy": 302,
+        "katilim_orani": 92.79
+      },
+      "ERDEMLİ": {
+        "toplam_sandik": 338,
+        "sandiklarda_kayitli_secmen": 101343,
+        "kayitli_secmen": 101343,
+        "oy_kullanan_secmen": 90746,
+        "gecerli_oy": 87629,
+        "gecersiz_oy": 3117,
+        "katilim_orani": 89.54
+      },
+      "GÜLNAR": {
+        "toplam_sandik": 97,
+        "sandiklarda_kayitli_secmen": 20267,
+        "kayitli_secmen": 20267,
+        "oy_kullanan_secmen": 18621,
+        "gecerli_oy": 17960,
+        "gecersiz_oy": 661,
+        "katilim_orani": 91.88
+      },
+      "MEZİTLİ": {
+        "toplam_sandik": 417,
+        "sandiklarda_kayitli_secmen": 137834,
+        "kayitli_secmen": 137834,
+        "oy_kullanan_secmen": 112533,
+        "gecerli_oy": 110643,
+        "gecersiz_oy": 1890,
+        "katilim_orani": 81.64
+      },
+      "MUT": {
+        "toplam_sandik": 188,
+        "sandiklarda_kayitli_secmen": 47159,
+        "kayitli_secmen": 47159,
+        "oy_kullanan_secmen": 43064,
+        "gecerli_oy": 41381,
+        "gecersiz_oy": 1683,
+        "katilim_orani": 91.32
+      },
+      "SİLİFKE": {
+        "toplam_sandik": 312,
+        "sandiklarda_kayitli_secmen": 91398,
+        "kayitli_secmen": 91233,
+        "oy_kullanan_secmen": 80052,
+        "gecerli_oy": 77164,
+        "gecersiz_oy": 2888,
+        "katilim_orani": 87.74
+      },
+      "TARSUS": {
+        "toplam_sandik": 775,
+        "sandiklarda_kayitli_secmen": 236343,
+        "kayitli_secmen": 235951,
+        "oy_kullanan_secmen": 203806,
+        "gecerli_oy": 197493,
+        "gecersiz_oy": 6313,
+        "katilim_orani": 86.38
+      },
+      "TOROSLAR": {
+        "toplam_sandik": 631,
+        "sandiklarda_kayitli_secmen": 204621,
+        "kayitli_secmen": 204621,
+        "oy_kullanan_secmen": 170811,
+        "gecerli_oy": 165362,
+        "gecersiz_oy": 5449,
+        "katilim_orani": 83.48
+      },
+      "YENİŞEHİR": {
+        "toplam_sandik": 546,
+        "sandiklarda_kayitli_secmen": 182184,
+        "kayitli_secmen": 182184,
+        "oy_kullanan_secmen": 147839,
+        "gecerli_oy": 144494,
+        "gecersiz_oy": 3345,
+        "katilim_orani": 81.15
+      }
+    },
+    "MUĞLA": {
+      "BODRUM": {
+        "toplam_sandik": 396,
+        "sandiklarda_kayitli_secmen": 129113,
+        "kayitli_secmen": 129104,
+        "oy_kullanan_secmen": 102740,
+        "gecerli_oy": 99778,
+        "gecersiz_oy": 2962,
+        "katilim_orani": 79.58
+      },
+      "DALAMAN": {
+        "toplam_sandik": 98,
+        "sandiklarda_kayitli_secmen": 29527,
+        "kayitli_secmen": 29527,
+        "oy_kullanan_secmen": 26303,
+        "gecerli_oy": 25302,
+        "gecersiz_oy": 1001,
+        "katilim_orani": 89.08
+      },
+      "DATÇA": {
+        "toplam_sandik": 57,
+        "sandiklarda_kayitli_secmen": 17656,
+        "kayitli_secmen": 17656,
+        "oy_kullanan_secmen": 14455,
+        "gecerli_oy": 13970,
+        "gecersiz_oy": 485,
+        "katilim_orani": 81.87
+      },
+      "FETHİYE": {
+        "toplam_sandik": 350,
+        "sandiklarda_kayitli_secmen": 114395,
+        "kayitli_secmen": 114395,
+        "oy_kullanan_secmen": 97684,
+        "gecerli_oy": 94649,
+        "gecersiz_oy": 3035,
+        "katilim_orani": 85.39
+      },
+      "KAVAKLIDERE": {
+        "toplam_sandik": 31,
+        "sandiklarda_kayitli_secmen": 8432,
+        "kayitli_secmen": 8432,
+        "oy_kullanan_secmen": 7899,
+        "gecerli_oy": 7495,
+        "gecersiz_oy": 404,
+        "katilim_orani": 93.68
+      },
+      "KÖYCEĞİZ": {
+        "toplam_sandik": 98,
+        "sandiklarda_kayitli_secmen": 27991,
+        "kayitli_secmen": 27991,
+        "oy_kullanan_secmen": 25051,
+        "gecerli_oy": 23993,
+        "gecersiz_oy": 1058,
+        "katilim_orani": 89.5
+      },
+      "MARMARİS": {
+        "toplam_sandik": 212,
+        "sandiklarda_kayitli_secmen": 68515,
+        "kayitli_secmen": 68515,
+        "oy_kullanan_secmen": 56169,
+        "gecerli_oy": 54473,
+        "gecersiz_oy": 1696,
+        "katilim_orani": 81.98
+      },
+      "MENTEŞE": {
+        "toplam_sandik": 275,
+        "sandiklarda_kayitli_secmen": 82111,
+        "kayitli_secmen": 81918,
+        "oy_kullanan_secmen": 72321,
+        "gecerli_oy": 69665,
+        "gecersiz_oy": 2656,
+        "katilim_orani": 88.28
+      },
+      "MİLAS": {
+        "toplam_sandik": 374,
+        "sandiklarda_kayitli_secmen": 107842,
+        "kayitli_secmen": 107842,
+        "oy_kullanan_secmen": 95722,
+        "gecerli_oy": 92319,
+        "gecersiz_oy": 3403,
+        "katilim_orani": 88.76
+      },
+      "ORTACA": {
+        "toplam_sandik": 119,
+        "sandiklarda_kayitli_secmen": 36827,
+        "kayitli_secmen": 36827,
+        "oy_kullanan_secmen": 32334,
+        "gecerli_oy": 30839,
+        "gecersiz_oy": 1495,
+        "katilim_orani": 87.8
+      },
+      "SEYDİKEMER": {
+        "toplam_sandik": 176,
+        "sandiklarda_kayitli_secmen": 47824,
+        "kayitli_secmen": 47652,
+        "oy_kullanan_secmen": 44965,
+        "gecerli_oy": 41984,
+        "gecersiz_oy": 2981,
+        "katilim_orani": 94.36
+      },
+      "ULA": {
+        "toplam_sandik": 74,
+        "sandiklarda_kayitli_secmen": 20515,
+        "kayitli_secmen": 20515,
+        "oy_kullanan_secmen": 18514,
+        "gecerli_oy": 17715,
+        "gecersiz_oy": 799,
+        "katilim_orani": 90.25
+      },
+      "YATAĞAN": {
+        "toplam_sandik": 129,
+        "sandiklarda_kayitli_secmen": 35749,
+        "kayitli_secmen": 35749,
+        "oy_kullanan_secmen": 33119,
+        "gecerli_oy": 31680,
+        "gecersiz_oy": 1439,
+        "katilim_orani": 92.64
+      }
+    },
+    "ORDU": {
+      "AKKUŞ": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 18603,
+        "kayitli_secmen": 18603,
+        "oy_kullanan_secmen": 15758,
+        "gecerli_oy": 14299,
+        "gecersiz_oy": 1459,
+        "katilim_orani": 84.71
+      },
+      "ALTINORDU": {
+        "toplam_sandik": 464,
+        "sandiklarda_kayitli_secmen": 144142,
+        "kayitli_secmen": 144142,
+        "oy_kullanan_secmen": 120325,
+        "gecerli_oy": 115981,
+        "gecersiz_oy": 4344,
+        "katilim_orani": 83.48
+      },
+      "AYBASTI": {
+        "toplam_sandik": 66,
+        "sandiklarda_kayitli_secmen": 17232,
+        "kayitli_secmen": 17232,
+        "oy_kullanan_secmen": 14123,
+        "gecerli_oy": 13328,
+        "gecersiz_oy": 795,
+        "katilim_orani": 81.96
+      },
+      "ÇAMAŞ": {
+        "toplam_sandik": 39,
+        "sandiklarda_kayitli_secmen": 9776,
+        "kayitli_secmen": 9776,
+        "oy_kullanan_secmen": 8891,
+        "gecerli_oy": 8476,
+        "gecersiz_oy": 415,
+        "katilim_orani": 90.95
+      },
+      "ÇATALPINAR": {
+        "toplam_sandik": 43,
+        "sandiklarda_kayitli_secmen": 11324,
+        "kayitli_secmen": 11324,
+        "oy_kullanan_secmen": 10368,
+        "gecerli_oy": 9920,
+        "gecersiz_oy": 448,
+        "katilim_orani": 91.56
+      },
+      "ÇAYBAŞI": {
+        "toplam_sandik": 44,
+        "sandiklarda_kayitli_secmen": 10448,
+        "kayitli_secmen": 10448,
+        "oy_kullanan_secmen": 9639,
+        "gecerli_oy": 9248,
+        "gecersiz_oy": 391,
+        "katilim_orani": 92.26
+      },
+      "FATSA": {
+        "toplam_sandik": 298,
+        "sandiklarda_kayitli_secmen": 84155,
+        "kayitli_secmen": 84155,
+        "oy_kullanan_secmen": 69689,
+        "gecerli_oy": 66524,
+        "gecersiz_oy": 3165,
+        "katilim_orani": 82.81
+      },
+      "GÖLKÖY": {
+        "toplam_sandik": 84,
+        "sandiklarda_kayitli_secmen": 23918,
+        "kayitli_secmen": 23918,
+        "oy_kullanan_secmen": 20683,
+        "gecerli_oy": 19262,
+        "gecersiz_oy": 1421,
+        "katilim_orani": 86.47
+      },
+      "GÜLYALI": {
+        "toplam_sandik": 28,
+        "sandiklarda_kayitli_secmen": 7606,
+        "kayitli_secmen": 7606,
+        "oy_kullanan_secmen": 6918,
+        "gecerli_oy": 6673,
+        "gecersiz_oy": 245,
+        "katilim_orani": 90.95
+      },
+      "GÜRGENTEPE": {
+        "toplam_sandik": 53,
+        "sandiklarda_kayitli_secmen": 14028,
+        "kayitli_secmen": 14028,
+        "oy_kullanan_secmen": 12941,
+        "gecerli_oy": 12362,
+        "gecersiz_oy": 579,
+        "katilim_orani": 92.25
+      },
+      "İKİZCE": {
+        "toplam_sandik": 58,
+        "sandiklarda_kayitli_secmen": 12624,
+        "kayitli_secmen": 12624,
+        "oy_kullanan_secmen": 11653,
+        "gecerli_oy": 10972,
+        "gecersiz_oy": 681,
+        "katilim_orani": 92.31
+      },
+      "KABADÜZ": {
+        "toplam_sandik": 33,
+        "sandiklarda_kayitli_secmen": 8044,
+        "kayitli_secmen": 8044,
+        "oy_kullanan_secmen": 7393,
+        "gecerli_oy": 7108,
+        "gecersiz_oy": 285,
+        "katilim_orani": 91.91
+      },
+      "KABATAŞ": {
+        "toplam_sandik": 37,
+        "sandiklarda_kayitli_secmen": 9324,
+        "kayitli_secmen": 9324,
+        "oy_kullanan_secmen": 8468,
+        "gecerli_oy": 8060,
+        "gecersiz_oy": 408,
+        "katilim_orani": 90.82
+      },
+      "KORGAN": {
+        "toplam_sandik": 81,
+        "sandiklarda_kayitli_secmen": 22651,
+        "kayitli_secmen": 22651,
+        "oy_kullanan_secmen": 20002,
+        "gecerli_oy": 18990,
+        "gecersiz_oy": 1012,
+        "katilim_orani": 88.31
+      },
+      "KUMRU": {
+        "toplam_sandik": 91,
+        "sandiklarda_kayitli_secmen": 23848,
+        "kayitli_secmen": 23848,
+        "oy_kullanan_secmen": 20828,
+        "gecerli_oy": 19737,
+        "gecersiz_oy": 1091,
+        "katilim_orani": 87.34
+      },
+      "MESUDİYE": {
+        "toplam_sandik": 98,
+        "sandiklarda_kayitli_secmen": 20179,
+        "kayitli_secmen": 20179,
+        "oy_kullanan_secmen": 15833,
+        "gecerli_oy": 15065,
+        "gecersiz_oy": 768,
+        "katilim_orani": 78.46
+      },
+      "PERŞEMBE": {
+        "toplam_sandik": 119,
+        "sandiklarda_kayitli_secmen": 28170,
+        "kayitli_secmen": 28000,
+        "oy_kullanan_secmen": 24432,
+        "gecerli_oy": 23230,
+        "gecersiz_oy": 1202,
+        "katilim_orani": 87.26
+      },
+      "ULUBEY": {
+        "toplam_sandik": 88,
+        "sandiklarda_kayitli_secmen": 22393,
+        "kayitli_secmen": 22393,
+        "oy_kullanan_secmen": 20607,
+        "gecerli_oy": 19612,
+        "gecersiz_oy": 995,
+        "katilim_orani": 92.02
+      },
+      "ÜNYE": {
+        "toplam_sandik": 365,
+        "sandiklarda_kayitli_secmen": 93191,
+        "kayitli_secmen": 93057,
+        "oy_kullanan_secmen": 79215,
+        "gecerli_oy": 76057,
+        "gecersiz_oy": 3158,
+        "katilim_orani": 85.13
+      }
+    },
+    "SAKARYA": {
+      "ADAPAZARI": {
+        "toplam_sandik": 596,
+        "sandiklarda_kayitli_secmen": 191078,
+        "kayitli_secmen": 191078,
+        "oy_kullanan_secmen": 159317,
+        "gecerli_oy": 152897,
+        "gecersiz_oy": 6420,
+        "katilim_orani": 83.38
+      },
+      "AKYAZI": {
+        "toplam_sandik": 225,
+        "sandiklarda_kayitli_secmen": 64767,
+        "kayitli_secmen": 64767,
+        "oy_kullanan_secmen": 58293,
+        "gecerli_oy": 55608,
+        "gecersiz_oy": 2685,
+        "katilim_orani": 90
+      },
+      "ARİFİYE": {
+        "toplam_sandik": 98,
+        "sandiklarda_kayitli_secmen": 30332,
+        "kayitli_secmen": 30332,
+        "oy_kullanan_secmen": 26816,
+        "gecerli_oy": 25612,
+        "gecersiz_oy": 1204,
+        "katilim_orani": 88.41
+      },
+      "ERENLER": {
+        "toplam_sandik": 191,
+        "sandiklarda_kayitli_secmen": 61148,
+        "kayitli_secmen": 61148,
+        "oy_kullanan_secmen": 51638,
+        "gecerli_oy": 49574,
+        "gecersiz_oy": 2064,
+        "katilim_orani": 84.45
+      },
+      "FERİZLİ": {
+        "toplam_sandik": 68,
+        "sandiklarda_kayitli_secmen": 19013,
+        "kayitli_secmen": 18640,
+        "oy_kullanan_secmen": 17132,
+        "gecerli_oy": 16494,
+        "gecersiz_oy": 638,
+        "katilim_orani": 91.91
+      },
+      "GEYVE": {
+        "toplam_sandik": 153,
+        "sandiklarda_kayitli_secmen": 36112,
+        "kayitli_secmen": 36112,
+        "oy_kullanan_secmen": 32965,
+        "gecerli_oy": 31598,
+        "gecersiz_oy": 1367,
+        "katilim_orani": 91.29
+      },
+      "HENDEK": {
+        "toplam_sandik": 217,
+        "sandiklarda_kayitli_secmen": 59910,
+        "kayitli_secmen": 59910,
+        "oy_kullanan_secmen": 53886,
+        "gecerli_oy": 51219,
+        "gecersiz_oy": 2667,
+        "katilim_orani": 89.94
+      },
+      "KARAPÜRÇEK": {
+        "toplam_sandik": 34,
+        "sandiklarda_kayitli_secmen": 9306,
+        "kayitli_secmen": 9306,
+        "oy_kullanan_secmen": 8747,
+        "gecerli_oy": 8280,
+        "gecersiz_oy": 467,
+        "katilim_orani": 93.99
+      },
+      "KARASU": {
+        "toplam_sandik": 157,
+        "sandiklarda_kayitli_secmen": 47616,
+        "kayitli_secmen": 47616,
+        "oy_kullanan_secmen": 40228,
+        "gecerli_oy": 38301,
+        "gecersiz_oy": 1927,
+        "katilim_orani": 84.48
+      },
+      "KAYNARCA": {
+        "toplam_sandik": 78,
+        "sandiklarda_kayitli_secmen": 18112,
+        "kayitli_secmen": 18112,
+        "oy_kullanan_secmen": 16669,
+        "gecerli_oy": 15945,
+        "gecersiz_oy": 724,
+        "katilim_orani": 92.03
+      },
+      "KOCAALİ": {
+        "toplam_sandik": 76,
+        "sandiklarda_kayitli_secmen": 20363,
+        "kayitli_secmen": 20363,
+        "oy_kullanan_secmen": 18558,
+        "gecerli_oy": 17841,
+        "gecersiz_oy": 717,
+        "katilim_orani": 91.14
+      },
+      "PAMUKOVA": {
+        "toplam_sandik": 85,
+        "sandiklarda_kayitli_secmen": 21637,
+        "kayitli_secmen": 21637,
+        "oy_kullanan_secmen": 19508,
+        "gecerli_oy": 18725,
+        "gecersiz_oy": 783,
+        "katilim_orani": 90.16
+      },
+      "SAPANCA": {
+        "toplam_sandik": 105,
+        "sandiklarda_kayitli_secmen": 30271,
+        "kayitli_secmen": 30271,
+        "oy_kullanan_secmen": 26738,
+        "gecerli_oy": 25424,
+        "gecersiz_oy": 1314,
+        "katilim_orani": 88.33
+      },
+      "SERDİVAN": {
+        "toplam_sandik": 277,
+        "sandiklarda_kayitli_secmen": 91622,
+        "kayitli_secmen": 91622,
+        "oy_kullanan_secmen": 75676,
+        "gecerli_oy": 72755,
+        "gecersiz_oy": 2921,
+        "katilim_orani": 82.6
+      },
+      "SÖĞÜTLÜ": {
+        "toplam_sandik": 43,
+        "sandiklarda_kayitli_secmen": 10996,
+        "kayitli_secmen": 10996,
+        "oy_kullanan_secmen": 10054,
+        "gecerli_oy": 9626,
+        "gecersiz_oy": 428,
+        "katilim_orani": 91.43
+      },
+      "TARAKLI": {
+        "toplam_sandik": 28,
+        "sandiklarda_kayitli_secmen": 5212,
+        "kayitli_secmen": 5212,
+        "oy_kullanan_secmen": 4897,
+        "gecerli_oy": 4636,
+        "gecersiz_oy": 261,
+        "katilim_orani": 93.96
+      }
+    },
+    "SAMSUN": {
+      "19 MAYIS": {
+        "toplam_sandik": 77,
+        "sandiklarda_kayitli_secmen": 20054,
+        "kayitli_secmen": 20054,
+        "oy_kullanan_secmen": 17546,
+        "gecerli_oy": 16846,
+        "gecersiz_oy": 700,
+        "katilim_orani": 87.49
+      },
+      "ALAÇAM": {
+        "toplam_sandik": 93,
+        "sandiklarda_kayitli_secmen": 20611,
+        "kayitli_secmen": 20611,
+        "oy_kullanan_secmen": 18834,
+        "gecerli_oy": 17337,
+        "gecersiz_oy": 1497,
+        "katilim_orani": 91.38
+      },
+      "ASARCIK": {
+        "toplam_sandik": 56,
+        "sandiklarda_kayitli_secmen": 12452,
+        "kayitli_secmen": 12452,
+        "oy_kullanan_secmen": 11112,
+        "gecerli_oy": 10630,
+        "gecersiz_oy": 482,
+        "katilim_orani": 89.24
+      },
+      "ATAKUM": {
+        "toplam_sandik": 426,
+        "sandiklarda_kayitli_secmen": 138261,
+        "kayitli_secmen": 138261,
+        "oy_kullanan_secmen": 115592,
+        "gecerli_oy": 112193,
+        "gecersiz_oy": 3399,
+        "katilim_orani": 83.6
+      },
+      "AYVACIK": {
+        "toplam_sandik": 65,
+        "sandiklarda_kayitli_secmen": 16469,
+        "kayitli_secmen": 16469,
+        "oy_kullanan_secmen": 15384,
+        "gecerli_oy": 14755,
+        "gecersiz_oy": 629,
+        "katilim_orani": 93.41
+      },
+      "BAFRA": {
+        "toplam_sandik": 389,
+        "sandiklarda_kayitli_secmen": 109951,
+        "kayitli_secmen": 109857,
+        "oy_kullanan_secmen": 94452,
+        "gecerli_oy": 89486,
+        "gecersiz_oy": 4966,
+        "katilim_orani": 85.98
+      },
+      "CANİK": {
+        "toplam_sandik": 224,
+        "sandiklarda_kayitli_secmen": 68370,
+        "kayitli_secmen": 68370,
+        "oy_kullanan_secmen": 58146,
+        "gecerli_oy": 55783,
+        "gecersiz_oy": 2363,
+        "katilim_orani": 85.05
+      },
+      "ÇARŞAMBA": {
+        "toplam_sandik": 367,
+        "sandiklarda_kayitli_secmen": 101777,
+        "kayitli_secmen": 101689,
+        "oy_kullanan_secmen": 88545,
+        "gecerli_oy": 84171,
+        "gecersiz_oy": 4374,
+        "katilim_orani": 87.07
+      },
+      "HAVZA": {
+        "toplam_sandik": 149,
+        "sandiklarda_kayitli_secmen": 31238,
+        "kayitli_secmen": 31238,
+        "oy_kullanan_secmen": 28030,
+        "gecerli_oy": 26011,
+        "gecersiz_oy": 2019,
+        "katilim_orani": 89.73
+      },
+      "İLKADIM": {
+        "toplam_sandik": 712,
+        "sandiklarda_kayitli_secmen": 233529,
+        "kayitli_secmen": 233087,
+        "oy_kullanan_secmen": 191925,
+        "gecerli_oy": 185629,
+        "gecersiz_oy": 6296,
+        "katilim_orani": 82.34
+      },
+      "KAVAK": {
+        "toplam_sandik": 109,
+        "sandiklarda_kayitli_secmen": 17106,
+        "kayitli_secmen": 17106,
+        "oy_kullanan_secmen": 15807,
+        "gecerli_oy": 14732,
+        "gecersiz_oy": 1075,
+        "katilim_orani": 92.41
+      },
+      "LADİK": {
+        "toplam_sandik": 81,
+        "sandiklarda_kayitli_secmen": 13867,
+        "kayitli_secmen": 13867,
+        "oy_kullanan_secmen": 12323,
+        "gecerli_oy": 11627,
+        "gecersiz_oy": 696,
+        "katilim_orani": 88.87
+      },
+      "SALIPAZARI": {
+        "toplam_sandik": 75,
+        "sandiklarda_kayitli_secmen": 17935,
+        "kayitli_secmen": 17935,
+        "oy_kullanan_secmen": 16790,
+        "gecerli_oy": 15881,
+        "gecersiz_oy": 909,
+        "katilim_orani": 93.62
+      },
+      "TEKKEKÖY": {
+        "toplam_sandik": 143,
+        "sandiklarda_kayitli_secmen": 39174,
+        "kayitli_secmen": 39174,
+        "oy_kullanan_secmen": 36037,
+        "gecerli_oy": 34601,
+        "gecersiz_oy": 1436,
+        "katilim_orani": 91.99
+      },
+      "TERME": {
+        "toplam_sandik": 215,
+        "sandiklarda_kayitli_secmen": 57187,
+        "kayitli_secmen": 57187,
+        "oy_kullanan_secmen": 50639,
+        "gecerli_oy": 48116,
+        "gecersiz_oy": 2523,
+        "katilim_orani": 88.55
+      },
+      "VEZİRKÖPRÜ": {
+        "toplam_sandik": 277,
+        "sandiklarda_kayitli_secmen": 66954,
+        "kayitli_secmen": 66866,
+        "oy_kullanan_secmen": 60812,
+        "gecerli_oy": 56664,
+        "gecersiz_oy": 4148,
+        "katilim_orani": 90.95
+      },
+      "YAKAKENT": {
+        "toplam_sandik": 28,
+        "sandiklarda_kayitli_secmen": 6765,
+        "kayitli_secmen": 6765,
+        "oy_kullanan_secmen": 6111,
+        "gecerli_oy": 5709,
+        "gecersiz_oy": 402,
+        "katilim_orani": 90.33
+      }
+    },
+    "ŞANLIURFA": {
+      "AKÇAKALE": {
+        "toplam_sandik": 213,
+        "sandiklarda_kayitli_secmen": 50642,
+        "kayitli_secmen": 50642,
+        "oy_kullanan_secmen": 44523,
+        "gecerli_oy": 42937,
+        "gecersiz_oy": 1586,
+        "katilim_orani": 87.92
+      },
+      "BİRECİK": {
+        "toplam_sandik": 208,
+        "sandiklarda_kayitli_secmen": 54949,
+        "kayitli_secmen": 54949,
+        "oy_kullanan_secmen": 43398,
+        "gecerli_oy": 40121,
+        "gecersiz_oy": 3277,
+        "katilim_orani": 78.98
+      },
+      "BOZOVA": {
+        "toplam_sandik": 155,
+        "sandiklarda_kayitli_secmen": 35503,
+        "kayitli_secmen": 35503,
+        "oy_kullanan_secmen": 29647,
+        "gecerli_oy": 27847,
+        "gecersiz_oy": 1800,
+        "katilim_orani": 83.51
+      },
+      "CEYLANPINAR": {
+        "toplam_sandik": 164,
+        "sandiklarda_kayitli_secmen": 47562,
+        "kayitli_secmen": 47562,
+        "oy_kullanan_secmen": 41003,
+        "gecerli_oy": 37047,
+        "gecersiz_oy": 3956,
+        "katilim_orani": 86.21
+      },
+      "EYYÜBİYE": {
+        "toplam_sandik": 619,
+        "sandiklarda_kayitli_secmen": 188508,
+        "kayitli_secmen": 187531,
+        "oy_kullanan_secmen": 153143,
+        "gecerli_oy": 145849,
+        "gecersiz_oy": 7294,
+        "katilim_orani": 81.66
+      },
+      "HALFETİ": {
+        "toplam_sandik": 110,
+        "sandiklarda_kayitli_secmen": 27030,
+        "kayitli_secmen": 27030,
+        "oy_kullanan_secmen": 22055,
+        "gecerli_oy": 20246,
+        "gecersiz_oy": 1809,
+        "katilim_orani": 81.59
+      },
+      "HALİLİYE": {
+        "toplam_sandik": 699,
+        "sandiklarda_kayitli_secmen": 208590,
+        "kayitli_secmen": 208590,
+        "oy_kullanan_secmen": 166478,
+        "gecerli_oy": 160584,
+        "gecersiz_oy": 5894,
+        "katilim_orani": 79.81
+      },
+      "HARRAN": {
+        "toplam_sandik": 170,
+        "sandiklarda_kayitli_secmen": 38723,
+        "kayitli_secmen": 38723,
+        "oy_kullanan_secmen": 36079,
+        "gecerli_oy": 35142,
+        "gecersiz_oy": 937,
+        "katilim_orani": 93.17
+      },
+      "HİLVAN": {
+        "toplam_sandik": 123,
+        "sandiklarda_kayitli_secmen": 26281,
+        "kayitli_secmen": 26281,
+        "oy_kullanan_secmen": 22057,
+        "gecerli_oy": 21038,
+        "gecersiz_oy": 1019,
+        "katilim_orani": 83.93
+      },
+      "KARAKÖPRÜ": {
+        "toplam_sandik": 397,
+        "sandiklarda_kayitli_secmen": 117350,
+        "kayitli_secmen": 116805,
+        "oy_kullanan_secmen": 93122,
+        "gecerli_oy": 90544,
+        "gecersiz_oy": 2578,
+        "katilim_orani": 79.72
+      },
+      "SİVEREK": {
+        "toplam_sandik": 501,
+        "sandiklarda_kayitli_secmen": 138592,
+        "kayitli_secmen": 138356,
+        "oy_kullanan_secmen": 110203,
+        "gecerli_oy": 103065,
+        "gecersiz_oy": 7138,
+        "katilim_orani": 79.65
+      },
+      "SURUÇ": {
+        "toplam_sandik": 225,
+        "sandiklarda_kayitli_secmen": 59229,
+        "kayitli_secmen": 59229,
+        "oy_kullanan_secmen": 46811,
+        "gecerli_oy": 43493,
+        "gecersiz_oy": 3318,
+        "katilim_orani": 79.03
+      },
+      "VİRANŞEHİR": {
+        "toplam_sandik": 394,
+        "sandiklarda_kayitli_secmen": 102323,
+        "kayitli_secmen": 102314,
+        "oy_kullanan_secmen": 85417,
+        "gecerli_oy": 80903,
+        "gecersiz_oy": 4514,
+        "katilim_orani": 83.49
+      }
+    },
+    "TEKİRDAĞ": {
+      "ÇERKEZKÖY": {
+        "toplam_sandik": 330,
+        "sandiklarda_kayitli_secmen": 112048,
+        "kayitli_secmen": 112030,
+        "oy_kullanan_secmen": 95137,
+        "gecerli_oy": 92388,
+        "gecersiz_oy": 2749,
+        "katilim_orani": 84.92
+      },
+      "ÇORLU": {
+        "toplam_sandik": 562,
+        "sandiklarda_kayitli_secmen": 188815,
+        "kayitli_secmen": 188789,
+        "oy_kullanan_secmen": 156539,
+        "gecerli_oy": 152729,
+        "gecersiz_oy": 3810,
+        "katilim_orani": 82.92
+      },
+      "ERGENE": {
+        "toplam_sandik": 141,
+        "sandiklarda_kayitli_secmen": 46598,
+        "kayitli_secmen": 46598,
+        "oy_kullanan_secmen": 40863,
+        "gecerli_oy": 39579,
+        "gecersiz_oy": 1284,
+        "katilim_orani": 87.69
+      },
+      "HAYRABOLU": {
+        "toplam_sandik": 100,
+        "sandiklarda_kayitli_secmen": 25821,
+        "kayitli_secmen": 25821,
+        "oy_kullanan_secmen": 23424,
+        "gecerli_oy": 22747,
+        "gecersiz_oy": 677,
+        "katilim_orani": 90.72
+      },
+      "KAPAKLI": {
+        "toplam_sandik": 237,
+        "sandiklarda_kayitli_secmen": 79939,
+        "kayitli_secmen": 79939,
+        "oy_kullanan_secmen": 67780,
+        "gecerli_oy": 65744,
+        "gecersiz_oy": 2036,
+        "katilim_orani": 84.79
+      },
+      "MALKARA": {
+        "toplam_sandik": 164,
+        "sandiklarda_kayitli_secmen": 42211,
+        "kayitli_secmen": 42211,
+        "oy_kullanan_secmen": 38431,
+        "gecerli_oy": 37158,
+        "gecersiz_oy": 1273,
+        "katilim_orani": 91.04
+      },
+      "MARMARAEREĞLİSİ": {
+        "toplam_sandik": 64,
+        "sandiklarda_kayitli_secmen": 20641,
+        "kayitli_secmen": 20641,
+        "oy_kullanan_secmen": 17645,
+        "gecerli_oy": 16997,
+        "gecersiz_oy": 648,
+        "katilim_orani": 85.49
+      },
+      "MURATLI": {
+        "toplam_sandik": 75,
+        "sandiklarda_kayitli_secmen": 22005,
+        "kayitli_secmen": 22005,
+        "oy_kullanan_secmen": 19477,
+        "gecerli_oy": 18860,
+        "gecersiz_oy": 617,
+        "katilim_orani": 88.51
+      },
+      "SARAY": {
+        "toplam_sandik": 123,
+        "sandiklarda_kayitli_secmen": 38051,
+        "kayitli_secmen": 38051,
+        "oy_kullanan_secmen": 33651,
+        "gecerli_oy": 32591,
+        "gecersiz_oy": 1060,
+        "katilim_orani": 88.44
+      },
+      "SÜLEYMANPAŞA": {
+        "toplam_sandik": 471,
+        "sandiklarda_kayitli_secmen": 147810,
+        "kayitli_secmen": 147339,
+        "oy_kullanan_secmen": 125096,
+        "gecerli_oy": 121787,
+        "gecersiz_oy": 3309,
+        "katilim_orani": 84.9
+      },
+      "ŞARKÖY": {
+        "toplam_sandik": 93,
+        "sandiklarda_kayitli_secmen": 26502,
+        "kayitli_secmen": 26502,
+        "oy_kullanan_secmen": 22001,
+        "gecerli_oy": 21198,
+        "gecersiz_oy": 803,
+        "katilim_orani": 83.02
+      }
+    },
+    "TRABZON": {
+      "AKÇAABAT": {
+        "toplam_sandik": 338,
+        "sandiklarda_kayitli_secmen": 89637,
+        "kayitli_secmen": 89637,
+        "oy_kullanan_secmen": 76765,
+        "gecerli_oy": 73240,
+        "gecersiz_oy": 3525,
+        "katilim_orani": 85.64
+      },
+      "ARAKLI": {
+        "toplam_sandik": 152,
+        "sandiklarda_kayitli_secmen": 37051,
+        "kayitli_secmen": 37051,
+        "oy_kullanan_secmen": 30279,
+        "gecerli_oy": 29102,
+        "gecersiz_oy": 1177,
+        "katilim_orani": 81.72
+      },
+      "ARSİN": {
+        "toplam_sandik": 96,
+        "sandiklarda_kayitli_secmen": 26948,
+        "kayitli_secmen": 26948,
+        "oy_kullanan_secmen": 24013,
+        "gecerli_oy": 23160,
+        "gecersiz_oy": 853,
+        "katilim_orani": 89.11
+      },
+      "BEŞİKDÜZÜ": {
+        "toplam_sandik": 69,
+        "sandiklarda_kayitli_secmen": 17608,
+        "kayitli_secmen": 17573,
+        "oy_kullanan_secmen": 15425,
+        "gecerli_oy": 14699,
+        "gecersiz_oy": 726,
+        "katilim_orani": 87.78
+      },
+      "ÇARŞIBAŞI": {
+        "toplam_sandik": 50,
+        "sandiklarda_kayitli_secmen": 12880,
+        "kayitli_secmen": 12880,
+        "oy_kullanan_secmen": 11713,
+        "gecerli_oy": 11128,
+        "gecersiz_oy": 585,
+        "katilim_orani": 90.94
+      },
+      "ÇAYKARA": {
+        "toplam_sandik": 68,
+        "sandiklarda_kayitli_secmen": 14025,
+        "kayitli_secmen": 14025,
+        "oy_kullanan_secmen": 11834,
+        "gecerli_oy": 11164,
+        "gecersiz_oy": 670,
+        "katilim_orani": 84.38
+      },
+      "DERNEKPAZARI": {
+        "toplam_sandik": 17,
+        "sandiklarda_kayitli_secmen": 3835,
+        "kayitli_secmen": 3835,
+        "oy_kullanan_secmen": 3180,
+        "gecerli_oy": 3080,
+        "gecersiz_oy": 100,
+        "katilim_orani": 82.92
+      },
+      "DÜZKÖY": {
+        "toplam_sandik": 47,
+        "sandiklarda_kayitli_secmen": 11396,
+        "kayitli_secmen": 11396,
+        "oy_kullanan_secmen": 10224,
+        "gecerli_oy": 9756,
+        "gecersiz_oy": 468,
+        "katilim_orani": 89.72
+      },
+      "HAYRAT": {
+        "toplam_sandik": 46,
+        "sandiklarda_kayitli_secmen": 8966,
+        "kayitli_secmen": 8966,
+        "oy_kullanan_secmen": 7725,
+        "gecerli_oy": 7463,
+        "gecersiz_oy": 262,
+        "katilim_orani": 86.16
+      },
+      "KÖPRÜBAŞI": {
+        "toplam_sandik": 24,
+        "sandiklarda_kayitli_secmen": 5212,
+        "kayitli_secmen": 5212,
+        "oy_kullanan_secmen": 4361,
+        "gecerli_oy": 4207,
+        "gecersiz_oy": 154,
+        "katilim_orani": 83.67
+      },
+      "MAÇKA": {
+        "toplam_sandik": 106,
+        "sandiklarda_kayitli_secmen": 22546,
+        "kayitli_secmen": 22546,
+        "oy_kullanan_secmen": 19767,
+        "gecerli_oy": 18714,
+        "gecersiz_oy": 1053,
+        "katilim_orani": 87.67
+      },
+      "OF": {
+        "toplam_sandik": 140,
+        "sandiklarda_kayitli_secmen": 33832,
+        "kayitli_secmen": 33832,
+        "oy_kullanan_secmen": 27931,
+        "gecerli_oy": 26764,
+        "gecersiz_oy": 1167,
+        "katilim_orani": 82.56
+      },
+      "ORTAHİSAR": {
+        "toplam_sandik": 680,
+        "sandiklarda_kayitli_secmen": 216766,
+        "kayitli_secmen": 216478,
+        "oy_kullanan_secmen": 174042,
+        "gecerli_oy": 166737,
+        "gecersiz_oy": 7305,
+        "katilim_orani": 80.4
+      },
+      "SÜRMENE": {
+        "toplam_sandik": 94,
+        "sandiklarda_kayitli_secmen": 21116,
+        "kayitli_secmen": 21116,
+        "oy_kullanan_secmen": 17291,
+        "gecerli_oy": 16379,
+        "gecersiz_oy": 912,
+        "katilim_orani": 81.89
+      },
+      "ŞALPAZARI": {
+        "toplam_sandik": 45,
+        "sandiklarda_kayitli_secmen": 10667,
+        "kayitli_secmen": 10667,
+        "oy_kullanan_secmen": 9742,
+        "gecerli_oy": 9344,
+        "gecersiz_oy": 398,
+        "katilim_orani": 91.33
+      },
+      "TONYA": {
+        "toplam_sandik": 48,
+        "sandiklarda_kayitli_secmen": 12260,
+        "kayitli_secmen": 12260,
+        "oy_kullanan_secmen": 10538,
+        "gecerli_oy": 9756,
+        "gecersiz_oy": 782,
+        "katilim_orani": 85.95
+      },
+      "VAKFIKEBİR": {
+        "toplam_sandik": 92,
+        "sandiklarda_kayitli_secmen": 22166,
+        "kayitli_secmen": 22166,
+        "oy_kullanan_secmen": 19200,
+        "gecerli_oy": 17774,
+        "gecersiz_oy": 1426,
+        "katilim_orani": 86.62
+      },
+      "YOMRA": {
+        "toplam_sandik": 103,
+        "sandiklarda_kayitli_secmen": 28001,
+        "kayitli_secmen": 28001,
+        "oy_kullanan_secmen": 23846,
+        "gecerli_oy": 22984,
+        "gecersiz_oy": 862,
+        "katilim_orani": 85.16
+      }
+    },
+    "VAN": {
+      "BAHÇESARAY": {
+        "toplam_sandik": 37,
+        "sandiklarda_kayitli_secmen": 7915,
+        "kayitli_secmen": 7915,
+        "oy_kullanan_secmen": 6545,
+        "gecerli_oy": 6209,
+        "gecersiz_oy": 336,
+        "katilim_orani": 82.69
+      },
+      "BAŞKALE": {
+        "toplam_sandik": 123,
+        "sandiklarda_kayitli_secmen": 28720,
+        "kayitli_secmen": 28720,
+        "oy_kullanan_secmen": 21895,
+        "gecerli_oy": 20680,
+        "gecersiz_oy": 1215,
+        "katilim_orani": 76.24
+      },
+      "ÇALDIRAN": {
+        "toplam_sandik": 134,
+        "sandiklarda_kayitli_secmen": 33133,
+        "kayitli_secmen": 33133,
+        "oy_kullanan_secmen": 25707,
+        "gecerli_oy": 24206,
+        "gecersiz_oy": 1501,
+        "katilim_orani": 77.59
+      },
+      "ÇATAK": {
+        "toplam_sandik": 54,
+        "sandiklarda_kayitli_secmen": 12766,
+        "kayitli_secmen": 12766,
+        "oy_kullanan_secmen": 11080,
+        "gecerli_oy": 10486,
+        "gecersiz_oy": 594,
+        "katilim_orani": 86.79
+      },
+      "EDREMİT": {
+        "toplam_sandik": 239,
+        "sandiklarda_kayitli_secmen": 76181,
+        "kayitli_secmen": 76181,
+        "oy_kullanan_secmen": 60932,
+        "gecerli_oy": 58038,
+        "gecersiz_oy": 2894,
+        "katilim_orani": 79.98
+      },
+      "ERCİŞ": {
+        "toplam_sandik": 342,
+        "sandiklarda_kayitli_secmen": 98800,
+        "kayitli_secmen": 98754,
+        "oy_kullanan_secmen": 76790,
+        "gecerli_oy": 72249,
+        "gecersiz_oy": 4541,
+        "katilim_orani": 77.76
+      },
+      "GEVAŞ": {
+        "toplam_sandik": 73,
+        "sandiklarda_kayitli_secmen": 18865,
+        "kayitli_secmen": 18865,
+        "oy_kullanan_secmen": 15702,
+        "gecerli_oy": 14792,
+        "gecersiz_oy": 910,
+        "katilim_orani": 83.23
+      },
+      "GÜRPINAR": {
+        "toplam_sandik": 107,
+        "sandiklarda_kayitli_secmen": 21826,
+        "kayitli_secmen": 21826,
+        "oy_kullanan_secmen": 18344,
+        "gecerli_oy": 17213,
+        "gecersiz_oy": 1131,
+        "katilim_orani": 84.05
+      },
+      "İPEKYOLU": {
+        "toplam_sandik": 583,
+        "sandiklarda_kayitli_secmen": 190922,
+        "kayitli_secmen": 190922,
+        "oy_kullanan_secmen": 148447,
+        "gecerli_oy": 141065,
+        "gecersiz_oy": 7382,
+        "katilim_orani": 77.75
+      },
+      "MURADİYE": {
+        "toplam_sandik": 112,
+        "sandiklarda_kayitli_secmen": 27810,
+        "kayitli_secmen": 27810,
+        "oy_kullanan_secmen": 22671,
+        "gecerli_oy": 21098,
+        "gecersiz_oy": 1573,
+        "katilim_orani": 81.52
+      },
+      "ÖZALP": {
+        "toplam_sandik": 130,
+        "sandiklarda_kayitli_secmen": 35346,
+        "kayitli_secmen": 35346,
+        "oy_kullanan_secmen": 27529,
+        "gecerli_oy": 25455,
+        "gecersiz_oy": 2074,
+        "katilim_orani": 77.88
+      },
+      "SARAY": {
+        "toplam_sandik": 48,
+        "sandiklarda_kayitli_secmen": 11707,
+        "kayitli_secmen": 11707,
+        "oy_kullanan_secmen": 9402,
+        "gecerli_oy": 8692,
+        "gecersiz_oy": 710,
+        "katilim_orani": 80.31
+      },
+      "TUŞBA": {
+        "toplam_sandik": 299,
+        "sandiklarda_kayitli_secmen": 90049,
+        "kayitli_secmen": 88933,
+        "oy_kullanan_secmen": 67519,
+        "gecerli_oy": 63722,
+        "gecersiz_oy": 3797,
+        "katilim_orani": 75.92
+      }
+    }
+  },
+  "scraped_at": "2026-05-03T17:43:58.683Z"
+}

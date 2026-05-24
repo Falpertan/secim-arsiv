@@ -1,0 +1,69 @@
+{
+  "_kaynak": "YSK Resmi Gazete kararları. 2018: 24 Haziran 2018 EK (I) Sayılı Cetvel. 2024: 27 Haziran 2024 Resmi Gazete, Karar No. 2024/2712 (31/12/2023 TÜİK nüfus verisi ile, gelecek MV seçimi için geçerli).",
+  "_aciklama": "Her seçimden önce TÜİK nüfus verilerine göre YSK tarafından 600 milletvekilinin 81 ile dağıtımı yapılır. Kanun gereği her ile garantili 1 vekil, kalan 519 nüfusa göre dağıtılır (2839 sayılı Milletvekili Seçimi Kanunu, m.4-5).",
+  "_not_2024": "2024 verisi, 27 Haziran 2024 tarihli YSK kararından gelir. 14 Mayıs 2023 seçiminde kullanılan farklı bir tabloydu (2022 nüfusuyla); o YSK kararına bu projede yer verilmemiştir. 2024 verisi 'gelecek MV seçimi için geçerli olan' anlamına gelir.",
+  "_son_guncelleme": "2026-05-18",
+  "secimler": {
+    "2018_MV": {
+      "_baslik": "27. Dönem MV Seçimi — 24 Haziran 2018",
+      "_aciklama": "Gerçek seçim. Dağıtım 2017 nüfus verisine göre.",
+      "_nufus_yili": 2017,
+      "_secim_cevresi_sayisi": 87,
+      "_toplam_kontrol": 600,
+      "iller": {
+        "ADANA": 15, "ADIYAMAN": 5, "AFYONKARAHİSAR": 6, "AĞRI": 4,
+        "AKSARAY": 4, "AMASYA": 3, "ANKARA": 36, "ANTALYA": 16,
+        "ARDAHAN": 2, "ARTVİN": 2, "AYDIN": 8, "BALIKESİR": 9,
+        "BARTIN": 2, "BATMAN": 5, "BAYBURT": 1, "BİLECİK": 2,
+        "BİNGÖL": 3, "BİTLİS": 3, "BOLU": 3, "BURDUR": 3,
+        "BURSA": 20, "ÇANAKKALE": 4, "ÇANKIRI": 2, "ÇORUM": 4,
+        "DENİZLİ": 8, "DİYARBAKIR": 12, "DÜZCE": 3, "EDİRNE": 4,
+        "ELAZIĞ": 5, "ERZİNCAN": 2, "ERZURUM": 6, "ESKİŞEHİR": 7,
+        "GAZİANTEP": 14, "GİRESUN": 4, "GÜMÜŞHANE": 2, "HAKKARİ": 3,
+        "HATAY": 11, "IĞDIR": 2, "ISPARTA": 4, "İSTANBUL": 98,
+        "İZMİR": 28, "KAHRAMANMARAŞ": 8, "KARABÜK": 3, "KARAMAN": 3,
+        "KARS": 3, "KASTAMONU": 3, "KAYSERİ": 10, "KİLİS": 2,
+        "KIRIKKALE": 3, "KIRKLARELİ": 3, "KIRŞEHİR": 2, "KOCAELİ": 13,
+        "KONYA": 15, "KÜTAHYA": 5, "MALATYA": 6, "MANİSA": 10,
+        "MARDİN": 6, "MERSİN": 13, "MUĞLA": 7, "MUŞ": 4,
+        "NEVŞEHİR": 3, "NİĞDE": 3, "ORDU": 6, "OSMANİYE": 4,
+        "RİZE": 3, "SAKARYA": 7, "SAMSUN": 9, "ŞANLIURFA": 14,
+        "SİİRT": 3, "SİNOP": 2, "ŞIRNAK": 4, "SİVAS": 5,
+        "TEKİRDAĞ": 7, "TOKAT": 5, "TRABZON": 6, "TUNCELİ": 2,
+        "UŞAK": 3, "VAN": 8, "YALOVA": 3, "YOZGAT": 4,
+        "ZONGULDAK": 5
+      }
+    },
+    "2024_guncel": {
+      "_baslik": "27 Haziran 2024 — YSK güncel kararı",
+      "_aciklama": "27 Haziran 2024 tarihli YSK Resmi Gazete kararı (No. 2024/2712). 31/12/2023 nüfus verisiyle hesaplanmış, sonraki MV seçiminde uygulanacak.",
+      "_nufus_yili": 2023,
+      "_secim_cevresi_sayisi": 87,
+      "_toplam_kontrol": 600,
+      "_karar_no": "2024/2712",
+      "iller": {
+        "ADANA": 15, "ADIYAMAN": 5, "AFYONKARAHİSAR": 6, "AĞRI": 4,
+        "AKSARAY": 4, "AMASYA": 3, "ANKARA": 36, "ANTALYA": 17,
+        "ARDAHAN": 2, "ARTVİN": 2, "AYDIN": 8, "BALIKESİR": 9,
+        "BARTIN": 2, "BATMAN": 5, "BAYBURT": 2, "BİLECİK": 2,
+        "BİNGÖL": 3, "BİTLİS": 3, "BOLU": 3, "BURDUR": 3,
+        "BURSA": 21, "ÇANAKKALE": 4, "ÇANKIRI": 2, "ÇORUM": 4,
+        "DENİZLİ": 7, "DİYARBAKIR": 12, "DÜZCE": 3, "EDİRNE": 4,
+        "ELAZIĞ": 5, "ERZİNCAN": 2, "ERZURUM": 6, "ESKİŞEHİR": 7,
+        "GAZİANTEP": 14, "GİRESUN": 4, "GÜMÜŞHANE": 2, "HAKKARİ": 3,
+        "HATAY": 10, "IĞDIR": 2, "ISPARTA": 4, "İSTANBUL": 96,
+        "İZMİR": 28, "KAHRAMANMARAŞ": 8, "KARABÜK": 3, "KARAMAN": 3,
+        "KARS": 3, "KASTAMONU": 3, "KAYSERİ": 10, "KİLİS": 2,
+        "KIRIKKALE": 3, "KIRKLARELİ": 3, "KIRŞEHİR": 2, "KOCAELİ": 14,
+        "KONYA": 15, "KÜTAHYA": 4, "MALATYA": 6, "MANİSA": 10,
+        "MARDİN": 6, "MERSİN": 13, "MUĞLA": 7, "MUŞ": 3,
+        "NEVŞEHİR": 3, "NİĞDE": 3, "ORDU": 6, "OSMANİYE": 4,
+        "RİZE": 3, "SAKARYA": 8, "SAMSUN": 9, "ŞANLIURFA": 14,
+        "SİİRT": 3, "SİNOP": 2, "ŞIRNAK": 4, "SİVAS": 5,
+        "TEKİRDAĞ": 8, "TOKAT": 5, "TRABZON": 6, "TUNCELİ": 2,
+        "UŞAK": 3, "VAN": 8, "YALOVA": 3, "YOZGAT": 4,
+        "ZONGULDAK": 5
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+FAVICON YERLEŞTİRME - ADIM ADIM
+==================================
+
+Bu zip'in içindekiler:
+  favicons/                  (klasör, 8 dosya)
+  index.html                 (yeni hali)
+  site.webmanifest           (yeni dosya)
+  OKU_BENI.txt               (bu dosya)
+
+
+YAPACAĞIN İŞ
+------------
+
+1) Bu zip'i aç.
+
+2) Zip'in içinden şunları kopyala:
+   - favicons/ (komple klasör)
+   - index.html
+   - site.webmanifest
+
+3) Projenin ana klasörüne yapıştır
+   (yani index.html'in olduğu yer - assets, data, modules klasörleri orada).
+
+4) Windows soracak: "Bu dosya zaten var, üzerine yazılsın mı?"
+   - index.html için: EVET, üzerine yaz
+   - Diğer dosyalar zaten yok, sorun çıkmaz.
+
+5) BİTTİ.
+
+
+EKSTRA: SİLİNECEK DOSYA
+-----------------------
+
+Klasöründe "index_head.html" diye bir dosya var.
+Bu önceki turdaki referans dosyası, projeye ait DEĞİL.
+Silebilirsin (zorunlu değil ama yer kaplıyor).
+
+
+TEST
+----
+
+Yükledikten sonra:
+  - Tarayıcıyı aç
+  - index.html'i aç (veya yayınlandıysa siteyi aç)
+  - Ctrl+Shift+R bas (sert yenileme - eski cache temizlenir)
+  - Sekmede yunus+balerin ikonunu görmen lazım
+
+Görünmüyorsa:
+  - F12 bas, Console sekmesine bak
+  - Kırmızı 404 hatası var mı kontrol et
+  - Hangi dosya 404 veriyor, söyle - düzeltirim

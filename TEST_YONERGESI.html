@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Türkiye Halk Oyu Arşivi — Test Yönergesi</title>
+<style>
+  :root {
+    --paper: #fdfaf2;
+    --paper-2: #f8f3e5;
+    --ink: #2e2820;
+    --ink-2: #4b4233;
+    --ink-3: #7a6e58;
+    --line: #ddd6c0;
+    --brand-gold: #c8861a;
+    --signal-green: #4a7c3a;
+    --signal-red: #a01818;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background: var(--paper);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  h1 {
+    color: var(--brand-gold);
+    border-bottom: 3px solid var(--brand-gold);
+    padding-bottom: 12px;
+  }
+  h2 {
+    background: var(--paper-2);
+    padding: 12px 16px;
+    border-left: 4px solid var(--brand-gold);
+    margin-top: 32px;
+  }
+  h3 {
+    color: var(--ink-2);
+    margin-top: 20px;
+    border-bottom: 1px dashed var(--line);
+    padding-bottom: 4px;
+  }
+  .ozet {
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 20px 0;
+  }
+  ul.test-listesi {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul.test-listesi li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--paper-2);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  ul.test-listesi li:hover {
+    background: var(--paper-2);
+  }
+  ul.test-listesi input[type="checkbox"] {
+    margin-top: 4px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: var(--brand-gold);
+    flex-shrink: 0;
+  }
+  ul.test-listesi label {
+    cursor: pointer;
+    flex: 1;
+  }
+  ul.test-listesi input:checked + label {
+    text-decoration: line-through;
+    color: var(--ink-3);
+  }
+  .durum {
+    background: white;
+    border: 2px solid var(--brand-gold);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .durum-sayac {
+    font-size: 24px;
+    color: var(--brand-gold);
+    font-weight: 700;
+  }
+  .modul-baslik {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .modul-num {
+    background: var(--brand-gold);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  .not {
+    background: rgba(200, 134, 26, 0.1);
+    border-left: 3px solid var(--brand-gold);
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .bug-alani {
+    background: white;
+    border: 2px dashed var(--signal-red);
+    border-radius: 6px;
+    padding: 16px;
+    margin: 16px 0;
+  }
+  .bug-alani textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    font-family: inherit;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    resize: vertical;
+  }
+  button.reset {
+    background: var(--ink-3);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  button.reset:hover {
+    background: var(--signal-red);
+  }
+  .progress-bar {
+    background: var(--paper-2);
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 12px;
+  }
+  .progress-bar-fill {
+    background: var(--brand-gold);
+    height: 100%;
+    transition: width 300ms ease;
+  }
+</style>
+</head>
+<body>
+
+<h1>Türkiye Halk Oyu Arşivi — Sistematik Test</h1>
+
+<div class="ozet">
+  <strong>Son otomatik test (24 Mayıs 2026):</strong> <code>python tools/run_qa_checks.py 8081</code> → <strong>116/116 geçti</strong> (veri, HTTP, CB2, tarafsızlık grep).
+  <br><br>
+  <strong>Nasıl kullanılır:</strong>
+  <ol>
+    <li>Localhost'u başlat (<code>python -m http.server 8081</code>) — port 8000 takılıysa 8081 kullan</li>
+    <li>Tarayıcıda <code>http://localhost:8081</code> aç</li>
+    <li>F12 → Console aç</li>
+    <li>Bu yönergeyi takip et, her madde için site'yi kontrol et</li>
+    <li>Tamamsa kutuyu işaretle, sorun varsa bug alanına not düş</li>
+  </ol>
+  <p>İşaretlemelerin <strong>tarayıcı bellğinde</strong> saklanır. Sayfayı kapatıp açtığında da kayıtlı kalır.</p>
+</div>
+
+<div class="durum" id="ana-durum">
+  <span>Toplam ilerleme:</span>
+  <span><span class="durum-sayac" id="toplam-sayac">0</span> / <span id="toplam-max">0</span></span>
+</div>
+<div class="progress-bar">
+  <div class="progress-bar-fill" id="progress" style="width: 0%;"></div>
+</div>
+<div style="text-align: right; margin-top: 8px;">
+  <button class="reset" onclick="resetAll()">Tüm tikleri sıfırla</button>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">00</span> Anasayfa</span></h2>
+
+<h3>Görsel</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-00-1"><label for="t-00-1">Sayfa açılıyor</label></li>
+  <li><input type="checkbox" id="t-00-2"><label for="t-00-2">Marka logosu/başlığı görünüyor</label></li>
+  <li><input type="checkbox" id="t-00-3"><label for="t-00-3">Açıklama metni var</label></li>
+  <li><input type="checkbox" id="t-00-4"><label for="t-00-4">11 modül kartı sıralı görünüyor (00, 01, ..., 08, i, ii)</label></li>
+  <li><input type="checkbox" id="t-00-5"><label for="t-00-5">Her kartın numarası, başlığı, açıklaması var</label></li>
+  <li><input type="checkbox" id="t-00-6"><label for="t-00-6">Sağ üst köşede Paylaş butonu var</label></li>
+</ul>
+
+<h3>Etkileşim</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-00-7"><label for="t-00-7">Karta tıklayınca ilgili modüle gidiyor</label></li>
+  <li><input type="checkbox" id="t-00-8"><label for="t-00-8">Sol menü çalışıyor</label></li>
+</ul>
+
+<h3>Konsol</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-00-9"><label for="t-00-9">Konsol temiz (kırmızı hata yok)</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>00 için bug/not:</strong>
+  <textarea id="bug-00" placeholder="Sorun veya not buraya..."></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">01</span> Arşiv</span></h2>
+
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-01-1"><label for="t-01-1">13 seçim listesi görünüyor</label></li>
+  <li><input type="checkbox" id="t-01-2"><label for="t-01-2">Her satırda: seçim adı, tarih, kayıtlı seçmen, katılım</label></li>
+  <li><input type="checkbox" id="t-01-3"><label for="t-01-3">Sıralanabiliyor (sütun başlıklarına tıkla)</label></li>
+  <li><input type="checkbox" id="t-01-4"><label for="t-01-4">Bir seçime tıklayınca detay açılıyor</label></li>
+  <li><input type="checkbox" id="t-01-5"><label for="t-01-5">Paylaş butonu çalışıyor</label></li>
+  <li><input type="checkbox" id="t-01-6"><label for="t-01-6">Konsol temiz</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>01 için bug/not:</strong>
+  <textarea id="bug-01"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">02</span> Uyumsuzluk tespiti</span></h2>
+
+<h3>Sekme A — Demografik</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-02a-1"><label for="t-02a-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-02a-2"><label for="t-02a-2">Filtreler çalışıyor (seçim, parti, eşik)</label></li>
+  <li><input type="checkbox" id="t-02a-3"><label for="t-02a-3">Tablo doluyor</label></li>
+  <li><input type="checkbox" id="t-02a-4"><label for="t-02a-4">Filtre değişimde tablo güncelleniyor</label></li>
+</ul>
+
+<h3>Sekme B — Zamansal</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-02b-1"><label for="t-02b-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-02b-2"><label for="t-02b-2">İki seçim seçilebiliyor</label></li>
+  <li><input type="checkbox" id="t-02b-3"><label for="t-02b-3">Karşılaştırma tablosu çıkıyor</label></li>
+</ul>
+
+<h3>Sekme C — Tip tutarsızlığı</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-02c-1"><label for="t-02c-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-02c-2"><label for="t-02c-2">Seçim grupları görünüyor</label></li>
+  <li><input type="checkbox" id="t-02c-3"><label for="t-02c-3">Aykırı durumlar listesi var</label></li>
+</ul>
+
+<h3>Sekme D — İstatistiksel göstergeler</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-02d-1"><label for="t-02d-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-02d-2"><label for="t-02d-2">Katılım / geçersiz oy / büyüme tablosu doluyor</label></li>
+  <li><input type="checkbox" id="t-02d-3"><label for="t-02d-3">Filtre değişimde tablo güncelleniyor</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>02 için bug/not:</strong>
+  <textarea id="bug-02"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">03</span> Trend analizi</span></h2>
+
+<h3>Sekme A — Parti zaman çizelgesi</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-03a-1"><label for="t-03a-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-03a-2"><label for="t-03a-2">7 partinin çizgi grafiği görünüyor</label></li>
+  <li><input type="checkbox" id="t-03a-3"><label for="t-03a-3">Tooltip hover'da çalışıyor</label></li>
+</ul>
+
+<h3>Sekme B — Bölgesel ısı haritası</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-03b-1"><label for="t-03b-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-03b-2"><label for="t-03b-2">Türkiye haritası renklendi</label></li>
+  <li><input type="checkbox" id="t-03b-3"><label for="t-03b-3">Parti seçilebiliyor</label></li>
+  <li><input type="checkbox" id="t-03b-4"><label for="t-03b-4">Renkler değişiyor</label></li>
+</ul>
+
+<h3>Sekme C — Koalisyon</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-03c-1"><label for="t-03c-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-03c-2"><label for="t-03c-2">Koalisyon kombinasyonları görünüyor</label></li>
+  <li><input type="checkbox" id="t-03c-3"><label for="t-03c-3">Toplam oy hesaplanıyor</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>03 için bug/not:</strong>
+  <textarea id="bug-03"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">04</span> Karşılaştırma</span></h2>
+
+<h3>Sekme A — İki ilçe</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-04a-1"><label for="t-04a-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-04a-2"><label for="t-04a-2">İki ilçe seçilebiliyor</label></li>
+  <li><input type="checkbox" id="t-04a-3"><label for="t-04a-3">Yan yana sonuç gösteriliyor</label></li>
+</ul>
+
+<h3>Sekme B — İki seçim</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-04b-1"><label for="t-04b-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-04b-2"><label for="t-04b-2">Aynı ilçenin iki seçimde sonucu</label></li>
+  <li><input type="checkbox" id="t-04b-3"><label for="t-04b-3">Değişim oklarla gösteriliyor</label></li>
+</ul>
+
+<h3>Sekme C — Tek ilçe geçmişi</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-04c-1"><label for="t-04c-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-04c-2"><label for="t-04c-2">Tüm seçimlerde o ilçenin oyu var</label></li>
+  <li><input type="checkbox" id="t-04c-3"><label for="t-04c-3">Zaman çizelgesi var</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>04 için bug/not:</strong>
+  <textarea id="bug-04"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">05</span> Demografi</span></h2>
+
+<h3>Sekme A — Yaş analizi</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-05a-1"><label for="t-05a-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-05a-2"><label for="t-05a-2">Yaş piramidi çiziliyor</label></li>
+  <li><input type="checkbox" id="t-05a-3"><label for="t-05a-3">Ortalama yaş gösteriliyor</label></li>
+  <li><input type="checkbox" id="t-05a-4"><label for="t-05a-4">Filtre (Türkiye/İl/İlçe) çalışıyor</label></li>
+</ul>
+
+<h3>Sekme B — Eğitim</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-05b-1"><label for="t-05b-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-05b-2"><label for="t-05b-2">Eğitim seviyeleri grafiği var</label></li>
+  <li><input type="checkbox" id="t-05b-3"><label for="t-05b-3">Yıllar arası değişim var</label></li>
+</ul>
+
+<h3>Sekme C — Cinsiyet & zaman</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-05c-1"><label for="t-05c-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-05c-2"><label for="t-05c-2">Erkek/kadın oranı görünüyor</label></li>
+  <li><input type="checkbox" id="t-05c-3"><label for="t-05c-3">Yıllar arası değişim çiziliyor</label></li>
+</ul>
+
+<h3>Sekme D — Yaşlanma analizi (YENİ)</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-05d-1"><label for="t-05d-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-05d-2"><label for="t-05d-2">Üst uyarı kutusu (⏳ Tahmin değil) görünüyor</label></li>
+  <li><input type="checkbox" id="t-05d-3"><label for="t-05d-3">4 özet kutu doluyor (ortalama yaş, 65+, genç, nüfus)</label></li>
+  <li><input type="checkbox" id="t-05d-4"><label for="t-05d-4">Çift eksen çizgi grafik (turuncu + bordo) çizdi</label></li>
+  <li><input type="checkbox" id="t-05d-5"><label for="t-05d-5">Yaş grupları zaman serisi (6 çizgi) var</label></li>
+  <li><input type="checkbox" id="t-05d-6"><label for="t-05d-6">"En hızlı yaşlanan iller" tablosu var</label></li>
+  <li><input type="checkbox" id="t-05d-7"><label for="t-05d-7">"En az değişen / gençleşen iller" tablosu var</label></li>
+  <li><input type="checkbox" id="t-05d-8"><label for="t-05d-8">TÜİK projeksiyon kartları (2030/2050/2080) var</label></li>
+  <li><input type="checkbox" id="t-05d-9"><label for="t-05d-9">Yorum notu altta görünüyor</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>05 için bug/not:</strong>
+  <textarea id="bug-05"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">06</span> Senaryo modelleri</span></h2>
+
+<h3>Sekme A — Sürgü senaryosu</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-06a-1"><label for="t-06a-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-06a-2"><label for="t-06a-2">Parti seçimi var</label></li>
+  <li><input type="checkbox" id="t-06a-3"><label for="t-06a-3">+/- sürgüsü çalışıyor</label></li>
+  <li><input type="checkbox" id="t-06a-4"><label for="t-06a-4">Sonuç anında güncelleniyor</label></li>
+</ul>
+
+<h3>Sekme B — Bölgesel kayma</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-06b-1"><label for="t-06b-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-06b-2"><label for="t-06b-2">Bölge seçimi var</label></li>
+  <li><input type="checkbox" id="t-06b-3"><label for="t-06b-3">Yüzde değişimi çalışıyor</label></li>
+</ul>
+
+<h3>Sekme C — Katılım senaryosu</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-06c-1"><label for="t-06c-1">Sekme açılıyor</label></li>
+  <li><input type="checkbox" id="t-06c-2"><label for="t-06c-2">Katılım oranı değişiyor</label></li>
+  <li><input type="checkbox" id="t-06c-3"><label for="t-06c-3">Sonuç değişiyor</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>06 için bug/not:</strong>
+  <textarea id="bug-06"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">07</span> Bölge profili</span></h2>
+
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-07-1"><label for="t-07-1">NUTS-1 seçimi çalışıyor</label></li>
+  <li><input type="checkbox" id="t-07-2"><label for="t-07-2">NUTS-2 seçimi çalışıyor</label></li>
+  <li><input type="checkbox" id="t-07-3"><label for="t-07-3">İl seçimi çalışıyor</label></li>
+  <li><input type="checkbox" id="t-07-4"><label for="t-07-4">İlçe seçimi çalışıyor</label></li>
+  <li><input type="checkbox" id="t-07-5"><label for="t-07-5">Her kapsam için doğru sayılar</label></li>
+  <li><input type="checkbox" id="t-07-6"><label for="t-07-6">Demografi grafikleri çiziliyor</label></li>
+  <li><input type="checkbox" id="t-07-7"><label for="t-07-7">Seçim sonuçları geçmişi var</label></li>
+  <li><input type="checkbox" id="t-07-8"><label for="t-07-8">Haritada vurgulama çalışıyor</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>07 için bug/not:</strong>
+  <textarea id="bug-07"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">08</span> Vekil başına seçmen (YENİ)</span></h2>
+
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-08-1"><label for="t-08-1">Sayfa açılıyor</label></li>
+  <li><input type="checkbox" id="t-08-2"><label for="t-08-2">Üst açıklama kutusu "Yargı yok, veri var" görünüyor</label></li>
+  <li><input type="checkbox" id="t-08-3"><label for="t-08-3">Veri kaynağı notu (2023 vs 2024 farkı) görünüyor</label></li>
+  <li><input type="checkbox" id="t-08-4"><label for="t-08-4">YSK Kararı dropdown: "2018" ve "2024 — YSK güncel kararı"</label></li>
+  <li><input type="checkbox" id="t-08-5"><label for="t-08-5">Hesaplama temeli: Kayıtlı seçmen / TÜİK 18+ nüfus</label></li>
+  <li><input type="checkbox" id="t-08-6"><label for="t-08-6">6 özet kutu doluyor</label></li>
+  <li><input type="checkbox" id="t-08-7"><label for="t-08-7">Türkiye haritası renklenmiş</label></li>
+  <li><input type="checkbox" id="t-08-8"><label for="t-08-8">Tooltip hover'da çıkıyor</label></li>
+  <li><input type="checkbox" id="t-08-9"><label for="t-08-9">81 il sıralı tablosu doluyor</label></li>
+  <li><input type="checkbox" id="t-08-10"><label for="t-08-10">Tabloda sıralama tıklanabilir</label></li>
+  <li><input type="checkbox" id="t-08-11"><label for="t-08-11">2018 ↔ 2024 değişim tablosu (artan/azalan)</label></li>
+  <li><input type="checkbox" id="t-08-12"><label for="t-08-12">Filtre değişimde sayılar güncelleniyor</label></li>
+  <li><input type="checkbox" id="t-08-13"><label for="t-08-13">"Nasıl hesaplanıyor?" açıklaması altta</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>08 için bug/not:</strong>
+  <textarea id="bug-08"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">i</span> Metodoloji</span></h2>
+
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-i-1"><label for="t-i-1">Sayfa açılıyor</label></li>
+  <li><input type="checkbox" id="t-i-2"><label for="t-i-2">Tüm bölümler görünüyor</label></li>
+  <li><input type="checkbox" id="t-i-3"><label for="t-i-3">İletişim bölümü var (e-posta veya Metodoloji yönlendirmesi)</label></li>
+  <li><input type="checkbox" id="t-i-4"><label for="t-i-4"><strong>GitHub placeholder yok</strong> — "yayına alındığında" notu</label></li>
+  <li><input type="checkbox" id="t-i-5"><label for="t-i-5">Atıf biçimi gösteriliyor</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>i için bug/not:</strong>
+  <textarea id="bug-i"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2><span class="modul-baslik"><span class="modul-num">ii</span> Hakkında</span></h2>
+
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-ii-1"><label for="t-ii-1">Sayfa açılıyor</label></li>
+  <li><input type="checkbox" id="t-ii-2"><label for="t-ii-2">Misyon kartları (4 adet) görünüyor</label></li>
+  <li><input type="checkbox" id="t-ii-3"><label for="t-ii-3"><strong>Misyon 04 → "Gönüllü çalışma"</strong></label></li>
+  <li><input type="checkbox" id="t-ii-4"><label for="t-ii-4"><strong>Bağış bölümü YOK</strong> (Kreosus, Patreon, IBAN olmamalı)</label></li>
+  <li><input type="checkbox" id="t-ii-5"><label for="t-ii-5"><strong>Katkı bölümü</strong> (hata bildir + paylaş; bağış/IBAN yok)</label></li>
+  <li><input type="checkbox" id="t-ii-6"><label for="t-ii-6">Teşekkür bölümü var</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>ii için bug/not:</strong>
+  <textarea id="bug-ii"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2>Ortak özellikler</h2>
+
+<h3>Paylaş butonu (her modülde)</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-payla-1"><label for="t-payla-1">Her modülün sağ üstünde var</label></li>
+  <li><input type="checkbox" id="t-payla-2"><label for="t-payla-2">Tıklayınca dropdown açılıyor</label></li>
+  <li><input type="checkbox" id="t-payla-3"><label for="t-payla-3">Twitter, WhatsApp, Telegram, Instagram, LinkedIn, Kopyala seçenekleri</label></li>
+  <li><input type="checkbox" id="t-payla-4"><label for="t-payla-4">"Kopyala" → "✓ Kopyalandı" mesajı</label></li>
+  <li><input type="checkbox" id="t-payla-5"><label for="t-payla-5">Boş alana tıklayınca menü kapanıyor</label></li>
+</ul>
+
+<h3>Sol menü</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-menu-1"><label for="t-menu-1">Tüm modüller listede</label></li>
+  <li><input type="checkbox" id="t-menu-2"><label for="t-menu-2">Aktif modül vurgulanıyor</label></li>
+  <li><input type="checkbox" id="t-menu-3"><label for="t-menu-3">Tıklayınca hash değişiyor (#/modul)</label></li>
+  <li><input type="checkbox" id="t-menu-4"><label for="t-menu-4">Geri/ileri butonu çalışıyor</label></li>
+</ul>
+
+<h3>Mobil görünüm</h3>
+<ul class="test-listesi">
+  <li><input type="checkbox" id="t-mobil-1"><label for="t-mobil-1">F12 → Device toolbar → küçült</label></li>
+  <li><input type="checkbox" id="t-mobil-2"><label for="t-mobil-2">Sol menü hamburger oluyor</label></li>
+  <li><input type="checkbox" id="t-mobil-3"><label for="t-mobil-3">Grafikler responsive</label></li>
+  <li><input type="checkbox" id="t-mobil-4"><label for="t-mobil-4">Tablolar yatay scroll</label></li>
+</ul>
+
+<div class="bug-alani">
+  <strong>Ortak özellikler bug/not:</strong>
+  <textarea id="bug-ortak"></textarea>
+</div>
+
+<!-- ============================================== -->
+
+<h2>🎯 Sonuç</h2>
+
+<div class="ozet">
+  <p><strong>Tüm tikler atılınca:</strong> Bug raporu olmadıysa, site yayına hazır demektir.</p>
+  <p><strong>Bug raporları varsa:</strong> Bunları bana paylaş, anında düzeltirim.</p>
+</div>
+
+<div class="not">
+  <strong>İpucu:</strong> Her bug alanına yazdığını da yerel olarak kaydederim. Daha sonra hepsini tek bir mesajla bana iletebilirsin.
+</div>
+
+<button class="reset" onclick="exportNotes()" style="background: var(--brand-gold);">📋 Tüm notları kopyala</button>
+
+<script>
+  // Local storage ile tik ve not durumlarını sakla
+  const STORAGE_KEY = 'halkoyu-test-state-v1';
+
+  function loadState() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : {};
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveState() {
+    const state = {};
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      state[cb.id] = cb.checked;
+    });
+    document.querySelectorAll('textarea').forEach(ta => {
+      state[ta.id] = ta.value;
+    });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    updateProgress();
+  }
+
+  function updateProgress() {
+    const all = document.querySelectorAll('input[type="checkbox"]');
+    const checked = document.querySelectorAll('input[type="checkbox"]:checked');
+    document.getElementById('toplam-sayac').textContent = checked.length;
+    document.getElementById('toplam-max').textContent = all.length;
+    const pct = (checked.length / all.length) * 100;
+    document.getElementById('progress').style.width = pct + '%';
+  }
+
+  function resetAll() {
+    if (!confirm('Tüm tikleri ve notları sıfırlayayım mı?')) return;
+    localStorage.removeItem(STORAGE_KEY);
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+    document.querySelectorAll('textarea').forEach(ta => ta.value = '');
+    updateProgress();
+  }
+
+  function exportNotes() {
+    let report = '=== Türkiye Halk Oyu Arşivi — Test Raporu ===\n\n';
+    let tarih = new Date().toLocaleDateString('tr-TR');
+    report += `Tarih: ${tarih}\n\n`;
+
+    const all = document.querySelectorAll('input[type="checkbox"]');
+    const checked = document.querySelectorAll('input[type="checkbox"]:checked');
+    report += `İlerleme: ${checked.length}/${all.length}\n\n`;
+
+    document.querySelectorAll('textarea').forEach(ta => {
+      if (ta.value.trim()) {
+        const moduleId = ta.id.replace('bug-', '');
+        report += `--- ${moduleId.toUpperCase()} ---\n${ta.value}\n\n`;
+      }
+    });
+
+    if (report.indexOf('---') === -1) {
+      report += '(Hiçbir bug/not yazılmamış. Her şey çalışıyor görünüyor!)\n';
+    }
+
+    navigator.clipboard.writeText(report).then(() => {
+      alert('Rapor panoya kopyalandı! Claude\'a yapıştırabilirsin.');
+    }).catch(() => {
+      // Fallback
+      const ta = document.createElement('textarea');
+      ta.value = report;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+      alert('Rapor panoya kopyalandı! Claude\'a yapıştırabilirsin.');
+    });
+  }
+
+  // Sayfa yüklenince state'i geri yükle
+  window.addEventListener('DOMContentLoaded', () => {
+    const state = loadState();
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      if (state[cb.id]) cb.checked = true;
+      cb.addEventListener('change', saveState);
+    });
+    document.querySelectorAll('textarea').forEach(ta => {
+      if (state[ta.id]) ta.value = state[ta.id];
+      ta.addEventListener('input', saveState);
+    });
+    updateProgress();
+  });
+</script>
+
+</body>
+</html>

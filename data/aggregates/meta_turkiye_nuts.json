@@ -1,0 +1,4457 @@
+{
+  "version": "1.0.0",
+  "updated_at": "2026-05-24",
+  "kaynak": "YSK *_meta.json dosyaları",
+  "icerik": "Türkiye + 12 NUTS-1 + 26 NUTS-2 toplamları",
+  "secimler": {
+    "2018_CB": {
+      "name": "2018 CB",
+      "turkiye": {
+        "toplam_sandik": 180524,
+        "kayitli_secmen": 56322632,
+        "oy_kullanan_secmen": 49671344,
+        "gecerli_oy": 48562084,
+        "gecersiz_oy": 1109260,
+        "katilim_orani": 88.19
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 19394,
+          "kayitli_secmen": 6383743,
+          "oy_kullanan_secmen": 5597364,
+          "gecerli_oy": 5475399,
+          "gecersiz_oy": 121965,
+          "il_sayisi": 7,
+          "katilim_orani": 87.68
+        },
+        "TRC": {
+          "toplam_sandik": 19091,
+          "kayitli_secmen": 5783009,
+          "oy_kullanan_secmen": 4917964,
+          "gecerli_oy": 4795394,
+          "gecersiz_oy": 122570,
+          "il_sayisi": 10,
+          "katilim_orani": 85.04
+        },
+        "TR3": {
+          "toplam_sandik": 24227,
+          "kayitli_secmen": 7755902,
+          "oy_kullanan_secmen": 6974478,
+          "gecerli_oy": 6812323,
+          "gecersiz_oy": 162155,
+          "il_sayisi": 8,
+          "katilim_orani": 89.92
+        },
+        "TRA": {
+          "toplam_sandik": 5980,
+          "kayitli_secmen": 1378164,
+          "oy_kullanan_secmen": 1158281,
+          "gecerli_oy": 1125826,
+          "gecersiz_oy": 32455,
+          "il_sayisi": 7,
+          "katilim_orani": 84.05
+        },
+        "TR7": {
+          "toplam_sandik": 10322,
+          "kayitli_secmen": 2780344,
+          "oy_kullanan_secmen": 2474560,
+          "gecerli_oy": 2412503,
+          "gecersiz_oy": 62057,
+          "il_sayisi": 8,
+          "katilim_orani": 89.0
+        },
+        "TR8": {
+          "toplam_sandik": 13392,
+          "kayitli_secmen": 3368433,
+          "oy_kullanan_secmen": 2996407,
+          "gecerli_oy": 2902405,
+          "gecersiz_oy": 94002,
+          "il_sayisi": 10,
+          "katilim_orani": 88.96
+        },
+        "TR5": {
+          "toplam_sandik": 16656,
+          "kayitli_secmen": 5581496,
+          "oy_kullanan_secmen": 4991065,
+          "gecerli_oy": 4892053,
+          "gecersiz_oy": 99012,
+          "il_sayisi": 3,
+          "katilim_orani": 89.42
+        },
+        "TR9": {
+          "toplam_sandik": 7588,
+          "kayitli_secmen": 1959764,
+          "oy_kullanan_secmen": 1702038,
+          "gecerli_oy": 1653139,
+          "gecersiz_oy": 48899,
+          "il_sayisi": 6,
+          "katilim_orani": 86.85
+        },
+        "TR2": {
+          "toplam_sandik": 8769,
+          "kayitli_secmen": 2671778,
+          "oy_kullanan_secmen": 2408442,
+          "gecerli_oy": 2356470,
+          "gecersiz_oy": 51972,
+          "il_sayisi": 5,
+          "katilim_orani": 90.14
+        },
+        "TR4": {
+          "toplam_sandik": 17534,
+          "kayitli_secmen": 5655491,
+          "oy_kullanan_secmen": 5080766,
+          "gecerli_oy": 4974379,
+          "gecersiz_oy": 106387,
+          "il_sayisi": 8,
+          "katilim_orani": 89.84
+        },
+        "TRB": {
+          "toplam_sandik": 8746,
+          "kayitli_secmen": 2444822,
+          "oy_kullanan_secmen": 2065359,
+          "gecerli_oy": 2005304,
+          "gecersiz_oy": 60055,
+          "il_sayisi": 8,
+          "katilim_orani": 84.48
+        },
+        "TR1": {
+          "toplam_sandik": 28825,
+          "kayitli_secmen": 10559686,
+          "oy_kullanan_secmen": 9304620,
+          "gecerli_oy": 9156889,
+          "gecersiz_oy": 147731,
+          "il_sayisi": 1,
+          "katilim_orani": 88.11
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 9518,
+          "kayitli_secmen": 3152535,
+          "oy_kullanan_secmen": 2746908,
+          "gecerli_oy": 2686489,
+          "gecersiz_oy": 60419,
+          "il_sayisi": 3,
+          "katilim_orani": 87.13
+        },
+        "TRC1": {
+          "toplam_sandik": 7902,
+          "kayitli_secmen": 2438077,
+          "oy_kullanan_secmen": 2121108,
+          "gecerli_oy": 2073145,
+          "gecersiz_oy": 47963,
+          "il_sayisi": 4,
+          "katilim_orani": 87.0
+        },
+        "TR33": {
+          "toplam_sandik": 7732,
+          "kayitli_secmen": 2240088,
+          "oy_kullanan_secmen": 2041580,
+          "gecerli_oy": 1984098,
+          "gecersiz_oy": 57482,
+          "il_sayisi": 4,
+          "katilim_orani": 91.14
+        },
+        "TRA2": {
+          "toplam_sandik": 2565,
+          "kayitli_secmen": 666311,
+          "oy_kullanan_secmen": 532376,
+          "gecerli_oy": 515215,
+          "gecersiz_oy": 17161,
+          "il_sayisi": 4,
+          "katilim_orani": 79.9
+        },
+        "TR71": {
+          "toplam_sandik": 3757,
+          "kayitli_secmen": 1081379,
+          "oy_kullanan_secmen": 949441,
+          "gecerli_oy": 923447,
+          "gecersiz_oy": 25994,
+          "il_sayisi": 5,
+          "katilim_orani": 87.8
+        },
+        "TR83": {
+          "toplam_sandik": 7542,
+          "kayitli_secmen": 2019751,
+          "oy_kullanan_secmen": 1813098,
+          "gecerli_oy": 1763357,
+          "gecersiz_oy": 49741,
+          "il_sayisi": 4,
+          "katilim_orani": 89.77
+        },
+        "TR51": {
+          "toplam_sandik": 11328,
+          "kayitli_secmen": 3904585,
+          "oy_kullanan_secmen": 3492366,
+          "gecerli_oy": 3429877,
+          "gecersiz_oy": 62489,
+          "il_sayisi": 1,
+          "katilim_orani": 89.44
+        },
+        "TR61": {
+          "toplam_sandik": 6752,
+          "kayitli_secmen": 2190132,
+          "oy_kullanan_secmen": 1924963,
+          "gecerli_oy": 1880170,
+          "gecersiz_oy": 44793,
+          "il_sayisi": 3,
+          "katilim_orani": 87.89
+        },
+        "TR90": {
+          "toplam_sandik": 7588,
+          "kayitli_secmen": 1959764,
+          "oy_kullanan_secmen": 1702038,
+          "gecerli_oy": 1653139,
+          "gecersiz_oy": 48899,
+          "il_sayisi": 6,
+          "katilim_orani": 86.85
+        },
+        "TR32": {
+          "toplam_sandik": 7135,
+          "kayitli_secmen": 2288782,
+          "oy_kullanan_secmen": 2051998,
+          "gecerli_oy": 2000227,
+          "gecersiz_oy": 51771,
+          "il_sayisi": 3,
+          "katilim_orani": 89.65
+        },
+        "TR22": {
+          "toplam_sandik": 4718,
+          "kayitli_secmen": 1351901,
+          "oy_kullanan_secmen": 1229321,
+          "gecerli_oy": 1201599,
+          "gecersiz_oy": 27722,
+          "il_sayisi": 2,
+          "katilim_orani": 90.93
+        },
+        "TR81": {
+          "toplam_sandik": 2775,
+          "kayitli_secmen": 769251,
+          "oy_kullanan_secmen": 675903,
+          "gecerli_oy": 649871,
+          "gecersiz_oy": 26032,
+          "il_sayisi": 3,
+          "katilim_orani": 87.87
+        },
+        "TRC3": {
+          "toplam_sandik": 4226,
+          "kayitli_secmen": 1260728,
+          "oy_kullanan_secmen": 1074821,
+          "gecerli_oy": 1045932,
+          "gecersiz_oy": 28889,
+          "il_sayisi": 4,
+          "katilim_orani": 85.25
+        },
+        "TRA1": {
+          "toplam_sandik": 3415,
+          "kayitli_secmen": 711853,
+          "oy_kullanan_secmen": 625905,
+          "gecerli_oy": 610611,
+          "gecersiz_oy": 15294,
+          "il_sayisi": 3,
+          "katilim_orani": 87.93
+        },
+        "TR41": {
+          "toplam_sandik": 9011,
+          "kayitli_secmen": 2947576,
+          "oy_kullanan_secmen": 2645241,
+          "gecerli_oy": 2591766,
+          "gecersiz_oy": 53475,
+          "il_sayisi": 3,
+          "katilim_orani": 89.74
+        },
+        "TRB1": {
+          "toplam_sandik": 5406,
+          "kayitli_secmen": 1440187,
+          "oy_kullanan_secmen": 1229101,
+          "gecerli_oy": 1195828,
+          "gecersiz_oy": 33273,
+          "il_sayisi": 5,
+          "katilim_orani": 85.34
+        },
+        "TRB2": {
+          "toplam_sandik": 3340,
+          "kayitli_secmen": 1004635,
+          "oy_kullanan_secmen": 836258,
+          "gecerli_oy": 809476,
+          "gecersiz_oy": 26782,
+          "il_sayisi": 3,
+          "katilim_orani": 83.24
+        },
+        "TR42": {
+          "toplam_sandik": 8523,
+          "kayitli_secmen": 2707915,
+          "oy_kullanan_secmen": 2435525,
+          "gecerli_oy": 2382613,
+          "gecersiz_oy": 52912,
+          "il_sayisi": 5,
+          "katilim_orani": 89.94
+        },
+        "TR82": {
+          "toplam_sandik": 3075,
+          "kayitli_secmen": 579431,
+          "oy_kullanan_secmen": 507406,
+          "gecerli_oy": 489177,
+          "gecersiz_oy": 18229,
+          "il_sayisi": 3,
+          "katilim_orani": 87.57
+        },
+        "TRC2": {
+          "toplam_sandik": 6963,
+          "kayitli_secmen": 2084204,
+          "oy_kullanan_secmen": 1722035,
+          "gecerli_oy": 1676317,
+          "gecersiz_oy": 45718,
+          "il_sayisi": 2,
+          "katilim_orani": 82.62
+        },
+        "TR21": {
+          "toplam_sandik": 4051,
+          "kayitli_secmen": 1319877,
+          "oy_kullanan_secmen": 1179121,
+          "gecerli_oy": 1154871,
+          "gecersiz_oy": 24250,
+          "il_sayisi": 3,
+          "katilim_orani": 89.34
+        },
+        "TR63": {
+          "toplam_sandik": 3124,
+          "kayitli_secmen": 1041076,
+          "oy_kullanan_secmen": 925493,
+          "gecerli_oy": 908740,
+          "gecersiz_oy": 16753,
+          "il_sayisi": 1,
+          "katilim_orani": 88.9
+        },
+        "TR10": {
+          "toplam_sandik": 28825,
+          "kayitli_secmen": 10559686,
+          "oy_kullanan_secmen": 9304620,
+          "gecerli_oy": 9156889,
+          "gecersiz_oy": 147731,
+          "il_sayisi": 1,
+          "katilim_orani": 88.11
+        },
+        "TR31": {
+          "toplam_sandik": 9360,
+          "kayitli_secmen": 3227032,
+          "oy_kullanan_secmen": 2880900,
+          "gecerli_oy": 2827998,
+          "gecersiz_oy": 52902,
+          "il_sayisi": 1,
+          "katilim_orani": 89.27
+        },
+        "TR52": {
+          "toplam_sandik": 5328,
+          "kayitli_secmen": 1676911,
+          "oy_kullanan_secmen": 1498699,
+          "gecerli_oy": 1462176,
+          "gecersiz_oy": 36523,
+          "il_sayisi": 2,
+          "katilim_orani": 89.37
+        },
+        "TR72": {
+          "toplam_sandik": 6565,
+          "kayitli_secmen": 1698965,
+          "oy_kullanan_secmen": 1525119,
+          "gecerli_oy": 1489056,
+          "gecersiz_oy": 36063,
+          "il_sayisi": 3,
+          "katilim_orani": 89.77
+        }
+      }
+    },
+    "2018_MV": {
+      "name": "2018 MV",
+      "turkiye": {
+        "toplam_sandik": 180524,
+        "kayitli_secmen": 56322632,
+        "oy_kullanan_secmen": 49664165,
+        "gecerli_oy": 48631366,
+        "gecersiz_oy": 1032799,
+        "katilim_orani": 88.18
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 19394,
+          "kayitli_secmen": 6383743,
+          "oy_kullanan_secmen": 5595714,
+          "gecerli_oy": 5484819,
+          "gecersiz_oy": 110895,
+          "il_sayisi": 7,
+          "katilim_orani": 87.66
+        },
+        "TRC": {
+          "toplam_sandik": 19091,
+          "kayitli_secmen": 5783009,
+          "oy_kullanan_secmen": 4915259,
+          "gecerli_oy": 4790572,
+          "gecersiz_oy": 124687,
+          "il_sayisi": 10,
+          "katilim_orani": 84.99
+        },
+        "TR3": {
+          "toplam_sandik": 24227,
+          "kayitli_secmen": 7755902,
+          "oy_kullanan_secmen": 6974544,
+          "gecerli_oy": 6821205,
+          "gecersiz_oy": 153339,
+          "il_sayisi": 8,
+          "katilim_orani": 89.93
+        },
+        "TRA": {
+          "toplam_sandik": 5980,
+          "kayitli_secmen": 1378164,
+          "oy_kullanan_secmen": 1157805,
+          "gecerli_oy": 1129596,
+          "gecersiz_oy": 28209,
+          "il_sayisi": 7,
+          "katilim_orani": 84.01
+        },
+        "TR7": {
+          "toplam_sandik": 10322,
+          "kayitli_secmen": 2780344,
+          "oy_kullanan_secmen": 2474450,
+          "gecerli_oy": 2426108,
+          "gecersiz_oy": 48342,
+          "il_sayisi": 8,
+          "katilim_orani": 89.0
+        },
+        "TR8": {
+          "toplam_sandik": 13392,
+          "kayitli_secmen": 3368433,
+          "oy_kullanan_secmen": 2996365,
+          "gecerli_oy": 2915193,
+          "gecersiz_oy": 81172,
+          "il_sayisi": 10,
+          "katilim_orani": 88.95
+        },
+        "TR5": {
+          "toplam_sandik": 16656,
+          "kayitli_secmen": 5581496,
+          "oy_kullanan_secmen": 4991005,
+          "gecerli_oy": 4906214,
+          "gecersiz_oy": 84791,
+          "il_sayisi": 3,
+          "katilim_orani": 89.42
+        },
+        "TR9": {
+          "toplam_sandik": 7588,
+          "kayitli_secmen": 1959764,
+          "oy_kullanan_secmen": 1701783,
+          "gecerli_oy": 1659188,
+          "gecersiz_oy": 42595,
+          "il_sayisi": 6,
+          "katilim_orani": 86.84
+        },
+        "TR2": {
+          "toplam_sandik": 8769,
+          "kayitli_secmen": 2671778,
+          "oy_kullanan_secmen": 2408154,
+          "gecerli_oy": 2355362,
+          "gecersiz_oy": 52792,
+          "il_sayisi": 5,
+          "katilim_orani": 90.13
+        },
+        "TR4": {
+          "toplam_sandik": 17534,
+          "kayitli_secmen": 5655491,
+          "oy_kullanan_secmen": 5080836,
+          "gecerli_oy": 4983890,
+          "gecersiz_oy": 96946,
+          "il_sayisi": 8,
+          "katilim_orani": 89.84
+        },
+        "TRB": {
+          "toplam_sandik": 8746,
+          "kayitli_secmen": 2444822,
+          "oy_kullanan_secmen": 2064043,
+          "gecerli_oy": 2004101,
+          "gecersiz_oy": 59942,
+          "il_sayisi": 8,
+          "katilim_orani": 84.43
+        },
+        "TR1": {
+          "toplam_sandik": 28825,
+          "kayitli_secmen": 10559686,
+          "oy_kullanan_secmen": 9304207,
+          "gecerli_oy": 9155118,
+          "gecersiz_oy": 149089,
+          "il_sayisi": 1,
+          "katilim_orani": 88.11
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 9518,
+          "kayitli_secmen": 3152535,
+          "oy_kullanan_secmen": 2745676,
+          "gecerli_oy": 2694910,
+          "gecersiz_oy": 50766,
+          "il_sayisi": 3,
+          "katilim_orani": 87.09
+        },
+        "TRC1": {
+          "toplam_sandik": 7902,
+          "kayitli_secmen": 2438077,
+          "oy_kullanan_secmen": 2120759,
+          "gecerli_oy": 2078123,
+          "gecersiz_oy": 42636,
+          "il_sayisi": 4,
+          "katilim_orani": 86.98
+        },
+        "TR33": {
+          "toplam_sandik": 7732,
+          "kayitli_secmen": 2240088,
+          "oy_kullanan_secmen": 2041759,
+          "gecerli_oy": 1991046,
+          "gecersiz_oy": 50713,
+          "il_sayisi": 4,
+          "katilim_orani": 91.15
+        },
+        "TRA2": {
+          "toplam_sandik": 2565,
+          "kayitli_secmen": 666311,
+          "oy_kullanan_secmen": 531972,
+          "gecerli_oy": 515107,
+          "gecersiz_oy": 16865,
+          "il_sayisi": 4,
+          "katilim_orani": 79.84
+        },
+        "TR71": {
+          "toplam_sandik": 3757,
+          "kayitli_secmen": 1081379,
+          "oy_kullanan_secmen": 949388,
+          "gecerli_oy": 929169,
+          "gecersiz_oy": 20219,
+          "il_sayisi": 5,
+          "katilim_orani": 87.79
+        },
+        "TR83": {
+          "toplam_sandik": 7542,
+          "kayitli_secmen": 2019751,
+          "oy_kullanan_secmen": 1813080,
+          "gecerli_oy": 1771652,
+          "gecersiz_oy": 41428,
+          "il_sayisi": 4,
+          "katilim_orani": 89.77
+        },
+        "TR51": {
+          "toplam_sandik": 11328,
+          "kayitli_secmen": 3904585,
+          "oy_kullanan_secmen": 3492316,
+          "gecerli_oy": 3440290,
+          "gecersiz_oy": 52026,
+          "il_sayisi": 1,
+          "katilim_orani": 89.44
+        },
+        "TR61": {
+          "toplam_sandik": 6752,
+          "kayitli_secmen": 2190132,
+          "oy_kullanan_secmen": 1924756,
+          "gecerli_oy": 1878629,
+          "gecersiz_oy": 46127,
+          "il_sayisi": 3,
+          "katilim_orani": 87.88
+        },
+        "TR90": {
+          "toplam_sandik": 7588,
+          "kayitli_secmen": 1959764,
+          "oy_kullanan_secmen": 1701783,
+          "gecerli_oy": 1659188,
+          "gecersiz_oy": 42595,
+          "il_sayisi": 6,
+          "katilim_orani": 86.84
+        },
+        "TR32": {
+          "toplam_sandik": 7135,
+          "kayitli_secmen": 2288782,
+          "oy_kullanan_secmen": 2051855,
+          "gecerli_oy": 2002162,
+          "gecersiz_oy": 49693,
+          "il_sayisi": 3,
+          "katilim_orani": 89.65
+        },
+        "TR22": {
+          "toplam_sandik": 4718,
+          "kayitli_secmen": 1351901,
+          "oy_kullanan_secmen": 1229259,
+          "gecerli_oy": 1201445,
+          "gecersiz_oy": 27814,
+          "il_sayisi": 2,
+          "katilim_orani": 90.93
+        },
+        "TR81": {
+          "toplam_sandik": 2775,
+          "kayitli_secmen": 769251,
+          "oy_kullanan_secmen": 675878,
+          "gecerli_oy": 650804,
+          "gecersiz_oy": 25074,
+          "il_sayisi": 3,
+          "katilim_orani": 87.86
+        },
+        "TRC3": {
+          "toplam_sandik": 4226,
+          "kayitli_secmen": 1260728,
+          "oy_kullanan_secmen": 1073850,
+          "gecerli_oy": 1042346,
+          "gecersiz_oy": 31504,
+          "il_sayisi": 4,
+          "katilim_orani": 85.18
+        },
+        "TRA1": {
+          "toplam_sandik": 3415,
+          "kayitli_secmen": 711853,
+          "oy_kullanan_secmen": 625833,
+          "gecerli_oy": 614489,
+          "gecersiz_oy": 11344,
+          "il_sayisi": 3,
+          "katilim_orani": 87.92
+        },
+        "TR41": {
+          "toplam_sandik": 9011,
+          "kayitli_secmen": 2947576,
+          "oy_kullanan_secmen": 2645423,
+          "gecerli_oy": 2594676,
+          "gecersiz_oy": 50747,
+          "il_sayisi": 3,
+          "katilim_orani": 89.75
+        },
+        "TRB1": {
+          "toplam_sandik": 5406,
+          "kayitli_secmen": 1440187,
+          "oy_kullanan_secmen": 1228410,
+          "gecerli_oy": 1197158,
+          "gecersiz_oy": 31252,
+          "il_sayisi": 5,
+          "katilim_orani": 85.3
+        },
+        "TRB2": {
+          "toplam_sandik": 3340,
+          "kayitli_secmen": 1004635,
+          "oy_kullanan_secmen": 835633,
+          "gecerli_oy": 806943,
+          "gecersiz_oy": 28690,
+          "il_sayisi": 3,
+          "katilim_orani": 83.18
+        },
+        "TR42": {
+          "toplam_sandik": 8523,
+          "kayitli_secmen": 2707915,
+          "oy_kullanan_secmen": 2435413,
+          "gecerli_oy": 2389214,
+          "gecersiz_oy": 46199,
+          "il_sayisi": 5,
+          "katilim_orani": 89.94
+        },
+        "TR82": {
+          "toplam_sandik": 3075,
+          "kayitli_secmen": 579431,
+          "oy_kullanan_secmen": 507407,
+          "gecerli_oy": 492737,
+          "gecersiz_oy": 14670,
+          "il_sayisi": 3,
+          "katilim_orani": 87.57
+        },
+        "TRC2": {
+          "toplam_sandik": 6963,
+          "kayitli_secmen": 2084204,
+          "oy_kullanan_secmen": 1720650,
+          "gecerli_oy": 1670103,
+          "gecersiz_oy": 50547,
+          "il_sayisi": 2,
+          "katilim_orani": 82.56
+        },
+        "TR21": {
+          "toplam_sandik": 4051,
+          "kayitli_secmen": 1319877,
+          "oy_kullanan_secmen": 1178895,
+          "gecerli_oy": 1153917,
+          "gecersiz_oy": 24978,
+          "il_sayisi": 3,
+          "katilim_orani": 89.32
+        },
+        "TR63": {
+          "toplam_sandik": 3124,
+          "kayitli_secmen": 1041076,
+          "oy_kullanan_secmen": 925282,
+          "gecerli_oy": 911280,
+          "gecersiz_oy": 14002,
+          "il_sayisi": 1,
+          "katilim_orani": 88.88
+        },
+        "TR10": {
+          "toplam_sandik": 28825,
+          "kayitli_secmen": 10559686,
+          "oy_kullanan_secmen": 9304207,
+          "gecerli_oy": 9155118,
+          "gecersiz_oy": 149089,
+          "il_sayisi": 1,
+          "katilim_orani": 88.11
+        },
+        "TR31": {
+          "toplam_sandik": 9360,
+          "kayitli_secmen": 3227032,
+          "oy_kullanan_secmen": 2880930,
+          "gecerli_oy": 2827997,
+          "gecersiz_oy": 52933,
+          "il_sayisi": 1,
+          "katilim_orani": 89.27
+        },
+        "TR52": {
+          "toplam_sandik": 5328,
+          "kayitli_secmen": 1676911,
+          "oy_kullanan_secmen": 1498689,
+          "gecerli_oy": 1465924,
+          "gecersiz_oy": 32765,
+          "il_sayisi": 2,
+          "katilim_orani": 89.37
+        },
+        "TR72": {
+          "toplam_sandik": 6565,
+          "kayitli_secmen": 1698965,
+          "oy_kullanan_secmen": 1525062,
+          "gecerli_oy": 1496939,
+          "gecersiz_oy": 28123,
+          "il_sayisi": 3,
+          "katilim_orani": 89.76
+        }
+      }
+    },
+    "2019_BBB": {
+      "name": "2019 BBB",
+      "turkiye": {
+        "toplam_sandik": 143008,
+        "kayitli_secmen": 44212704,
+        "oy_kullanan_secmen": 37363418,
+        "gecerli_oy": 35930098,
+        "gecersiz_oy": 1433320,
+        "katilim_orani": 84.51
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 17914,
+          "kayitli_secmen": 5592538,
+          "oy_kullanan_secmen": 4744150,
+          "gecerli_oy": 4580875,
+          "gecersiz_oy": 163275,
+          "il_sayisi": 4,
+          "katilim_orani": 84.83
+        },
+        "TR5": {
+          "toplam_sandik": 17224,
+          "kayitli_secmen": 5443562,
+          "oy_kullanan_secmen": 4647835,
+          "gecerli_oy": 4481685,
+          "gecersiz_oy": 166150,
+          "il_sayisi": 2,
+          "katilim_orani": 85.38
+        },
+        "TR3": {
+          "toplam_sandik": 21492,
+          "kayitli_secmen": 6604949,
+          "oy_kullanan_secmen": 5676385,
+          "gecerli_oy": 5464192,
+          "gecersiz_oy": 212193,
+          "il_sayisi": 5,
+          "katilim_orani": 85.94
+        },
+        "TR2": {
+          "toplam_sandik": 5742,
+          "kayitli_secmen": 1692014,
+          "oy_kullanan_secmen": 1457269,
+          "gecerli_oy": 1407210,
+          "gecersiz_oy": 50059,
+          "il_sayisi": 2,
+          "katilim_orani": 86.13
+        },
+        "TR4": {
+          "toplam_sandik": 15695,
+          "kayitli_secmen": 4894654,
+          "oy_kullanan_secmen": 4202153,
+          "gecerli_oy": 4049516,
+          "gecersiz_oy": 152637,
+          "il_sayisi": 4,
+          "katilim_orani": 85.85
+        },
+        "TRC": {
+          "toplam_sandik": 16035,
+          "kayitli_secmen": 4608107,
+          "oy_kullanan_secmen": 3732916,
+          "gecerli_oy": 3541408,
+          "gecersiz_oy": 191508,
+          "il_sayisi": 5,
+          "katilim_orani": 81.01
+        },
+        "TRA": {
+          "toplam_sandik": 2284,
+          "kayitli_secmen": 498253,
+          "oy_kullanan_secmen": 405591,
+          "gecerli_oy": 384917,
+          "gecersiz_oy": 20674,
+          "il_sayisi": 1,
+          "katilim_orani": 81.4
+        },
+        "TR1": {
+          "toplam_sandik": 31186,
+          "kayitli_secmen": 10560963,
+          "oy_kullanan_secmen": 8865072,
+          "gecerli_oy": 8549822,
+          "gecersiz_oy": 315250,
+          "il_sayisi": 1,
+          "katilim_orani": 83.94
+        },
+        "TR7": {
+          "toplam_sandik": 3191,
+          "kayitli_secmen": 956149,
+          "oy_kullanan_secmen": 820938,
+          "gecerli_oy": 789750,
+          "gecersiz_oy": 31188,
+          "il_sayisi": 1,
+          "katilim_orani": 85.86
+        },
+        "TRB": {
+          "toplam_sandik": 4370,
+          "kayitli_secmen": 1214586,
+          "oy_kullanan_secmen": 977382,
+          "gecerli_oy": 930197,
+          "gecersiz_oy": 47185,
+          "il_sayisi": 2,
+          "katilim_orani": 80.47
+        },
+        "TR9": {
+          "toplam_sandik": 4389,
+          "kayitli_secmen": 1175941,
+          "oy_kullanan_secmen": 995642,
+          "gecerli_oy": 950355,
+          "gecersiz_oy": 45287,
+          "il_sayisi": 2,
+          "katilim_orani": 84.67
+        },
+        "TR8": {
+          "toplam_sandik": 3486,
+          "kayitli_secmen": 970988,
+          "oy_kullanan_secmen": 838085,
+          "gecerli_oy": 800171,
+          "gecersiz_oy": 37914,
+          "il_sayisi": 1,
+          "katilim_orani": 86.31
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 9056,
+          "kayitli_secmen": 2816902,
+          "oy_kullanan_secmen": 2374030,
+          "gecerli_oy": 2281007,
+          "gecersiz_oy": 93023,
+          "il_sayisi": 2,
+          "katilim_orani": 84.28
+        },
+        "TR51": {
+          "toplam_sandik": 12180,
+          "kayitli_secmen": 3922163,
+          "oy_kullanan_secmen": 3362641,
+          "gecerli_oy": 3263648,
+          "gecersiz_oy": 98993,
+          "il_sayisi": 1,
+          "katilim_orani": 85.73
+        },
+        "TR61": {
+          "toplam_sandik": 5437,
+          "kayitli_secmen": 1707819,
+          "oy_kullanan_secmen": 1456390,
+          "gecerli_oy": 1411011,
+          "gecersiz_oy": 45379,
+          "il_sayisi": 1,
+          "katilim_orani": 85.28
+        },
+        "TR32": {
+          "toplam_sandik": 7657,
+          "kayitli_secmen": 2301199,
+          "oy_kullanan_secmen": 2002510,
+          "gecerli_oy": 1923874,
+          "gecersiz_oy": 78636,
+          "il_sayisi": 3,
+          "katilim_orani": 87.02
+        },
+        "TR22": {
+          "toplam_sandik": 3382,
+          "kayitli_secmen": 942088,
+          "oy_kullanan_secmen": 817225,
+          "gecerli_oy": 785432,
+          "gecersiz_oy": 31793,
+          "il_sayisi": 1,
+          "katilim_orani": 86.75
+        },
+        "TR41": {
+          "toplam_sandik": 9068,
+          "kayitli_secmen": 2828052,
+          "oy_kullanan_secmen": 2429813,
+          "gecerli_oy": 2356662,
+          "gecersiz_oy": 73151,
+          "il_sayisi": 2,
+          "katilim_orani": 85.92
+        },
+        "TRC2": {
+          "toplam_sandik": 7621,
+          "kayitli_secmen": 2141765,
+          "oy_kullanan_secmen": 1718840,
+          "gecerli_oy": 1628409,
+          "gecersiz_oy": 90431,
+          "il_sayisi": 2,
+          "katilim_orani": 80.25
+        },
+        "TRA1": {
+          "toplam_sandik": 2284,
+          "kayitli_secmen": 498253,
+          "oy_kullanan_secmen": 405591,
+          "gecerli_oy": 384917,
+          "gecersiz_oy": 20674,
+          "il_sayisi": 1,
+          "katilim_orani": 81.4
+        },
+        "TRC1": {
+          "toplam_sandik": 6577,
+          "kayitli_secmen": 1982058,
+          "oy_kullanan_secmen": 1623369,
+          "gecerli_oy": 1541665,
+          "gecersiz_oy": 81704,
+          "il_sayisi": 2,
+          "katilim_orani": 81.9
+        },
+        "TR63": {
+          "toplam_sandik": 3421,
+          "kayitli_secmen": 1067817,
+          "oy_kullanan_secmen": 913730,
+          "gecerli_oy": 888857,
+          "gecersiz_oy": 24873,
+          "il_sayisi": 1,
+          "katilim_orani": 85.57
+        },
+        "TR10": {
+          "toplam_sandik": 31186,
+          "kayitli_secmen": 10560963,
+          "oy_kullanan_secmen": 8865072,
+          "gecerli_oy": 8549822,
+          "gecersiz_oy": 315250,
+          "il_sayisi": 1,
+          "katilim_orani": 83.94
+        },
+        "TR31": {
+          "toplam_sandik": 10161,
+          "kayitli_secmen": 3250780,
+          "oy_kullanan_secmen": 2740742,
+          "gecerli_oy": 2667297,
+          "gecersiz_oy": 73445,
+          "il_sayisi": 1,
+          "katilim_orani": 84.31
+        },
+        "TR72": {
+          "toplam_sandik": 3191,
+          "kayitli_secmen": 956149,
+          "oy_kullanan_secmen": 820938,
+          "gecerli_oy": 789750,
+          "gecersiz_oy": 31188,
+          "il_sayisi": 1,
+          "katilim_orani": 85.86
+        },
+        "TR42": {
+          "toplam_sandik": 6627,
+          "kayitli_secmen": 2066602,
+          "oy_kullanan_secmen": 1772340,
+          "gecerli_oy": 1692854,
+          "gecersiz_oy": 79486,
+          "il_sayisi": 2,
+          "katilim_orani": 85.76
+        },
+        "TR52": {
+          "toplam_sandik": 5044,
+          "kayitli_secmen": 1521399,
+          "oy_kullanan_secmen": 1285194,
+          "gecerli_oy": 1218037,
+          "gecersiz_oy": 67157,
+          "il_sayisi": 1,
+          "katilim_orani": 84.47
+        },
+        "TRB1": {
+          "toplam_sandik": 2089,
+          "kayitli_secmen": 561708,
+          "oy_kullanan_secmen": 464819,
+          "gecerli_oy": 446292,
+          "gecersiz_oy": 18527,
+          "il_sayisi": 1,
+          "katilim_orani": 82.75
+        },
+        "TR33": {
+          "toplam_sandik": 3674,
+          "kayitli_secmen": 1052970,
+          "oy_kullanan_secmen": 933133,
+          "gecerli_oy": 873021,
+          "gecersiz_oy": 60112,
+          "il_sayisi": 1,
+          "katilim_orani": 88.62
+        },
+        "TRC3": {
+          "toplam_sandik": 1837,
+          "kayitli_secmen": 484284,
+          "oy_kullanan_secmen": 390707,
+          "gecerli_oy": 371334,
+          "gecersiz_oy": 19373,
+          "il_sayisi": 1,
+          "katilim_orani": 80.68
+        },
+        "TR90": {
+          "toplam_sandik": 4389,
+          "kayitli_secmen": 1175941,
+          "oy_kullanan_secmen": 995642,
+          "gecerli_oy": 950355,
+          "gecersiz_oy": 45287,
+          "il_sayisi": 2,
+          "katilim_orani": 84.67
+        },
+        "TR83": {
+          "toplam_sandik": 3486,
+          "kayitli_secmen": 970988,
+          "oy_kullanan_secmen": 838085,
+          "gecerli_oy": 800171,
+          "gecersiz_oy": 37914,
+          "il_sayisi": 1,
+          "katilim_orani": 86.31
+        },
+        "TR21": {
+          "toplam_sandik": 2360,
+          "kayitli_secmen": 749926,
+          "oy_kullanan_secmen": 640044,
+          "gecerli_oy": 621778,
+          "gecersiz_oy": 18266,
+          "il_sayisi": 1,
+          "katilim_orani": 85.35
+        },
+        "TRB2": {
+          "toplam_sandik": 2281,
+          "kayitli_secmen": 652878,
+          "oy_kullanan_secmen": 512563,
+          "gecerli_oy": 483905,
+          "gecersiz_oy": 28658,
+          "il_sayisi": 1,
+          "katilim_orani": 78.51
+        }
+      }
+    },
+    "2019_BB": {
+      "name": "2019 BB",
+      "turkiye": {
+        "toplam_sandik": 172445,
+        "kayitli_secmen": 53203842,
+        "oy_kullanan_secmen": 44891911,
+        "gecerli_oy": 43193915,
+        "gecersiz_oy": 1697996,
+        "katilim_orani": 84.38,
+        "_kaynak": "il toplamından hesaplandı"
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 20083,
+          "kayitli_secmen": 6260425,
+          "oy_kullanan_secmen": 5301602,
+          "gecerli_oy": 5113274,
+          "gecersiz_oy": 188328,
+          "il_sayisi": 7,
+          "katilim_orani": 84.68
+        },
+        "TRC": {
+          "toplam_sandik": 19238,
+          "kayitli_secmen": 5613810,
+          "oy_kullanan_secmen": 4552107,
+          "gecerli_oy": 4311077,
+          "gecersiz_oy": 241030,
+          "il_sayisi": 10,
+          "katilim_orani": 81.09
+        },
+        "TR3": {
+          "toplam_sandik": 24478,
+          "kayitli_secmen": 7499846,
+          "oy_kullanan_secmen": 6458299,
+          "gecerli_oy": 6221496,
+          "gecersiz_oy": 236803,
+          "il_sayisi": 8,
+          "katilim_orani": 86.11
+        },
+        "TRA": {
+          "toplam_sandik": 4014,
+          "kayitli_secmen": 1019139,
+          "oy_kullanan_secmen": 824413,
+          "gecerli_oy": 789055,
+          "gecersiz_oy": 35358,
+          "il_sayisi": 7,
+          "katilim_orani": 80.89
+        },
+        "TR7": {
+          "toplam_sandik": 7831,
+          "kayitli_secmen": 2368320,
+          "oy_kullanan_secmen": 2024923,
+          "gecerli_oy": 1950917,
+          "gecersiz_oy": 74006,
+          "il_sayisi": 8,
+          "katilim_orani": 85.5
+        },
+        "TR8": {
+          "toplam_sandik": 8892,
+          "kayitli_secmen": 2604847,
+          "oy_kullanan_secmen": 2235264,
+          "gecerli_oy": 2141826,
+          "gecersiz_oy": 93438,
+          "il_sayisi": 10,
+          "katilim_orani": 85.81
+        },
+        "TR5": {
+          "toplam_sandik": 17694,
+          "kayitli_secmen": 5581094,
+          "oy_kullanan_secmen": 4761656,
+          "gecerli_oy": 4592948,
+          "gecersiz_oy": 168708,
+          "il_sayisi": 3,
+          "katilim_orani": 85.32
+        },
+        "TR9": {
+          "toplam_sandik": 6172,
+          "kayitli_secmen": 1688152,
+          "oy_kullanan_secmen": 1416218,
+          "gecerli_oy": 1350795,
+          "gecersiz_oy": 65423,
+          "il_sayisi": 6,
+          "katilim_orani": 83.89
+        },
+        "TR2": {
+          "toplam_sandik": 8037,
+          "kayitli_secmen": 2423108,
+          "oy_kullanan_secmen": 2080443,
+          "gecerli_oy": 2013751,
+          "gecersiz_oy": 66692,
+          "il_sayisi": 5,
+          "katilim_orani": 85.86
+        },
+        "TR4": {
+          "toplam_sandik": 17640,
+          "kayitli_secmen": 5509491,
+          "oy_kullanan_secmen": 4724269,
+          "gecerli_oy": 4564300,
+          "gecersiz_oy": 159969,
+          "il_sayisi": 8,
+          "katilim_orani": 85.75
+        },
+        "TRB": {
+          "toplam_sandik": 7180,
+          "kayitli_secmen": 2074647,
+          "oy_kullanan_secmen": 1662012,
+          "gecerli_oy": 1574982,
+          "gecersiz_oy": 87030,
+          "il_sayisi": 8,
+          "katilim_orani": 80.11
+        },
+        "TR1": {
+          "toplam_sandik": 31186,
+          "kayitli_secmen": 10560963,
+          "oy_kullanan_secmen": 8850705,
+          "gecerli_oy": 8569494,
+          "gecersiz_oy": 281211,
+          "il_sayisi": 1,
+          "katilim_orani": 83.81
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 9955,
+          "kayitli_secmen": 3105667,
+          "oy_kullanan_secmen": 2608835,
+          "gecerli_oy": 2509623,
+          "gecersiz_oy": 99212,
+          "il_sayisi": 3,
+          "katilim_orani": 84.0
+        },
+        "TRC1": {
+          "toplam_sandik": 7737,
+          "kayitli_secmen": 2337956,
+          "oy_kullanan_secmen": 1918100,
+          "gecerli_oy": 1824338,
+          "gecersiz_oy": 93762,
+          "il_sayisi": 4,
+          "katilim_orani": 82.04
+        },
+        "TR33": {
+          "toplam_sandik": 6660,
+          "kayitli_secmen": 1947867,
+          "oy_kullanan_secmen": 1722721,
+          "gecerli_oy": 1649782,
+          "gecersiz_oy": 72939,
+          "il_sayisi": 4,
+          "katilim_orani": 88.44
+        },
+        "TRA2": {
+          "toplam_sandik": 1191,
+          "kayitli_secmen": 369514,
+          "oy_kullanan_secmen": 291115,
+          "gecerli_oy": 277499,
+          "gecersiz_oy": 13616,
+          "il_sayisi": 4,
+          "katilim_orani": 78.78
+        },
+        "TR71": {
+          "toplam_sandik": 2821,
+          "kayitli_secmen": 870120,
+          "oy_kullanan_secmen": 745135,
+          "gecerli_oy": 719787,
+          "gecersiz_oy": 25348,
+          "il_sayisi": 5,
+          "katilim_orani": 85.64
+        },
+        "TR83": {
+          "toplam_sandik": 6027,
+          "kayitli_secmen": 1742924,
+          "oy_kullanan_secmen": 1505492,
+          "gecerli_oy": 1440048,
+          "gecersiz_oy": 65444,
+          "il_sayisi": 4,
+          "katilim_orani": 86.38
+        },
+        "TR51": {
+          "toplam_sandik": 12180,
+          "kayitli_secmen": 3922163,
+          "oy_kullanan_secmen": 3358317,
+          "gecerli_oy": 3249685,
+          "gecersiz_oy": 108632,
+          "il_sayisi": 1,
+          "katilim_orani": 85.62
+        },
+        "TR61": {
+          "toplam_sandik": 6707,
+          "kayitli_secmen": 2086941,
+          "oy_kullanan_secmen": 1780691,
+          "gecerli_oy": 1720108,
+          "gecersiz_oy": 60583,
+          "il_sayisi": 3,
+          "katilim_orani": 85.33
+        },
+        "TR90": {
+          "toplam_sandik": 6172,
+          "kayitli_secmen": 1688152,
+          "oy_kullanan_secmen": 1416218,
+          "gecerli_oy": 1350795,
+          "gecersiz_oy": 65423,
+          "il_sayisi": 6,
+          "katilim_orani": 83.89
+        },
+        "TR32": {
+          "toplam_sandik": 7657,
+          "kayitli_secmen": 2301199,
+          "oy_kullanan_secmen": 1999933,
+          "gecerli_oy": 1914690,
+          "gecersiz_oy": 85243,
+          "il_sayisi": 3,
+          "katilim_orani": 86.91
+        },
+        "TR22": {
+          "toplam_sandik": 4264,
+          "kayitli_secmen": 1222465,
+          "oy_kullanan_secmen": 1057096,
+          "gecerli_oy": 1019429,
+          "gecersiz_oy": 37667,
+          "il_sayisi": 2,
+          "katilim_orani": 86.47
+        },
+        "TR81": {
+          "toplam_sandik": 1671,
+          "kayitli_secmen": 513004,
+          "oy_kullanan_secmen": 432687,
+          "gecerli_oy": 416500,
+          "gecersiz_oy": 16187,
+          "il_sayisi": 3,
+          "katilim_orani": 84.34
+        },
+        "TRC3": {
+          "toplam_sandik": 3880,
+          "kayitli_secmen": 1134089,
+          "oy_kullanan_secmen": 921907,
+          "gecerli_oy": 872896,
+          "gecersiz_oy": 49011,
+          "il_sayisi": 4,
+          "katilim_orani": 81.29
+        },
+        "TRA1": {
+          "toplam_sandik": 2823,
+          "kayitli_secmen": 649625,
+          "oy_kullanan_secmen": 533298,
+          "gecerli_oy": 511556,
+          "gecersiz_oy": 21742,
+          "il_sayisi": 3,
+          "katilim_orani": 82.09
+        },
+        "TR41": {
+          "toplam_sandik": 9475,
+          "kayitli_secmen": 2954047,
+          "oy_kullanan_secmen": 2538890,
+          "gecerli_oy": 2459821,
+          "gecersiz_oy": 79069,
+          "il_sayisi": 3,
+          "katilim_orani": 85.95
+        },
+        "TRB1": {
+          "toplam_sandik": 4088,
+          "kayitli_secmen": 1172463,
+          "oy_kullanan_secmen": 950123,
+          "gecerli_oy": 906326,
+          "gecersiz_oy": 43797,
+          "il_sayisi": 5,
+          "katilim_orani": 81.04
+        },
+        "TRB2": {
+          "toplam_sandik": 3092,
+          "kayitli_secmen": 902184,
+          "oy_kullanan_secmen": 711889,
+          "gecerli_oy": 668656,
+          "gecersiz_oy": 43233,
+          "il_sayisi": 3,
+          "katilim_orani": 78.91
+        },
+        "TR42": {
+          "toplam_sandik": 8165,
+          "kayitli_secmen": 2555444,
+          "oy_kullanan_secmen": 2185379,
+          "gecerli_oy": 2104479,
+          "gecersiz_oy": 80900,
+          "il_sayisi": 5,
+          "katilim_orani": 85.52
+        },
+        "TR82": {
+          "toplam_sandik": 1194,
+          "kayitli_secmen": 348919,
+          "oy_kullanan_secmen": 297085,
+          "gecerli_oy": 285278,
+          "gecersiz_oy": 11807,
+          "il_sayisi": 3,
+          "katilim_orani": 85.14
+        },
+        "TRC2": {
+          "toplam_sandik": 7621,
+          "kayitli_secmen": 2141765,
+          "oy_kullanan_secmen": 1712100,
+          "gecerli_oy": 1613843,
+          "gecersiz_oy": 98257,
+          "il_sayisi": 2,
+          "katilim_orani": 79.94
+        },
+        "TR21": {
+          "toplam_sandik": 3773,
+          "kayitli_secmen": 1200643,
+          "oy_kullanan_secmen": 1023347,
+          "gecerli_oy": 994322,
+          "gecersiz_oy": 29025,
+          "il_sayisi": 3,
+          "katilim_orani": 85.23
+        },
+        "TR63": {
+          "toplam_sandik": 3421,
+          "kayitli_secmen": 1067817,
+          "oy_kullanan_secmen": 912076,
+          "gecerli_oy": 883543,
+          "gecersiz_oy": 28533,
+          "il_sayisi": 1,
+          "katilim_orani": 85.42
+        },
+        "TR10": {
+          "toplam_sandik": 31186,
+          "kayitli_secmen": 10560963,
+          "oy_kullanan_secmen": 8850705,
+          "gecerli_oy": 8569494,
+          "gecersiz_oy": 281211,
+          "il_sayisi": 1,
+          "katilim_orani": 83.81
+        },
+        "TR31": {
+          "toplam_sandik": 10161,
+          "kayitli_secmen": 3250780,
+          "oy_kullanan_secmen": 2735645,
+          "gecerli_oy": 2657024,
+          "gecersiz_oy": 78621,
+          "il_sayisi": 1,
+          "katilim_orani": 84.15
+        },
+        "TR52": {
+          "toplam_sandik": 5514,
+          "kayitli_secmen": 1658931,
+          "oy_kullanan_secmen": 1403339,
+          "gecerli_oy": 1343263,
+          "gecersiz_oy": 60076,
+          "il_sayisi": 2,
+          "katilim_orani": 84.59
+        },
+        "TR72": {
+          "toplam_sandik": 5010,
+          "kayitli_secmen": 1498200,
+          "oy_kullanan_secmen": 1279788,
+          "gecerli_oy": 1231130,
+          "gecersiz_oy": 48658,
+          "il_sayisi": 3,
+          "katilim_orani": 85.42
+        }
+      }
+    },
+    "2019_IGM": {
+      "name": "2019 IGM",
+      "turkiye": {
+        "toplam_sandik": 51670,
+        "kayitli_secmen": 12837077,
+        "oy_kullanan_secmen": 10975294,
+        "gecerli_oy": 10505314,
+        "gecersiz_oy": 469980,
+        "katilim_orani": 85.5,
+        "_kaynak": "il toplamından hesaplandı"
+      },
+      "nuts1": {
+        "TRC": {
+          "toplam_sandik": 4945,
+          "kayitli_secmen": 1318931,
+          "oy_kullanan_secmen": 1091368,
+          "gecerli_oy": 1036573,
+          "gecersiz_oy": 54795,
+          "il_sayisi": 5,
+          "katilim_orani": 82.75
+        },
+        "TR3": {
+          "toplam_sandik": 4591,
+          "kayitli_secmen": 1208013,
+          "oy_kullanan_secmen": 1079568,
+          "gecerli_oy": 1036759,
+          "gecersiz_oy": 42809,
+          "il_sayisi": 3,
+          "katilim_orani": 89.37
+        },
+        "TRA": {
+          "toplam_sandik": 4113,
+          "kayitli_secmen": 900356,
+          "oy_kullanan_secmen": 726977,
+          "gecerli_oy": 694691,
+          "gecersiz_oy": 32286,
+          "il_sayisi": 6,
+          "katilim_orani": 80.74
+        },
+        "TR7": {
+          "toplam_sandik": 7782,
+          "kayitli_secmen": 1870314,
+          "oy_kullanan_secmen": 1608755,
+          "gecerli_oy": 1546279,
+          "gecersiz_oy": 62476,
+          "il_sayisi": 7,
+          "katilim_orani": 86.02
+        },
+        "TR8": {
+          "toplam_sandik": 10732,
+          "kayitli_secmen": 2482711,
+          "oy_kullanan_secmen": 2173980,
+          "gecerli_oy": 2079401,
+          "gecersiz_oy": 94579,
+          "il_sayisi": 9,
+          "katilim_orani": 87.56
+        },
+        "TR9": {
+          "toplam_sandik": 3719,
+          "kayitli_secmen": 875798,
+          "oy_kullanan_secmen": 737603,
+          "gecerli_oy": 707204,
+          "gecersiz_oy": 30399,
+          "il_sayisi": 4,
+          "katilim_orani": 84.22
+        },
+        "TR4": {
+          "toplam_sandik": 3245,
+          "kayitli_secmen": 837577,
+          "oy_kullanan_secmen": 733332,
+          "gecerli_oy": 708456,
+          "gecersiz_oy": 24876,
+          "il_sayisi": 4,
+          "katilim_orani": 87.55
+        },
+        "TRB": {
+          "toplam_sandik": 5161,
+          "kayitli_secmen": 1293115,
+          "oy_kullanan_secmen": 1038488,
+          "gecerli_oy": 976734,
+          "gecersiz_oy": 61754,
+          "il_sayisi": 6,
+          "katilim_orani": 80.31
+        },
+        "TR6": {
+          "toplam_sandik": 3100,
+          "kayitli_secmen": 883979,
+          "oy_kullanan_secmen": 763621,
+          "gecerli_oy": 729242,
+          "gecersiz_oy": 34379,
+          "il_sayisi": 3,
+          "katilim_orani": 86.38
+        },
+        "TR2": {
+          "toplam_sandik": 3596,
+          "kayitli_secmen": 989521,
+          "oy_kullanan_secmen": 865554,
+          "gecerli_oy": 839854,
+          "gecersiz_oy": 25700,
+          "il_sayisi": 3,
+          "katilim_orani": 87.47
+        },
+        "TR5": {
+          "toplam_sandik": 686,
+          "kayitli_secmen": 176762,
+          "oy_kullanan_secmen": 156048,
+          "gecerli_oy": 150121,
+          "gecersiz_oy": 5927,
+          "il_sayisi": 1,
+          "katilim_orani": 88.28
+        }
+      },
+      "nuts2": {
+        "TRC1": {
+          "toplam_sandik": 1932,
+          "kayitli_secmen": 492899,
+          "oy_kullanan_secmen": 415284,
+          "gecerli_oy": 397319,
+          "gecersiz_oy": 17965,
+          "il_sayisi": 2,
+          "katilim_orani": 84.25
+        },
+        "TR33": {
+          "toplam_sandik": 4591,
+          "kayitli_secmen": 1208013,
+          "oy_kullanan_secmen": 1079568,
+          "gecerli_oy": 1036759,
+          "gecersiz_oy": 42809,
+          "il_sayisi": 3,
+          "katilim_orani": 89.37
+        },
+        "TRA2": {
+          "toplam_sandik": 2841,
+          "kayitli_secmen": 679604,
+          "oy_kullanan_secmen": 539973,
+          "gecerli_oy": 513738,
+          "gecersiz_oy": 26235,
+          "il_sayisi": 4,
+          "katilim_orani": 79.45
+        },
+        "TR71": {
+          "toplam_sandik": 4048,
+          "kayitli_secmen": 1107115,
+          "oy_kullanan_secmen": 954893,
+          "gecerli_oy": 917707,
+          "gecersiz_oy": 37186,
+          "il_sayisi": 5,
+          "katilim_orani": 86.25
+        },
+        "TR83": {
+          "toplam_sandik": 4573,
+          "kayitli_secmen": 1087532,
+          "oy_kullanan_secmen": 960523,
+          "gecerli_oy": 923539,
+          "gecersiz_oy": 36984,
+          "il_sayisi": 3,
+          "katilim_orani": 88.32
+        },
+        "TR90": {
+          "toplam_sandik": 3719,
+          "kayitli_secmen": 875798,
+          "oy_kullanan_secmen": 737603,
+          "gecerli_oy": 707204,
+          "gecersiz_oy": 30399,
+          "il_sayisi": 4,
+          "katilim_orani": 84.22
+        },
+        "TR81": {
+          "toplam_sandik": 2961,
+          "kayitli_secmen": 781293,
+          "oy_kullanan_secmen": 678612,
+          "gecerli_oy": 645186,
+          "gecersiz_oy": 33426,
+          "il_sayisi": 3,
+          "katilim_orani": 86.86
+        },
+        "TRC3": {
+          "toplam_sandik": 3013,
+          "kayitli_secmen": 826032,
+          "oy_kullanan_secmen": 676084,
+          "gecerli_oy": 639254,
+          "gecersiz_oy": 36830,
+          "il_sayisi": 3,
+          "katilim_orani": 81.85
+        },
+        "TRA1": {
+          "toplam_sandik": 1272,
+          "kayitli_secmen": 220752,
+          "oy_kullanan_secmen": 187004,
+          "gecerli_oy": 180953,
+          "gecersiz_oy": 6051,
+          "il_sayisi": 2,
+          "katilim_orani": 84.71
+        },
+        "TR41": {
+          "toplam_sandik": 666,
+          "kayitli_secmen": 156632,
+          "oy_kullanan_secmen": 140094,
+          "gecerli_oy": 135199,
+          "gecersiz_oy": 4895,
+          "il_sayisi": 1,
+          "katilim_orani": 89.44
+        },
+        "TRB1": {
+          "toplam_sandik": 3679,
+          "kayitli_secmen": 908877,
+          "oy_kullanan_secmen": 730042,
+          "gecerli_oy": 685549,
+          "gecersiz_oy": 44493,
+          "il_sayisi": 4,
+          "katilim_orani": 80.32
+        },
+        "TRB2": {
+          "toplam_sandik": 1482,
+          "kayitli_secmen": 384238,
+          "oy_kullanan_secmen": 308446,
+          "gecerli_oy": 291185,
+          "gecersiz_oy": 17261,
+          "il_sayisi": 2,
+          "katilim_orani": 80.27
+        },
+        "TR42": {
+          "toplam_sandik": 2579,
+          "kayitli_secmen": 680945,
+          "oy_kullanan_secmen": 593238,
+          "gecerli_oy": 573257,
+          "gecersiz_oy": 19981,
+          "il_sayisi": 3,
+          "katilim_orani": 87.12
+        },
+        "TR61": {
+          "toplam_sandik": 1903,
+          "kayitli_secmen": 521220,
+          "oy_kullanan_secmen": 454868,
+          "gecerli_oy": 435666,
+          "gecersiz_oy": 19202,
+          "il_sayisi": 2,
+          "katilim_orani": 87.27
+        },
+        "TR22": {
+          "toplam_sandik": 1570,
+          "kayitli_secmen": 401270,
+          "oy_kullanan_secmen": 354545,
+          "gecerli_oy": 344715,
+          "gecersiz_oy": 9830,
+          "il_sayisi": 1,
+          "katilim_orani": 88.36
+        },
+        "TR82": {
+          "toplam_sandik": 3198,
+          "kayitli_secmen": 613886,
+          "oy_kullanan_secmen": 534845,
+          "gecerli_oy": 510676,
+          "gecersiz_oy": 24169,
+          "il_sayisi": 3,
+          "katilim_orani": 87.12
+        },
+        "TR21": {
+          "toplam_sandik": 2026,
+          "kayitli_secmen": 588251,
+          "oy_kullanan_secmen": 511009,
+          "gecerli_oy": 495139,
+          "gecersiz_oy": 15870,
+          "il_sayisi": 2,
+          "katilim_orani": 86.87
+        },
+        "TR52": {
+          "toplam_sandik": 686,
+          "kayitli_secmen": 176762,
+          "oy_kullanan_secmen": 156048,
+          "gecerli_oy": 150121,
+          "gecersiz_oy": 5927,
+          "il_sayisi": 1,
+          "katilim_orani": 88.28
+        },
+        "TR62": {
+          "toplam_sandik": 1197,
+          "kayitli_secmen": 362759,
+          "oy_kullanan_secmen": 308753,
+          "gecerli_oy": 293576,
+          "gecersiz_oy": 15177,
+          "il_sayisi": 1,
+          "katilim_orani": 85.11
+        },
+        "TR72": {
+          "toplam_sandik": 3734,
+          "kayitli_secmen": 763199,
+          "oy_kullanan_secmen": 653862,
+          "gecerli_oy": 628572,
+          "gecersiz_oy": 25290,
+          "il_sayisi": 2,
+          "katilim_orani": 85.67
+        }
+      }
+    },
+    "2019_BM": {
+      "name": "2019 BM",
+      "turkiye": {
+        "toplam_sandik": 172445,
+        "kayitli_secmen": 53203842,
+        "oy_kullanan_secmen": 44881860,
+        "gecerli_oy": 42998754,
+        "gecersiz_oy": 1883106,
+        "katilim_orani": 84.36,
+        "_kaynak": "il toplamından hesaplandı"
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 20083,
+          "kayitli_secmen": 6260425,
+          "oy_kullanan_secmen": 5300429,
+          "gecerli_oy": 5093280,
+          "gecersiz_oy": 207149,
+          "il_sayisi": 7,
+          "katilim_orani": 84.67
+        },
+        "TRC": {
+          "toplam_sandik": 19238,
+          "kayitli_secmen": 5613810,
+          "oy_kullanan_secmen": 4549761,
+          "gecerli_oy": 4285915,
+          "gecersiz_oy": 263846,
+          "il_sayisi": 10,
+          "katilim_orani": 81.05
+        },
+        "TR3": {
+          "toplam_sandik": 24478,
+          "kayitli_secmen": 7499846,
+          "oy_kullanan_secmen": 6458057,
+          "gecerli_oy": 6197312,
+          "gecersiz_oy": 260745,
+          "il_sayisi": 8,
+          "katilim_orani": 86.11
+        },
+        "TRA": {
+          "toplam_sandik": 4014,
+          "kayitli_secmen": 1019139,
+          "oy_kullanan_secmen": 824161,
+          "gecerli_oy": 781772,
+          "gecersiz_oy": 42389,
+          "il_sayisi": 7,
+          "katilim_orani": 80.87
+        },
+        "TR7": {
+          "toplam_sandik": 7831,
+          "kayitli_secmen": 2368320,
+          "oy_kullanan_secmen": 2024283,
+          "gecerli_oy": 1942061,
+          "gecersiz_oy": 82222,
+          "il_sayisi": 8,
+          "katilim_orani": 85.47
+        },
+        "TR8": {
+          "toplam_sandik": 8892,
+          "kayitli_secmen": 2604847,
+          "oy_kullanan_secmen": 2234803,
+          "gecerli_oy": 2126390,
+          "gecersiz_oy": 108413,
+          "il_sayisi": 10,
+          "katilim_orani": 85.79
+        },
+        "TR5": {
+          "toplam_sandik": 17694,
+          "kayitli_secmen": 5581094,
+          "oy_kullanan_secmen": 4760448,
+          "gecerli_oy": 4584147,
+          "gecersiz_oy": 176301,
+          "il_sayisi": 3,
+          "katilim_orani": 85.3
+        },
+        "TR9": {
+          "toplam_sandik": 6172,
+          "kayitli_secmen": 1688152,
+          "oy_kullanan_secmen": 1415848,
+          "gecerli_oy": 1340874,
+          "gecersiz_oy": 74974,
+          "il_sayisi": 6,
+          "katilim_orani": 83.87
+        },
+        "TR2": {
+          "toplam_sandik": 8037,
+          "kayitli_secmen": 2423108,
+          "oy_kullanan_secmen": 2080553,
+          "gecerli_oy": 2006477,
+          "gecersiz_oy": 74076,
+          "il_sayisi": 5,
+          "katilim_orani": 85.86
+        },
+        "TR4": {
+          "toplam_sandik": 17640,
+          "kayitli_secmen": 5509491,
+          "oy_kullanan_secmen": 4723751,
+          "gecerli_oy": 4551249,
+          "gecersiz_oy": 172502,
+          "il_sayisi": 8,
+          "katilim_orani": 85.74
+        },
+        "TRB": {
+          "toplam_sandik": 7180,
+          "kayitli_secmen": 2074647,
+          "oy_kullanan_secmen": 1660628,
+          "gecerli_oy": 1559835,
+          "gecersiz_oy": 100793,
+          "il_sayisi": 8,
+          "katilim_orani": 80.04
+        },
+        "TR1": {
+          "toplam_sandik": 31186,
+          "kayitli_secmen": 10560963,
+          "oy_kullanan_secmen": 8849138,
+          "gecerli_oy": 8529442,
+          "gecersiz_oy": 319696,
+          "il_sayisi": 1,
+          "katilim_orani": 83.79
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 9955,
+          "kayitli_secmen": 3105667,
+          "oy_kullanan_secmen": 2608060,
+          "gecerli_oy": 2499781,
+          "gecersiz_oy": 108279,
+          "il_sayisi": 3,
+          "katilim_orani": 83.98
+        },
+        "TRC1": {
+          "toplam_sandik": 7737,
+          "kayitli_secmen": 2337956,
+          "oy_kullanan_secmen": 1917370,
+          "gecerli_oy": 1816665,
+          "gecersiz_oy": 100705,
+          "il_sayisi": 4,
+          "katilim_orani": 82.01
+        },
+        "TR33": {
+          "toplam_sandik": 6660,
+          "kayitli_secmen": 1947867,
+          "oy_kullanan_secmen": 1722581,
+          "gecerli_oy": 1641236,
+          "gecersiz_oy": 81345,
+          "il_sayisi": 4,
+          "katilim_orani": 88.43
+        },
+        "TRA2": {
+          "toplam_sandik": 1191,
+          "kayitli_secmen": 369514,
+          "oy_kullanan_secmen": 291006,
+          "gecerli_oy": 274213,
+          "gecersiz_oy": 16793,
+          "il_sayisi": 4,
+          "katilim_orani": 78.75
+        },
+        "TR71": {
+          "toplam_sandik": 2821,
+          "kayitli_secmen": 870120,
+          "oy_kullanan_secmen": 744795,
+          "gecerli_oy": 715929,
+          "gecersiz_oy": 28866,
+          "il_sayisi": 5,
+          "katilim_orani": 85.6
+        },
+        "TR83": {
+          "toplam_sandik": 6027,
+          "kayitli_secmen": 1742924,
+          "oy_kullanan_secmen": 1505113,
+          "gecerli_oy": 1429520,
+          "gecersiz_oy": 75593,
+          "il_sayisi": 4,
+          "katilim_orani": 86.36
+        },
+        "TR51": {
+          "toplam_sandik": 12180,
+          "kayitli_secmen": 3922163,
+          "oy_kullanan_secmen": 3357350,
+          "gecerli_oy": 3248804,
+          "gecersiz_oy": 108546,
+          "il_sayisi": 1,
+          "katilim_orani": 85.6
+        },
+        "TR61": {
+          "toplam_sandik": 6707,
+          "kayitli_secmen": 2086941,
+          "oy_kullanan_secmen": 1780448,
+          "gecerli_oy": 1712930,
+          "gecersiz_oy": 67518,
+          "il_sayisi": 3,
+          "katilim_orani": 85.31
+        },
+        "TR90": {
+          "toplam_sandik": 6172,
+          "kayitli_secmen": 1688152,
+          "oy_kullanan_secmen": 1415848,
+          "gecerli_oy": 1340874,
+          "gecersiz_oy": 74974,
+          "il_sayisi": 6,
+          "katilim_orani": 83.87
+        },
+        "TR32": {
+          "toplam_sandik": 7657,
+          "kayitli_secmen": 2301199,
+          "oy_kullanan_secmen": 1999907,
+          "gecerli_oy": 1906999,
+          "gecersiz_oy": 92908,
+          "il_sayisi": 3,
+          "katilim_orani": 86.91
+        },
+        "TR22": {
+          "toplam_sandik": 4264,
+          "kayitli_secmen": 1222465,
+          "oy_kullanan_secmen": 1057184,
+          "gecerli_oy": 1016239,
+          "gecersiz_oy": 40945,
+          "il_sayisi": 2,
+          "katilim_orani": 86.48
+        },
+        "TR81": {
+          "toplam_sandik": 1671,
+          "kayitli_secmen": 513004,
+          "oy_kullanan_secmen": 432628,
+          "gecerli_oy": 413563,
+          "gecersiz_oy": 19065,
+          "il_sayisi": 3,
+          "katilim_orani": 84.33
+        },
+        "TRC3": {
+          "toplam_sandik": 3880,
+          "kayitli_secmen": 1134089,
+          "oy_kullanan_secmen": 921396,
+          "gecerli_oy": 865716,
+          "gecersiz_oy": 55680,
+          "il_sayisi": 4,
+          "katilim_orani": 81.25
+        },
+        "TRA1": {
+          "toplam_sandik": 2823,
+          "kayitli_secmen": 649625,
+          "oy_kullanan_secmen": 533155,
+          "gecerli_oy": 507559,
+          "gecersiz_oy": 25596,
+          "il_sayisi": 3,
+          "katilim_orani": 82.07
+        },
+        "TR41": {
+          "toplam_sandik": 9475,
+          "kayitli_secmen": 2954047,
+          "oy_kullanan_secmen": 2538798,
+          "gecerli_oy": 2456645,
+          "gecersiz_oy": 82153,
+          "il_sayisi": 3,
+          "katilim_orani": 85.94
+        },
+        "TRB1": {
+          "toplam_sandik": 4088,
+          "kayitli_secmen": 1172463,
+          "oy_kullanan_secmen": 949213,
+          "gecerli_oy": 895729,
+          "gecersiz_oy": 53484,
+          "il_sayisi": 5,
+          "katilim_orani": 80.96
+        },
+        "TRB2": {
+          "toplam_sandik": 3092,
+          "kayitli_secmen": 902184,
+          "oy_kullanan_secmen": 711415,
+          "gecerli_oy": 664106,
+          "gecersiz_oy": 47309,
+          "il_sayisi": 3,
+          "katilim_orani": 78.85
+        },
+        "TR42": {
+          "toplam_sandik": 8165,
+          "kayitli_secmen": 2555444,
+          "oy_kullanan_secmen": 2184953,
+          "gecerli_oy": 2094604,
+          "gecersiz_oy": 90349,
+          "il_sayisi": 5,
+          "katilim_orani": 85.5
+        },
+        "TR82": {
+          "toplam_sandik": 1194,
+          "kayitli_secmen": 348919,
+          "oy_kullanan_secmen": 297062,
+          "gecerli_oy": 283307,
+          "gecersiz_oy": 13755,
+          "il_sayisi": 3,
+          "katilim_orani": 85.14
+        },
+        "TRC2": {
+          "toplam_sandik": 7621,
+          "kayitli_secmen": 2141765,
+          "oy_kullanan_secmen": 1710995,
+          "gecerli_oy": 1603534,
+          "gecersiz_oy": 107461,
+          "il_sayisi": 2,
+          "katilim_orani": 79.89
+        },
+        "TR21": {
+          "toplam_sandik": 3773,
+          "kayitli_secmen": 1200643,
+          "oy_kullanan_secmen": 1023369,
+          "gecerli_oy": 990238,
+          "gecersiz_oy": 33131,
+          "il_sayisi": 3,
+          "katilim_orani": 85.24
+        },
+        "TR63": {
+          "toplam_sandik": 3421,
+          "kayitli_secmen": 1067817,
+          "oy_kullanan_secmen": 911921,
+          "gecerli_oy": 880569,
+          "gecersiz_oy": 31352,
+          "il_sayisi": 1,
+          "katilim_orani": 85.4
+        },
+        "TR10": {
+          "toplam_sandik": 31186,
+          "kayitli_secmen": 10560963,
+          "oy_kullanan_secmen": 8849138,
+          "gecerli_oy": 8529442,
+          "gecersiz_oy": 319696,
+          "il_sayisi": 1,
+          "katilim_orani": 83.79
+        },
+        "TR31": {
+          "toplam_sandik": 10161,
+          "kayitli_secmen": 3250780,
+          "oy_kullanan_secmen": 2735569,
+          "gecerli_oy": 2649077,
+          "gecersiz_oy": 86492,
+          "il_sayisi": 1,
+          "katilim_orani": 84.15
+        },
+        "TR52": {
+          "toplam_sandik": 5514,
+          "kayitli_secmen": 1658931,
+          "oy_kullanan_secmen": 1403098,
+          "gecerli_oy": 1335343,
+          "gecersiz_oy": 67755,
+          "il_sayisi": 2,
+          "katilim_orani": 84.58
+        },
+        "TR72": {
+          "toplam_sandik": 5010,
+          "kayitli_secmen": 1498200,
+          "oy_kullanan_secmen": 1279488,
+          "gecerli_oy": 1226132,
+          "gecersiz_oy": 53356,
+          "il_sayisi": 3,
+          "katilim_orani": 85.4
+        }
+      }
+    },
+    "2023_CB1": {
+      "name": "2023 CB 1.tur",
+      "turkiye": {
+        "toplam_sandik": 192214,
+        "kayitli_secmen": 60721745,
+        "oy_kullanan_secmen": 53993683,
+        "gecerli_oy": 52972934,
+        "gecersiz_oy": 1020749,
+        "katilim_orani": 88.92
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 20639,
+          "kayitli_secmen": 6878686,
+          "oy_kullanan_secmen": 6056849,
+          "gecerli_oy": 5947384,
+          "gecersiz_oy": 109465,
+          "il_sayisi": 7,
+          "katilim_orani": 88.05
+        },
+        "TRC": {
+          "toplam_sandik": 21017,
+          "kayitli_secmen": 6440910,
+          "oy_kullanan_secmen": 5392111,
+          "gecerli_oy": 5257971,
+          "gecersiz_oy": 134140,
+          "il_sayisi": 10,
+          "katilim_orani": 83.72
+        },
+        "TR3": {
+          "toplam_sandik": 25515,
+          "kayitli_secmen": 8272936,
+          "oy_kullanan_secmen": 7508794,
+          "gecerli_oy": 7364735,
+          "gecersiz_oy": 144059,
+          "il_sayisi": 8,
+          "katilim_orani": 90.76
+        },
+        "TRA": {
+          "toplam_sandik": 6247,
+          "kayitli_secmen": 1430119,
+          "oy_kullanan_secmen": 1177414,
+          "gecerli_oy": 1148185,
+          "gecersiz_oy": 29229,
+          "il_sayisi": 7,
+          "katilim_orani": 82.33
+        },
+        "TR7": {
+          "toplam_sandik": 10754,
+          "kayitli_secmen": 2943422,
+          "oy_kullanan_secmen": 2629022,
+          "gecerli_oy": 2579968,
+          "gecersiz_oy": 49054,
+          "il_sayisi": 8,
+          "katilim_orani": 89.32
+        },
+        "TR8": {
+          "toplam_sandik": 13795,
+          "kayitli_secmen": 3523546,
+          "oy_kullanan_secmen": 3160863,
+          "gecerli_oy": 3082924,
+          "gecersiz_oy": 77939,
+          "il_sayisi": 10,
+          "katilim_orani": 89.71
+        },
+        "TR5": {
+          "toplam_sandik": 17941,
+          "kayitli_secmen": 6099875,
+          "oy_kullanan_secmen": 5532332,
+          "gecerli_oy": 5445253,
+          "gecersiz_oy": 87079,
+          "il_sayisi": 3,
+          "katilim_orani": 90.7
+        },
+        "TR9": {
+          "toplam_sandik": 7807,
+          "kayitli_secmen": 2045807,
+          "oy_kullanan_secmen": 1805925,
+          "gecerli_oy": 1763723,
+          "gecersiz_oy": 42202,
+          "il_sayisi": 6,
+          "katilim_orani": 88.27
+        },
+        "TR2": {
+          "toplam_sandik": 9350,
+          "kayitli_secmen": 2894532,
+          "oy_kullanan_secmen": 2635478,
+          "gecerli_oy": 2588841,
+          "gecersiz_oy": 46637,
+          "il_sayisi": 5,
+          "katilim_orani": 91.05
+        },
+        "TR4": {
+          "toplam_sandik": 19095,
+          "kayitli_secmen": 6256795,
+          "oy_kullanan_secmen": 5705672,
+          "gecerli_oy": 5607929,
+          "gecersiz_oy": 97743,
+          "il_sayisi": 8,
+          "katilim_orani": 91.19
+        },
+        "TRB": {
+          "toplam_sandik": 9205,
+          "kayitli_secmen": 2577034,
+          "oy_kullanan_secmen": 2097926,
+          "gecerli_oy": 2035306,
+          "gecersiz_oy": 62620,
+          "il_sayisi": 8,
+          "katilim_orani": 81.41
+        },
+        "TR1": {
+          "toplam_sandik": 30849,
+          "kayitli_secmen": 11358083,
+          "oy_kullanan_secmen": 10291297,
+          "gecerli_oy": 10150715,
+          "gecersiz_oy": 140582,
+          "il_sayisi": 1,
+          "katilim_orani": 90.61
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 10091,
+          "kayitli_secmen": 3378219,
+          "oy_kullanan_secmen": 2988372,
+          "gecerli_oy": 2933251,
+          "gecersiz_oy": 55121,
+          "il_sayisi": 3,
+          "katilim_orani": 88.46
+        },
+        "TRC1": {
+          "toplam_sandik": 8325,
+          "kayitli_secmen": 2609164,
+          "oy_kullanan_secmen": 2224186,
+          "gecerli_oy": 2179501,
+          "gecersiz_oy": 44685,
+          "il_sayisi": 4,
+          "katilim_orani": 85.25
+        },
+        "TR33": {
+          "toplam_sandik": 7998,
+          "kayitli_secmen": 2353257,
+          "oy_kullanan_secmen": 2153943,
+          "gecerli_oy": 2102579,
+          "gecersiz_oy": 51364,
+          "il_sayisi": 4,
+          "katilim_orani": 91.53
+        },
+        "TRA2": {
+          "toplam_sandik": 2743,
+          "kayitli_secmen": 693645,
+          "oy_kullanan_secmen": 533406,
+          "gecerli_oy": 516513,
+          "gecersiz_oy": 16893,
+          "il_sayisi": 4,
+          "katilim_orani": 76.9
+        },
+        "TR71": {
+          "toplam_sandik": 3947,
+          "kayitli_secmen": 1156687,
+          "oy_kullanan_secmen": 1023227,
+          "gecerli_oy": 1001627,
+          "gecersiz_oy": 21600,
+          "il_sayisi": 5,
+          "katilim_orani": 88.46
+        },
+        "TR83": {
+          "toplam_sandik": 7805,
+          "kayitli_secmen": 2118889,
+          "oy_kullanan_secmen": 1913697,
+          "gecerli_oy": 1872697,
+          "gecersiz_oy": 41000,
+          "il_sayisi": 4,
+          "katilim_orani": 90.32
+        },
+        "TR51": {
+          "toplam_sandik": 12275,
+          "kayitli_secmen": 4282718,
+          "oy_kullanan_secmen": 3909821,
+          "gecerli_oy": 3854407,
+          "gecersiz_oy": 55414,
+          "il_sayisi": 1,
+          "katilim_orani": 91.29
+        },
+        "TR61": {
+          "toplam_sandik": 7394,
+          "kayitli_secmen": 2437948,
+          "oy_kullanan_secmen": 2184485,
+          "gecerli_oy": 2143331,
+          "gecersiz_oy": 41154,
+          "il_sayisi": 3,
+          "katilim_orani": 89.6
+        },
+        "TR90": {
+          "toplam_sandik": 7807,
+          "kayitli_secmen": 2045807,
+          "oy_kullanan_secmen": 1805925,
+          "gecerli_oy": 1763723,
+          "gecersiz_oy": 42202,
+          "il_sayisi": 6,
+          "katilim_orani": 88.27
+        },
+        "TR32": {
+          "toplam_sandik": 7620,
+          "kayitli_secmen": 2477255,
+          "oy_kullanan_secmen": 2244792,
+          "gecerli_oy": 2198483,
+          "gecersiz_oy": 46309,
+          "il_sayisi": 3,
+          "katilim_orani": 90.62
+        },
+        "TR22": {
+          "toplam_sandik": 4914,
+          "kayitli_secmen": 1425583,
+          "oy_kullanan_secmen": 1303100,
+          "gecerli_oy": 1278495,
+          "gecersiz_oy": 24605,
+          "il_sayisi": 2,
+          "katilim_orani": 91.41
+        },
+        "TR81": {
+          "toplam_sandik": 2841,
+          "kayitli_secmen": 795608,
+          "oy_kullanan_secmen": 709744,
+          "gecerli_oy": 688063,
+          "gecersiz_oy": 21681,
+          "il_sayisi": 3,
+          "katilim_orani": 89.21
+        },
+        "TRC3": {
+          "toplam_sandik": 4918,
+          "kayitli_secmen": 1467354,
+          "oy_kullanan_secmen": 1231218,
+          "gecerli_oy": 1194356,
+          "gecersiz_oy": 36862,
+          "il_sayisi": 4,
+          "katilim_orani": 83.91
+        },
+        "TRA1": {
+          "toplam_sandik": 3504,
+          "kayitli_secmen": 736474,
+          "oy_kullanan_secmen": 644008,
+          "gecerli_oy": 631672,
+          "gecersiz_oy": 12336,
+          "il_sayisi": 3,
+          "katilim_orani": 87.44
+        },
+        "TR41": {
+          "toplam_sandik": 9737,
+          "kayitli_secmen": 3222409,
+          "oy_kullanan_secmen": 2932534,
+          "gecerli_oy": 2883624,
+          "gecersiz_oy": 48910,
+          "il_sayisi": 3,
+          "katilim_orani": 91.0
+        },
+        "TRB1": {
+          "toplam_sandik": 5447,
+          "kayitli_secmen": 1463530,
+          "oy_kullanan_secmen": 1204713,
+          "gecerli_oy": 1173242,
+          "gecersiz_oy": 31471,
+          "il_sayisi": 5,
+          "katilim_orani": 82.32
+        },
+        "TRB2": {
+          "toplam_sandik": 3758,
+          "kayitli_secmen": 1113504,
+          "oy_kullanan_secmen": 893213,
+          "gecerli_oy": 862064,
+          "gecersiz_oy": 31149,
+          "il_sayisi": 3,
+          "katilim_orani": 80.22
+        },
+        "TR42": {
+          "toplam_sandik": 9358,
+          "kayitli_secmen": 3034386,
+          "oy_kullanan_secmen": 2773138,
+          "gecerli_oy": 2724305,
+          "gecersiz_oy": 48833,
+          "il_sayisi": 5,
+          "katilim_orani": 91.39
+        },
+        "TR82": {
+          "toplam_sandik": 3149,
+          "kayitli_secmen": 609049,
+          "oy_kullanan_secmen": 537422,
+          "gecerli_oy": 522164,
+          "gecersiz_oy": 15258,
+          "il_sayisi": 3,
+          "katilim_orani": 88.24
+        },
+        "TRC2": {
+          "toplam_sandik": 7774,
+          "kayitli_secmen": 2364392,
+          "oy_kullanan_secmen": 1936707,
+          "gecerli_oy": 1884114,
+          "gecersiz_oy": 52593,
+          "il_sayisi": 2,
+          "katilim_orani": 81.91
+        },
+        "TR21": {
+          "toplam_sandik": 4436,
+          "kayitli_secmen": 1468949,
+          "oy_kullanan_secmen": 1332378,
+          "gecerli_oy": 1310346,
+          "gecersiz_oy": 22032,
+          "il_sayisi": 3,
+          "katilim_orani": 90.7
+        },
+        "TR63": {
+          "toplam_sandik": 3154,
+          "kayitli_secmen": 1062519,
+          "oy_kullanan_secmen": 883992,
+          "gecerli_oy": 870802,
+          "gecersiz_oy": 13190,
+          "il_sayisi": 1,
+          "katilim_orani": 83.2
+        },
+        "TR10": {
+          "toplam_sandik": 30849,
+          "kayitli_secmen": 11358083,
+          "oy_kullanan_secmen": 10291297,
+          "gecerli_oy": 10150715,
+          "gecersiz_oy": 140582,
+          "il_sayisi": 1,
+          "katilim_orani": 90.61
+        },
+        "TR31": {
+          "toplam_sandik": 9897,
+          "kayitli_secmen": 3442424,
+          "oy_kullanan_secmen": 3110059,
+          "gecerli_oy": 3063673,
+          "gecersiz_oy": 46386,
+          "il_sayisi": 1,
+          "katilim_orani": 90.35
+        },
+        "TR52": {
+          "toplam_sandik": 5666,
+          "kayitli_secmen": 1817157,
+          "oy_kullanan_secmen": 1622511,
+          "gecerli_oy": 1590846,
+          "gecersiz_oy": 31665,
+          "il_sayisi": 2,
+          "katilim_orani": 89.29
+        },
+        "TR72": {
+          "toplam_sandik": 6807,
+          "kayitli_secmen": 1786735,
+          "oy_kullanan_secmen": 1605795,
+          "gecerli_oy": 1578341,
+          "gecersiz_oy": 27454,
+          "il_sayisi": 3,
+          "katilim_orani": 89.87
+        }
+      }
+    },
+    "2023_CB2": {
+      "name": "2023 CB 2.tur",
+      "turkiye": {
+        "toplam_sandik": 192214,
+        "kayitli_secmen": 60823248,
+        "oy_kullanan_secmen": 52093374,
+        "gecerli_oy": 51418556,
+        "gecersiz_oy": 674818,
+        "katilim_orani": 85.65
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 20639,
+          "kayitli_secmen": 6891074,
+          "oy_kullanan_secmen": 5852141,
+          "gecerli_oy": 5779347,
+          "gecersiz_oy": 72794,
+          "il_sayisi": 7,
+          "katilim_orani": 84.92
+        },
+        "TRC": {
+          "toplam_sandik": 21017,
+          "kayitli_secmen": 6456461,
+          "oy_kullanan_secmen": 5146168,
+          "gecerli_oy": 5065077,
+          "gecersiz_oy": 81091,
+          "il_sayisi": 10,
+          "katilim_orani": 79.71
+        },
+        "TR3": {
+          "toplam_sandik": 25515,
+          "kayitli_secmen": 8285378,
+          "oy_kullanan_secmen": 7253803,
+          "gecerli_oy": 7162851,
+          "gecersiz_oy": 90952,
+          "il_sayisi": 8,
+          "katilim_orani": 87.55
+        },
+        "TRA": {
+          "toplam_sandik": 6247,
+          "kayitli_secmen": 1433483,
+          "oy_kullanan_secmen": 1113865,
+          "gecerli_oy": 1095435,
+          "gecersiz_oy": 18430,
+          "il_sayisi": 7,
+          "katilim_orani": 77.7
+        },
+        "TR7": {
+          "toplam_sandik": 10754,
+          "kayitli_secmen": 2948773,
+          "oy_kullanan_secmen": 2543463,
+          "gecerli_oy": 2506262,
+          "gecersiz_oy": 37201,
+          "il_sayisi": 8,
+          "katilim_orani": 86.25
+        },
+        "TR8": {
+          "toplam_sandik": 13795,
+          "kayitli_secmen": 3528186,
+          "oy_kullanan_secmen": 3065299,
+          "gecerli_oy": 3016745,
+          "gecersiz_oy": 48554,
+          "il_sayisi": 10,
+          "katilim_orani": 86.88
+        },
+        "TR5": {
+          "toplam_sandik": 17941,
+          "kayitli_secmen": 6109054,
+          "oy_kullanan_secmen": 5339125,
+          "gecerli_oy": 5268916,
+          "gecersiz_oy": 70209,
+          "il_sayisi": 3,
+          "katilim_orani": 87.4
+        },
+        "TR9": {
+          "toplam_sandik": 7807,
+          "kayitli_secmen": 2048068,
+          "oy_kullanan_secmen": 1750844,
+          "gecerli_oy": 1724717,
+          "gecersiz_oy": 26127,
+          "il_sayisi": 6,
+          "katilim_orani": 85.49
+        },
+        "TR2": {
+          "toplam_sandik": 9350,
+          "kayitli_secmen": 2899091,
+          "oy_kullanan_secmen": 2551437,
+          "gecerli_oy": 2523566,
+          "gecersiz_oy": 27871,
+          "il_sayisi": 5,
+          "katilim_orani": 88.01
+        },
+        "TR4": {
+          "toplam_sandik": 19095,
+          "kayitli_secmen": 6265419,
+          "oy_kullanan_secmen": 5506661,
+          "gecerli_oy": 5436044,
+          "gecersiz_oy": 70617,
+          "il_sayisi": 8,
+          "katilim_orani": 87.89
+        },
+        "TRB": {
+          "toplam_sandik": 9205,
+          "kayitli_secmen": 2582645,
+          "oy_kullanan_secmen": 1986409,
+          "gecerli_oy": 1949742,
+          "gecersiz_oy": 36667,
+          "il_sayisi": 8,
+          "katilim_orani": 76.91
+        },
+        "TR1": {
+          "toplam_sandik": 30849,
+          "kayitli_secmen": 11375616,
+          "oy_kullanan_secmen": 9984159,
+          "gecerli_oy": 9889854,
+          "gecersiz_oy": 94305,
+          "il_sayisi": 1,
+          "katilim_orani": 87.77
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 10091,
+          "kayitli_secmen": 3385210,
+          "oy_kullanan_secmen": 2884341,
+          "gecerli_oy": 2850039,
+          "gecersiz_oy": 34302,
+          "il_sayisi": 3,
+          "katilim_orani": 85.2
+        },
+        "TRC1": {
+          "toplam_sandik": 8325,
+          "kayitli_secmen": 2614552,
+          "oy_kullanan_secmen": 2155423,
+          "gecerli_oy": 2127154,
+          "gecersiz_oy": 28269,
+          "il_sayisi": 4,
+          "katilim_orani": 82.44
+        },
+        "TR33": {
+          "toplam_sandik": 7998,
+          "kayitli_secmen": 2357109,
+          "oy_kullanan_secmen": 2082309,
+          "gecerli_oy": 2047645,
+          "gecersiz_oy": 34664,
+          "il_sayisi": 4,
+          "katilim_orani": 88.34
+        },
+        "TRA2": {
+          "toplam_sandik": 2743,
+          "kayitli_secmen": 695344,
+          "oy_kullanan_secmen": 490116,
+          "gecerli_oy": 481904,
+          "gecersiz_oy": 8212,
+          "il_sayisi": 4,
+          "katilim_orani": 70.49
+        },
+        "TR71": {
+          "toplam_sandik": 3947,
+          "kayitli_secmen": 1158849,
+          "oy_kullanan_secmen": 986085,
+          "gecerli_oy": 971225,
+          "gecersiz_oy": 14860,
+          "il_sayisi": 5,
+          "katilim_orani": 85.09
+        },
+        "TR83": {
+          "toplam_sandik": 7805,
+          "kayitli_secmen": 2121954,
+          "oy_kullanan_secmen": 1858991,
+          "gecerli_oy": 1833001,
+          "gecersiz_oy": 25990,
+          "il_sayisi": 4,
+          "katilim_orani": 87.61
+        },
+        "TR51": {
+          "toplam_sandik": 12275,
+          "kayitli_secmen": 4288945,
+          "oy_kullanan_secmen": 3772972,
+          "gecerli_oy": 3727550,
+          "gecersiz_oy": 45422,
+          "il_sayisi": 1,
+          "katilim_orani": 87.97
+        },
+        "TR61": {
+          "toplam_sandik": 7394,
+          "kayitli_secmen": 2441971,
+          "oy_kullanan_secmen": 2098014,
+          "gecerli_oy": 2070399,
+          "gecersiz_oy": 27615,
+          "il_sayisi": 3,
+          "katilim_orani": 85.91
+        },
+        "TR90": {
+          "toplam_sandik": 7807,
+          "kayitli_secmen": 2048068,
+          "oy_kullanan_secmen": 1750844,
+          "gecerli_oy": 1724717,
+          "gecersiz_oy": 26127,
+          "il_sayisi": 6,
+          "katilim_orani": 85.49
+        },
+        "TR32": {
+          "toplam_sandik": 7620,
+          "kayitli_secmen": 2480568,
+          "oy_kullanan_secmen": 2166723,
+          "gecerli_oy": 2138505,
+          "gecersiz_oy": 28218,
+          "il_sayisi": 3,
+          "katilim_orani": 87.35
+        },
+        "TR22": {
+          "toplam_sandik": 4914,
+          "kayitli_secmen": 1427631,
+          "oy_kullanan_secmen": 1262393,
+          "gecerli_oy": 1247014,
+          "gecersiz_oy": 15379,
+          "il_sayisi": 2,
+          "katilim_orani": 88.43
+        },
+        "TR81": {
+          "toplam_sandik": 2841,
+          "kayitli_secmen": 796518,
+          "oy_kullanan_secmen": 685073,
+          "gecerli_oy": 671389,
+          "gecersiz_oy": 13684,
+          "il_sayisi": 3,
+          "katilim_orani": 86.01
+        },
+        "TRC3": {
+          "toplam_sandik": 4918,
+          "kayitli_secmen": 1470436,
+          "oy_kullanan_secmen": 1167461,
+          "gecerli_oy": 1143187,
+          "gecersiz_oy": 24274,
+          "il_sayisi": 4,
+          "katilim_orani": 79.4
+        },
+        "TRA1": {
+          "toplam_sandik": 3504,
+          "kayitli_secmen": 738139,
+          "oy_kullanan_secmen": 623749,
+          "gecerli_oy": 613531,
+          "gecersiz_oy": 10218,
+          "il_sayisi": 3,
+          "katilim_orani": 84.5
+        },
+        "TR41": {
+          "toplam_sandik": 9737,
+          "kayitli_secmen": 3226384,
+          "oy_kullanan_secmen": 2824134,
+          "gecerli_oy": 2789220,
+          "gecersiz_oy": 34914,
+          "il_sayisi": 3,
+          "katilim_orani": 87.53
+        },
+        "TRB1": {
+          "toplam_sandik": 5447,
+          "kayitli_secmen": 1465942,
+          "oy_kullanan_secmen": 1160527,
+          "gecerli_oy": 1140597,
+          "gecersiz_oy": 19930,
+          "il_sayisi": 5,
+          "katilim_orani": 79.17
+        },
+        "TRB2": {
+          "toplam_sandik": 3758,
+          "kayitli_secmen": 1116703,
+          "oy_kullanan_secmen": 825882,
+          "gecerli_oy": 809145,
+          "gecersiz_oy": 16737,
+          "il_sayisi": 3,
+          "katilim_orani": 73.96
+        },
+        "TR42": {
+          "toplam_sandik": 9358,
+          "kayitli_secmen": 3039035,
+          "oy_kullanan_secmen": 2682527,
+          "gecerli_oy": 2646824,
+          "gecersiz_oy": 35703,
+          "il_sayisi": 5,
+          "katilim_orani": 88.27
+        },
+        "TR82": {
+          "toplam_sandik": 3149,
+          "kayitli_secmen": 609714,
+          "oy_kullanan_secmen": 521235,
+          "gecerli_oy": 512355,
+          "gecersiz_oy": 8880,
+          "il_sayisi": 3,
+          "katilim_orani": 85.49
+        },
+        "TRC2": {
+          "toplam_sandik": 7774,
+          "kayitli_secmen": 2371473,
+          "oy_kullanan_secmen": 1823284,
+          "gecerli_oy": 1794736,
+          "gecersiz_oy": 28548,
+          "il_sayisi": 2,
+          "katilim_orani": 76.88
+        },
+        "TR21": {
+          "toplam_sandik": 4436,
+          "kayitli_secmen": 1471460,
+          "oy_kullanan_secmen": 1289044,
+          "gecerli_oy": 1276552,
+          "gecersiz_oy": 12492,
+          "il_sayisi": 3,
+          "katilim_orani": 87.6
+        },
+        "TR63": {
+          "toplam_sandik": 3154,
+          "kayitli_secmen": 1063893,
+          "oy_kullanan_secmen": 869786,
+          "gecerli_oy": 858909,
+          "gecersiz_oy": 10877,
+          "il_sayisi": 1,
+          "katilim_orani": 81.76
+        },
+        "TR10": {
+          "toplam_sandik": 30849,
+          "kayitli_secmen": 11375616,
+          "oy_kullanan_secmen": 9984159,
+          "gecerli_oy": 9889854,
+          "gecersiz_oy": 94305,
+          "il_sayisi": 1,
+          "katilim_orani": 87.77
+        },
+        "TR31": {
+          "toplam_sandik": 9897,
+          "kayitli_secmen": 3447701,
+          "oy_kullanan_secmen": 3004771,
+          "gecerli_oy": 2976701,
+          "gecersiz_oy": 28070,
+          "il_sayisi": 1,
+          "katilim_orani": 87.15
+        },
+        "TR52": {
+          "toplam_sandik": 5666,
+          "kayitli_secmen": 1820109,
+          "oy_kullanan_secmen": 1566153,
+          "gecerli_oy": 1541366,
+          "gecersiz_oy": 24787,
+          "il_sayisi": 2,
+          "katilim_orani": 86.05
+        },
+        "TR72": {
+          "toplam_sandik": 6807,
+          "kayitli_secmen": 1789924,
+          "oy_kullanan_secmen": 1557378,
+          "gecerli_oy": 1535037,
+          "gecersiz_oy": 22341,
+          "il_sayisi": 3,
+          "katilim_orani": 87.01
+        }
+      }
+    },
+    "2023_MV": {
+      "name": "2023 MV",
+      "turkiye": {
+        "toplam_sandik": 192214,
+        "kayitli_secmen": 60721745,
+        "oy_kullanan_secmen": 53994049,
+        "gecerli_oy": 52628178,
+        "gecersiz_oy": 1365871,
+        "katilim_orani": 88.92
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 20639,
+          "kayitli_secmen": 6878686,
+          "oy_kullanan_secmen": 6056918,
+          "gecerli_oy": 5907179,
+          "gecersiz_oy": 149739,
+          "il_sayisi": 7,
+          "katilim_orani": 88.05
+        },
+        "TRC": {
+          "toplam_sandik": 21017,
+          "kayitli_secmen": 6440910,
+          "oy_kullanan_secmen": 5392218,
+          "gecerli_oy": 5195531,
+          "gecersiz_oy": 196687,
+          "il_sayisi": 10,
+          "katilim_orani": 83.72
+        },
+        "TR3": {
+          "toplam_sandik": 25515,
+          "kayitli_secmen": 8272936,
+          "oy_kullanan_secmen": 7508672,
+          "gecerli_oy": 7317405,
+          "gecersiz_oy": 191267,
+          "il_sayisi": 8,
+          "katilim_orani": 90.76
+        },
+        "TRA": {
+          "toplam_sandik": 6247,
+          "kayitli_secmen": 1430119,
+          "oy_kullanan_secmen": 1177284,
+          "gecerli_oy": 1138594,
+          "gecersiz_oy": 38690,
+          "il_sayisi": 7,
+          "katilim_orani": 82.32
+        },
+        "TR7": {
+          "toplam_sandik": 10754,
+          "kayitli_secmen": 2943422,
+          "oy_kullanan_secmen": 2629276,
+          "gecerli_oy": 2572468,
+          "gecersiz_oy": 56808,
+          "il_sayisi": 8,
+          "katilim_orani": 89.33
+        },
+        "TR8": {
+          "toplam_sandik": 13795,
+          "kayitli_secmen": 3523546,
+          "oy_kullanan_secmen": 3161040,
+          "gecerli_oy": 3068126,
+          "gecersiz_oy": 92914,
+          "il_sayisi": 10,
+          "katilim_orani": 89.71
+        },
+        "TR5": {
+          "toplam_sandik": 17941,
+          "kayitli_secmen": 6099875,
+          "oy_kullanan_secmen": 5532423,
+          "gecerli_oy": 5421126,
+          "gecersiz_oy": 111297,
+          "il_sayisi": 3,
+          "katilim_orani": 90.7
+        },
+        "TR9": {
+          "toplam_sandik": 7807,
+          "kayitli_secmen": 2045807,
+          "oy_kullanan_secmen": 1805933,
+          "gecerli_oy": 1756820,
+          "gecersiz_oy": 49113,
+          "il_sayisi": 6,
+          "katilim_orani": 88.27
+        },
+        "TR2": {
+          "toplam_sandik": 9350,
+          "kayitli_secmen": 2894532,
+          "oy_kullanan_secmen": 2635404,
+          "gecerli_oy": 2572968,
+          "gecersiz_oy": 62436,
+          "il_sayisi": 5,
+          "katilim_orani": 91.05
+        },
+        "TR4": {
+          "toplam_sandik": 19095,
+          "kayitli_secmen": 6256795,
+          "oy_kullanan_secmen": 5705849,
+          "gecerli_oy": 5584210,
+          "gecersiz_oy": 121639,
+          "il_sayisi": 8,
+          "katilim_orani": 91.19
+        },
+        "TRB": {
+          "toplam_sandik": 9205,
+          "kayitli_secmen": 2577034,
+          "oy_kullanan_secmen": 2098047,
+          "gecerli_oy": 2017877,
+          "gecersiz_oy": 80170,
+          "il_sayisi": 8,
+          "katilim_orani": 81.41
+        },
+        "TR1": {
+          "toplam_sandik": 30849,
+          "kayitli_secmen": 11358083,
+          "oy_kullanan_secmen": 10290985,
+          "gecerli_oy": 10075874,
+          "gecersiz_oy": 215111,
+          "il_sayisi": 1,
+          "katilim_orani": 90.6
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 10091,
+          "kayitli_secmen": 3378219,
+          "oy_kullanan_secmen": 2988671,
+          "gecerli_oy": 2916560,
+          "gecersiz_oy": 72111,
+          "il_sayisi": 3,
+          "katilim_orani": 88.47
+        },
+        "TRC1": {
+          "toplam_sandik": 8325,
+          "kayitli_secmen": 2609164,
+          "oy_kullanan_secmen": 2224064,
+          "gecerli_oy": 2159792,
+          "gecersiz_oy": 64272,
+          "il_sayisi": 4,
+          "katilim_orani": 85.24
+        },
+        "TR33": {
+          "toplam_sandik": 7998,
+          "kayitli_secmen": 2353257,
+          "oy_kullanan_secmen": 2153959,
+          "gecerli_oy": 2092075,
+          "gecersiz_oy": 61884,
+          "il_sayisi": 4,
+          "katilim_orani": 91.53
+        },
+        "TRA2": {
+          "toplam_sandik": 2743,
+          "kayitli_secmen": 693645,
+          "oy_kullanan_secmen": 533338,
+          "gecerli_oy": 509011,
+          "gecersiz_oy": 24327,
+          "il_sayisi": 4,
+          "katilim_orani": 76.89
+        },
+        "TR71": {
+          "toplam_sandik": 3947,
+          "kayitli_secmen": 1156687,
+          "oy_kullanan_secmen": 1023335,
+          "gecerli_oy": 997681,
+          "gecersiz_oy": 25654,
+          "il_sayisi": 5,
+          "katilim_orani": 88.47
+        },
+        "TR83": {
+          "toplam_sandik": 7805,
+          "kayitli_secmen": 2118889,
+          "oy_kullanan_secmen": 1913796,
+          "gecerli_oy": 1866949,
+          "gecersiz_oy": 46847,
+          "il_sayisi": 4,
+          "katilim_orani": 90.32
+        },
+        "TR51": {
+          "toplam_sandik": 12275,
+          "kayitli_secmen": 4282718,
+          "oy_kullanan_secmen": 3909815,
+          "gecerli_oy": 3841560,
+          "gecersiz_oy": 68255,
+          "il_sayisi": 1,
+          "katilim_orani": 91.29
+        },
+        "TR61": {
+          "toplam_sandik": 7394,
+          "kayitli_secmen": 2437948,
+          "oy_kullanan_secmen": 2184445,
+          "gecerli_oy": 2125893,
+          "gecersiz_oy": 58552,
+          "il_sayisi": 3,
+          "katilim_orani": 89.6
+        },
+        "TR90": {
+          "toplam_sandik": 7807,
+          "kayitli_secmen": 2045807,
+          "oy_kullanan_secmen": 1805933,
+          "gecerli_oy": 1756820,
+          "gecersiz_oy": 49113,
+          "il_sayisi": 6,
+          "katilim_orani": 88.27
+        },
+        "TR32": {
+          "toplam_sandik": 7620,
+          "kayitli_secmen": 2477255,
+          "oy_kullanan_secmen": 2244743,
+          "gecerli_oy": 2186064,
+          "gecersiz_oy": 58679,
+          "il_sayisi": 3,
+          "katilim_orani": 90.61
+        },
+        "TR22": {
+          "toplam_sandik": 4914,
+          "kayitli_secmen": 1425583,
+          "oy_kullanan_secmen": 1303085,
+          "gecerli_oy": 1272572,
+          "gecersiz_oy": 30513,
+          "il_sayisi": 2,
+          "katilim_orani": 91.41
+        },
+        "TR81": {
+          "toplam_sandik": 2841,
+          "kayitli_secmen": 795608,
+          "oy_kullanan_secmen": 709896,
+          "gecerli_oy": 681826,
+          "gecersiz_oy": 28070,
+          "il_sayisi": 3,
+          "katilim_orani": 89.23
+        },
+        "TRC3": {
+          "toplam_sandik": 4918,
+          "kayitli_secmen": 1467354,
+          "oy_kullanan_secmen": 1231292,
+          "gecerli_oy": 1182956,
+          "gecersiz_oy": 48336,
+          "il_sayisi": 4,
+          "katilim_orani": 83.91
+        },
+        "TRA1": {
+          "toplam_sandik": 3504,
+          "kayitli_secmen": 736474,
+          "oy_kullanan_secmen": 643946,
+          "gecerli_oy": 629583,
+          "gecersiz_oy": 14363,
+          "il_sayisi": 3,
+          "katilim_orani": 87.44
+        },
+        "TR41": {
+          "toplam_sandik": 9737,
+          "kayitli_secmen": 3222409,
+          "oy_kullanan_secmen": 2932606,
+          "gecerli_oy": 2869852,
+          "gecersiz_oy": 62754,
+          "il_sayisi": 3,
+          "katilim_orani": 91.01
+        },
+        "TRB1": {
+          "toplam_sandik": 5447,
+          "kayitli_secmen": 1463530,
+          "oy_kullanan_secmen": 1204705,
+          "gecerli_oy": 1166132,
+          "gecersiz_oy": 38573,
+          "il_sayisi": 5,
+          "katilim_orani": 82.32
+        },
+        "TRB2": {
+          "toplam_sandik": 3758,
+          "kayitli_secmen": 1113504,
+          "oy_kullanan_secmen": 893342,
+          "gecerli_oy": 851745,
+          "gecersiz_oy": 41597,
+          "il_sayisi": 3,
+          "katilim_orani": 80.23
+        },
+        "TR42": {
+          "toplam_sandik": 9358,
+          "kayitli_secmen": 3034386,
+          "oy_kullanan_secmen": 2773243,
+          "gecerli_oy": 2714358,
+          "gecersiz_oy": 58885,
+          "il_sayisi": 5,
+          "katilim_orani": 91.39
+        },
+        "TR82": {
+          "toplam_sandik": 3149,
+          "kayitli_secmen": 609049,
+          "oy_kullanan_secmen": 537348,
+          "gecerli_oy": 519351,
+          "gecersiz_oy": 17997,
+          "il_sayisi": 3,
+          "katilim_orani": 88.23
+        },
+        "TRC2": {
+          "toplam_sandik": 7774,
+          "kayitli_secmen": 2364392,
+          "oy_kullanan_secmen": 1936862,
+          "gecerli_oy": 1852783,
+          "gecersiz_oy": 84079,
+          "il_sayisi": 2,
+          "katilim_orani": 81.92
+        },
+        "TR21": {
+          "toplam_sandik": 4436,
+          "kayitli_secmen": 1468949,
+          "oy_kullanan_secmen": 1332319,
+          "gecerli_oy": 1300396,
+          "gecersiz_oy": 31923,
+          "il_sayisi": 3,
+          "katilim_orani": 90.7
+        },
+        "TR63": {
+          "toplam_sandik": 3154,
+          "kayitli_secmen": 1062519,
+          "oy_kullanan_secmen": 883802,
+          "gecerli_oy": 864726,
+          "gecersiz_oy": 19076,
+          "il_sayisi": 1,
+          "katilim_orani": 83.18
+        },
+        "TR10": {
+          "toplam_sandik": 30849,
+          "kayitli_secmen": 11358083,
+          "oy_kullanan_secmen": 10290985,
+          "gecerli_oy": 10075874,
+          "gecersiz_oy": 215111,
+          "il_sayisi": 1,
+          "katilim_orani": 90.6
+        },
+        "TR31": {
+          "toplam_sandik": 9897,
+          "kayitli_secmen": 3442424,
+          "oy_kullanan_secmen": 3109970,
+          "gecerli_oy": 3039266,
+          "gecersiz_oy": 70704,
+          "il_sayisi": 1,
+          "katilim_orani": 90.34
+        },
+        "TR52": {
+          "toplam_sandik": 5666,
+          "kayitli_secmen": 1817157,
+          "oy_kullanan_secmen": 1622608,
+          "gecerli_oy": 1579566,
+          "gecersiz_oy": 43042,
+          "il_sayisi": 2,
+          "katilim_orani": 89.29
+        },
+        "TR72": {
+          "toplam_sandik": 6807,
+          "kayitli_secmen": 1786735,
+          "oy_kullanan_secmen": 1605941,
+          "gecerli_oy": 1574787,
+          "gecersiz_oy": 31154,
+          "il_sayisi": 3,
+          "katilim_orani": 89.88
+        }
+      }
+    },
+    "2024_BBB": {
+      "name": "2024 BBB",
+      "turkiye": {
+        "toplam_sandik": 152899,
+        "kayitli_secmen": 47867134,
+        "oy_kullanan_secmen": 37393632,
+        "gecerli_oy": 35773821,
+        "gecersiz_oy": 1619811,
+        "katilim_orani": 78.12
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 19077,
+          "kayitli_secmen": 6026194,
+          "oy_kullanan_secmen": 4665390,
+          "gecerli_oy": 4461608,
+          "gecersiz_oy": 203782,
+          "il_sayisi": 4,
+          "katilim_orani": 77.42
+        },
+        "TR5": {
+          "toplam_sandik": 18627,
+          "kayitli_secmen": 5954431,
+          "oy_kullanan_secmen": 4671364,
+          "gecerli_oy": 4494449,
+          "gecersiz_oy": 176915,
+          "il_sayisi": 2,
+          "katilim_orani": 78.45
+        },
+        "TR3": {
+          "toplam_sandik": 22697,
+          "kayitli_secmen": 7070769,
+          "oy_kullanan_secmen": 5723777,
+          "gecerli_oy": 5477553,
+          "gecersiz_oy": 246224,
+          "il_sayisi": 5,
+          "katilim_orani": 80.95
+        },
+        "TR2": {
+          "toplam_sandik": 6239,
+          "kayitli_secmen": 1871548,
+          "oy_kullanan_secmen": 1510749,
+          "gecerli_oy": 1450735,
+          "gecersiz_oy": 60014,
+          "il_sayisi": 2,
+          "katilim_orani": 80.72
+        },
+        "TR4": {
+          "toplam_sandik": 17148,
+          "kayitli_secmen": 5415285,
+          "oy_kullanan_secmen": 4252384,
+          "gecerli_oy": 4074756,
+          "gecersiz_oy": 177628,
+          "il_sayisi": 4,
+          "katilim_orani": 78.53
+        },
+        "TRC": {
+          "toplam_sandik": 17489,
+          "kayitli_secmen": 5137123,
+          "oy_kullanan_secmen": 3727913,
+          "gecerli_oy": 3505008,
+          "gecersiz_oy": 222905,
+          "il_sayisi": 5,
+          "katilim_orani": 72.57
+        },
+        "TRA": {
+          "toplam_sandik": 2333,
+          "kayitli_secmen": 516952,
+          "oy_kullanan_secmen": 374352,
+          "gecerli_oy": 346600,
+          "gecersiz_oy": 27752,
+          "il_sayisi": 1,
+          "katilim_orani": 72.42
+        },
+        "TR1": {
+          "toplam_sandik": 33273,
+          "kayitli_secmen": 11314534,
+          "oy_kullanan_secmen": 8970377,
+          "gecerli_oy": 8667694,
+          "gecersiz_oy": 302683,
+          "il_sayisi": 1,
+          "katilim_orani": 79.28
+        },
+        "TR7": {
+          "toplam_sandik": 3414,
+          "kayitli_secmen": 1039684,
+          "oy_kullanan_secmen": 806511,
+          "gecerli_oy": 767998,
+          "gecersiz_oy": 38513,
+          "il_sayisi": 1,
+          "katilim_orani": 77.57
+        },
+        "TRB": {
+          "toplam_sandik": 4460,
+          "kayitli_secmen": 1257169,
+          "oy_kullanan_secmen": 886128,
+          "gecerli_oy": 830979,
+          "gecersiz_oy": 55149,
+          "il_sayisi": 2,
+          "katilim_orani": 70.49
+        },
+        "TR9": {
+          "toplam_sandik": 4486,
+          "kayitli_secmen": 1224454,
+          "oy_kullanan_secmen": 970997,
+          "gecerli_oy": 912392,
+          "gecersiz_oy": 58605,
+          "il_sayisi": 2,
+          "katilim_orani": 79.3
+        },
+        "TR8": {
+          "toplam_sandik": 3656,
+          "kayitli_secmen": 1038991,
+          "oy_kullanan_secmen": 833690,
+          "gecerli_oy": 784049,
+          "gecersiz_oy": 49641,
+          "il_sayisi": 1,
+          "katilim_orani": 80.24
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 9601,
+          "kayitli_secmen": 3022129,
+          "oy_kullanan_secmen": 2337220,
+          "gecerli_oy": 2232382,
+          "gecersiz_oy": 104838,
+          "il_sayisi": 2,
+          "katilim_orani": 77.34
+        },
+        "TR51": {
+          "toplam_sandik": 13253,
+          "kayitli_secmen": 4304874,
+          "oy_kullanan_secmen": 3417581,
+          "gecerli_oy": 3308097,
+          "gecersiz_oy": 109484,
+          "il_sayisi": 1,
+          "katilim_orani": 79.39
+        },
+        "TR61": {
+          "toplam_sandik": 6050,
+          "kayitli_secmen": 1925935,
+          "oy_kullanan_secmen": 1511296,
+          "gecerli_oy": 1451240,
+          "gecersiz_oy": 60056,
+          "il_sayisi": 1,
+          "katilim_orani": 78.47
+        },
+        "TR32": {
+          "toplam_sandik": 8167,
+          "kayitli_secmen": 2497658,
+          "oy_kullanan_secmen": 2043867,
+          "gecerli_oy": 1952570,
+          "gecersiz_oy": 91297,
+          "il_sayisi": 3,
+          "katilim_orani": 81.83
+        },
+        "TR22": {
+          "toplam_sandik": 3534,
+          "kayitli_secmen": 999041,
+          "oy_kullanan_secmen": 831953,
+          "gecerli_oy": 797015,
+          "gecersiz_oy": 34938,
+          "il_sayisi": 1,
+          "katilim_orani": 83.28
+        },
+        "TR41": {
+          "toplam_sandik": 9783,
+          "kayitli_secmen": 3085055,
+          "oy_kullanan_secmen": 2442809,
+          "gecerli_oy": 2347284,
+          "gecersiz_oy": 95525,
+          "il_sayisi": 2,
+          "katilim_orani": 79.18
+        },
+        "TRC2": {
+          "toplam_sandik": 8399,
+          "kayitli_secmen": 2415166,
+          "oy_kullanan_secmen": 1721907,
+          "gecerli_oy": 1617034,
+          "gecersiz_oy": 104873,
+          "il_sayisi": 2,
+          "katilim_orani": 71.3
+        },
+        "TRA1": {
+          "toplam_sandik": 2333,
+          "kayitli_secmen": 516952,
+          "oy_kullanan_secmen": 374352,
+          "gecerli_oy": 346600,
+          "gecersiz_oy": 27752,
+          "il_sayisi": 1,
+          "katilim_orani": 72.42
+        },
+        "TRC1": {
+          "toplam_sandik": 7059,
+          "kayitli_secmen": 2166885,
+          "oy_kullanan_secmen": 1600313,
+          "gecerli_oy": 1508114,
+          "gecersiz_oy": 92199,
+          "il_sayisi": 2,
+          "katilim_orani": 73.85
+        },
+        "TR63": {
+          "toplam_sandik": 3426,
+          "kayitli_secmen": 1078130,
+          "oy_kullanan_secmen": 816874,
+          "gecerli_oy": 777986,
+          "gecersiz_oy": 38888,
+          "il_sayisi": 1,
+          "katilim_orani": 75.77
+        },
+        "TR10": {
+          "toplam_sandik": 33273,
+          "kayitli_secmen": 11314534,
+          "oy_kullanan_secmen": 8970377,
+          "gecerli_oy": 8667694,
+          "gecersiz_oy": 302683,
+          "il_sayisi": 1,
+          "katilim_orani": 79.28
+        },
+        "TR31": {
+          "toplam_sandik": 10697,
+          "kayitli_secmen": 3459970,
+          "oy_kullanan_secmen": 2734105,
+          "gecerli_oy": 2638524,
+          "gecersiz_oy": 95581,
+          "il_sayisi": 1,
+          "katilim_orani": 79.02
+        },
+        "TR72": {
+          "toplam_sandik": 3414,
+          "kayitli_secmen": 1039684,
+          "oy_kullanan_secmen": 806511,
+          "gecerli_oy": 767998,
+          "gecersiz_oy": 38513,
+          "il_sayisi": 1,
+          "katilim_orani": 77.57
+        },
+        "TR42": {
+          "toplam_sandik": 7365,
+          "kayitli_secmen": 2330230,
+          "oy_kullanan_secmen": 1809575,
+          "gecerli_oy": 1727472,
+          "gecersiz_oy": 82103,
+          "il_sayisi": 2,
+          "katilim_orani": 77.66
+        },
+        "TR52": {
+          "toplam_sandik": 5374,
+          "kayitli_secmen": 1649557,
+          "oy_kullanan_secmen": 1253783,
+          "gecerli_oy": 1186352,
+          "gecersiz_oy": 67431,
+          "il_sayisi": 1,
+          "katilim_orani": 76.01
+        },
+        "TRB1": {
+          "toplam_sandik": 2009,
+          "kayitli_secmen": 542177,
+          "oy_kullanan_secmen": 404343,
+          "gecerli_oy": 388368,
+          "gecersiz_oy": 15975,
+          "il_sayisi": 1,
+          "katilim_orani": 74.58
+        },
+        "TR33": {
+          "toplam_sandik": 3833,
+          "kayitli_secmen": 1113141,
+          "oy_kullanan_secmen": 945805,
+          "gecerli_oy": 886459,
+          "gecersiz_oy": 59346,
+          "il_sayisi": 1,
+          "katilim_orani": 84.97
+        },
+        "TRC3": {
+          "toplam_sandik": 2031,
+          "kayitli_secmen": 555072,
+          "oy_kullanan_secmen": 405693,
+          "gecerli_oy": 379860,
+          "gecersiz_oy": 25833,
+          "il_sayisi": 1,
+          "katilim_orani": 73.09
+        },
+        "TR90": {
+          "toplam_sandik": 4486,
+          "kayitli_secmen": 1224454,
+          "oy_kullanan_secmen": 970997,
+          "gecerli_oy": 912392,
+          "gecersiz_oy": 58605,
+          "il_sayisi": 2,
+          "katilim_orani": 79.3
+        },
+        "TR83": {
+          "toplam_sandik": 3656,
+          "kayitli_secmen": 1038991,
+          "oy_kullanan_secmen": 833690,
+          "gecerli_oy": 784049,
+          "gecersiz_oy": 49641,
+          "il_sayisi": 1,
+          "katilim_orani": 80.24
+        },
+        "TR21": {
+          "toplam_sandik": 2705,
+          "kayitli_secmen": 872507,
+          "oy_kullanan_secmen": 678796,
+          "gecerli_oy": 653720,
+          "gecersiz_oy": 25076,
+          "il_sayisi": 1,
+          "katilim_orani": 77.8
+        },
+        "TRB2": {
+          "toplam_sandik": 2451,
+          "kayitli_secmen": 714992,
+          "oy_kullanan_secmen": 481785,
+          "gecerli_oy": 442611,
+          "gecersiz_oy": 39174,
+          "il_sayisi": 1,
+          "katilim_orani": 67.38
+        }
+      }
+    },
+    "2024_BB": {
+      "name": "2024 BB",
+      "turkiye": {
+        "toplam_sandik": 184772,
+        "kayitli_secmen": 57766800,
+        "oy_kullanan_secmen": 45123628,
+        "gecerli_oy": 43082663,
+        "gecersiz_oy": 2040965,
+        "katilim_orani": 78.11,
+        "_kaynak": "il toplamından hesaplandı"
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 21382,
+          "kayitli_secmen": 6746586,
+          "oy_kullanan_secmen": 5232912,
+          "gecerli_oy": 4984278,
+          "gecersiz_oy": 248634,
+          "il_sayisi": 7,
+          "katilim_orani": 77.56
+        },
+        "TRC": {
+          "toplam_sandik": 21137,
+          "kayitli_secmen": 6299062,
+          "oy_kullanan_secmen": 4586146,
+          "gecerli_oy": 4297589,
+          "gecersiz_oy": 288557,
+          "il_sayisi": 10,
+          "katilim_orani": 72.81
+        },
+        "TR3": {
+          "toplam_sandik": 25853,
+          "kayitli_secmen": 8036461,
+          "oy_kullanan_secmen": 6523649,
+          "gecerli_oy": 6230536,
+          "gecersiz_oy": 293113,
+          "il_sayisi": 8,
+          "katilim_orani": 81.18
+        },
+        "TRA": {
+          "toplam_sandik": 4238,
+          "kayitli_secmen": 1104847,
+          "oy_kullanan_secmen": 806747,
+          "gecerli_oy": 759919,
+          "gecersiz_oy": 46828,
+          "il_sayisi": 7,
+          "katilim_orani": 73.02
+        },
+        "TR7": {
+          "toplam_sandik": 8350,
+          "kayitli_secmen": 2572275,
+          "oy_kullanan_secmen": 2021734,
+          "gecerli_oy": 1929718,
+          "gecersiz_oy": 92016,
+          "il_sayisi": 8,
+          "katilim_orani": 78.6
+        },
+        "TR8": {
+          "toplam_sandik": 9355,
+          "kayitli_secmen": 2784271,
+          "oy_kullanan_secmen": 2241825,
+          "gecerli_oy": 2126001,
+          "gecersiz_oy": 115824,
+          "il_sayisi": 10,
+          "katilim_orani": 80.52
+        },
+        "TR5": {
+          "toplam_sandik": 19129,
+          "kayitli_secmen": 6105694,
+          "oy_kullanan_secmen": 4788234,
+          "gecerli_oy": 4588861,
+          "gecersiz_oy": 199373,
+          "il_sayisi": 3,
+          "katilim_orani": 78.42
+        },
+        "TR9": {
+          "toplam_sandik": 6384,
+          "kayitli_secmen": 1774553,
+          "oy_kullanan_secmen": 1404153,
+          "gecerli_oy": 1325704,
+          "gecersiz_oy": 78449,
+          "il_sayisi": 6,
+          "katilim_orani": 79.13
+        },
+        "TR2": {
+          "toplam_sandik": 8734,
+          "kayitli_secmen": 2676275,
+          "oy_kullanan_secmen": 2167279,
+          "gecerli_oy": 2080640,
+          "gecersiz_oy": 86639,
+          "il_sayisi": 5,
+          "katilim_orani": 80.98
+        },
+        "TR4": {
+          "toplam_sandik": 19350,
+          "kayitli_secmen": 6120784,
+          "oy_kullanan_secmen": 4809858,
+          "gecerli_oy": 4588651,
+          "gecersiz_oy": 221207,
+          "il_sayisi": 8,
+          "katilim_orani": 78.58
+        },
+        "TRB": {
+          "toplam_sandik": 7587,
+          "kayitli_secmen": 2231458,
+          "oy_kullanan_secmen": 1581991,
+          "gecerli_oy": 1473288,
+          "gecersiz_oy": 108703,
+          "il_sayisi": 8,
+          "katilim_orani": 70.89
+        },
+        "TR1": {
+          "toplam_sandik": 33273,
+          "kayitli_secmen": 11314534,
+          "oy_kullanan_secmen": 8959100,
+          "gecerli_oy": 8697478,
+          "gecersiz_oy": 261622,
+          "il_sayisi": 1,
+          "katilim_orani": 79.18
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 10584,
+          "kayitli_secmen": 3340245,
+          "oy_kullanan_secmen": 2578346,
+          "gecerli_oy": 2446568,
+          "gecersiz_oy": 131778,
+          "il_sayisi": 3,
+          "katilim_orani": 77.19
+        },
+        "TRC1": {
+          "toplam_sandik": 8283,
+          "kayitli_secmen": 2545927,
+          "oy_kullanan_secmen": 1883486,
+          "gecerli_oy": 1772744,
+          "gecersiz_oy": 110742,
+          "il_sayisi": 4,
+          "katilim_orani": 73.98
+        },
+        "TR33": {
+          "toplam_sandik": 6989,
+          "kayitli_secmen": 2078833,
+          "oy_kullanan_secmen": 1751532,
+          "gecerli_oy": 1669459,
+          "gecersiz_oy": 82073,
+          "il_sayisi": 4,
+          "katilim_orani": 84.26
+        },
+        "TRA2": {
+          "toplam_sandik": 1327,
+          "kayitli_secmen": 420435,
+          "oy_kullanan_secmen": 303209,
+          "gecerli_oy": 284284,
+          "gecersiz_oy": 18925,
+          "il_sayisi": 4,
+          "katilim_orani": 72.12
+        },
+        "TR71": {
+          "toplam_sandik": 3039,
+          "kayitli_secmen": 956650,
+          "oy_kullanan_secmen": 763518,
+          "gecerli_oy": 731505,
+          "gecersiz_oy": 32013,
+          "il_sayisi": 5,
+          "katilim_orani": 79.81
+        },
+        "TR83": {
+          "toplam_sandik": 6307,
+          "kayitli_secmen": 1855065,
+          "oy_kullanan_secmen": 1497404,
+          "gecerli_oy": 1416864,
+          "gecersiz_oy": 80540,
+          "il_sayisi": 4,
+          "katilim_orani": 80.72
+        },
+        "TR51": {
+          "toplam_sandik": 13253,
+          "kayitli_secmen": 4304874,
+          "oy_kullanan_secmen": 3414602,
+          "gecerli_oy": 3290921,
+          "gecersiz_oy": 123681,
+          "il_sayisi": 1,
+          "katilim_orani": 79.32
+        },
+        "TR61": {
+          "toplam_sandik": 7372,
+          "kayitli_secmen": 2328211,
+          "oy_kullanan_secmen": 1839223,
+          "gecerli_oy": 1760496,
+          "gecersiz_oy": 78727,
+          "il_sayisi": 3,
+          "katilim_orani": 79.0
+        },
+        "TR90": {
+          "toplam_sandik": 6384,
+          "kayitli_secmen": 1774553,
+          "oy_kullanan_secmen": 1404153,
+          "gecerli_oy": 1325704,
+          "gecersiz_oy": 78449,
+          "il_sayisi": 6,
+          "katilim_orani": 79.13
+        },
+        "TR32": {
+          "toplam_sandik": 8167,
+          "kayitli_secmen": 2497658,
+          "oy_kullanan_secmen": 2041731,
+          "gecerli_oy": 1939016,
+          "gecersiz_oy": 102715,
+          "il_sayisi": 3,
+          "katilim_orani": 81.75
+        },
+        "TR22": {
+          "toplam_sandik": 4511,
+          "kayitli_secmen": 1314665,
+          "oy_kullanan_secmen": 1089300,
+          "gecerli_oy": 1044899,
+          "gecersiz_oy": 44401,
+          "il_sayisi": 2,
+          "katilim_orani": 82.86
+        },
+        "TR81": {
+          "toplam_sandik": 1771,
+          "kayitli_secmen": 549986,
+          "oy_kullanan_secmen": 436056,
+          "gecerli_oy": 415321,
+          "gecersiz_oy": 20735,
+          "il_sayisi": 3,
+          "katilim_orani": 79.28
+        },
+        "TRC3": {
+          "toplam_sandik": 4455,
+          "kayitli_secmen": 1337969,
+          "oy_kullanan_secmen": 988377,
+          "gecerli_oy": 922848,
+          "gecersiz_oy": 65529,
+          "il_sayisi": 4,
+          "katilim_orani": 73.87
+        },
+        "TRA1": {
+          "toplam_sandik": 2911,
+          "kayitli_secmen": 684412,
+          "oy_kullanan_secmen": 503538,
+          "gecerli_oy": 475635,
+          "gecersiz_oy": 27903,
+          "il_sayisi": 3,
+          "katilim_orani": 73.57
+        },
+        "TR41": {
+          "toplam_sandik": 10228,
+          "kayitli_secmen": 3225676,
+          "oy_kullanan_secmen": 2556970,
+          "gecerli_oy": 2444460,
+          "gecersiz_oy": 112510,
+          "il_sayisi": 3,
+          "katilim_orani": 79.27
+        },
+        "TRB1": {
+          "toplam_sandik": 4192,
+          "kayitli_secmen": 1221176,
+          "oy_kullanan_secmen": 881799,
+          "gecerli_oy": 830480,
+          "gecersiz_oy": 51319,
+          "il_sayisi": 5,
+          "katilim_orani": 72.21
+        },
+        "TRB2": {
+          "toplam_sandik": 3395,
+          "kayitli_secmen": 1010282,
+          "oy_kullanan_secmen": 700192,
+          "gecerli_oy": 642808,
+          "gecersiz_oy": 57384,
+          "il_sayisi": 3,
+          "katilim_orani": 69.31
+        },
+        "TR42": {
+          "toplam_sandik": 9122,
+          "kayitli_secmen": 2895108,
+          "oy_kullanan_secmen": 2252888,
+          "gecerli_oy": 2144191,
+          "gecersiz_oy": 108697,
+          "il_sayisi": 5,
+          "katilim_orani": 77.82
+        },
+        "TR82": {
+          "toplam_sandik": 1277,
+          "kayitli_secmen": 379220,
+          "oy_kullanan_secmen": 308365,
+          "gecerli_oy": 293816,
+          "gecersiz_oy": 14549,
+          "il_sayisi": 3,
+          "katilim_orani": 81.32
+        },
+        "TRC2": {
+          "toplam_sandik": 8399,
+          "kayitli_secmen": 2415166,
+          "oy_kullanan_secmen": 1714283,
+          "gecerli_oy": 1601997,
+          "gecersiz_oy": 112286,
+          "il_sayisi": 2,
+          "katilim_orani": 70.98
+        },
+        "TR21": {
+          "toplam_sandik": 4223,
+          "kayitli_secmen": 1361610,
+          "oy_kullanan_secmen": 1077979,
+          "gecerli_oy": 1035741,
+          "gecersiz_oy": 42238,
+          "il_sayisi": 3,
+          "katilim_orani": 79.17
+        },
+        "TR63": {
+          "toplam_sandik": 3426,
+          "kayitli_secmen": 1078130,
+          "oy_kullanan_secmen": 815343,
+          "gecerli_oy": 777214,
+          "gecersiz_oy": 38129,
+          "il_sayisi": 1,
+          "katilim_orani": 75.63
+        },
+        "TR10": {
+          "toplam_sandik": 33273,
+          "kayitli_secmen": 11314534,
+          "oy_kullanan_secmen": 8959100,
+          "gecerli_oy": 8697478,
+          "gecersiz_oy": 261622,
+          "il_sayisi": 1,
+          "katilim_orani": 79.18
+        },
+        "TR31": {
+          "toplam_sandik": 10697,
+          "kayitli_secmen": 3459970,
+          "oy_kullanan_secmen": 2730386,
+          "gecerli_oy": 2622061,
+          "gecersiz_oy": 108325,
+          "il_sayisi": 1,
+          "katilim_orani": 78.91
+        },
+        "TR52": {
+          "toplam_sandik": 5876,
+          "kayitli_secmen": 1800820,
+          "oy_kullanan_secmen": 1373632,
+          "gecerli_oy": 1297940,
+          "gecersiz_oy": 75692,
+          "il_sayisi": 2,
+          "katilim_orani": 76.28
+        },
+        "TR72": {
+          "toplam_sandik": 5311,
+          "kayitli_secmen": 1615625,
+          "oy_kullanan_secmen": 1258216,
+          "gecerli_oy": 1198213,
+          "gecersiz_oy": 60003,
+          "il_sayisi": 3,
+          "katilim_orani": 77.88
+        }
+      }
+    },
+    "2024_IGM": {
+      "name": "2024 IGM",
+      "turkiye": {
+        "toplam_sandik": 53907,
+        "kayitli_secmen": 13563800,
+        "oy_kullanan_secmen": 10863679,
+        "gecerli_oy": 10274330,
+        "gecersiz_oy": 589349,
+        "katilim_orani": 80.09,
+        "_kaynak": "il toplamından hesaplandı"
+      },
+      "nuts1": {
+        "TRC": {
+          "toplam_sandik": 5423,
+          "kayitli_secmen": 1483071,
+          "oy_kullanan_secmen": 1118948,
+          "gecerli_oy": 1044814,
+          "gecersiz_oy": 74134,
+          "il_sayisi": 5,
+          "katilim_orani": 75.45
+        },
+        "TR3": {
+          "toplam_sandik": 4728,
+          "kayitli_secmen": 1259836,
+          "oy_kullanan_secmen": 1069322,
+          "gecerli_oy": 1015134,
+          "gecersiz_oy": 54188,
+          "il_sayisi": 3,
+          "katilim_orani": 84.88
+        },
+        "TRA": {
+          "toplam_sandik": 4241,
+          "kayitli_secmen": 947188,
+          "oy_kullanan_secmen": 703252,
+          "gecerli_oy": 655864,
+          "gecersiz_oy": 47388,
+          "il_sayisi": 6,
+          "katilim_orani": 74.25
+        },
+        "TR7": {
+          "toplam_sandik": 8039,
+          "kayitli_secmen": 1967727,
+          "oy_kullanan_secmen": 1579389,
+          "gecerli_oy": 1500302,
+          "gecersiz_oy": 79087,
+          "il_sayisi": 7,
+          "katilim_orani": 80.26
+        },
+        "TR8": {
+          "toplam_sandik": 10929,
+          "kayitli_secmen": 2565816,
+          "oy_kullanan_secmen": 2134610,
+          "gecerli_oy": 2023721,
+          "gecersiz_oy": 110889,
+          "il_sayisi": 9,
+          "katilim_orani": 83.19
+        },
+        "TR9": {
+          "toplam_sandik": 3763,
+          "kayitli_secmen": 873281,
+          "oy_kullanan_secmen": 702757,
+          "gecerli_oy": 668773,
+          "gecersiz_oy": 33984,
+          "il_sayisi": 4,
+          "katilim_orani": 80.47
+        },
+        "TR4": {
+          "toplam_sandik": 3477,
+          "kayitli_secmen": 919012,
+          "oy_kullanan_secmen": 752992,
+          "gecerli_oy": 720650,
+          "gecersiz_oy": 32342,
+          "il_sayisi": 4,
+          "katilim_orani": 81.93
+        },
+        "TRB": {
+          "toplam_sandik": 5630,
+          "kayitli_secmen": 1380539,
+          "oy_kullanan_secmen": 1005860,
+          "gecerli_oy": 931516,
+          "gecersiz_oy": 74344,
+          "il_sayisi": 6,
+          "katilim_orani": 72.86
+        },
+        "TR6": {
+          "toplam_sandik": 3206,
+          "kayitli_secmen": 929756,
+          "oy_kullanan_secmen": 760249,
+          "gecerli_oy": 716470,
+          "gecersiz_oy": 43779,
+          "il_sayisi": 3,
+          "katilim_orani": 81.77
+        },
+        "TR2": {
+          "toplam_sandik": 3757,
+          "kayitli_secmen": 1047686,
+          "oy_kullanan_secmen": 880036,
+          "gecerli_oy": 848467,
+          "gecersiz_oy": 31569,
+          "il_sayisi": 3,
+          "katilim_orani": 84.0
+        },
+        "TR5": {
+          "toplam_sandik": 714,
+          "kayitli_secmen": 189888,
+          "oy_kullanan_secmen": 156264,
+          "gecerli_oy": 148619,
+          "gecersiz_oy": 7645,
+          "il_sayisi": 1,
+          "katilim_orani": 82.29
+        }
+      },
+      "nuts2": {
+        "TRC1": {
+          "toplam_sandik": 1996,
+          "kayitli_secmen": 511210,
+          "oy_kullanan_secmen": 395380,
+          "gecerli_oy": 371840,
+          "gecersiz_oy": 23540,
+          "il_sayisi": 2,
+          "katilim_orani": 77.34
+        },
+        "TR33": {
+          "toplam_sandik": 4728,
+          "kayitli_secmen": 1259836,
+          "oy_kullanan_secmen": 1069322,
+          "gecerli_oy": 1015134,
+          "gecersiz_oy": 54188,
+          "il_sayisi": 3,
+          "katilim_orani": 84.88
+        },
+        "TRA2": {
+          "toplam_sandik": 2936,
+          "kayitli_secmen": 712839,
+          "oy_kullanan_secmen": 519691,
+          "gecerli_oy": 483649,
+          "gecersiz_oy": 36042,
+          "il_sayisi": 4,
+          "katilim_orani": 72.9
+        },
+        "TR71": {
+          "toplam_sandik": 4242,
+          "kayitli_secmen": 1182955,
+          "oy_kullanan_secmen": 954021,
+          "gecerli_oy": 904756,
+          "gecersiz_oy": 49265,
+          "il_sayisi": 5,
+          "katilim_orani": 80.65
+        },
+        "TR83": {
+          "toplam_sandik": 4661,
+          "kayitli_secmen": 1125503,
+          "oy_kullanan_secmen": 941989,
+          "gecerli_oy": 896813,
+          "gecersiz_oy": 45176,
+          "il_sayisi": 3,
+          "katilim_orani": 83.69
+        },
+        "TR90": {
+          "toplam_sandik": 3763,
+          "kayitli_secmen": 873281,
+          "oy_kullanan_secmen": 702757,
+          "gecerli_oy": 668773,
+          "gecersiz_oy": 33984,
+          "il_sayisi": 4,
+          "katilim_orani": 80.47
+        },
+        "TR81": {
+          "toplam_sandik": 3021,
+          "kayitli_secmen": 805965,
+          "oy_kullanan_secmen": 662672,
+          "gecerli_oy": 624505,
+          "gecersiz_oy": 38167,
+          "il_sayisi": 3,
+          "katilim_orani": 82.22
+        },
+        "TRC3": {
+          "toplam_sandik": 3427,
+          "kayitli_secmen": 971861,
+          "oy_kullanan_secmen": 723568,
+          "gecerli_oy": 672974,
+          "gecersiz_oy": 50594,
+          "il_sayisi": 3,
+          "katilim_orani": 74.45
+        },
+        "TRA1": {
+          "toplam_sandik": 1305,
+          "kayitli_secmen": 234349,
+          "oy_kullanan_secmen": 183561,
+          "gecerli_oy": 172215,
+          "gecersiz_oy": 11346,
+          "il_sayisi": 2,
+          "katilim_orani": 78.33
+        },
+        "TR41": {
+          "toplam_sandik": 700,
+          "kayitli_secmen": 169000,
+          "oy_kullanan_secmen": 142057,
+          "gecerli_oy": 136173,
+          "gecersiz_oy": 5884,
+          "il_sayisi": 1,
+          "katilim_orani": 84.06
+        },
+        "TRB1": {
+          "toplam_sandik": 4027,
+          "kayitli_secmen": 956721,
+          "oy_kullanan_secmen": 691371,
+          "gecerli_oy": 639942,
+          "gecersiz_oy": 51429,
+          "il_sayisi": 4,
+          "katilim_orani": 72.26
+        },
+        "TRB2": {
+          "toplam_sandik": 1603,
+          "kayitli_secmen": 423818,
+          "oy_kullanan_secmen": 314489,
+          "gecerli_oy": 291574,
+          "gecersiz_oy": 22915,
+          "il_sayisi": 2,
+          "katilim_orani": 74.2
+        },
+        "TR42": {
+          "toplam_sandik": 2777,
+          "kayitli_secmen": 750012,
+          "oy_kullanan_secmen": 610935,
+          "gecerli_oy": 584477,
+          "gecersiz_oy": 26458,
+          "il_sayisi": 3,
+          "katilim_orani": 81.46
+        },
+        "TR61": {
+          "toplam_sandik": 1933,
+          "kayitli_secmen": 537286,
+          "oy_kullanan_secmen": 448458,
+          "gecerli_oy": 423382,
+          "gecersiz_oy": 25076,
+          "il_sayisi": 2,
+          "katilim_orani": 83.47
+        },
+        "TR22": {
+          "toplam_sandik": 1659,
+          "kayitli_secmen": 430683,
+          "oy_kullanan_secmen": 364054,
+          "gecerli_oy": 352517,
+          "gecersiz_oy": 11537,
+          "il_sayisi": 1,
+          "katilim_orani": 84.53
+        },
+        "TR82": {
+          "toplam_sandik": 3247,
+          "kayitli_secmen": 634348,
+          "oy_kullanan_secmen": 529949,
+          "gecerli_oy": 502403,
+          "gecersiz_oy": 27546,
+          "il_sayisi": 3,
+          "katilim_orani": 83.54
+        },
+        "TR21": {
+          "toplam_sandik": 2098,
+          "kayitli_secmen": 617003,
+          "oy_kullanan_secmen": 515982,
+          "gecerli_oy": 495950,
+          "gecersiz_oy": 20032,
+          "il_sayisi": 2,
+          "katilim_orani": 83.63
+        },
+        "TR52": {
+          "toplam_sandik": 714,
+          "kayitli_secmen": 189888,
+          "oy_kullanan_secmen": 156264,
+          "gecerli_oy": 148619,
+          "gecersiz_oy": 7645,
+          "il_sayisi": 1,
+          "katilim_orani": 82.29
+        },
+        "TR62": {
+          "toplam_sandik": 1273,
+          "kayitli_secmen": 392470,
+          "oy_kullanan_secmen": 311791,
+          "gecerli_oy": 293088,
+          "gecersiz_oy": 18703,
+          "il_sayisi": 1,
+          "katilim_orani": 79.44
+        },
+        "TR72": {
+          "toplam_sandik": 3797,
+          "kayitli_secmen": 784772,
+          "oy_kullanan_secmen": 625368,
+          "gecerli_oy": 595546,
+          "gecersiz_oy": 29822,
+          "il_sayisi": 2,
+          "katilim_orani": 79.69
+        }
+      }
+    },
+    "2024_BM": {
+      "name": "2024 BM",
+      "turkiye": {
+        "toplam_sandik": 184772,
+        "kayitli_secmen": 57766800,
+        "oy_kullanan_secmen": 45120274,
+        "gecerli_oy": 42886573,
+        "gecersiz_oy": 2233701,
+        "katilim_orani": 78.11,
+        "_kaynak": "il toplamından hesaplandı"
+      },
+      "nuts1": {
+        "TR6": {
+          "toplam_sandik": 21382,
+          "kayitli_secmen": 6746586,
+          "oy_kullanan_secmen": 5232144,
+          "gecerli_oy": 4960895,
+          "gecersiz_oy": 271249,
+          "il_sayisi": 7,
+          "katilim_orani": 77.55
+        },
+        "TRC": {
+          "toplam_sandik": 21137,
+          "kayitli_secmen": 6299062,
+          "oy_kullanan_secmen": 4586530,
+          "gecerli_oy": 4264884,
+          "gecersiz_oy": 321646,
+          "il_sayisi": 10,
+          "katilim_orani": 72.81
+        },
+        "TR3": {
+          "toplam_sandik": 25853,
+          "kayitli_secmen": 8036461,
+          "oy_kullanan_secmen": 6523043,
+          "gecerli_oy": 6199598,
+          "gecersiz_oy": 323445,
+          "il_sayisi": 8,
+          "katilim_orani": 81.17
+        },
+        "TRA": {
+          "toplam_sandik": 4238,
+          "kayitli_secmen": 1104847,
+          "oy_kullanan_secmen": 806496,
+          "gecerli_oy": 747928,
+          "gecersiz_oy": 58568,
+          "il_sayisi": 7,
+          "katilim_orani": 73.0
+        },
+        "TR7": {
+          "toplam_sandik": 8350,
+          "kayitli_secmen": 2572275,
+          "oy_kullanan_secmen": 2020895,
+          "gecerli_oy": 1919972,
+          "gecersiz_oy": 100923,
+          "il_sayisi": 8,
+          "katilim_orani": 78.56
+        },
+        "TR8": {
+          "toplam_sandik": 9355,
+          "kayitli_secmen": 2784271,
+          "oy_kullanan_secmen": 2241518,
+          "gecerli_oy": 2112045,
+          "gecersiz_oy": 129473,
+          "il_sayisi": 10,
+          "katilim_orani": 80.51
+        },
+        "TR5": {
+          "toplam_sandik": 19129,
+          "kayitli_secmen": 6105694,
+          "oy_kullanan_secmen": 4787713,
+          "gecerli_oy": 4574442,
+          "gecersiz_oy": 213271,
+          "il_sayisi": 3,
+          "katilim_orani": 78.41
+        },
+        "TR9": {
+          "toplam_sandik": 6384,
+          "kayitli_secmen": 1774553,
+          "oy_kullanan_secmen": 1403879,
+          "gecerli_oy": 1314288,
+          "gecersiz_oy": 89591,
+          "il_sayisi": 6,
+          "katilim_orani": 79.11
+        },
+        "TR2": {
+          "toplam_sandik": 8734,
+          "kayitli_secmen": 2676275,
+          "oy_kullanan_secmen": 2167610,
+          "gecerli_oy": 2070874,
+          "gecersiz_oy": 96736,
+          "il_sayisi": 5,
+          "katilim_orani": 80.99
+        },
+        "TR4": {
+          "toplam_sandik": 19350,
+          "kayitli_secmen": 6120784,
+          "oy_kullanan_secmen": 4809799,
+          "gecerli_oy": 4569261,
+          "gecersiz_oy": 240538,
+          "il_sayisi": 8,
+          "katilim_orani": 78.58
+        },
+        "TRB": {
+          "toplam_sandik": 7587,
+          "kayitli_secmen": 2231458,
+          "oy_kullanan_secmen": 1581048,
+          "gecerli_oy": 1461500,
+          "gecersiz_oy": 119548,
+          "il_sayisi": 8,
+          "katilim_orani": 70.85
+        },
+        "TR1": {
+          "toplam_sandik": 33273,
+          "kayitli_secmen": 11314534,
+          "oy_kullanan_secmen": 8959599,
+          "gecerli_oy": 8690886,
+          "gecersiz_oy": 268713,
+          "il_sayisi": 1,
+          "katilim_orani": 79.19
+        }
+      },
+      "nuts2": {
+        "TR62": {
+          "toplam_sandik": 10584,
+          "kayitli_secmen": 3340245,
+          "oy_kullanan_secmen": 2577887,
+          "gecerli_oy": 2434617,
+          "gecersiz_oy": 143270,
+          "il_sayisi": 3,
+          "katilim_orani": 77.18
+        },
+        "TRC1": {
+          "toplam_sandik": 8283,
+          "kayitli_secmen": 2545927,
+          "oy_kullanan_secmen": 1883353,
+          "gecerli_oy": 1757818,
+          "gecersiz_oy": 125535,
+          "il_sayisi": 4,
+          "katilim_orani": 73.98
+        },
+        "TR33": {
+          "toplam_sandik": 6989,
+          "kayitli_secmen": 2078833,
+          "oy_kullanan_secmen": 1751259,
+          "gecerli_oy": 1657448,
+          "gecersiz_oy": 93811,
+          "il_sayisi": 4,
+          "katilim_orani": 84.24
+        },
+        "TRA2": {
+          "toplam_sandik": 1327,
+          "kayitli_secmen": 420435,
+          "oy_kullanan_secmen": 303072,
+          "gecerli_oy": 279800,
+          "gecersiz_oy": 23272,
+          "il_sayisi": 4,
+          "katilim_orani": 72.09
+        },
+        "TR71": {
+          "toplam_sandik": 3039,
+          "kayitli_secmen": 956650,
+          "oy_kullanan_secmen": 762499,
+          "gecerli_oy": 725630,
+          "gecersiz_oy": 36869,
+          "il_sayisi": 5,
+          "katilim_orani": 79.71
+        },
+        "TR83": {
+          "toplam_sandik": 6307,
+          "kayitli_secmen": 1855065,
+          "oy_kullanan_secmen": 1497266,
+          "gecerli_oy": 1405404,
+          "gecersiz_oy": 91862,
+          "il_sayisi": 4,
+          "katilim_orani": 80.71
+        },
+        "TR51": {
+          "toplam_sandik": 13253,
+          "kayitli_secmen": 4304874,
+          "oy_kullanan_secmen": 3414151,
+          "gecerli_oy": 3281738,
+          "gecersiz_oy": 132413,
+          "il_sayisi": 1,
+          "katilim_orani": 79.31
+        },
+        "TR61": {
+          "toplam_sandik": 7372,
+          "kayitli_secmen": 2328211,
+          "oy_kullanan_secmen": 1839223,
+          "gecerli_oy": 1751971,
+          "gecersiz_oy": 87252,
+          "il_sayisi": 3,
+          "katilim_orani": 79.0
+        },
+        "TR90": {
+          "toplam_sandik": 6384,
+          "kayitli_secmen": 1774553,
+          "oy_kullanan_secmen": 1403879,
+          "gecerli_oy": 1314288,
+          "gecersiz_oy": 89591,
+          "il_sayisi": 6,
+          "katilim_orani": 79.11
+        },
+        "TR32": {
+          "toplam_sandik": 8167,
+          "kayitli_secmen": 2497658,
+          "oy_kullanan_secmen": 2041795,
+          "gecerli_oy": 1930531,
+          "gecersiz_oy": 111264,
+          "il_sayisi": 3,
+          "katilim_orani": 81.75
+        },
+        "TR22": {
+          "toplam_sandik": 4511,
+          "kayitli_secmen": 1314665,
+          "oy_kullanan_secmen": 1089324,
+          "gecerli_oy": 1040311,
+          "gecersiz_oy": 49013,
+          "il_sayisi": 2,
+          "katilim_orani": 82.86
+        },
+        "TR81": {
+          "toplam_sandik": 1771,
+          "kayitli_secmen": 549986,
+          "oy_kullanan_secmen": 435963,
+          "gecerli_oy": 414173,
+          "gecersiz_oy": 21790,
+          "il_sayisi": 3,
+          "katilim_orani": 79.27
+        },
+        "TRC3": {
+          "toplam_sandik": 4455,
+          "kayitli_secmen": 1337969,
+          "oy_kullanan_secmen": 988169,
+          "gecerli_oy": 914919,
+          "gecersiz_oy": 73250,
+          "il_sayisi": 4,
+          "katilim_orani": 73.86
+        },
+        "TRA1": {
+          "toplam_sandik": 2911,
+          "kayitli_secmen": 684412,
+          "oy_kullanan_secmen": 503424,
+          "gecerli_oy": 468128,
+          "gecersiz_oy": 35296,
+          "il_sayisi": 3,
+          "katilim_orani": 73.56
+        },
+        "TR41": {
+          "toplam_sandik": 10228,
+          "kayitli_secmen": 3225676,
+          "oy_kullanan_secmen": 2556902,
+          "gecerli_oy": 2436167,
+          "gecersiz_oy": 120735,
+          "il_sayisi": 3,
+          "katilim_orani": 79.27
+        },
+        "TRB1": {
+          "toplam_sandik": 4192,
+          "kayitli_secmen": 1221176,
+          "oy_kullanan_secmen": 881344,
+          "gecerli_oy": 823685,
+          "gecersiz_oy": 57659,
+          "il_sayisi": 5,
+          "katilim_orani": 72.17
+        },
+        "TRB2": {
+          "toplam_sandik": 3395,
+          "kayitli_secmen": 1010282,
+          "oy_kullanan_secmen": 699704,
+          "gecerli_oy": 637815,
+          "gecersiz_oy": 61889,
+          "il_sayisi": 3,
+          "katilim_orani": 69.26
+        },
+        "TR42": {
+          "toplam_sandik": 9122,
+          "kayitli_secmen": 2895108,
+          "oy_kullanan_secmen": 2252897,
+          "gecerli_oy": 2133094,
+          "gecersiz_oy": 119803,
+          "il_sayisi": 5,
+          "katilim_orani": 77.82
+        },
+        "TR82": {
+          "toplam_sandik": 1277,
+          "kayitli_secmen": 379220,
+          "oy_kullanan_secmen": 308289,
+          "gecerli_oy": 292468,
+          "gecersiz_oy": 15821,
+          "il_sayisi": 3,
+          "katilim_orani": 81.3
+        },
+        "TRC2": {
+          "toplam_sandik": 8399,
+          "kayitli_secmen": 2415166,
+          "oy_kullanan_secmen": 1715008,
+          "gecerli_oy": 1592147,
+          "gecersiz_oy": 122861,
+          "il_sayisi": 2,
+          "katilim_orani": 71.01
+        },
+        "TR21": {
+          "toplam_sandik": 4223,
+          "kayitli_secmen": 1361610,
+          "oy_kullanan_secmen": 1078286,
+          "gecerli_oy": 1030563,
+          "gecersiz_oy": 47723,
+          "il_sayisi": 3,
+          "katilim_orani": 79.19
+        },
+        "TR63": {
+          "toplam_sandik": 3426,
+          "kayitli_secmen": 1078130,
+          "oy_kullanan_secmen": 815034,
+          "gecerli_oy": 774307,
+          "gecersiz_oy": 40727,
+          "il_sayisi": 1,
+          "katilim_orani": 75.6
+        },
+        "TR10": {
+          "toplam_sandik": 33273,
+          "kayitli_secmen": 11314534,
+          "oy_kullanan_secmen": 8959599,
+          "gecerli_oy": 8690886,
+          "gecersiz_oy": 268713,
+          "il_sayisi": 1,
+          "katilim_orani": 79.19
+        },
+        "TR31": {
+          "toplam_sandik": 10697,
+          "kayitli_secmen": 3459970,
+          "oy_kullanan_secmen": 2729989,
+          "gecerli_oy": 2611619,
+          "gecersiz_oy": 118370,
+          "il_sayisi": 1,
+          "katilim_orani": 78.9
+        },
+        "TR52": {
+          "toplam_sandik": 5876,
+          "kayitli_secmen": 1800820,
+          "oy_kullanan_secmen": 1373562,
+          "gecerli_oy": 1292704,
+          "gecersiz_oy": 80858,
+          "il_sayisi": 2,
+          "katilim_orani": 76.27
+        },
+        "TR72": {
+          "toplam_sandik": 5311,
+          "kayitli_secmen": 1615625,
+          "oy_kullanan_secmen": 1258396,
+          "gecerli_oy": 1194342,
+          "gecersiz_oy": 64054,
+          "il_sayisi": 3,
+          "katilim_orani": 77.89
+        }
+      }
+    }
+  }
+}
