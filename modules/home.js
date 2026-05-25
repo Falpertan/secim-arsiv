@@ -18,6 +18,9 @@
 
     // Render
     container.innerHTML = `
+      <div class="home-page">
+      <div class="home-siluet" aria-hidden="true"></div>
+
       <header class="page-header">
         <span class="eyebrow">Açık seçim arşivi · 2018 — 2024</span>
         <h1>Türkiye'nin son 13 seçimini<br/>tek bir arşivde inceleyin.</h1>
@@ -111,6 +114,7 @@
         sorgulamaya açar. Bazı bölgelerdeki yüksek oranlar gerçek nüfus hareketinden
         (iç göç, mezraların ilçeye dönmesi, deprem sonrası kayıt değişikliği) kaynaklanabilir.
       </p>
+      </div>
     `;
 
     // Render election grid
