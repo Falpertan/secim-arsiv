@@ -288,7 +288,7 @@ h4 { font-size: 14px; line-height: 1.35; font-family: var(--font-body); font-wei
   margin: 0 auto;
 }
 
-/* Anasayfa — Türkiye siluet filigranı */
+/* Anasayfa — Türkiye siluet filigranı (img + blend, mask yerine) */
 .home-page {
   position: relative;
 }
@@ -298,34 +298,30 @@ h4 { font-size: 14px; line-height: 1.35; font-family: var(--font-body); font-wei
 }
 .home-siluet {
   position: absolute;
-  top: 0;
-  right: -6%;
-  width: min(52%, 560px);
-  height: min(72vh, 640px);
-  max-height: 640px;
-  background-color: var(--brand-gold);
-  opacity: 0.07;
-  mask-image: url('../promo/turkiye-siluet.png');
-  mask-size: contain;
-  mask-repeat: no-repeat;
-  mask-position: center right;
-  -webkit-mask-image: url('../promo/turkiye-siluet.png');
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center right;
+  top: 12px;
+  right: -3%;
+  width: min(46%, 480px);
+  height: auto;
+  max-width: 480px;
+  opacity: 0.16;
+  mix-blend-mode: multiply;
+  filter: invert(1) sepia(0.45) saturate(2.5) hue-rotate(358deg) brightness(0.95);
   pointer-events: none;
   z-index: 0;
+  user-select: none;
 }
 @media (max-width: 900px) {
   .home-siluet {
-    width: 58%;
-    right: -12%;
-    opacity: 0.05;
+    width: 52%;
+    right: -10%;
+    opacity: 0.11;
   }
 }
 @media (max-width: 640px) {
   .home-siluet {
-    display: none;
+    width: 70%;
+    right: -22%;
+    opacity: 0.08;
   }
 }
 

@@ -19,7 +19,7 @@
     // Render
     container.innerHTML = `
       <div class="home-page">
-      <div class="home-siluet" aria-hidden="true"></div>
+      <img class="home-siluet" src="assets/turkiye-siluet.png?v=1" alt="" aria-hidden="true" width="520" height="520">
 
       <header class="page-header">
         <span class="eyebrow">Açık seçim arşivi · 2018 — 2024</span>
