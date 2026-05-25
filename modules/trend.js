@@ -326,6 +326,9 @@
         </p>
       </header>
 
+      ${window.AT.renderDataFreshness ? window.AT.renderDataFreshness() : ''}
+      ${window.AT.renderContextNotice ? window.AT.renderContextNotice('trend') : ''}
+
       <div class="trend-sekmeler">
         <button class="trend-sekme" data-sekme="A">
           <span class="sekme-num">A</span>
@@ -479,7 +482,7 @@
         <h2>Parti oy oranları — ${getKapsamBaslik()}</h2>
         <span class="eyebrow">Sadece toplam oyun en az %1'ini alan partiler gösterilir</span>
       </div>
-      <div class="panel" style="padding: var(--space-4);">
+      <div class="panel chart-export-panel" data-chart-export="trend-parti-oranlari" style="padding: var(--space-4);">
         <div id="trendA-grafik"></div>
       </div>
 
@@ -497,6 +500,7 @@
     bindFiltrePanel(icerikEl, () => renderSekmeA(container, icerikEl));
     renderCizgiGrafik(icerikEl);
     renderDegisimTablosu(icerikEl);
+    if (window.AT.enhanceChartExports) window.AT.enhanceChartExports(icerikEl);
   }
 
   /** Sağ kenar parti etiketlerini çakışmayacak şekilde dikey yay */

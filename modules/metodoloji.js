@@ -36,6 +36,7 @@
           <li><a href="#hesaplama">Hesaplama yöntemi</a></li>
           <li><a href="#tarafsizlik">Tarafsızlık ilkeleri</a></li>
           <li><a href="#sinirlar">Sınırlamalar ve önemli notlar</a></li>
+          <li><a href="#arastirmaci">Araştırmacı ve gazeteci kaynakları</a></li>
           <li><a href="#atif">Atıf ve kullanım</a></li>
           <li><a href="#bagimsizlik">Açık kaynak ve bağımsızlık</a></li>
           <li><a href="#iletisim">İletişim ve hata bildirimi</a></li>
@@ -47,7 +48,7 @@
         <h2>Bu site nedir?</h2>
         <p>
           <strong>Türkiye Seçim Arşivi</strong>, 2018-2024 yılları arasında Türkiye'de yapılan
-          <strong>12 farklı seçimin</strong> il ve ilçe bazında sonuçlarını, demografik verilerle birlikte
+          <strong>13 farklı seçimin</strong> il ve ilçe bazında sonuçlarını, demografik verilerle birlikte
           tek bir arayüzde inceleme imkânı sunan <strong>bağımsız, açık kaynak</strong> bir platformdur.
         </p>
         <p>
@@ -326,6 +327,35 @@
           ADNKS güncellemeleri eklendiğinde manuel olarak güncellenir. Mevcut veri sürümü
           <strong>2024 yerel seçimi</strong>nin resmi sonuçları ve <strong>2024 ADNKS</strong>
           verisini kapsar.
+        </p>
+      </section>
+
+      <!-- ═══ ARAŞTIRMACI / GAZETECİ ═══ -->
+      <section id="arastirmaci" class="metod-bolum">
+        <h2>Araştırmacı ve gazeteci kaynakları</h2>
+        <p>
+          Akademik atıf, haber görseli ve veri indirme için hazır belgeler:
+        </p>
+        <div class="metod-kaynak-grid">
+          <a class="metod-kaynak-kart" href="docs/codebook.html" target="_blank" rel="noopener">
+            <div class="metod-kaynak-etiket">Veri sözlüğü</div>
+            <div class="metod-kaynak-baslik">Codebook</div>
+            <p>Dosya yapısı, değişkenler, parti birleştirmeleri, sınırlar.</p>
+          </a>
+          <a class="metod-kaynak-kart" href="promo/basin-ozeti.html" target="_blank" rel="noopener">
+            <div class="metod-kaynak-etiket">1 sayfa</div>
+            <div class="metod-kaynak-baslik">Basın özeti</div>
+            <p>Kapsam, kaynaklar, alıntı biçimi, örnek haber açıları. Yazdırılabilir.</p>
+          </a>
+          <a class="metod-kaynak-kart" href="https://github.com/Falpertan/secim-arsiv/tree/main/data" target="_blank" rel="noopener">
+            <div class="metod-kaynak-etiket">GitHub</div>
+            <div class="metod-kaynak-baslik">Veri indir</div>
+            <p><span class="mono">data/</span> klasöründeki tüm JSON dosyaları. CC BY-NC 4.0.</p>
+          </a>
+        </div>
+        <p class="metod-not" style="margin-top: var(--space-4);">
+          <strong>Grafik dışa aktarma:</strong> Trend modülü → Parti zaman çizelgesi sekmesinde
+          grafik altında <em>PNG indir</em> butonu (kaynak satırı otomatik eklenir).
         </p>
       </section>
 
@@ -623,6 +653,46 @@
           font-family: var(--font-mono);
           font-size: 0.92em;
           color: var(--ink);
+        }
+
+        .metod-kaynak-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: var(--space-4);
+          margin: var(--space-4) 0;
+        }
+        .metod-kaynak-kart {
+          display: block;
+          background: #fdfaf2;
+          border: 1px solid var(--line);
+          border-radius: var(--radius);
+          padding: var(--space-4) var(--space-5);
+          text-decoration: none;
+          color: inherit;
+          transition: border-color 0.15s;
+        }
+        .metod-kaynak-kart:hover {
+          border-color: var(--brand-gold);
+        }
+        .metod-kaynak-etiket {
+          font-size: 10px;
+          font-weight: 600;
+          letter-spacing: 0.06em;
+          color: var(--brand-gold);
+          margin-bottom: 6px;
+        }
+        .metod-kaynak-baslik {
+          font-family: var(--font-display);
+          font-size: 17px;
+          font-weight: 600;
+          color: var(--ink);
+          margin-bottom: 8px;
+        }
+        .metod-kaynak-kart p {
+          font-size: 13px;
+          line-height: 1.5;
+          margin: 0;
+          color: var(--ink-3);
         }
       </style>
     `;

@@ -961,3 +961,95 @@ h4 { font-size: 14px; line-height: 1.35; font-family: var(--font-body); font-wei
     grid-template-columns: 1fr;
   }
 }
+
+/* Araştırmacı / gazeteci yardımcıları */
+.at-data-freshness {
+  font-size: 12.5px;
+  color: var(--ink-3);
+  margin: calc(-1 * var(--space-2)) 0 var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--line-soft);
+}
+.at-data-freshness a {
+  color: var(--brand-gold);
+  text-decoration: none;
+}
+.at-data-freshness a:hover { text-decoration: underline; }
+
+.at-context-notice {
+  background: #fdfaf2;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand-gold);
+  border-radius: var(--radius);
+  padding: var(--space-4) var(--space-5);
+  margin-bottom: var(--space-6);
+}
+.at-context-notice-title {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: var(--space-3);
+}
+.at-context-notice-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+@media (max-width: 720px) {
+  .at-context-notice-grid { grid-template-columns: 1fr; }
+}
+.at-context-notice-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--brand-gold);
+  margin-bottom: 6px;
+}
+.at-context-notice ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.at-context-notice li { margin-bottom: 4px; }
+.at-context-notice-note {
+  font-size: 12.5px;
+  line-height: 1.55;
+  color: var(--ink-3);
+  font-style: italic;
+  margin: 0;
+}
+
+.chart-export-panel { position: relative; }
+.chart-export-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px dashed var(--line-soft);
+}
+.chart-export-hint {
+  font-size: 11.5px;
+  color: var(--ink-3);
+  margin-right: auto;
+}
+.chart-export-btn {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: #fdfaf2;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.chart-export-btn:hover {
+  border-color: var(--brand-gold);
+  color: var(--brand-gold);
+}

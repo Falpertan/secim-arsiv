@@ -151,6 +151,19 @@
   }
   window.AT.navigate = navigate;
 
+  function buildDocumentTitle(route, params) {
+    let t = route.label;
+    if (params && state.manifest) {
+      if (params.key) {
+        const e = state.manifest.elections.find(x => x.key === params.key);
+        if (e) t += ' · ' + (e.kisa || e.tip);
+      }
+      if (params.il) t += ' · ' + params.il;
+      if (params.ilce) t += ' · ' + params.ilce;
+    }
+    return t + ' · Türkiye Seçim Arşivi · AlperTan™';
+  }
+
   async function renderRoute() {
     const { id, params } = parseHash();
     const route = ROUTES.find(r => r.id === id) || ROUTES[0];
@@ -191,7 +204,7 @@
     // Scroll to top on route change
     window.scrollTo(0, 0);
 
-    document.title = route.label + ' · Türkiye Seçim Arşivi · AlperTan™';
+    document.title = buildDocumentTitle(route, params);
 
     if (window.ATAnalytics) {
       window.ATAnalytics.trackPageView(route, params);

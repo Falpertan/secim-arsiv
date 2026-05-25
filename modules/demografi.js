@@ -178,6 +178,9 @@
         </p>
       </header>
 
+      ${window.AT.renderDataFreshness ? window.AT.renderDataFreshness() : ''}
+      ${window.AT.renderContextNotice ? window.AT.renderContextNotice('demografi') : ''}
+
       <div class="demografi-sekmeler">
         <button class="demografi-sekme" data-sekme="A">
           <span class="sekme-num">A</span>
