@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Türkiye Seçim Arşivi — Tanıtım görselleri</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Inter, sans-serif;
+    background: #2e2820;
+    color: #f5f1e8;
+    padding: 32px 24px 64px;
+  }
+  .rehber {
+    max-width: 960px;
+    margin: 0 auto 40px;
+    background: #3a342b;
+    border: 1px solid #6b6253;
+    border-radius: 8px;
+    padding: 20px 24px;
+    line-height: 1.6;
+  }
+  .rehber h1 { font-size: 20px; margin-bottom: 12px; color: #e8dcc4; }
+  .rehber ol { padding-left: 20px; color: #d8cfb8; }
+  .rehber li { margin-bottom: 6px; }
+  .rehber code { background: #1a1814; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+  .grup {
+    max-width: 960px;
+    margin: 0 auto 48px;
+  }
+  .grup-baslik {
+    font-size: 13px;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    color: #c8861a;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  .grup-alt { font-size: 12px; color: #9b9180; margin-bottom: 16px; }
+
+  /* ─── Ortak kart stili ─── */
+  .kart {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(145deg, #f5f1e8 0%, #ebe5d6 55%, #ddd5c0 100%);
+    color: #1a1814;
+    font-family: Fraunces, Georgia, serif;
+  }
+  .kart::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 85% 15%, rgba(200,134,26,0.12), transparent 45%);
+    pointer-events: none;
+  }
+  .kart-altin-cizgi {
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 72px; height: 3px;
+    background: #a07820;
+  }
+  .kart-eyebrow {
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: #a07820;
+    text-transform: none;
+  }
+  .kart-baslik {
+    font-size: 42px;
+    line-height: 1.15;
+    font-weight: 600;
+    margin: 10px 0 12px;
+    max-width: 90%;
+  }
+  .kart-baslik-kucuk { font-size: 34px; }
+  .kart-lede {
+    font-family: Inter, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #3a342b;
+    font-style: italic;
+    max-width: 520px;
+  }
+  .kart-stats {
+    display: flex;
+    gap: 28px;
+    margin-top: 28px;
+    font-family: Inter, sans-serif;
+  }
+  .kart-stat-val {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1814;
+    font-variant-numeric: tabular-nums;
+  }
+  .kart-stat-lbl {
+    font-size: 11px;
+    color: #6b6253;
+    margin-top: 2px;
+  }
+  .kart-url {
+    position: absolute;
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #a07820;
+    letter-spacing: 0.02em;
+  }
+  .kart-marka {
+    position: absolute;
+    font-family: Inter, sans-serif;
+    font-size: 11px;
+    color: #6b6253;
+  }
+  .kart-moduller {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+    font-family: Inter, sans-serif;
+  }
+  .kart-modul {
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid #c8bfa8;
+    border-radius: 4px;
+    background: rgba(253,250,242,0.7);
+    color: #3a342b;
+  }
+
+  /* Boyutlar */
+  .kart-twitter {
+    width: 1200px; height: 630px;
+    padding: 56px 64px;
+  }
+  .kart-twitter .kart-url { bottom: 48px; left: 64px; }
+  .kart-twitter .kart-marka { bottom: 48px; right: 64px; }
+
+  .kart-kare {
+    width: 1080px; height: 1080px;
+    padding: 72px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kart-kare .kart-baslik { font-size: 52px; }
+  .kart-kare .kart-url { bottom: 64px; left: 64px; position: absolute; font-size: 22px; }
+
+  .kart-story {
+    width: 1080px; height: 1920px;
+    padding: 120px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .kart-story .kart-baslik { font-size: 58px; }
+  .kart-story .kart-lede { font-size: 22px; max-width: 100%; }
+  .kart-story .kart-stats { flex-direction: column; gap: 20px; margin-top: 48px; }
+  .kart-story .kart-stat-val { font-size: 36px; }
+  .kart-story .kart-url { bottom: 100px; left: 72px; position: absolute; font-size: 26px; }
+
+  .kart-modul-vitrin {
+    width: 1200px; height: 675px;
+    padding: 48px 56px;
+  }
+  .kart-modul-vitrin .kart-baslik { font-size: 36px; margin-bottom: 24px; }
+  .modul-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    font-family: Inter, sans-serif;
+  }
+  .modul-kutu {
+    background: rgba(253,250,242,0.85);
+    border: 1px solid #c8bfa8;
+    border-radius: 6px;
+    padding: 20px 18px;
+    min-height: 160px;
+  }
+  .modul-kutu-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: #a07820;
+    margin-bottom: 8px;
+  }
+  .modul-kutu-baslik {
+    font-family: Fraunces, serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #1a1814;
+  }
+  .modul-kutu-metin {
+    font-size: 12px;
+    line-height: 1.45;
+    color: #4b4233;
+  }
+  .kart-modul-vitrin .kart-url { bottom: 40px; right: 56px; left: auto; font-size: 16px; }
+
+  .kart-whatsapp {
+    width: 800px; height: 418px;
+    padding: 40px 44px;
+  }
+  .kart-whatsapp .kart-baslik { font-size: 28px; }
+  .kart-whatsapp .kart-lede { font-size: 13px; }
+  .kart-whatsapp .kart-url { bottom: 36px; left: 44px; font-size: 15px; }
+
+  .scroll-x { overflow-x: auto; padding-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<div class="rehber">
+  <h1>Tanıtım görselleri — nasıl kaydedilir?</h1>
+  <ol>
+    <li>Bu dosyayı tarayıcıda aç: <code>promo/tanitim.html</code> (veya çift tıkla)</li>
+    <li>Her kartın etrafını <strong>Win + Shift + S</strong> ile seç → PNG kaydet</li>
+    <li>Twitter/X için <strong>1200×630</strong>, Instagram kare için <strong>1080×1080</strong>, Story için <strong>1080×1920</strong> kartını kullan</li>
+    <li>Paylaşım metni: <em>«Türkiye Seçim Arşivi — 2018–2024, 13 seçim, il ve ilçe bazında. Bağımsız, açık, tarafsız. secimarsivi.com»</em></li>
+  </ol>
+</div>
+
+<!-- 1 Twitter / X / LinkedIn -->
+<div class="grup">
+  <div class="grup-baslik">1 · Twitter / X / LinkedIn (1200 × 630)</div>
+  <div class="grup-alt">Kapak görseli, link paylaşımı</div>
+  <div class="scroll-x">
+    <div class="kart kart-twitter">
+      <div class="kart-eyebrow">Açık seçim arşivi · 2018 — 2024</div>
+      <div class="kart-baslik">Türkiye'nin son 13 seçimini tek arşivde inceleyin.</div>
+      <p class="kart-lede">81 il, 973 ilçe. YSK ve TÜİK kaynaklı. Tarafsız dil, reklam yok.</p>
+      <div class="kart-stats">
+        <div><div class="kart-stat-val">13</div><div class="kart-stat-lbl">seçim</div></div>
+        <div><div class="kart-stat-val">81 · 973</div><div class="kart-stat-lbl">il · ilçe</div></div>
+        <div><div class="kart-stat-val">7</div><div class="kart-stat-lbl">yıl demografi</div></div>
+      </div>
+      <div class="kart-url">secimarsivi.com</div>
+      <div class="kart-marka">AlperTan™</div>
+      <div class="kart-altin-cizgi"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2 Instagram kare -->
+<div class="grup">
+  <div class="grup-baslik">2 · Instagram / Facebook kare (1080 × 1080)</div>
+  <div class="scroll-x">
+    <div class="kart kart-kare">
+      <div class="kart-eyebrow">Türkiye Seçim Arşivi</div>
+      <div class="kart-baslik">2018'den 2024'e<br/>13 seçim.</div>
+      <p class="kart-lede">Arşiv · trend · karşılaştırma · demografi · uyumsuzluk analizi</p>
+      <div class="kart-moduller">
+        <span class="kart-modul">Arşiv</span>
+        <span class="kart-modul">Trend</span>
+        <span class="kart-modul">Karşılaştırma</span>
+        <span class="kart-modul">Demografi</span>
+        <span class="kart-modul">Uyumsuzluk</span>
+        <span class="kart-modul">Senaryo</span>
+      </div>
+      <div class="kart-stats" style="margin-top:36px;">
+        <div><div class="kart-stat-val">Bağımsız</div><div class="kart-stat-lbl">açık veri</div></div>
+      </div>
+      <div class="kart-url">secimarsivi.com</div>
+      <div class="kart-altin-cizgi"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 3 Story -->
+<div class="grup">
+  <div class="grup-baslik">3 · Instagram / WhatsApp Story (1080 × 1920)</div>
+  <div class="scroll-x">
+    <div class="kart kart-story">
+      <div class="kart-eyebrow">AlperTan™ · Açık seçim arşivi</div>
+      <div class="kart-baslik">Türkiye Seçim Arşivi</div>
+      <p class="kart-lede">Cumhurbaşkanlığından mahalli idarelere — il ve ilçe bazında tüm sonuçlar, demografi ve karşılaştırma.</p>
+      <div class="kart-stats">
+        <div><div class="kart-stat-val">13 seçim</div><div class="kart-stat-lbl">2018 — 2024</div></div>
+        <div><div class="kart-stat-val">81 il · 973 ilçe</div><div class="kart-stat-lbl">tüm Türkiye</div></div>
+        <div><div class="kart-stat-val">Tarafsız</div><div class="kart-stat-lbl">reklam yok · açık kaynak yaklaşımı</div></div>
+      </div>
+      <div class="kart-url">secimarsivi.com</div>
+      <div class="kart-altin-cizgi"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4 Modül vitrini -->
+<div class="grup">
+  <div class="grup-baslik">4 · Modül vitrini (1200 × 675)</div>
+  <div class="grup-alt">Site içeriğini tanıtan slayt</div>
+  <div class="scroll-x">
+    <div class="kart kart-modul-vitrin">
+      <div class="kart-eyebrow">Ne sunar?</div>
+      <div class="kart-baslik kart-baslik-kucuk">Veri görselleştirme modülleri</div>
+      <div class="modul-grid">
+        <div class="modul-kutu">
+          <div class="modul-kutu-num">01</div>
+          <div class="modul-kutu-baslik">Arşiv</div>
+          <div class="modul-kutu-metin">13 seçimin listesi, kayıtlı seçmen, katılım, ilçe detayı.</div>
+        </div>
+        <div class="modul-kutu">
+          <div class="modul-kutu-num">03</div>
+          <div class="modul-kutu-baslik">Trend</div>
+          <div class="modul-kutu-metin">Parti zaman çizelgesi, bölgesel ısı haritası, koalisyon.</div>
+        </div>
+        <div class="modul-kutu">
+          <div class="modul-kutu-num">04</div>
+          <div class="modul-kutu-baslik">Karşılaştırma</div>
+          <div class="modul-kutu-metin">İki ilçe, iki seçim veya tek ilçenin geçmişi.</div>
+        </div>
+        <div class="modul-kutu">
+          <div class="modul-kutu-num">05</div>
+          <div class="modul-kutu-baslik">Demografi</div>
+          <div class="modul-kutu-metin">Yaş, eğitim, cinsiyet — TÜİK verisiyle birleşik.</div>
+        </div>
+        <div class="modul-kutu">
+          <div class="modul-kutu-num">02</div>
+          <div class="modul-kutu-baslik">Uyumsuzluk</div>
+          <div class="modul-kutu-metin">Demografik, zamansal ve istatistiksel göstergeler.</div>
+        </div>
+        <div class="modul-kutu">
+          <div class="modul-kutu-num">06</div>
+          <div class="modul-kutu-baslik">Senaryo · Bölge · Vekil</div>
+          <div class="modul-kutu-metin">Varsayımsal modeller ve bölgesel profil.</div>
+        </div>
+      </div>
+      <div class="kart-url">secimarsivi.com</div>
+      <div class="kart-altin-cizgi"></div>
+    </div>
+  </div>
+</div>
+
+<!-- 5 WhatsApp önizleme -->
+<div class="grup">
+  <div class="grup-baslik">5 · WhatsApp / küçük paylaşım (800 × 418)</div>
+  <div class="scroll-x">
+    <div class="kart kart-whatsapp">
+      <div class="kart-eyebrow">Türkiye Seçim Arşivi</div>
+      <div class="kart-baslik">13 seçim · 81 il · 973 ilçe</div>
+      <p class="kart-lede">Bağımsız, açık, tarafsız seçim ve demografi arşivi.</p>
+      <div class="kart-url">secimarsivi.com</div>
+      <div class="kart-altin-cizgi"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
