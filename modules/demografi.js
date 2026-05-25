@@ -2072,7 +2072,10 @@
     const xStep = iw / (yillar.length - 1);
 
     let cizgiler = '';
-    let etiketler = '';
+    const labelMeta = [];
+    const labelX = padL + iw + 8;
+    const LABEL_GAP = 17;
+
     for (const yk of yasKats) {
       const noktalar = [];
       for (let i = 0; i < yillar.length; i++) {
@@ -2091,13 +2094,38 @@
       for (const p of noktalar) {
         cizgiler += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="3" fill="${renk}"/>`;
       }
-      // Etiket
       const sonNokta = noktalar[noktalar.length - 1];
+      labelMeta.push({ yk, renk, val: sonNokta.val, anchorX: sonNokta.x, anchorY: sonNokta.y });
+    }
+
+    // Sağ etiketler — çakışmayı önle (sıkışık yüzdeler için)
+    labelMeta.sort((a, b) => a.anchorY - b.anchorY);
+    for (let i = 0; i < labelMeta.length; i++) {
+      labelMeta[i].labelY = labelMeta[i].anchorY;
+      if (i > 0 && labelMeta[i].labelY - labelMeta[i - 1].labelY < LABEL_GAP) {
+        labelMeta[i].labelY = labelMeta[i - 1].labelY + LABEL_GAP;
+      }
+    }
+    const maxLabelY = padT + ih - 2;
+    const minLabelY = padT + 10;
+    if (labelMeta.length && labelMeta[labelMeta.length - 1].labelY > maxLabelY) {
+      const shift = labelMeta[labelMeta.length - 1].labelY - maxLabelY;
+      for (const lb of labelMeta) lb.labelY -= shift;
+    }
+    if (labelMeta.length && labelMeta[0].labelY < minLabelY) {
+      const shift = minLabelY - labelMeta[0].labelY;
+      for (const lb of labelMeta) lb.labelY += shift;
+    }
+
+    let etiketler = '';
+    for (const lb of labelMeta) {
+      const lx = labelX;
+      const ay = lb.anchorY.toFixed(1);
+      const ly = lb.labelY.toFixed(1);
       etiketler += `
-        <g transform="translate(${(padL + iw + 8).toFixed(1)}, ${sonNokta.y.toFixed(1)})">
-          <line x1="-6" y1="0" x2="0" y2="0" stroke="${renk}" stroke-width="2"/>
-          <text x="6" y="4" class="demD-yas-label" fill="${renk}">${yk} · ${fmt.n1(sonNokta.val)}%</text>
-        </g>
+        <path d="M ${lb.anchorX.toFixed(1)} ${ay} H ${(lx - 4).toFixed(1)} V ${ly}" fill="none" stroke="${lb.renk}" stroke-width="1" opacity="0.45"/>
+        <circle cx="${lb.anchorX.toFixed(1)}" cy="${ay}" r="2.5" fill="${lb.renk}"/>
+        <text x="${(lx + 4).toFixed(1)}" y="${(lb.labelY + 4).toFixed(1)}" class="demD-yas-label" fill="${lb.renk}">${lb.yk} · ${fmt.n1(lb.val)}%</text>
       `;
     }
 
@@ -2391,7 +2419,7 @@
         }
         .demD-yas-label {
           font-family: var(--font-body);
-          font-size: 12px;
+          font-size: 11px;
           font-weight: 600;
         }
         .demD-bos {
