@@ -356,7 +356,9 @@
         </div>
         <p class="metod-not" style="margin-top: var(--space-4);">
           <strong>Grafik dışa aktarma:</strong> Trend modülü → Parti zaman çizelgesi sekmesinde
-          grafik altında <em>PNG indir</em> butonu (kaynak satırı otomatik eklenir).
+          grafik üstünde <em>PNG indir</em> butonu (kaynak satırı otomatik eklenir).<br>
+          <strong>Tablo dışa aktarma:</strong> Trend, Karşılaştırma ve Arşiv modüllerinde
+          <em>CSV indir</em> — Excel / LibreOffice ile açılır (; ayraç, UTF-8).
         </p>
       </section>
 

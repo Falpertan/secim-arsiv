@@ -156,9 +156,12 @@
         </div>
       </div>
 
-      <div class="section-head">
-        <h2>Türkiye sıralaması</h2>
-        <span class="eyebrow">İlk 8 parti / aday</span>
+      <div class="section-head trend-grafik-baslik">
+        <div>
+          <h2>Türkiye sıralaması</h2>
+          <span class="eyebrow">İlk 8 parti / aday (tabloda); CSV tüm partiler</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="arsiv-csv-parti">CSV indir</button>
       </div>
       <div class="panel">
         <table class="data-table">
@@ -190,9 +193,12 @@
         </table>
       </div>
 
-      <div class="section-head">
-        <h2>İl bazında sıralama</h2>
-        <span class="eyebrow">Kayıtlı seçmene göre</span>
+      <div class="section-head trend-grafik-baslik">
+        <div>
+          <h2>İl bazında sıralama</h2>
+          <span class="eyebrow">Kayıtlı seçmene göre (tabloda 25 il; CSV 81 il)</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="arsiv-csv-il">CSV indir</button>
       </div>
       <div class="panel" style="padding:0;overflow:hidden">
         <table class="data-table">
@@ -231,6 +237,30 @@
         İttifak oyları, ittifaktaki her partinin doğrudan oy oranına göre orantılı dağıtılmıştır.
       </p>
     `;
+
+    if (window.AT.bindRowsCsvExport) {
+      window.AT.bindRowsCsvExport(
+        container.querySelector('#arsiv-csv-parti'),
+        ['Parti / Aday', 'Oy', 'Pay (%)'],
+        () => Object.entries(partyTotals)
+          .sort((a, b) => b[1] - a[1])
+          .map(([p, v]) => [p, v, totalAllParties > 0 ? (v / totalAllParties * 100).toFixed(2) : '0']),
+        () => `arsiv-${info.key}-partiler`
+      );
+      window.AT.bindRowsCsvExport(
+        container.querySelector('#arsiv-csv-il'),
+        ['Il', 'Kayitli secmen', 'Oy kullanan', 'Katilim (%)', 'Ilce sayisi'],
+        () => ilList.map(il => {
+          const k = il.meta.kayitli_secmen || 0;
+          const o = il.meta.oy_kullanan_secmen || 0;
+          const kat = k > 0 ? (o / k * 100).toFixed(1) : '0';
+          const ilceCount = (data.SECIM_ILCE && data.SECIM_ILCE[il.ad])
+            ? Object.keys(data.SECIM_ILCE[il.ad]).length : 0;
+          return [il.ad, k, o, kat, ilceCount];
+        }),
+        () => `arsiv-${info.key}-iller`
+      );
+    }
   }
 
   function escapeHtml(s) {

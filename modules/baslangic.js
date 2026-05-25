@@ -76,7 +76,7 @@
           </details>
           <details class="rehber-sss-item">
             <summary>Grafiği habere koyabilir miyim?</summary>
-            <p>Trend modülünde <em>PNG indir</em> butonu vardır; kaynak satırı otomatik eklenir. Alıntı: <a href="promo/basin-ozeti.html" target="_blank" rel="noopener">Basın özeti</a>.</p>
+            <p>Trend → Sekme A’da <em>PNG indir</em> (grafik). Tablolar için <em>CSV indir</em> — Trend, Karşılaştırma, Arşiv. Alıntı: <a href="promo/basin-ozeti.html" target="_blank" rel="noopener">Basın özeti</a>.</p>
           </details>
           <details class="rehber-sss-item">
             <summary>Link nasıl paylaşılır?</summary>

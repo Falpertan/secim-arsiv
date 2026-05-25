@@ -422,9 +422,12 @@
         </div>
       </div>
 
-      <div class="section-head" style="margin-top: var(--space-6);">
-        <h2>Parti karşılaştırma tablosu</h2>
-        <span class="eyebrow">İki ilçe arası yüzde puanı fark</span>
+      <div class="section-head trend-grafik-baslik" style="margin-top: var(--space-6);">
+        <div>
+          <h2>Parti karşılaştırma tablosu</h2>
+          <span class="eyebrow">İki ilçe arası yüzde puanı fark</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="karsA-csv-btn">CSV indir</button>
       </div>
       <div class="panel" style="padding: 0; overflow: hidden;">
         <div id="karsA-tablo"></div>
@@ -462,6 +465,8 @@
     renderIlcePanel(icerikEl.querySelector('#karsA-icerik1'), v1, s.il1, s.ilce1);
     renderIlcePanel(icerikEl.querySelector('#karsA-icerik2'), v2, s.il2, s.ilce2);
     renderIkiIlceFarkTablosu(icerikEl.querySelector('#karsA-tablo'), v1, v2);
+    bindKarsCsv(icerikEl, '#karsA-csv-btn', '#karsA-tablo table', () =>
+      `karsilastirma-ilce-${s.secim}-${s.il1}-${s.ilce1}-vs-${s.il2}-${s.ilce2}`);
   }
 
   function renderIlcePanel(el, v, il, ilce) {
@@ -650,9 +655,12 @@
         </div>
       </div>
 
-      <div class="section-head" style="margin-top: var(--space-6);">
-        <h2>Parti hareketi tablosu</h2>
-        <span class="eyebrow">İki seçim arası fark (yüzde puanı)</span>
+      <div class="section-head trend-grafik-baslik" style="margin-top: var(--space-6);">
+        <div>
+          <h2>Parti hareketi tablosu</h2>
+          <span class="eyebrow">İki seçim arası fark (yüzde puanı)</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="karsB-csv-btn">CSV indir</button>
       </div>
       <div class="panel" style="padding: 0; overflow: hidden;">
         <div id="karsB-tablo"></div>
@@ -700,6 +708,8 @@
     renderSecimPanel(icerikEl.querySelector('#karsB-icerik1'), v1);
     renderSecimPanel(icerikEl.querySelector('#karsB-icerik2'), v2);
     renderIkiSecimFarkTablosu(icerikEl.querySelector('#karsB-tablo'), v1, v2, s.secim1, s.secim2);
+    bindKarsCsv(icerikEl, '#karsB-csv-btn', '#karsB-tablo table', () =>
+      `karsilastirma-secim-${s.katman}-${s.secim1}-vs-${s.secim2}`);
   }
 
   function getKapsamVerisi(katman, katman_deger, secim) {
@@ -848,9 +858,12 @@
         <div id="karsC-katilim"></div>
       </div>
 
-      <div class="section-head">
-        <h2>Seçim seçim detay tablo</h2>
-        <span class="eyebrow">Her seçimde en çok oy alan partiler</span>
+      <div class="section-head trend-grafik-baslik">
+        <div>
+          <h2>Seçim seçim detay tablo</h2>
+          <span class="eyebrow">Her seçimde en çok oy alan partiler</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="karsC-csv-btn">CSV indir</button>
       </div>
       <div class="panel" style="padding: 0; overflow: hidden;">
         <div id="karsC-detay-tablo"></div>
@@ -870,6 +883,15 @@
     renderCSekmesiZaman(icerikEl);
     renderCSekmesiKatilim(icerikEl);
     renderCSekmesiDetayTablo(icerikEl);
+    bindKarsCsv(icerikEl, '#karsC-csv-btn', '#karsC-detay-tablo table', () =>
+      `karsilastirma-gecmis-${s.il}-${s.ilce}`);
+  }
+
+  function bindKarsCsv(icerikEl, btnSel, tableSel, filenameFn) {
+    const btn = icerikEl.querySelector(btnSel);
+    const table = () => icerikEl.querySelector(tableSel);
+    if (btn) btn.disabled = !table();
+    if (window.AT.bindCsvExport) window.AT.bindCsvExport(btn, table, filenameFn);
   }
 
   function renderCSekmesiZaman(icerikEl) {

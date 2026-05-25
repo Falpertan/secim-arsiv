@@ -179,9 +179,92 @@
     });
   }
 
+  function csvEscape(val) {
+    const s = String(val == null ? '' : val).replace(/\s+/g, ' ').trim();
+    if (/[;"\n\r]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+    return s;
+  }
+
+  function downloadCsvText(lines, filename) {
+    const blob = new Blob(['\uFEFF' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = (filename || 'tablo') + '.csv';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  }
+
+  function csvMetaLines() {
+    return [
+      '# Kaynak: secimarsivi.com · AlperTan™ · CC BY-NC 4.0',
+      '# Lisans: CC BY-NC 4.0 (ticari kullanım için izin gerekir)',
+      '',
+    ];
+  }
+
+  function exportTableAsCsv(tableEl, filename) {
+    if (!tableEl) throw new Error('Tablo bulunamadı');
+    const lines = csvMetaLines();
+    tableEl.querySelectorAll('tr').forEach(tr => {
+      const cells = [...tr.querySelectorAll('th, td')].map(c => csvEscape(c.innerText));
+      if (cells.some(c => c)) lines.push(cells.join(';'));
+    });
+    if (lines.length <= 3) throw new Error('Dışa aktarılacak veri yok');
+    downloadCsvText(lines, filename);
+  }
+
+  function exportRowsAsCsv(headers, rows, filename) {
+    if (!headers || !headers.length) throw new Error('Başlık satırı gerekli');
+    if (!rows || !rows.length) throw new Error('Dışa aktarılacak veri yok');
+    const lines = csvMetaLines();
+    lines.push(headers.map(csvEscape).join(';'));
+    rows.forEach(row => {
+      lines.push(row.map(c => csvEscape(c)).join(';'));
+    });
+    downloadCsvText(lines, filename);
+  }
+
+  function bindCsvExport(btnEl, tableResolver, filenameResolver) {
+    if (!btnEl) return;
+    btnEl.onclick = () => {
+      if (!window.AT.exportTableAsCsv) {
+        alert('CSV dışa aktarma yüklenemedi. Sayfayı yenileyin (Ctrl+F5).');
+        return;
+      }
+      try {
+        const table = typeof tableResolver === 'function' ? tableResolver() : tableResolver;
+        const name = typeof filenameResolver === 'function' ? filenameResolver() : filenameResolver;
+        window.AT.exportTableAsCsv(table, name);
+      } catch (e) {
+        alert(e.message || 'CSV oluşturulamadı.');
+      }
+    };
+  }
+
+  function bindRowsCsvExport(btnEl, headers, rowsResolver, filenameResolver) {
+    if (!btnEl) return;
+    btnEl.onclick = () => {
+      if (!window.AT.exportRowsAsCsv) {
+        alert('CSV dışa aktarma yüklenemedi. Sayfayı yenileyin (Ctrl+F5).');
+        return;
+      }
+      try {
+        const rows = typeof rowsResolver === 'function' ? rowsResolver() : rowsResolver;
+        const name = typeof filenameResolver === 'function' ? filenameResolver() : filenameResolver;
+        window.AT.exportRowsAsCsv(headers, rows, name);
+      } catch (e) {
+        alert(e.message || 'CSV oluşturulamadı.');
+      }
+    };
+  }
+
   window.AT = window.AT || {};
   window.AT.renderContextNotice = renderContextNotice;
   window.AT.renderDataFreshness = renderDataFreshness;
   window.AT.exportSvgAsPng = exportSvgAsPng;
   window.AT.enhanceChartExports = enhanceChartExports;
+  window.AT.exportTableAsCsv = exportTableAsCsv;
+  window.AT.exportRowsAsCsv = exportRowsAsCsv;
+  window.AT.bindCsvExport = bindCsvExport;
+  window.AT.bindRowsCsvExport = bindRowsCsvExport;
 })();

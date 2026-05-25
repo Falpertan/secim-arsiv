@@ -492,9 +492,12 @@
         <div id="trendA-grafik"></div>
       </div>
 
-      <div class="section-head">
-        <h2>Sayısal değişim tablosu</h2>
-        <span class="eyebrow">Önceki seçimden sonrakine fark</span>
+      <div class="section-head trend-grafik-baslik">
+        <div>
+          <h2>Sayısal değişim tablosu</h2>
+          <span class="eyebrow">Önceki seçimden sonrakine fark</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="trendA-csv-btn">CSV indir</button>
       </div>
       <div class="panel" style="padding: 0; overflow: hidden;">
         <div id="trendA-tablo"></div>
@@ -507,6 +510,20 @@
     renderCizgiGrafik(icerikEl);
     renderDegisimTablosu(icerikEl);
     bindTrendPngExport(icerikEl);
+    bindTrendCsvExport(icerikEl);
+  }
+
+  function bindTrendCsvExport(icerikEl) {
+    const btn = icerikEl.querySelector('#trendA-csv-btn');
+    const table = () => icerikEl.querySelector('#trendA-tablo table');
+    if (btn) btn.disabled = !table();
+    if (!window.AT.bindCsvExport) return;
+    window.AT.bindCsvExport(btn, table, () => {
+      let name = `trend-degisim-${state.secim_tipi}`;
+      if (state.katman !== 'turkiye') name += `-${state.katman}`;
+      if (state.katman_deger) name += `-${state.katman_deger.replace(/\//g, '-')}`;
+      return name;
+    });
   }
 
   function bindTrendPngExport(icerikEl) {
