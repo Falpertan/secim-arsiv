@@ -23,6 +23,7 @@
           Bu sayfada sitenin <strong>nasıl çalıştığını</strong>, hangi <strong>kaynakları kullandığını</strong>,
           <strong>hangi seçimleri yaptığını</strong> ve <strong>nelerin dışında tutulduğunu</strong>
           açıklarız. Şeffaflık bu projenin temelidir.
+          İlk ziyaret için <a href="#/baslangic">Başlangıç rehberi</a>.
         </p>
       </header>
 

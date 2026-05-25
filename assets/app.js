@@ -32,6 +32,7 @@
     { id: 'senaryo',       label: 'Senaryo',              num: '06', module: 'senaryo',       section: 'analiz' },
     { id: 'bolge',         label: 'Bölge profili',        num: '07', module: 'bolge',         section: 'analiz' },
     { id: 'vekil',         label: 'Vekil dağılımı',       num: '08', module: 'vekil',         section: 'analiz' },
+    { id: 'baslangic',     label: 'Başlangıç rehberi',    num: '?',  module: 'baslangic',     section: 'bilgi' },
     { id: 'metodoloji',    label: 'Metodoloji',           num: 'i',  module: 'metodoloji',    section: 'bilgi' },
     { id: 'hakkinda',      label: 'Hakkında',             num: 'ii', module: 'hakkinda',      section: 'bilgi' },
   ];
@@ -416,6 +417,7 @@
           </span>
         </div>
         Veri: YSK, TÜİK<br/>
+        <a href="#/baslangic">Başlangıç rehberi</a> ·
         <a href="#/hakkinda">Hakkında</a>
       </div>
     `;

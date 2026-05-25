@@ -1053,3 +1053,44 @@ h4 { font-size: 14px; line-height: 1.35; font-family: var(--font-body); font-wei
   border-color: var(--brand-gold);
   color: var(--brand-gold);
 }
+
+/* Başlangıç rehberi — anasayfa teaser */
+.rehber-teaser {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4) var(--space-5);
+  background: #fdfaf2;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--brand-gold);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s;
+}
+.rehber-teaser:hover { border-color: var(--brand-gold); }
+.rehber-teaser-etiket {
+  flex-shrink: 0;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--brand-gold);
+  white-space: nowrap;
+}
+.rehber-teaser-metin {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.rehber-teaser-ok {
+  flex-shrink: 0;
+  font-size: 18px;
+  color: var(--brand-gold);
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .rehber-teaser { flex-wrap: wrap; }
+  .rehber-teaser-ok { display: none; }
+}

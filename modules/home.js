@@ -28,6 +28,12 @@
         </p>
       </header>
 
+      <a class="rehber-teaser focus-ring" href="#/baslangic">
+        <span class="rehber-teaser-etiket">İlk ziyaret</span>
+        <span class="rehber-teaser-metin">Siteye yeni misiniz? <strong>5 dakikalık başlangıç rehberi</strong> — hangi modülden başlayacağınızı gösterir.</span>
+        <span class="rehber-teaser-ok">→</span>
+      </a>
+
       <div class="stat-grid">
         <div class="stat-tile">
           <div class="stat-label">Seçim</div>
