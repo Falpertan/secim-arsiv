@@ -17,6 +17,29 @@
     max-width: 720px;
     margin: 0 auto;
     padding: 48px 40px 56px;
+    position: relative;
+    overflow: hidden;
+  }
+  .page > :not(.page-harita) { position: relative; z-index: 1; }
+  .page-harita {
+    position: absolute;
+    right: -8%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55%;
+    height: 90%;
+    background-color: #a07820;
+    opacity: 0.08;
+    mask-image: url('turkiye-siluet.png');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('turkiye-siluet.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    pointer-events: none;
+    z-index: 0;
   }
   .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 0.06em; color: #a07820; margin-bottom: 8px; }
   h1 { font-family: Fraunces, Georgia, serif; font-size: 32px; line-height: 1.2; margin-bottom: 16px; }
@@ -50,6 +73,7 @@
 </head>
 <body>
 <div class="page">
+  <div class="page-harita" aria-hidden="true"></div>
   <p class="no-print"><a href="../index.html">← Siteye dön</a> · <a href="../docs/codebook.html">Codebook</a> · <button onclick="window.print()" style="background:none;border:none;color:#a07820;font:inherit;cursor:pointer;font-weight:600;">PDF yazdır</button></p>
 
   <div class="eyebrow">Basın ve editörler için · 1 sayfa</div>

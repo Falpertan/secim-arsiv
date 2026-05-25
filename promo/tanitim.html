@@ -47,6 +47,43 @@
     color: #1a1814;
     font-family: Fraunces, Georgia, serif;
   }
+  .kart > :not(.kart-harita):not(.kart-altin-cizgi) {
+    position: relative;
+    z-index: 1;
+  }
+  .kart-harita {
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42%;
+    height: 88%;
+    background-color: #a07820;
+    opacity: 0.11;
+    mask-image: url('turkiye-siluet.png');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('turkiye-siluet.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .kart-story .kart-harita {
+    right: 50%;
+    top: 58%;
+    transform: translate(50%, -50%);
+    width: 72%;
+    height: 48%;
+    opacity: 0.09;
+  }
+  .kart-whatsapp .kart-harita {
+    width: 36%;
+    height: 95%;
+    opacity: 0.1;
+  }
   .kart::before {
     content: '';
     position: absolute;
@@ -59,6 +96,7 @@
     bottom: 0; left: 0;
     width: 72px; height: 3px;
     background: #a07820;
+    z-index: 1;
   }
   .kart-eyebrow {
     font-family: Inter, sans-serif;
@@ -229,6 +267,7 @@
   <div class="grup-alt">Kapak görseli, link paylaşımı</div>
   <div class="scroll-x">
     <div class="kart kart-twitter">
+      <div class="kart-harita" aria-hidden="true"></div>
       <div class="kart-eyebrow">Açık seçim arşivi · 2018 — 2024</div>
       <div class="kart-baslik">Türkiye'nin son 13 seçimini tek arşivde inceleyin.</div>
       <p class="kart-lede">81 il, 973 ilçe. YSK ve TÜİK kaynaklı. Tarafsız dil, reklam yok.</p>
@@ -249,6 +288,7 @@
   <div class="grup-baslik">2 · Instagram / Facebook kare (1080 × 1080)</div>
   <div class="scroll-x">
     <div class="kart kart-kare">
+      <div class="kart-harita" aria-hidden="true"></div>
       <div class="kart-eyebrow">Türkiye Seçim Arşivi</div>
       <div class="kart-baslik">2018'den 2024'e<br/>13 seçim.</div>
       <p class="kart-lede">Arşiv · trend · karşılaştırma · demografi · uyumsuzluk analizi</p>
@@ -274,6 +314,7 @@
   <div class="grup-baslik">3 · Instagram / WhatsApp Story (1080 × 1920)</div>
   <div class="scroll-x">
     <div class="kart kart-story">
+      <div class="kart-harita" aria-hidden="true"></div>
       <div class="kart-eyebrow">AlperTan™ · Açık seçim arşivi</div>
       <div class="kart-baslik">Türkiye Seçim Arşivi</div>
       <p class="kart-lede">Cumhurbaşkanlığından mahalli idarelere — il ve ilçe bazında tüm sonuçlar, demografi ve karşılaştırma.</p>
@@ -294,6 +335,7 @@
   <div class="grup-alt">Site içeriğini tanıtan slayt</div>
   <div class="scroll-x">
     <div class="kart kart-modul-vitrin">
+      <div class="kart-harita" aria-hidden="true"></div>
       <div class="kart-eyebrow">Ne sunar?</div>
       <div class="kart-baslik kart-baslik-kucuk">Veri görselleştirme modülleri</div>
       <div class="modul-grid">
@@ -339,6 +381,7 @@
   <div class="grup-baslik">5 · WhatsApp / küçük paylaşım (800 × 418)</div>
   <div class="scroll-x">
     <div class="kart kart-whatsapp">
+      <div class="kart-harita" aria-hidden="true"></div>
       <div class="kart-eyebrow">Türkiye Seçim Arşivi</div>
       <div class="kart-baslik">13 seçim · 81 il · 973 ilçe</div>
       <p class="kart-lede">Bağımsız, açık, tarafsız seçim ve demografi arşivi.</p>
