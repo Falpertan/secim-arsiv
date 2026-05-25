@@ -323,6 +323,7 @@
           Hangi bölgede kim güçlendi, hangi koalisyon genişledi?
           Yalnızca <strong>Cumhurbaşkanlığı</strong> ve <strong>Milletvekili</strong>
           seçimleri analiz edilir — yerel seçimlerde dinamikler farklıdır.
+          <strong>Grafik indirmek için Sekme A</strong> → çizgi grafiğin sağ üstündeki <strong>PNG indir</strong>.
         </p>
       </header>
 
@@ -478,9 +479,14 @@
 
       ${renderFiltrePanel('A')}
 
-      <div class="section-head">
-        <h2>Parti oy oranları — ${getKapsamBaslik()}</h2>
-        <span class="eyebrow">Sadece toplam oyun en az %1'ini alan partiler gösterilir</span>
+      <div class="section-head trend-grafik-baslik">
+        <div>
+          <h2>Parti oy oranları — ${getKapsamBaslik()}</h2>
+          <span class="eyebrow">Sadece toplam oyun en az %1'ini alan partiler gösterilir</span>
+        </div>
+        <button type="button" class="chart-export-btn focus-ring" id="trendA-png-btn" title="Grafiği PNG olarak indir (kaynak satırı eklenir)">
+          PNG indir
+        </button>
       </div>
       <div class="panel chart-export-panel" data-chart-export="trend-parti-oranlari" style="padding: var(--space-4);">
         <div id="trendA-grafik"></div>
@@ -500,7 +506,30 @@
     bindFiltrePanel(icerikEl, () => renderSekmeA(container, icerikEl));
     renderCizgiGrafik(icerikEl);
     renderDegisimTablosu(icerikEl);
-    if (window.AT.enhanceChartExports) window.AT.enhanceChartExports(icerikEl);
+    bindTrendPngExport(icerikEl);
+  }
+
+  function bindTrendPngExport(icerikEl) {
+    const btn = icerikEl.querySelector('#trendA-png-btn');
+    const svg = icerikEl.querySelector('#trendA-grafik svg');
+    if (!btn) return;
+    if (!svg) {
+      btn.disabled = true;
+      btn.title = 'Grafik yüklendiğinde etkinleşir';
+      return;
+    }
+    btn.disabled = false;
+    btn.title = 'Grafiği PNG olarak indir (kaynak: secimarsivi.com)';
+    btn.onclick = () => {
+      const exportFn = window.AT && window.AT.exportSvgAsPng;
+      if (!exportFn) {
+        alert('Dışa aktarma yüklenemedi. Sayfayı yenileyin (Ctrl+F5).');
+        return;
+      }
+      exportFn(svg, 'trend-parti-oranlari').catch(err => {
+        alert(err.message || 'PNG oluşturulamadı.');
+      });
+    };
   }
 
   /** Sağ kenar parti etiketlerini çakışmayacak şekilde dikey yay */

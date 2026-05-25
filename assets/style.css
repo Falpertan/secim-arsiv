@@ -1049,9 +1049,25 @@ h4 { font-size: 14px; line-height: 1.35; font-family: var(--font-body); font-wei
   color: var(--ink-2);
   cursor: pointer;
 }
-.chart-export-btn:hover {
+.chart-export-btn:hover:not(:disabled) {
   border-color: var(--brand-gold);
   color: var(--brand-gold);
+}
+.chart-export-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.trend-grafik-baslik {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+.trend-grafik-baslik .chart-export-btn {
+  flex-shrink: 0;
+  margin-bottom: 2px;
 }
 
 /* Başlangıç rehberi — anasayfa teaser */
