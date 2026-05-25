@@ -1,6 +1,7 @@
 /* ─────────────────────────────────────────────────────────
    Araştırmacı / gazeteci yardımcıları
    — bağlam uyarıları, grafik PNG dışa aktarma, veri tarihi
+   NOT: app.js'den SONRA yüklenmeli (window.AT = state üzerine eklenir)
    ───────────────────────────────────────────────────────── */
 
 (function() {
