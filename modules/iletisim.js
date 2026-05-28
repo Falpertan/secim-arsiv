@@ -99,7 +99,7 @@
       '<a class="ilet-kart" href="' + attrEsc(c.githubIssues) + '" target="_blank" rel="noopener noreferrer">' +
       '<span class="ilet-kart-etiket">GitHub</span>' +
       '<strong class="ilet-kart-baslik">Hata / veri bildirimi</strong>' +
-      '<p>Net bir hata veya eksik veri varsa issue açın (tercih edilen teknik kanal).</p>' +
+      '<p>Net bir hata veya eksik veri varsa bildirim formu (sadece mesaj gönderir; siteye doğrudan müdahale edemezsiniz).</p>' +
       '<span class="ilet-kart-cta">Issue aç →</span></a>' +
       '<a class="ilet-kart" href="#/anket/add/1">' +
       '<span class="ilet-kart-etiket">Anket modülü (beta)</span>' +
@@ -110,15 +110,14 @@
       '<section class="ilet-bolum">' +
       '<h2>Ne için hangi kanal?</h2>' +
       '<ul>' +
-      '<li><strong>YSK / TÜİK verisi yanlış görünüyor</strong> — GitHub issue (ekran görüntüsü + il/ilçe/seçim adı).</li>' +
+      '<li><strong>YSK / TÜİK verisi yanlış görünüyor</strong> — hata bildirimi formu (ekran görüntüsü + il/ilçe/seçim adı) veya e-posta.</li>' +
       '<li><strong>Anket firması paylaşımı</strong> — önce <a href="#/anket/add/1">Anket ekle</a>; kalıcı arşiv için e-posta ile JSON paylaşımı.</li>' +
       '<li><strong>Basın / akademik</strong> — e-posta.</li>' +
       '<li><strong>Metodoloji sorusu</strong> — <a href="#/metodoloji">Metodoloji</a> sayfasını okuyun; kalan sorular için e-posta.</li>' +
       '</ul></section>' +
       '<section class="ilet-bolum">' +
-      '<h2>Marka ve depo</h2>' +
-      '<p><strong>' + esc(c.displayName) + '</strong> · ' + esc(c.brand) +
-      ' · <a href="' + attrEsc(c.github) + '" target="_blank" rel="noopener noreferrer">GitHub deposu</a></p>' +
+      '<h2>Marka</h2>' +
+      '<p><strong>' + esc(c.displayName) + '</strong> · ' + esc(c.brand) + '</p>' +
       '</section>' +
       '</div>' +
       renderStyles();
