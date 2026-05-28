@@ -63,7 +63,7 @@
       '<span class="ank-beta-badge">Beta</span>' +
       '<p><strong>Anket arşivi henüz eksiktir.</strong> Firma kapsamı dengesiz olabilir; otomatik taramada oran doğrulanmamış kayıtlar ve henüz girilmemiş TV/X paylaşımları bulunabilir. ' +
       'Arşiv zamanla elle eklemelerle genişletilecektir. Modül deneyseldir — yeterli görülmezse kaldırılabilir. ' +
-      '<a href="#/anket/mode/about">Ayrıntılar →</a></p></aside>'
+      '<a href="#/iletisim">İletişim</a></p></aside>'
     );
   }
 
