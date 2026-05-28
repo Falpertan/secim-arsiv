@@ -60,7 +60,7 @@
         'Firma, parti veya aday lehine propaganda',
         'Sandık düzeyinde oy dağılımı veya hile kanıtı',
       ],
-      note: 'Gelecek seçimlerde yalnızca doğrulanmış paylaşımlar listelenir; puan verilmez. Puan = 100 − (ortalama sapma × 10).',
+      note: 'Gelecek seçimlerde yalnızca doğrulanmış paylaşımlar listelenir; puan verilmez. Puan = 100 − (ortalama sapma × 10). Bu modül beta sürümdedir; veri kapsamı zamanla elle arşiv eklemeleriyle genişletilir.',
     },
   };
 

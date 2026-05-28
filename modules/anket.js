@@ -57,6 +57,16 @@
     scrollToManual: false,
   };
 
+  function renderBetaNotice() {
+    return (
+      '<aside class="ank-beta-notice" role="note">' +
+      '<span class="ank-beta-badge">Beta</span>' +
+      '<p><strong>Anket arşivi henüz eksiktir.</strong> Firma kapsamı dengesiz olabilir; otomatik taramada oran doğrulanmamış kayıtlar ve henüz girilmemiş TV/X paylaşımları bulunabilir. ' +
+      'Arşiv zamanla elle eklemelerle genişletilecektir. Modül deneyseldir — yeterli görülmezse kaldırılabilir. ' +
+      '<a href="#/anket/mode/about">Ayrıntılar →</a></p></aside>'
+    );
+  }
+
   function renderAnketMetaLine() {
     const dr = DATA?.dataRange;
     const pollCount = dr?.pollCount ?? DATA?.polls?.length ?? 0;
@@ -1647,10 +1657,11 @@
     container.innerHTML =
       '<div class="ank-page">' +
       '<header class="page-header">' +
-      '<span class="eyebrow">Modül · 09 · Anket karşılaştırması</span>' +
+      '<span class="eyebrow">Modül · 09 · Anket karşılaştırması · <span class="ank-beta-badge ank-beta-badge-inline">Beta</span></span>' +
       '<h1>Anket firmaları</h1>' +
       '<p class="lede">Kamuoyu araştırma şirketlerinin seçim öncesi paylaşımlarını resmi YSK sonuçlarıyla karşılaştırın. Her paylaşımın kaynağına tıklayarak ulaşın.</p>' +
       '<p class="ank-meta" id="ank-meta"></p></header>' +
+      renderBetaNotice() +
       (renderAnketMetaLine()) +
       (window.AT.renderContextNotice ? window.AT.renderContextNotice('anket') : '') +
       '<nav class="ank-mode-nav" aria-label="Anket modu">' +

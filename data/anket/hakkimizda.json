@@ -25,6 +25,22 @@
         "Bu proje bir propaganda aracı değildir. Resmi sonuçlar YSK verilerine dayanır; anket kayıtları mümkün olduğunca birincil kaynaklarla — televizyon yayını, haber, video, sosyal medya paylaşımı — eşleştirilir.",
         "Hiçbir firma, parti veya aday lehine yorum üretilmez; yalnızca kayıtlı tahminler ile resmi sonuç arasındaki fark gösterilir. Okuyucu bir puan tablosuna baktığında, o tahminin ne zaman ve nerede söylendiğine de tıklayarak ulaşabilir — böylece sonuç yalnızca bir rakam değil, doğrulanabilir bir kayıt haline gelir."
       ]
+    },
+    {
+      "id": "beta",
+      "title": "Beta sürüm — bilinen sınırlamalar",
+      "lead": "Bu modülün veri ve kapsam açısından zayıf noktalarının farkındayız.",
+      "bullets": [
+        "Firma başına kayıt sayısı dengesizdir; bazı firmalar için arşiv henüz boş veya çok sınırlı olabilir.",
+        "Otomatik tarama haber başlığı bulur; yüzde oranları her zaman çıkarılamaz — «taranan» kayıtlar doğrulanmamıştır.",
+        "TV programları ve X/Twitter paylaşımları çoğu zaman elle arşive eklenmelidir.",
+        "Elle eklenen kayıtlar önce cihazınızda saklanır; kalıcı arşive almak için dışa aktarım ve birleştirme gerekir."
+      ],
+      "paragraphs": [
+        "Arşiv zamanla elle eklemeler ve kaynak doğrulamasıyla genişletilecektir. Modül deneysel (beta) niteliğindedir: kullanım, veri kalitesi veya site bütünlüğü açısından yeterli görülmezse ileride kaldırılabilir veya sadeleştirilebilir.",
+        "Geri bildirim ve kaynak önerileri (Anket ekle formu veya iletişim) arşivin büyümesine doğrudan katkı sağlar."
+      ],
+      "note": "Resmi YSK verisi modülleri bu beta kapsamına girmez; yalnızca «Anket firmaları» modülü için geçerlidir."
     }
   ],
   "summary": "Anket Firmaları, Türkiye'deki seçim anketlerini resmi sonuçlarla karşılaştıran, kaynaklarını şeffaf biçimde gösteren bir arşiv aracıdır. Seçim Arşivi çatısı altında, AlperTan tarafından geliştirilen bu proje; seçmenin, gazetecinin ve meraklı okurun «kim ne dedi, ne kadar tuttu, bunu nerede söyledi?» sorularına tarafsız ve kanıtlanabilir yanıtlar sunmayı hedefler."
