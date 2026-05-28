@@ -8,8 +8,10 @@
   const BUNDLE_PATH = 'data/anket/bundle.json';
   const ABOUT_PATH = 'data/anket/hakkimizda.json';
   const RESEARCH_STORAGE = 'secim-arsivi-anket-research';
+  const POLLS_EXTRA_STORAGE = 'secim-arsivi-anket-polls-extra';
   const LOCAL_API = 'http://127.0.0.1:8765';
   const IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+  const IS_DEV_SERVER = IS_LOCAL && location.port === '8765';
 
   const CHANNEL_META = {
     tv: { label: 'Televizyon', icon: '📺' },
@@ -37,6 +39,7 @@
     firmId: null,
     view: 'compare',
     upcomingElectionId: null,
+    profileFirmId: null,
   };
 
   function esc(s) {
@@ -144,6 +147,174 @@
     return Object.entries(byFirm)
       .map(([firmId, v]) => ({ firmId, ...v }))
       .sort((a, b) => b.score - a.score || a.acc.mae - b.acc.mae);
+  }
+
+  function loadStoredPollsExtra() {
+    try {
+      const raw = localStorage.getItem(POLLS_EXTRA_STORAGE);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveStoredPollsExtra(polls) {
+    localStorage.setItem(POLLS_EXTRA_STORAGE, JSON.stringify(polls));
+  }
+
+  function pollUrlKey(poll) {
+    const pub = getPrimaryPublication(poll.publications);
+    const href = pub ? getPublicationHref(pub) : '';
+    return href ? href.replace(/\?.*$/, '').toLowerCase() : poll.id;
+  }
+
+  function getMergedPollsUpcoming() {
+    const base = DATA.pollsUpcoming || [];
+    const extra = loadStoredPollsExtra();
+    const seen = new Set();
+    const out = [];
+    for (const poll of [...base, ...extra]) {
+      const key = pollUrlKey(poll);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(poll);
+    }
+    return out;
+  }
+
+  function defaultUpcomingElectionId() {
+    const today = new Date().toISOString().slice(0, 10);
+    const list = DATA.upcomingElections || [];
+    if (!list.length) return null;
+    return (list.find(e => e.date >= today) || list[0]).id;
+  }
+
+  function getBestPastPollForFirm(firmId, election) {
+    const polls = DATA.polls.filter(
+      p => p.firmId === firmId && p.electionId === election.id &&
+        new Date(p.publishedDate) <= new Date(election.date),
+    );
+    if (!polls.length) return null;
+    let best = null;
+    for (const poll of polls) {
+      const acc = comparePoll(poll, election);
+      if (!best || acc.days < best.acc.days || (acc.days === best.acc.days && acc.mae < best.acc.mae)) {
+        best = {
+          poll,
+          acc,
+          score: maeToScore(acc.mae),
+          grade: scoreGrade(maeToScore(acc.mae)),
+        };
+      }
+    }
+    return best;
+  }
+
+  function getFirmAverageScore(firmId) {
+    const scores = DATA.elections
+      .map(e => getBestPastPollForFirm(firmId, e))
+      .filter(Boolean)
+      .map(r => r.score);
+    if (!scores.length) return null;
+    return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
+  }
+
+  function getFirmCrossElectionRecords(firmId) {
+    const records = [];
+    for (const election of DATA.elections) {
+      const best = getBestPastPollForFirm(firmId, election);
+      records.push({
+        election,
+        kind: 'past',
+        hasData: !!best,
+        best,
+      });
+    }
+    for (const election of DATA.upcomingElections || []) {
+      const polls = getMergedPollsUpcoming().filter(
+        p => p.firmId === firmId && p.electionId === election.id,
+      );
+      const latest = polls.sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate))[0];
+      records.push({ election, kind: 'upcoming', hasData: !!latest, latest });
+    }
+    return records.sort((a, b) => new Date(b.election.date) - new Date(a.election.date));
+  }
+
+  function buildResearchQueries() {
+    const queries = [];
+    const seen = new Set();
+    const priority = ['konda', 'metropoll', 'gezici', 'genar', 'mak', 'optimar', 'sonar', 'orc', 'veri', 'area', 'piar'];
+    const byId = Object.fromEntries((DATA.firms || []).map(f => [f.id, f]));
+    for (const id of priority) {
+      const f = byId[id];
+      if (!f) continue;
+      const token = f.name.split(/\s+/)[0];
+      const q = '"' + token + '" anket';
+      if (!seen.has(q)) {
+        queries.push([id, q]);
+        seen.add(q);
+      }
+    }
+    for (const f of DATA.firms || []) {
+      const token = f.name.split(/\s+/)[0];
+      if (token.length <= 3 || queries.length >= 22) continue;
+      const q = '"' + token + '" anket';
+      if (seen.has(q)) continue;
+      queries.push([f.id, q]);
+      seen.add(q);
+    }
+    for (const q of ['seçim anketi Türkiye', 'site:youtube.com seçim anketi Türkiye']) {
+      if (!seen.has(q)) {
+        queries.push([null, q]);
+        seen.add(q);
+      }
+    }
+    return queries;
+  }
+
+  function researchItemToPollStub(item, electionId) {
+    if (!item.firmId || !item.url) return null;
+    const slug = item.url.replace(/[^a-z0-9]+/gi, '-').slice(0, 48).toLowerCase() || 'kaynak';
+    const pubDate = item.publishedAt || new Date().toISOString().slice(0, 10);
+    return {
+      id: 'scan-' + slug,
+      electionId,
+      firmId: item.firmId,
+      publishedDate: pubDate,
+      scope: 'party',
+      predictions: [],
+      publications: [{
+        id: 'pub-' + slug,
+        channel: item.channel || 'online_news',
+        outlet: item.outlet || 'Web',
+        title: item.title,
+        publishedAt: pubDate,
+        url: item.url,
+        isPrimary: true,
+      }],
+      sourceLabel: 'Otomatik tarama',
+      notes: 'Başlıktan otomatik eklendi; oranlar elle doğrulanmalı.',
+      _scanned: true,
+    };
+  }
+
+  function mergeScannedPollsFromResearch(research) {
+    const electionId = ui.upcomingElectionId || defaultUpcomingElectionId();
+    if (!electionId || !research?.items?.length) return 0;
+    const existing = new Set(getMergedPollsUpcoming().map(pollUrlKey));
+    const extra = loadStoredPollsExtra();
+    let added = 0;
+    for (const item of research.items) {
+      const stub = researchItemToPollStub(item, electionId);
+      if (!stub) continue;
+      const key = pollUrlKey(stub);
+      if (existing.has(key)) continue;
+      existing.add(key);
+      extra.push(stub);
+      added++;
+    }
+    if (added) saveStoredPollsExtra(extra);
+    return added;
   }
 
   function defaultElectionId() {
@@ -481,7 +652,7 @@
     const hasRun = r.generatedAt && r.totalHits > 0;
     const runLabel = r.generatedAt ? new Date(r.generatedAt).toLocaleString('tr-TR') : null;
     const modeLabel =
-      r.mode === 'local-server' ? 'Python (dosyaya yazıldı)' :
+      r.mode === 'local-server' || r.mode === 'python' ? 'Python (dosyaya yazıldı)' :
       r.mode === 'browser' ? 'Tarayıcı (localStorage)' : 'Gömülü arşiv';
 
     let listHtml = '';
@@ -508,27 +679,30 @@
       listHtml = '<p class="ank-empty">' + esc(r.note || 'Aşağıdaki düğmeyle taramayı başlatın.') + '</p>';
     }
 
-    const scanBtn = IS_LOCAL
-      ? '<button type="button" id="ank-research-run" class="ank-btn-research">Taramayı başlat</button>'
-      : '';
+    const scanBtn =
+      '<button type="button" id="ank-research-run" class="ank-btn-research ank-btn-update">' +
+      'Anketleri güncelle</button>';
 
-    const localNote = IS_LOCAL
-      ? '<p class="panel-note" style="margin-top:12px">Tam tarama (dosyaya yazar): <strong>SUNUCU.bat</strong> ile açın, sonra bu düğmeye basın.</p>'
-      : '<p class="panel-note" style="margin-top:12px">Canlı sitede gömülü arşiv verisi gösterilir. Güncelleme için yerel tarama yapılıp site yeniden yüklenir.</p>';
+    const localNote = IS_DEV_SERVER
+      ? '<p class="panel-note" style="margin-top:12px">Bu sunucu modunda tarama <strong>bundle.json</strong> dosyasına yazılır. Yayın için GitHub\'a push edin.</p>'
+      : IS_LOCAL
+        ? '<p class="panel-note" style="margin-top:12px">Tam dosya güncellemesi için <strong>SUNUCU.bat</strong> ile açın (port 8765), sonra güncelle\'ye basın.</p>'
+        : '<p class="panel-note" style="margin-top:12px">Canlı sitede tarama tarayıcıda çalışır; yeni kaynaklar bu cihazda saklanır. Kalıcı arşiv için yerelde SUNUCU.bat + push gerekir.</p>';
 
     return (
       '<section class="panel panel-spaced">' +
-      '<div class="ank-research-hdr"><h2>Kaynak araştırması</h2>' +
-      '<p class="panel-note" style="margin:4px 0 0;color:var(--signal-green)">Son bir yıl — haber, TV, YouTube, sosyal medya</p></div>' +
-      (IS_LOCAL
-        ? '<div class="ank-research-controls"><label>Dönem<select id="ank-research-days">' +
-          '<option value="30">30 gün</option><option value="90">90 gün</option>' +
-          '<option value="180">6 ay</option><option value="365" selected>1 yıl</option></select></label>' +
-          scanBtn + '</div><p id="ank-research-status" style="font-size:11px;color:var(--ink-3);min-height:1.25rem"></p>'
-        : '') +
+      '<div class="ank-research-hdr"><h2>Kaynak taraması</h2>' +
+      '<p class="panel-note" style="margin:4px 0 0;color:var(--signal-green)">Google News RSS — haber, TV, YouTube başlıkları</p></div>' +
+      '<div class="ank-research-controls">' +
+      '<label>Dönem<select id="ank-research-days">' +
+      '<option value="30">30 gün</option><option value="90">90 gün</option>' +
+      '<option value="180">6 ay</option><option value="365" selected>1 yıl</option></select></label>' +
+      scanBtn + '</div>' +
+      '<p id="ank-research-status" style="font-size:11px;color:var(--ink-3);min-height:1.25rem;margin:0 0 12px"></p>' +
       (runLabel
         ? '<p style="font-size:11px;color:var(--ink-3);margin-bottom:12px">Son tarama: ' + runLabel +
-          ' · <strong>' + r.totalHits + '</strong> kaynak · ' + modeLabel + '</p>'
+          ' · <strong>' + r.totalHits + '</strong> kaynak · ' + modeLabel +
+          (r.newPolls != null ? ' · <strong>' + r.newPolls + '</strong> yeni anket' : '') + '</p>'
         : '') +
       listHtml +
       (r.note && hasRun ? '<p class="panel-note" style="margin-top:12px">' + esc(r.note) + '</p>' : '') +
@@ -547,7 +721,7 @@
     }
     const election = DATA.upcomingElections.find(e => e.id === ui.upcomingElectionId);
     const targets = getUpcomingTargets(election);
-    const polls = (DATA.pollsUpcoming || []).filter(p => p.electionId === ui.upcomingElectionId);
+    const polls = getMergedPollsUpcoming().filter(p => p.electionId === ui.upcomingElectionId);
     const daysLeft = daysBetween(today, election.date);
 
     const elBtns = DATA.upcomingElections.map(el => {
@@ -568,10 +742,12 @@
               ? (targets.find(t => t.id === top.targetId)?.label || top.targetId) + ' ' + fmtPct(top.percent)
               : '—';
             const isNew = p.publishedDate >= today;
+            const isScanned = !!p._scanned;
             const dLeft = daysBetween(p.publishedDate, election.date);
             return (
               '<tr><td><strong>' + esc(firm?.name || p.firmId) + '</strong>' +
-              (isNew ? ' <span class="ank-badge-new">Yeni</span>' : '') + '</td>' +
+              (isNew ? ' <span class="ank-badge-new">Yeni</span>' : '') +
+              (isScanned ? ' <span class="ank-badge-scan">Taranan</span>' : '') + '</td>' +
               '<td>' + fmtDate(p.publishedDate) + '</td><td>' + fmtDaysUntil(dLeft) + '</td><td>' + esc(tl) + '</td>' +
               '<td>' + renderPrimarySourceCell(p.publications || []) + '</td></tr>'
             );
@@ -594,6 +770,107 @@
       '<div class="data-table-wrap"><table class="data-table"><thead><tr>' +
       '<th>Firma</th><th>Tarih</th><th>Seçime kalan</th><th>Öne çıkan</th><th>Kaynak</th></tr></thead><tbody>' +
       pollRows + '</tbody></table></div></div></div></div>'
+    );
+  }
+
+  function renderFirmsMain() {
+    const firms = [...(DATA.firms || [])].sort((a, b) => {
+      const sa = getFirmAverageScore(a.id);
+      const sb = getFirmAverageScore(b.id);
+      if (sa != null && sb != null) return sb - sa || a.name.localeCompare(b.name, 'tr');
+      if (sa != null) return -1;
+      if (sb != null) return 1;
+      return a.name.localeCompare(b.name, 'tr');
+    });
+
+    if (!ui.profileFirmId || !firms.find(f => f.id === ui.profileFirmId)) {
+      ui.profileFirmId = firms.find(f => getFirmAverageScore(f.id) != null)?.id || firms[0]?.id || null;
+    }
+
+    const firm = getFirm(ui.profileFirmId);
+    const records = ui.profileFirmId ? getFirmCrossElectionRecords(ui.profileFirmId) : [];
+    const avg = ui.profileFirmId ? getFirmAverageScore(ui.profileFirmId) : null;
+    const covered = records.filter(r => r.hasData && r.kind === 'past').length;
+
+    const firmBtns = firms.map(f => {
+      const active = f.id === ui.profileFirmId ? ' active' : '';
+      const avgScore = getFirmAverageScore(f.id);
+      return (
+        '<button type="button" class="ank-firm-btn' + active + '" data-profile-firm="' + f.id + '">' +
+        '<span style="flex:1;min-width:0"><span class="ank-firm-name">' + esc(f.name) + '</span>' +
+        (f.website ? '<br><span class="ank-firm-sub">' + esc(f.website.replace(/^https?:\/\//, '')) + '</span>' : '') +
+        '</span>' +
+        (avgScore != null
+          ? '<span class="ank-grade ank-grade-b" title="Ortalama puan">' + avgScore + '</span>'
+          : '<span class="ank-firm-sub">—</span>') +
+        '</button>'
+      );
+    }).join('');
+
+    const rows = records.length
+      ? records.map(rec => {
+          if (rec.kind === 'past') {
+            if (!rec.hasData) {
+              return (
+                '<tr class="ank-firm-row-empty"><td>' + esc(rec.election.title) + '</td>' +
+                '<td>' + fmtDate(rec.election.date) + '</td>' +
+                '<td colspan="6" class="ank-empty" style="padding:12px">Bu seçimde kayıtlı anket yok</td></tr>'
+              );
+            }
+            const b = rec.best;
+            return (
+              '<tr><td><strong>' + esc(rec.election.title) + '</strong></td>' +
+              '<td>' + fmtDate(rec.election.date) + '</td>' +
+              '<td>' + fmtDate(b.poll.publishedDate) + '</td>' +
+              '<td>' + fmtDays(b.acc.days) + '</td>' +
+              '<td class="num">' + fmtPct(b.acc.mae) + '</td>' +
+              '<td><span class="ank-grade ' + b.grade.cls + '">' + b.grade.letter + '</span> ' +
+              '<strong class="num">' + b.score + '</strong></td>' +
+              '<td onclick="event.stopPropagation()">' + renderPrimarySourceCell(b.poll.publications) + '</td></tr>'
+            );
+          }
+          if (!rec.hasData) {
+            return (
+              '<tr class="ank-firm-row-empty"><td>' + esc(rec.election.title) + '</td>' +
+              '<td>' + fmtDate(rec.election.date) + '</td>' +
+              '<td colspan="6" class="ank-empty" style="padding:12px">Henüz paylaşım yok</td></tr>'
+            );
+          }
+          const p = rec.latest;
+          const top = [...(p.predictions || [])].sort((a, b) => b.percent - a.percent)[0];
+          const targets = getUpcomingTargets(rec.election);
+          const tl = top
+            ? (targets.find(t => t.id === top.targetId)?.label || top.targetId) + ' ' + fmtPct(top.percent)
+            : (p._scanned ? 'Oran doğrulanmadı' : '—');
+          return (
+            '<tr><td><strong>' + esc(rec.election.title) + '</strong> <span class="ank-badge-new">Gelecek</span></td>' +
+            '<td>' + fmtDate(rec.election.date) + '</td>' +
+            '<td>' + fmtDate(p.publishedDate) + (p._scanned ? ' <span class="ank-badge-scan">Taranan</span>' : '') + '</td>' +
+            '<td>—</td><td>—</td><td>—</td>' +
+            '<td><span style="font-size:12px;color:var(--ink-2)">' + esc(tl) + '</span><br>' +
+            renderPrimarySourceCell(p.publications || []) + '</td></tr>'
+          );
+        }).join('')
+      : '<tr><td colspan="7" class="ank-empty">Firma seçin</td></tr>';
+
+    return (
+      '<div class="ank-layout">' +
+      '<aside class="ank-aside">' +
+      '<div class="panel panel-spaced"><div class="panel-title">Anket firmaları<span class="panel-meta">' + firms.length + ' firma</span></div>' +
+      '<div class="ank-firm-list ank-firm-list-tall">' + firmBtns + '</div></div></aside>' +
+      '<div>' +
+      '<div class="panel panel-spaced ank-firm-profile-hdr">' +
+      '<p class="ank-kicker">Firma profili</p>' +
+      '<h2 style="font-family:var(--font-display);font-size:20px;font-weight:600;margin:4px 0">' + esc(firm?.name || '—') + '</h2>' +
+      '<div class="ank-firm-stats">' +
+      '<div class="ank-firm-stat"><span class="lbl">Kapsanan seçim</span><strong>' + covered + '</strong></div>' +
+      '<div class="ank-firm-stat"><span class="lbl">Ortalama puan</span><strong>' + (avg != null ? avg + '/100' : '—') + '</strong></div>' +
+      '<div class="ank-firm-stat"><span class="lbl">Puan formülü</span><strong>100 − sapma×10</strong></div>' +
+      '</div>' +
+      '<p class="panel-note" style="margin:12px 0 0">Her geçmiş seçimde firmaya ait <em>seçime en yakın</em> anket esas alınır. Gelecek seçimlerde puan verilmez.</p></div>' +
+      '<div class="panel panel-flush"><div class="data-table-wrap"><table class="data-table ank-firm-history-table"><thead><tr>' +
+      '<th>Seçim</th><th>Tarih</th><th>Anket tarihi</th><th>Seçime kalan</th><th>Sapma</th><th>Puan</th><th>Kaynak</th>' +
+      '</tr></thead><tbody>' + rows + '</tbody></table></div></div></div></div>'
     );
   }
 
@@ -637,6 +914,8 @@
       if (ui.view && ui.view !== 'compare') params.view = ui.view;
     } else if (ui.mode === 'upcoming' && ui.upcomingElectionId) {
       params.election = ui.upcomingElectionId;
+    } else if (ui.mode === 'firms' && ui.profileFirmId) {
+      params.firm = ui.profileFirmId;
     }
     window.AT.navigate('anket', params);
   }
@@ -659,6 +938,7 @@
 
     if (ui.mode === 'archive') content.innerHTML = renderArchiveMain();
     else if (ui.mode === 'upcoming') content.innerHTML = renderUpcomingMain();
+    else if (ui.mode === 'firms') content.innerHTML = renderFirmsMain();
     else content.innerHTML = renderAboutMain();
 
     bindContentEvents(content);
@@ -747,13 +1027,7 @@
   }
 
   async function runBrowserResearch(days, onProgress) {
-    const queries = [
-      ['genar', '"GENAR Araştırma" anket'],
-      ['gezici', 'Gezici anket seçim'],
-      ['konda', 'KONDA anket barometre'],
-      [null, 'seçim anketi Türkiye'],
-      [null, 'site:youtube.com seçim anketi Türkiye'],
-    ];
+    const queries = buildResearchQueries();
     const sinceMs = Date.now() - days * 86400000;
     const all = [];
     for (let i = 0; i < queries.length; i++) {
@@ -769,15 +1043,17 @@
     }
     const items = dedupeItems(all);
     const now = new Date().toISOString();
+    const added = mergeScannedPollsFromResearch({ items });
     return {
       generatedAt: now,
       periodFrom: new Date(sinceMs).toISOString().slice(0, 10),
       periodTo: now.slice(0, 10),
       daysBack: days,
       totalHits: items.length,
+      newPolls: added,
       items,
       mode: 'browser',
-      note: items.length + ' kaynak bulundu (tarayıcı modu).',
+      note: items.length + ' kaynak bulundu' + (added ? (' · ' + added + ' yeni anket eklendi') : '') + ' (tarayıcı modu).',
     };
   }
 
@@ -799,19 +1075,27 @@
         });
         result = await r.json();
         if (!r.ok || result.error) throw new Error(result.error || 'Sunucu hatası');
-        result.mode = 'local-server';
+        result.mode = result.mode || 'python';
         if (result.regenerated) {
-          setStatus('Tamam — sayfa yenileniyor…');
-          location.reload();
+          DATA = null;
+          setStatus('Tamam — ' + (result.newPolls || 0) + ' yeni anket · veri yenileniyor…');
+          const bundle = await fetch(BUNDLE_PATH + '?t=' + Date.now()).then(res => {
+            if (!res.ok) throw new Error('Veri yenilenemedi');
+            return res.json();
+          });
+          DATA = bundle;
+          setStatus('Tamam: ' + result.totalHits + ' kaynak · ' + (result.newPolls || 0) + ' yeni anket');
+          paint();
           return;
         }
       } else {
-        setStatus('Yerel sunucu yok; tarayıcı modu.');
+        setStatus('Tarayıcı taraması başladı…');
         result = await runBrowserResearch(days, setStatus);
       }
       saveStoredResearch(result);
       DATA.researchLatest = result;
-      setStatus('Tamam: ' + result.totalHits + ' kaynak');
+      setStatus('Tamam: ' + result.totalHits + ' kaynak' +
+        (result.newPolls ? ' · ' + result.newPolls + ' yeni anket' : ''));
       paint();
     } catch (e) {
       setStatus('Hata: ' + (e.message || e));
@@ -855,6 +1139,12 @@
         syncUrl();
       });
     });
+    content.querySelectorAll('[data-profile-firm]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        ui.profileFirmId = btn.dataset.profileFirm;
+        syncUrl();
+      });
+    });
     const researchBtn = content.querySelector('#ank-research-run');
     if (researchBtn && !researchBtn.dataset.bound) {
       researchBtn.dataset.bound = '1';
@@ -867,14 +1157,20 @@
 
   function initFromParams(params) {
     params = params || {};
-    ui.mode = ['archive', 'upcoming', 'about'].includes(params.mode) ? params.mode : 'archive';
+    ui.mode = ['archive', 'upcoming', 'firms', 'about'].includes(params.mode) ? params.mode : 'archive';
     ui.view = params.view || 'compare';
-    ui.firmId = params.firm || null;
+    ui.firmId = null;
+    ui.profileFirmId = null;
     if (ui.mode === 'upcoming') {
       ui.upcomingElectionId = params.election || null;
       ui.electionId = null;
     } else if (ui.mode === 'archive') {
       ui.electionId = params.election || null;
+      ui.firmId = params.firm || null;
+      ui.upcomingElectionId = null;
+    } else if (ui.mode === 'firms') {
+      ui.profileFirmId = params.firm || null;
+      ui.electionId = null;
       ui.upcomingElectionId = null;
     } else {
       ui.electionId = null;
@@ -920,6 +1216,7 @@
       '<nav class="ank-mode-nav" aria-label="Anket modu">' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'archive' ? ' active' : '') + '" data-mode="archive">Geçmiş seçimler</button>' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'upcoming' ? ' active' : '') + '" data-mode="upcoming">Gelecek seçimler</button>' +
+      '<button type="button" class="ank-mode-btn' + (ui.mode === 'firms' ? ' active' : '') + '" data-mode="firms">Firma profilleri</button>' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'about' ? ' active' : '') + '" data-mode="about">Hakkında</button>' +
       '</nav>' +
       '<div id="ank-content"></div>' +
