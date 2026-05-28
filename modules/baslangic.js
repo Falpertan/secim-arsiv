@@ -58,6 +58,7 @@
               <tr><td><a href="#/senaryo">06 Senaryo</a></td><td>Varsayımsal “ne olurdu” modelleri</td><td>İleri kullanıcı — tahmin değildir</td></tr>
               <tr><td><a href="#/bolge">07 Bölge profili</a></td><td>NUTS, il, ilçe odaklı profil</td><td>Bölgesel analiz</td></tr>
               <tr><td><a href="#/vekil">08 Vekil dağılımı</a></td><td>Seçmen başına vekil (2018, 2024)</td><td>Anayasa / sistem meraklısı</td></tr>
+              <tr><td><a href="#/anket">09 Anket firmaları</a></td><td>Firma paylaşımları vs YSK, kaynak linkleri, isabet puanı</td><td>Gazeteci, meraklı</td></tr>
             </tbody>
           </table>
         </div>

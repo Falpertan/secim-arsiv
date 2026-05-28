@@ -33,6 +33,7 @@
         <div class="metod-icindekiler-baslik">İçindekiler</div>
         <ol>
           <li><a href="#nedir">Bu site nedir?</a></li>
+          <li><a href="#anket-firmalari">Anket firmaları modülü</a></li>
           <li><a href="#kaynaklar">Veri kaynakları</a></li>
           <li><a href="#hesaplama">Hesaplama yöntemi</a></li>
           <li><a href="#tarafsizlik">Tarafsızlık ilkeleri</a></li>
@@ -67,6 +68,25 @@
         <p>
           Tüm veri ve hesaplamalar şeffaftır. Üretim scriptleri açık kaynaktır ve
           <a href="#bagimsizlik">aşağıda</a> belirtildiği üzere indirilip yeniden çalıştırılabilir.
+        </p>
+      </section>
+
+      <!-- ═══ ANKET FİRMALARI ═══ -->
+      <section id="anket-firmalari" class="metod-bolum">
+        <h2>Anket firmaları modülü</h2>
+        <p>
+          <a href="#/anket">Anket firmaları</a> bölümü, kamuoyu araştırma şirketlerinin seçim öncesi
+          tahminlerini resmi YSK sonuçlarıyla yan yana koyar. Her firma için seçime en yakın anket
+          esas alınır; ortalama sapmaya göre 0–100 arası isabet puanı hesaplanır.
+        </p>
+        <ul>
+          <li>Geçmiş seçimler (2018–2024): karşılaştırma, paylaşımlar ve puan tablosu.</li>
+          <li>Her tahminin televizyon, YouTube, haber veya sosyal medya kaynağı linklenir.</li>
+          <li>Gelecek seçimler: yalnızca doğrulanmış tahminler listelenir; <strong>puan verilmez</strong>.</li>
+        </ul>
+        <p>
+          Bu modül bir propaganda aracı değildir; yalnızca kayıtlı tahmin ile resmi sonuç arasındaki
+          farkı gösterir. Detaylı açıklama için modül içindeki <a href="#/anket/mode/about">Hakkında</a> sekmesine bakın.
         </p>
       </section>
 

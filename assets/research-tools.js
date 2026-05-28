@@ -48,6 +48,20 @@
       ],
       note: 'MV seçimlerinde d’Hondt ve çevrim katsayısı oy–vekil ilişkisini doğrudan yansıtmaz.',
     },
+    anket: {
+      title: 'Anket karşılaştırması ne anlama gelir?',
+      proves: [
+        'Firma paylaşımları ile resmi YSK sonuçları arasındaki sapma (2018–2024)',
+        'Her paylaşımın birincil kaynağı (TV, haber, YouTube vb.) ve tarihi',
+        'Seçime en yakın anket için 0–100 isabet puanı (geçmiş seçimler)',
+      ],
+      notProves: [
+        'Geleceğe dönük seçim öngörüsü veya “kim kazanır” yorumu',
+        'Firma, parti veya aday lehine propaganda',
+        'Sandık düzeyinde oy dağılımı veya hile kanıtı',
+      ],
+      note: 'Gelecek seçimlerde yalnızca doğrulanmış paylaşımlar listelenir; puan verilmez. Puan = 100 − (ortalama sapma × 10).',
+    },
   };
 
   function renderContextNotice(type) {

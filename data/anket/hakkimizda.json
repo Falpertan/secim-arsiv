@@ -1,0 +1,31 @@
+{
+  "brand": {
+    "project": "Seçim Arşivi",
+    "author": "AlperTan",
+    "tagline": "Paylaşımları kayda alır, sonuçlarla karşılaştırır, kaynağını gösterir."
+  },
+  "intro": "Seçim dönemlerinde televizyon, internet ve sosyal medyada sayısız anket paylaşılır; hangi firmanın ne dediği, o paylaşımın nerede yayımlandığı ve sonuçlar açıklandığında ne kadar isabetli olduğu ise çoğu zaman dağınık kalır. Anket firmaları modülü, bu dağınıklığı azaltmak için yapıldı: kamuoyu araştırma şirketlerinin seçim öncesi paylaşımlarını resmi YSK sonuçlarıyla yan yana koyarak izlenebilir bir karşılaştırma arşivi sunar.",
+  "archiveNote": "Bu çalışma, Seçim Arşivi projesinin bir parçasıdır. AlperTan imzasıyla geliştirilen arşiv anlayışının devamı niteliğindedir: seçimle ilgili veriyi tek bir yerde toplamak, kaynağı göstermek ve kullanıcının kendi gözüyle incelemesine imkân tanımak.",
+  "sections": [
+    {
+      "id": "goal",
+      "title": "Neyi görmeye çalışıyoruz?",
+      "lead": "Amacımız bir partiyi veya adayı desteklemek değil; tahmin ile gerçeği aynı tabloda görmektir.",
+      "bullets": [
+        "Bir firma seçime ne kadar yakın zamanda anket yayımlamış?",
+        "Tahminler resmi sonuçtan ne kadar sapmış?",
+        "Bu tahmin hangi programda, hangi haberde, hangi paylaşımda dile getirilmiş — linki ve tarihi nedir?"
+      ],
+      "note": "Geçmiş seçimlerde (2018–2024) bu sorulara yanıt aranır; firmalar seçime en yakın anketlerine göre tarafsız bir isabet ölçütüyle karşılaştırılır. Henüz sonuçlanmamış seçimlerde yalnızca yayımlanan tahminler takip edilir; puanlama yapılmaz."
+    },
+    {
+      "id": "neutrality",
+      "title": "Tarafsızlık ilkesi",
+      "paragraphs": [
+        "Bu proje bir propaganda aracı değildir. Resmi sonuçlar YSK verilerine dayanır; anket kayıtları mümkün olduğunca birincil kaynaklarla — televizyon yayını, haber, video, sosyal medya paylaşımı — eşleştirilir.",
+        "Hiçbir firma, parti veya aday lehine yorum üretilmez; yalnızca kayıtlı tahminler ile resmi sonuç arasındaki fark gösterilir. Okuyucu bir puan tablosuna baktığında, o tahminin ne zaman ve nerede söylendiğine de tıklayarak ulaşabilir — böylece sonuç yalnızca bir rakam değil, doğrulanabilir bir kayıt haline gelir."
+      ]
+    }
+  ],
+  "summary": "Anket Firmaları, Türkiye'deki seçim anketlerini resmi sonuçlarla karşılaştıran, kaynaklarını şeffaf biçimde gösteren bir arşiv aracıdır. Seçim Arşivi çatısı altında, AlperTan tarafından geliştirilen bu proje; seçmenin, gazetecinin ve meraklı okurun «kim ne dedi, ne kadar tuttu, bunu nerede söyledi?» sorularına tarafsız ve kanıtlanabilir yanıtlar sunmayı hedefler."
+}

@@ -37,6 +37,12 @@
         <span class="rehber-teaser-ok">→</span>
       </a>
 
+      <a class="rehber-teaser focus-ring" href="#/anket" style="margin-top:var(--space-3)">
+        <span class="rehber-teaser-etiket">Yeni modül</span>
+        <span class="rehber-teaser-metin"><strong>Anket firmaları</strong> — seçim öncesi paylaşımları YSK sonuçlarıyla karşılaştırın; TV, YouTube ve haber kaynaklarına tıklayarak gidin.</span>
+        <span class="rehber-teaser-ok">→</span>
+      </a>
+
       <div class="stat-grid">
         <div class="stat-tile">
           <div class="stat-label">Seçim</div>

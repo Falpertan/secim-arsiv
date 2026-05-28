@@ -32,6 +32,7 @@
     { id: 'senaryo',       label: 'Senaryo',              num: '06', module: 'senaryo',       section: 'analiz' },
     { id: 'bolge',         label: 'Bölge profili',        num: '07', module: 'bolge',         section: 'analiz' },
     { id: 'vekil',         label: 'Vekil dağılımı',       num: '08', module: 'vekil',         section: 'analiz' },
+    { id: 'anket',         label: 'Anket firmaları',      num: '09', module: 'anket',         section: 'analiz' },
     { id: 'baslangic',     label: 'Başlangıç rehberi',    num: '?',  module: 'baslangic',     section: 'bilgi' },
     { id: 'metodoloji',    label: 'Metodoloji',           num: 'i',  module: 'metodoloji',    section: 'bilgi' },
     { id: 'hakkinda',      label: 'Hakkında',             num: 'ii', module: 'hakkinda',      section: 'bilgi' },
@@ -161,6 +162,8 @@
       }
       if (params.il) t += ' · ' + params.il;
       if (params.ilce) t += ' · ' + params.ilce;
+      if (params.election) t += ' · ' + params.election.replace(/-/g, ' ');
+      if (params.firm) t += ' · ' + params.firm;
     }
     return t + ' · Türkiye Seçim Arşivi · AlperTan™';
   }
@@ -230,6 +233,9 @@
     text += ' — 2018–2024, il ve ilçe bazında seçim verisi. Kaynak: AlperTan™';
     if (route.id === 'senaryo') {
       text += ' (Bu bir tahmin değildir; varsayımsal modeldir.)';
+    }
+    if (route.id === 'anket') {
+      text += ' (Geçmiş seçimlerde isabet puanı; gelecek seçimlerde puan yok.)';
     }
     return text;
   }
