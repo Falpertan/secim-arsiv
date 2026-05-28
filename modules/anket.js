@@ -76,6 +76,7 @@
       span +
       ' · <a href="#/anket/mode/about">Bu modül hakkında</a>' +
       ' · <a href="#/anket/add/1">Anket ekle</a>' +
+      ' · <a href="#/iletisim">İletişim</a>' +
       '</div>'
     );
   }

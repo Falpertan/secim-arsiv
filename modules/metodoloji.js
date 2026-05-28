@@ -459,7 +459,11 @@
           </div>
           <div class="metod-iletisim-satir">
             <span class="metod-iletisim-etiket">E-posta</span>
-            <span class="metod-iletisim-deger" style="color:var(--ink-3); font-style:italic;">Yakında eklenecek</span>
+            <span class="metod-iletisim-deger"><a href="mailto:secimarsivi@gmail.com">secimarsivi@gmail.com</a></span>
+          </div>
+          <div class="metod-iletisim-satir">
+            <span class="metod-iletisim-etiket">İletişim sayfası</span>
+            <span class="metod-iletisim-deger"><a href="#/iletisim">#/iletisim</a></span>
           </div>
           <div class="metod-iletisim-satir">
             <span class="metod-iletisim-etiket">Veri sürümü</span>

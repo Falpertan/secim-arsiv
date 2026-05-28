@@ -36,6 +36,7 @@
     { id: 'baslangic',     label: 'Başlangıç rehberi',    num: '?',  module: 'baslangic',     section: 'bilgi' },
     { id: 'metodoloji',    label: 'Metodoloji',           num: 'i',  module: 'metodoloji',    section: 'bilgi' },
     { id: 'hakkinda',      label: 'Hakkında',             num: 'ii', module: 'hakkinda',      section: 'bilgi' },
+    { id: 'iletisim',      label: 'İletişim',             num: 'iii', module: 'iletisim',    section: 'bilgi' },
   ];
 
   // Module functions registered by modules/*.js
@@ -424,6 +425,7 @@
         </div>
         Veri: YSK, TÜİK<br/>
         <a href="#/baslangic">Başlangıç rehberi</a> ·
+        <a href="#/iletisim">İletişim</a> ·
         <a href="#/hakkinda">Hakkında</a>
       </div>
     `;

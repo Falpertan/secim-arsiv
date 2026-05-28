@@ -90,8 +90,8 @@
         <ul class="hakk-destek-listesi">
           <li>
             <strong>Hata bildir.</strong> Bir grafikte yanlış sayı, bir ilçede eksik veri,
-            bir cümlede yanlış ifade gördüysen <a href="#/metodoloji">Metodoloji</a> sayfasındaki
-            atıf bölümünden haber ver.
+            bir cümlede yanlış ifade gördüysen <a href="#/iletisim">İletişim</a> veya
+            <a href="#/metodoloji#iletisim">Metodoloji</a> üzerinden haber ver.
             En değerli geri bildirim odur.
           </li>
           <li>
