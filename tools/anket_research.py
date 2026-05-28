@@ -33,8 +33,11 @@ CHANNEL_RULES = [
 ]
 
 FIRM_ALIASES = [
-    ("ozkiraz", re.compile(r"özk[ıi]raz|ozkiraz|kemal özk", re.I)),
+    ("ozkiraz", re.compile(r"özk[ıi]raz|ozkiraz|avrasya\s*araşt|avrasyaarastirma", re.I)),
+    ("avrasya", re.compile(r"avrasya\s*araşt|avrasyaarastirma", re.I)),
 ]
+
+SKIP_TOKEN_FIRMS = {"ozkiraz"}
 
 USER_AGENT = "SecimArsivi-AnketBot/1.0 (+https://secimarsivi.com)"
 
@@ -66,6 +69,8 @@ def guess_firm(title: str, firms: list[dict[str, Any]], firm_id: str | None = No
         if pattern.search(lower):
             return next((f for f in firms if f["id"] == fid), None)
     for firm in firms:
+        if firm.get("id") in SKIP_TOKEN_FIRMS:
+            continue
         name = firm.get("name", "")
         if not name:
             continue
@@ -151,6 +156,14 @@ def build_queries(firms: list[dict[str, Any]]) -> list[tuple[str | None, str]]:
         "piar",
     ]
     by_id = {f["id"]: f for f in firms}
+    for fid, q in (
+        ("ozkiraz", '"Özkıraz" anket'),
+        ("ozkiraz", "Avrasya Araştırma anket"),
+        ("ozkiraz", "site:x.com AvrasyaArastirma"),
+    ):
+        if q not in seen:
+            queries.append((fid, q))
+            seen.add(q)
     for fid in priority:
         firm = by_id.get(fid)
         if not firm:
@@ -161,6 +174,8 @@ def build_queries(firms: list[dict[str, Any]]) -> list[tuple[str | None, str]]:
             queries.append((fid, q))
             seen.add(q)
     for firm in firms:
+        if firm.get("id") in SKIP_TOKEN_FIRMS:
+            continue
         token = firm["name"].split()[0]
         if len(token) <= 3:
             continue

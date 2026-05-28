@@ -461,12 +461,20 @@
     },
     {
       "id": "avrasya",
-      "name": "Avrasya Araştırma"
+      "name": "Avrasya Araştırma",
+      "linkedFirmId": "ozkiraz",
+      "note": "Kemal Özkıraz dönemi anketleri ozkiraz profilinde toplanır."
     },
     {
       "id": "ozkiraz",
       "name": "Kemal Özkıraz",
-      "website": "https://twitter.com/AvrasyaArastirma"
+      "website": "https://twitter.com/AvrasyaArastirma",
+      "aliases": [
+        "Avrasya Araştırma",
+        "Avrasya Araştırma Başkanı"
+      ],
+      "linkedFirmId": "avrasya",
+      "note": "2023 öncesi Avrasya Araştırma bünyesinde paylaşım yaptı."
     },
     {
       "id": "istanbul-ekonomi",
@@ -2866,6 +2874,451 @@
         }
       ],
       "sourceLabel": "MAK — Ankara"
+    },
+    {
+      "id": "ozkiraz-2023-pres-r1-05-12",
+      "electionId": "2023-presidential-r1",
+      "firmId": "ozkiraz",
+      "publishedDate": "2023-05-12",
+      "fieldworkStart": "2023-05-08",
+      "fieldworkEnd": "2023-05-11",
+      "scope": "candidate",
+      "sampleSize": 2460,
+      "predictions": [
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 51.3
+        },
+        {
+          "targetId": "erdogan",
+          "percent": 44.2
+        },
+        {
+          "targetId": "ogan",
+          "percent": 3.1
+        },
+        {
+          "targetId": "ince",
+          "percent": 1.4
+        }
+      ],
+      "publications": [
+        {
+          "id": "ozkiraz-2023-r1-bianet",
+          "channel": "online_news",
+          "outlet": "Bianet",
+          "title": "Avrasya Araştırma anketi: Kılıçdaroğlu %51,3 — Erdoğan %44,2",
+          "publishedAt": "2023-05-12",
+          "url": "https://bianet.org/haber/avrasya-arastirma-nin-anketi-kilicdaroglu-51-3-erdogan-yuzde-44-2-278639",
+          "isPrimary": true
+        },
+        {
+          "id": "ozkiraz-2023-r1-tele1",
+          "channel": "online_news",
+          "outlet": "Tele1",
+          "title": "Kemal Özkıraz son anketini paylaştı — seçim ilk turda biter tahmini",
+          "publishedAt": "2023-05-12",
+          "url": "https://www.tele1.com.tr/kemal-ozkiraz-jubile-yapiyorum-diyerek-son-secim-anketini-paylasti"
+        }
+      ],
+      "sourceLabel": "Avrasya Araştırma — Kemal Özkıraz",
+      "notes": "İnce çekilmeden önceki son paylaşım; 2 gün seçime kala."
+    },
+    {
+      "id": "piar-2023-pres-r1-05-10",
+      "electionId": "2023-presidential-r1",
+      "firmId": "piar",
+      "publishedDate": "2023-05-11",
+      "fieldworkStart": "2023-05-06",
+      "fieldworkEnd": "2023-05-09",
+      "scope": "candidate",
+      "predictions": [
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 51.3
+        },
+        {
+          "targetId": "erdogan",
+          "percent": 45.3
+        },
+        {
+          "targetId": "ogan",
+          "percent": 2.6
+        },
+        {
+          "targetId": "ince",
+          "percent": 0.8
+        }
+      ],
+      "publications": [
+        {
+          "id": "piar-2023-r1-bianet",
+          "channel": "online_news",
+          "outlet": "Bianet",
+          "title": "PİAR Araştırma: Kılıçdaroğlu %51,3 — Erdoğan %45,3",
+          "publishedAt": "2023-05-11",
+          "url": "https://bianet.org/haber/yoneylem-ve-piar-arastirma-anket-sonuclari-kilicdaroglu-onde-gidiyor-278559",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "PİAR Araştırma — Bianet",
+      "notes": "26 ilde CATI; kararsızlar dağıtıldıktan sonra."
+    },
+    {
+      "id": "piar-2023-pres-r2-05-27",
+      "electionId": "2023-presidential-r2",
+      "firmId": "piar",
+      "publishedDate": "2023-05-27",
+      "fieldworkStart": "2023-05-23",
+      "fieldworkEnd": "2023-05-25",
+      "scope": "candidate",
+      "sampleSize": 2560,
+      "predictions": [
+        {
+          "targetId": "erdogan",
+          "percent": 52.5
+        },
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 47.5
+        }
+      ],
+      "publications": [
+        {
+          "id": "piar-2023-r2-kisadalga",
+          "channel": "online_news",
+          "outlet": "Kısa Dalga",
+          "title": "Piar Araştırma ikinci tur anketi: Erdoğan %52,5 — Kılıçdaroğlu %47,5",
+          "publishedAt": "2023-05-28",
+          "url": "https://kisadalga.net/haber/detay/secim-sonucunu-piar-arastirma-tutturdu_70011",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "PİAR Araştırma",
+      "notes": "Seçim sonucunu hata payı içinde doğru tahmin etti."
+    },
+    {
+      "id": "piar-2019-istanbul-rerun-06",
+      "electionId": "2019-istanbul-rerun",
+      "firmId": "piar",
+      "publishedDate": "2019-06-20",
+      "scope": "candidate",
+      "predictions": [
+        {
+          "targetId": "imamoglu",
+          "percent": 51.5
+        },
+        {
+          "targetId": "yildirim",
+          "percent": 47.6
+        }
+      ],
+      "publications": [
+        {
+          "id": "piar-2019-ist-600vekil",
+          "channel": "online_news",
+          "outlet": "600vekil",
+          "title": "Piar — İstanbul yenileme seçimi anket özeti",
+          "publishedAt": "2019-06-20",
+          "url": "https://600vekil.com/arastirmaci/piar",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "PİAR Araştırma — 600vekil arşivi"
+    },
+    {
+      "id": "aksoy-2023-pres-r1-05-12",
+      "electionId": "2023-presidential-r1",
+      "firmId": "aksoy",
+      "publishedDate": "2023-05-13",
+      "fieldworkStart": "2023-05-09",
+      "fieldworkEnd": "2023-05-12",
+      "scope": "candidate",
+      "sampleSize": 4000,
+      "predictions": [
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 47.9
+        },
+        {
+          "targetId": "erdogan",
+          "percent": 45.6
+        },
+        {
+          "targetId": "ogan",
+          "percent": 5.7
+        },
+        {
+          "targetId": "ince",
+          "percent": 0.8
+        }
+      ],
+      "publications": [
+        {
+          "id": "aksoy-2023-r1-medyascope",
+          "channel": "online_news",
+          "outlet": "Medyascope",
+          "title": "Aksoy Araştırma son anket: seçim ikinci tura kalıyor",
+          "publishedAt": "2023-05-13",
+          "url": "https://medyascope.tv/2023/05/13/aksoy-arastirma-anket-sonuclarini-paylasti-secim-ikinci-tura-kaliyor/",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "Aksoy Araştırma — Türkiye Monitörü",
+      "notes": "81 il, CATI; seçime 1 gün kala."
+    },
+    {
+      "id": "aksoy-2023-pres-r2-05-26",
+      "electionId": "2023-presidential-r2",
+      "firmId": "aksoy",
+      "publishedDate": "2023-05-27",
+      "fieldworkStart": "2023-05-24",
+      "fieldworkEnd": "2023-05-26",
+      "scope": "candidate",
+      "sampleSize": 3000,
+      "predictions": [
+        {
+          "targetId": "erdogan",
+          "percent": 53.0
+        },
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 47.0
+        }
+      ],
+      "publications": [
+        {
+          "id": "aksoy-2023-r2-wiki",
+          "channel": "academic_report",
+          "outlet": "Wikipedia (anket derlemesi)",
+          "title": "Aksoy Araştırma — 24-26 Mayıs 2023 ikinci tur anketi",
+          "publishedAt": "2023-05-27",
+          "url": "https://tr.wikipedia.org/wiki/2023_T%C3%BCrkiye_cumhurba%C5%9Fkanl%C4%B1%C4%9F%C4%B1_se%C3%A7imi_i%C3%A7in_yap%C4%B1lan_anketler",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "Aksoy Araştırma"
+    },
+    {
+      "id": "istanbul-ekonomi-2023-pres-r1-05-12",
+      "electionId": "2023-presidential-r1",
+      "firmId": "istanbul-ekonomi",
+      "publishedDate": "2023-05-12",
+      "fieldworkStart": "2023-05-12",
+      "fieldworkEnd": "2023-05-12",
+      "scope": "candidate",
+      "sampleSize": 1500,
+      "predictions": [
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 50.5
+        },
+        {
+          "targetId": "erdogan",
+          "percent": 45.6
+        },
+        {
+          "targetId": "ogan",
+          "percent": 3.9
+        },
+        {
+          "targetId": "ince",
+          "percent": 4.9
+        }
+      ],
+      "publications": [
+        {
+          "id": "iea-2023-r1-wiki",
+          "channel": "academic_report",
+          "outlet": "Wikipedia (İEA / Türkiye Raporu)",
+          "title": "İstanbul Ekonomi Araştırma — 12 Mayıs 2023 cumhurbaşkanlığı anketi",
+          "publishedAt": "2023-05-12",
+          "url": "https://tr.wikipedia.org/wiki/2023_T%C3%BCrkiye_cumhurba%C5%9Fkanl%C4%B1%C4%9F%C4%B1_se%C3%A7imi_i%C3%A7in_yap%C4%B1lan_anketler",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "İstanbul Ekonomi Araştırma (İEA)",
+      "notes": "Türkiye Raporu serisi; Wikipedia derlemesinden."
+    },
+    {
+      "id": "ozkiraz-2023-pres-r1-05-05",
+      "electionId": "2023-presidential-r1",
+      "firmId": "ozkiraz",
+      "publishedDate": "2023-05-06",
+      "fieldworkStart": "2023-04-27",
+      "fieldworkEnd": "2023-05-05",
+      "scope": "candidate",
+      "sampleSize": 5600,
+      "predictions": [
+        {
+          "targetId": "kilicdaroglu",
+          "percent": 50.9
+        },
+        {
+          "targetId": "erdogan",
+          "percent": 43.6
+        },
+        {
+          "targetId": "ogan",
+          "percent": 3.0
+        },
+        {
+          "targetId": "ince",
+          "percent": 2.5
+        }
+      ],
+      "publications": [
+        {
+          "id": "ozkiraz-2023-r1-wiki-avrasya",
+          "channel": "online_news",
+          "outlet": "Wikipedia (Avrasya derlemesi)",
+          "title": "Avrasya Araştırma — 27 Nisan-5 Mayıs 2023 anketi",
+          "publishedAt": "2023-05-06",
+          "url": "https://tr.wikipedia.org/wiki/2023_T%C3%BCrkiye_cumhurba%C5%9Fkanl%C4%B1%C4%9F%C4%B1_se%C3%A7imi_i%C3%A7in_yap%C4%B1lan_anketler",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "Avrasya Araştırma — Kemal Özkıraz"
+    },
+    {
+      "id": "mediar-2018-pres-04",
+      "electionId": "2018-presidential",
+      "firmId": "mediar",
+      "publishedDate": "2018-04-25",
+      "scope": "candidate",
+      "sampleSize": 2660,
+      "predictions": [
+        {
+          "targetId": "erdogan",
+          "percent": 42.11
+        },
+        {
+          "targetId": "ince",
+          "percent": 20.11
+        },
+        {
+          "targetId": "aksener",
+          "percent": 19.7
+        },
+        {
+          "targetId": "demirtas",
+          "percent": 13.38
+        },
+        {
+          "targetId": "karamollaoglu",
+          "percent": 3.08
+        }
+      ],
+      "publications": [
+        {
+          "id": "mediar-2018-04-indigo",
+          "channel": "online_news",
+          "outlet": "İndigo Dergisi",
+          "title": "Mediar Araştırma — Nisan 2018 cumhurbaşkanlığı anketi",
+          "publishedAt": "2018-04-25",
+          "url": "https://indigodergisi.com/2018/04/mediar-24-haziran-secim-anketi-sonuclari/",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "Mediar Araştırma",
+      "notes": "CHP adayı henüz İnce değildi; oran CHP adayına aittir."
+    },
+    {
+      "id": "mediar-2018-pres-05-23",
+      "electionId": "2018-presidential",
+      "firmId": "mediar",
+      "publishedDate": "2018-05-24",
+      "fieldworkStart": "2018-05-22",
+      "fieldworkEnd": "2018-05-23",
+      "scope": "candidate",
+      "sampleSize": 4268,
+      "predictions": [
+        {
+          "targetId": "erdogan",
+          "percent": 43.5
+        },
+        {
+          "targetId": "ince",
+          "percent": 22.2
+        },
+        {
+          "targetId": "aksener",
+          "percent": 19.31
+        },
+        {
+          "targetId": "demirtas",
+          "percent": 12.79
+        },
+        {
+          "targetId": "karamollaoglu",
+          "percent": 1.61
+        },
+        {
+          "targetId": "perincek",
+          "percent": 0.6
+        }
+      ],
+      "publications": [
+        {
+          "id": "mediar-2018-05-indigo",
+          "channel": "online_news",
+          "outlet": "İndigo Dergisi",
+          "title": "Mediar — 22-23 Mayıs 2018 cumhurbaşkanlığı anketi",
+          "publishedAt": "2018-05-24",
+          "url": "https://indigodergisi.com/2018/05/son-secim-anketleri-24-haziran/",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "Mediar Araştırma"
+    },
+    {
+      "id": "mediar-2018-pres-06-11",
+      "electionId": "2018-presidential",
+      "firmId": "mediar",
+      "publishedDate": "2018-06-12",
+      "fieldworkStart": "2018-06-08",
+      "fieldworkEnd": "2018-06-11",
+      "scope": "candidate",
+      "sampleSize": 2401,
+      "predictions": [
+        {
+          "targetId": "erdogan",
+          "percent": 47.96
+        },
+        {
+          "targetId": "ince",
+          "percent": 29.88
+        },
+        {
+          "targetId": "aksener",
+          "percent": 9.15
+        },
+        {
+          "targetId": "demirtas",
+          "percent": 10.18
+        },
+        {
+          "targetId": "karamollaoglu",
+          "percent": 2.06
+        },
+        {
+          "targetId": "perincek",
+          "percent": 0.76
+        }
+      ],
+      "publications": [
+        {
+          "id": "mediar-2018-06-turkipedia",
+          "channel": "academic_report",
+          "outlet": "Turkipedia (anket derlemesi)",
+          "title": "Mediar — 8-11 Haziran 2018 son anket",
+          "publishedAt": "2018-06-12",
+          "url": "https://turkipedia.com/2018_T%C3%BCrkiye_cumhurba%C5%9Fkanl%C4%B1%C4%9F%C4%B1_se%C3%A7imi_i%C3%A7in_yap%C4%B1lan_anketler",
+          "isPrimary": true
+        }
+      ],
+      "sourceLabel": "Mediar Araştırma",
+      "notes": "Seçime 13 gün kala."
     }
   ],
   "upcomingElections": [
@@ -4248,72 +4701,6 @@
       "_scanned": true
     },
     {
-      "id": "scan-https-news-google-com-rss-articles-cbminafbvv95c",
-      "electionId": "2028-presidential",
-      "firmId": "ozkiraz",
-      "publishedDate": "2026-05-28",
-      "scope": "party",
-      "predictions": [],
-      "publications": [
-        {
-          "id": "pub-https-news-google-com-rss-articles-cbminafbvv95c",
-          "channel": "online_news",
-          "outlet": "Google News",
-          "title": "Kemal Kılıcdarogluna anket soku! Halk Degisim Diyor! - Karadeniz Gazetesi",
-          "publishedAt": "2026-05-28",
-          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNb0lFRElsbkZuZTdld2tLcUtCLVpMeWw2U21Sa003MVpwZGU4WU5zMzBqZXBFdS0wSEtpM0hLdzlmTlpjbmw3WFY0U0xUX0c3OF92eDZNSlhxdjhVZHRrcmlvR1F1ZEUyOGlPY0VMTFdBejVyVUs2NGdKN1VzenpvRkhMa2dxcWRTalk3MUpnZ2ktWFB1ZHRydWdUcFM?oc=5",
-          "isPrimary": true
-        }
-      ],
-      "sourceLabel": "Otomatik tarama",
-      "notes": "Başlıktan otomatik eklendi; oranlar elle doğrulanmalı.",
-      "_scanned": true
-    },
-    {
-      "id": "scan-https-news-google-com-rss-articles-cbmiqafbvv95c",
-      "electionId": "2028-presidential",
-      "firmId": "ozkiraz",
-      "publishedDate": "2026-05-28",
-      "scope": "party",
-      "predictions": [],
-      "publications": [
-        {
-          "id": "pub-https-news-google-com-rss-articles-cbmiqafbvv95c",
-          "channel": "tv",
-          "outlet": "Google News",
-          "title": "Kemal Kılıçdaroğlu'na anket şoku! Bu oranlar şaşkınlık yaratacak - F5Haber",
-          "publishedAt": "2026-05-28",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMldwUl8yMHB4LTVMcFlMTldPTklHV2VCM29PRjBiMUtVWUctOEVPNXY3WUtGYng4akdRWVVMeWMxY0Y5ZVlYNW00aWNXaW53SEw4dnp4LWFPNFBqd0lnNDFnMHQwd0dqQVFvaFM4dGJKa1JHQ1Qwdm9KNDh0M1VzU2t5ZzU5UnZkcmF5TTJzOWxxVjAtVzlDakEzS1FvLTFNWkpfbjFzUVk?oc=5",
-          "isPrimary": true
-        }
-      ],
-      "sourceLabel": "Otomatik tarama",
-      "notes": "Başlıktan otomatik eklendi; oranlar elle doğrulanmalı.",
-      "_scanned": true
-    },
-    {
-      "id": "scan-https-news-google-com-rss-articles-cbmiuafbvv95c",
-      "electionId": "2028-presidential",
-      "firmId": "ozkiraz",
-      "publishedDate": "2026-05-28",
-      "scope": "party",
-      "predictions": [],
-      "publications": [
-        {
-          "id": "pub-https-news-google-com-rss-articles-cbmiuafbvv95c",
-          "channel": "online_news",
-          "outlet": "Google News",
-          "title": "Metropoll'den dikkat çeken anket: Özgür Özel yeni bir parti kursa... - Haber3",
-          "publishedAt": "2026-05-28",
-          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNl9hbTM3dVdZcEl1eWJEYTlkcnZ1dUxiYWdhSm54LTBqX2hqQ254eDA4ZnpSZXVvNHlvV3VpbzU3dFJ6Nno4VXhIMDBYU2VkV3lBSWNUMWstSW8tNTBibUxCVk5lM1g5azdQSkdXWEtpZkdqM1ZkM1lMLUtOUG5xUmhIV0RISVg4ODZrR2RzUnA1bV9PeEpXbm5YeWRzbXExWlBIVVctMVVSZThSc3k5LTlCMmZkNjMt0gG-AUFVX3lxTFB6NnZTQ2lLOEZydk9MNHVZTEtiaTRXUnJrUXlTWnpCM0NibmlKaV9Ta0xlNXMzU28xemczWDdQc1htQ0wwTU5uMWRNTXFyNW1rSjZLUGJIZzgtYXhwdUZZZnZMUU9aYVdoUFBBbnhleHhxR3Uzeko0ajVxY1VFS3JPNnVxajV6cmpGUW1rdlVEWkM2TnRPSjh0SmRmaHNUbkxpVkp2UjR5czBsMERVUTFPR2tjMTctaXJBeU9BWnc?oc=5",
-          "isPrimary": true
-        }
-      ],
-      "sourceLabel": "Otomatik tarama",
-      "notes": "Başlıktan otomatik eklendi; oranlar elle doğrulanmalı.",
-      "_scanned": true
-    },
-    {
       "id": "scan-https-news-google-com-rss-articles-cbmi1wfbvv95c",
       "electionId": "2028-presidential",
       "firmId": "veri",
@@ -4328,28 +4715,6 @@
           "title": "İşte kulisleri sallayacak anket: Hangi parti ne kadar oy alıyor? Sürpriz yükseliş ve düşüşler... - Yeniçağ Gazetesi",
           "publishedAt": "2026-05-27",
           "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNSmRKREk4LVBacTVnblQxY2Iza2U0akp5azlHOEVKUG04U1Zhc3hYdmx3cDNiX1ctOEhrYVYtMV93R0FKSjNiZ0dFdmRjOXUzemdoakFXckllMGJsc0dBZzdOdmJIdVdyX19ocW93cGg1S0VTY0pTU2s1STI5TzNSZFhsRnZJWG5XdHRKTjJ2el91Mi0xZEJKUi1OVExWX1VPQ0hKUlRTYm5NUjNfNUU5dDFWUXFtdm1BZVhLcmtuRHBrYWZXOHVZUjN1YWRIanZ0YzU5Rm1oZw?oc=5",
-          "isPrimary": true
-        }
-      ],
-      "sourceLabel": "Otomatik tarama",
-      "notes": "Başlıktan otomatik eklendi; oranlar elle doğrulanmalı.",
-      "_scanned": true
-    },
-    {
-      "id": "scan-https-news-google-com-rss-articles-cbmipwfbvv95c",
-      "electionId": "2028-presidential",
-      "firmId": "ozkiraz",
-      "publishedDate": "2026-05-27",
-      "scope": "party",
-      "predictions": [],
-      "publications": [
-        {
-          "id": "pub-https-news-google-com-rss-articles-cbmipwfbvv95c",
-          "channel": "online_news",
-          "outlet": "Google News",
-          "title": "Kemal Kılıçdaroğlu'na bir anket şoku daha: Baraj altında kalıyor! - 12punto",
-          "publishedAt": "2026-05-27",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQWlJrSG1hTUhqdlYxVGFqSFd3ZldCNFBnbU84UjBscmM5eW1pRXFRRFFhcjQxMUx0aHdQVXFCcjlYRXc1a0ZOQUNfN1pTMUEyTDJrYXc3cHZCNENqLTBaQm9SSUhNWXAzVzdtZU9zQ3FURDhTNm9wcnJVZVA1OUVNV25xbmZiMWVRbGtNcXhaVTdVQ1J3cjlPR2VtVktqSk5YcFc0SWF0d9IBpwFBVV95cUxQWlJrSG1hTUhqdlYxVGFqSFd3ZldCNFBnbU84UjBscmM5eW1pRXFRRFFhcjQxMUx0aHdQVXFCcjlYRXc1a0ZOQUNfN1pTMUEyTDJrYXc3cHZCNENqLTBaQm9SSUhNWXAzVzdtZU9zQ3FURDhTNm9wcnJVZVA1OUVNV25xbmZiMWVRbGtNcXhaVTdVQ1J3cjlPR2VtVktqSk5YcFc0SWF0dw?oc=5",
           "isPrimary": true
         }
       ],
@@ -4556,28 +4921,6 @@
       "_scanned": true
     },
     {
-      "id": "scan-https-news-google-com-rss-articles-cbmi5afbvv95c",
-      "electionId": "2028-presidential",
-      "firmId": "ozkiraz",
-      "publishedDate": "2026-05-25",
-      "scope": "party",
-      "predictions": [],
-      "publications": [
-        {
-          "id": "pub-https-news-google-com-rss-articles-cbmi5afbvv95c",
-          "channel": "online_news",
-          "outlet": "Google News",
-          "title": "'Mutlak butlan' kararı sonrası ilk anket yapıldı! CHP seçmeninin tercihi hangi taraf oldu? İşte çarpıcı anketin sonuçları - SuperHaber",
-          "publishedAt": "2026-05-25",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaHpBRUJEZXU3S0swWFpwNjg4OGRzTnVTV3ZtWk1Ld0NTdkVLUk5uT3JOOXVEc0xBYVpDekFrQWd2dlNaVEl2a0c3MlFPRkZRWS1OeDFLTWM0NlJGNzdYQVVWUEJ1UDRjVVJPcmg0anRWZnhMTy1JVGJLVGpTamJnU1lqMnZYTzVaUmtLN2tOUVE2VzBtbkZhMGpIbjl6WC0tbnZyMkxmQ0cyT3QtaG1wUUR4SUhLNHdta0UtaVgwR3dKXzMwdm9GVHNZUGp3RXZpbk9sSlJYNHVtQkZIWU1wQ1UwYm_SAeoBQVVfeXFMT3ZFck5oazgwOE5yREhyQkNOY0xoMXpfRVJRV1c2aTJjSHRDYS1lS2R3MU1GaWlIcUF5MmtleG1WajNKSzZHcmIzSlE3cEl0UTlLaXFKUWE1YzRzOEZTVGgzSTJhOXdtSEhzbTBTZ0tVdjlBYjFiQ3Mza05mSERCYnR3bFhaUFFhVkNqMFh4dlhZUF8wSXZrcFRzWVhXVUo2c3U3azFCWHoyc3c5cWJUWXhHVWw2Yk9wU09UMER1NFV3bzhrNjhSTUxleEwzMWJxNE5sclJ3UFJQUnpkeDN4ZGt0YzBLYkVBNHd3?oc=5",
-          "isPrimary": true
-        }
-      ],
-      "sourceLabel": "Otomatik tarama",
-      "notes": "Başlıktan otomatik eklendi; oranlar elle doğrulanmalı.",
-      "_scanned": true
-    },
-    {
       "id": "scan-https-news-google-com-rss-articles-cbmitafbvv95c",
       "electionId": "2028-presidential",
       "firmId": "areda",
@@ -4758,8 +5101,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "Kemal Kılıçdaroğlu'na anket şoku! Bu oranlar şaşkınlık yaratacak - F5Haber",
@@ -4769,8 +5112,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "Metropoll'den dikkat çeken anket: Özgür Özel yeni bir parti kursa... - Haber3",
@@ -4780,8 +5123,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "İşte kulisleri sallayacak anket: Hangi parti ne kadar oy alıyor? Sürpriz yükseliş ve düşüşler... - Yeniçağ Gazetesi",
@@ -4802,8 +5145,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "Özgür Özel Parti Kurarsa Ne Olur? Tarihi Seçim Anketi! Kılıçdaroğlu'na Büyük Şok - YouTube",
@@ -4934,8 +5277,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "Mutlak butlan kararı sonrası ilk anket! CHP seçmeninin kararı belli oldu - Haber3",
@@ -4945,8 +5288,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "'Mutlak butlan' kararı sonrası ilk anket yapıldı! CHP seçmeninin tercihi hangi taraf oldu? İşte çarpıcı anketin sonuçları - SuperHaber",
@@ -4956,8 +5299,8 @@
         "outlet": "Google News",
         "query": "\"Kemal\" anket",
         "source": "google_news_rss",
-        "firmId": "ozkiraz",
-        "firmName": "Kemal Özkıraz"
+        "firmId": null,
+        "firmName": null
       },
       {
         "title": "Mutlak butlan kararı sonrası dikkat çeken anket: Özgür Özel şoke olacak! - Haber 7",
@@ -5066,7 +5409,7 @@
     "from": 2018,
     "to": 2024,
     "electionCount": 11,
-    "pollCount": 56,
+    "pollCount": 67,
     "upcomingElectionCount": 2
   }
 }

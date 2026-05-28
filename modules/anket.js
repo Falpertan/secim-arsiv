@@ -9,6 +9,8 @@
   const ABOUT_PATH = 'data/anket/hakkimizda.json';
   const RESEARCH_STORAGE = 'secim-arsivi-anket-research';
   const POLLS_EXTRA_STORAGE = 'secim-arsivi-anket-polls-extra';
+  const POLLS_MANUAL_STORAGE = 'secim-arsivi-anket-polls-manual';
+  const MAX_PROOF_IMAGE_BYTES = 1500000;
   const LOCAL_API = 'http://127.0.0.1:8765';
   const IS_LOCAL = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
   const IS_DEV_SERVER = IS_LOCAL && location.port === '8765';
@@ -27,7 +29,19 @@
     other: { label: 'Diğer', icon: '📎' },
   };
 
+  const FIRM_MATCH = {
+    ozkiraz: /özk[ıi]raz|ozkiraz|avrasya\s*araşt|avrasyaarastirma/i,
+    avrasya: /avrasya\s*araşt|avrasyaarastirma/i,
+  };
+
+  const LINKED_FIRMS = {
+    ozkiraz: ['ozkiraz', 'avrasya'],
+    avrasya: ['ozkiraz', 'avrasya'],
+  };
+
   const RESEARCH_KEYWORDS = /anket|seçim|secim|oy\s*oran|parti\s*oran|cumhurbaşkan|milletvekili|ittifak|yüzde|araştırma\s*sonuc/i;
+
+  const SKIP_TOKEN_FIRMS = new Set(['ozkiraz']);
 
   let DATA = null;
   let aboutData = null;
@@ -40,7 +54,21 @@
     view: 'compare',
     upcomingElectionId: null,
     profileFirmId: null,
+    scrollToManual: false,
   };
+
+  function renderAnketMetaLine() {
+    const dr = DATA?.dataRange;
+    const pollCount = dr?.pollCount ?? DATA?.polls?.length ?? 0;
+    const span = dr ? (dr.from + '–' + dr.to + ' · ' + pollCount + ' doğrulanmış anket') : pollCount + ' anket';
+    return (
+      '<div class="at-data-freshness ank-meta-line">' +
+      span +
+      ' · <a href="#/anket/mode/about">Bu modül hakkında</a>' +
+      ' · <a href="#/anket/add/1">Anket ekle</a>' +
+      '</div>'
+    );
+  }
 
   function esc(s) {
     return String(s || '')
@@ -120,7 +148,7 @@
   }
 
   function getPolls() {
-    return DATA.polls.filter(p => p.electionId === ui.electionId);
+    return getMergedHistoricalPolls().filter(p => p.electionId === ui.electionId);
   }
 
   function getFirm(id) {
@@ -162,6 +190,33 @@
     localStorage.setItem(POLLS_EXTRA_STORAGE, JSON.stringify(polls));
   }
 
+  function loadManualPolls() {
+    try {
+      const raw = localStorage.getItem(POLLS_MANUAL_STORAGE);
+      return raw ? JSON.parse(raw) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function saveManualPolls(polls) {
+    localStorage.setItem(POLLS_MANUAL_STORAGE, JSON.stringify(polls));
+  }
+
+  function getMergedHistoricalPolls() {
+    const base = DATA?.polls || [];
+    const manual = loadManualPolls();
+    const seen = new Set();
+    const out = [];
+    for (const poll of [...base, ...manual]) {
+      const key = pollUrlKey(poll);
+      if (seen.has(key)) continue;
+      seen.add(key);
+      out.push(poll);
+    }
+    return out;
+  }
+
   function pollUrlKey(poll) {
     const pub = getPrimaryPublication(poll.publications);
     const href = pub ? getPublicationHref(pub) : '';
@@ -189,9 +244,27 @@
     return (list.find(e => e.date >= today) || list[0]).id;
   }
 
+  function getLinkedFirmIds(firmId) {
+    return LINKED_FIRMS[firmId] || [firmId];
+  }
+
+  function getFirmResearchItems(firmId) {
+    const ids = new Set(getLinkedFirmIds(firmId));
+    const r = getResearchData();
+    return (r.items || []).filter(it => it.firmId && ids.has(it.firmId));
+  }
+
+  function getAllPollsForFirm(firmId) {
+    const ids = new Set(getLinkedFirmIds(firmId));
+    const past = getMergedHistoricalPolls().filter(p => ids.has(p.firmId));
+    const upcoming = getMergedPollsUpcoming().filter(p => ids.has(p.firmId));
+    return { past, upcoming, manual: past.filter(p => p._manual) };
+  }
+
   function getBestPastPollForFirm(firmId, election) {
-    const polls = DATA.polls.filter(
-      p => p.firmId === firmId && p.electionId === election.id &&
+    const ids = new Set(getLinkedFirmIds(firmId));
+    const polls = getMergedHistoricalPolls().filter(
+      p => ids.has(p.firmId) && p.electionId === election.id &&
         new Date(p.publishedDate) <= new Date(election.date),
     );
     if (!polls.length) return null;
@@ -231,8 +304,9 @@
       });
     }
     for (const election of DATA.upcomingElections || []) {
+      const ids = new Set(getLinkedFirmIds(firmId));
       const polls = getMergedPollsUpcoming().filter(
-        p => p.firmId === firmId && p.electionId === election.id,
+        p => ids.has(p.firmId) && p.electionId === election.id,
       );
       const latest = polls.sort((a, b) => new Date(b.publishedDate) - new Date(a.publishedDate))[0];
       records.push({ election, kind: 'upcoming', hasData: !!latest, latest });
@@ -245,6 +319,18 @@
     const seen = new Set();
     const priority = ['konda', 'metropoll', 'gezici', 'genar', 'mak', 'optimar', 'sonar', 'orc', 'veri', 'area', 'piar'];
     const byId = Object.fromEntries((DATA.firms || []).map(f => [f.id, f]));
+
+    for (const [id, q] of [
+      ['ozkiraz', '"Özkıraz" anket'],
+      ['ozkiraz', 'Avrasya Araştırma anket'],
+      ['ozkiraz', 'site:x.com AvrasyaArastirma'],
+    ]) {
+      if (!seen.has(q)) {
+        queries.push([id, q]);
+        seen.add(q);
+      }
+    }
+
     for (const id of priority) {
       const f = byId[id];
       if (!f) continue;
@@ -256,8 +342,9 @@
       }
     }
     for (const f of DATA.firms || []) {
+      if (SKIP_TOKEN_FIRMS.has(f.id)) continue;
       const token = f.name.split(/\s+/)[0];
-      if (token.length <= 3 || queries.length >= 22) continue;
+      if (token.length <= 3 || queries.length >= 24) continue;
       const q = '"' + token + '" anket';
       if (seen.has(q)) continue;
       queries.push([f.id, q]);
@@ -360,7 +447,7 @@
       (extra > 0 ? ' <span class="ank-src-extra">+' + extra + '</span>' : '') +
       '</div>' +
       '<p class="ank-src-title">' + esc(primary.title) + '</p>' +
-      '<time class="ank-src-date">' + fmtDate(primary.publishedAt.split('T')[0]) + '</time>';
+      '<time class="ank-src-date">' + fmtDate((primary.publishedAt || '').split('T')[0]) + '</time>';
     if (href) {
       html +=
         ' <a class="ank-src-link" href="' + esc(href) +
@@ -369,6 +456,7 @@
     } else {
       html += ' <span class="ank-src-nolink">Bağlantı yok</span>';
     }
+    html += renderProofThumb(primary);
     html += '</div>';
     return html;
   }
@@ -399,6 +487,7 @@
           '" target="_blank" rel="noopener noreferrer">' +
           (pub.url ? 'Kaynağı aç →' : 'Arşiv bağlantısı →') + '</a>';
       }
+      html += renderProofThumb(pub);
       html += '</li>';
     }
     html += '</ol></div>';
@@ -647,6 +736,109 @@
     return new Date(stored.generatedAt) >= new Date(embedded.generatedAt) ? stored : embedded;
   }
 
+  function renderProofThumb(pub) {
+    if (!pub?.proofImage) return '';
+    return (
+      '<figure class="ank-proof-thumb">' +
+      '<img src="' + esc(pub.proofImage) + '" alt="Kanıt görseli" loading="lazy">' +
+      '<figcaption>Kanıt görseli</figcaption></figure>'
+    );
+  }
+
+  function getAllElectionOptions() {
+    const past = (DATA.elections || []).map(e => ({ id: e.id, label: e.title, date: e.date, results: e.results }));
+    const upcoming = (DATA.upcomingElections || []).map(e => ({ id: e.id, label: e.title + ' (gelecek)', date: e.date, results: e.targets || e.results || [] }));
+    return [...past, ...upcoming].sort((a, b) => new Date(b.date) - new Date(a.date));
+  }
+
+  function renderManualPollsList(firmId) {
+    const ids = new Set(getLinkedFirmIds(firmId));
+    const items = loadManualPolls().filter(p => ids.has(p.firmId));
+    if (!items.length) return '';
+    const rows = items.map(poll => {
+      const election = [...(DATA.elections || []), ...(DATA.upcomingElections || [])].find(e => e.id === poll.electionId);
+      const top = [...(poll.predictions || [])].sort((a, b) => b.percent - a.percent)[0];
+      const topLabel = top
+        ? ((election?.results || election?.targets || []).find(t => t.id === top.targetId)?.label || top.targetId) + ' ' + fmtPct(top.percent)
+        : 'Oran girilmedi';
+      return (
+        '<div class="ank-manual-item" data-manual-id="' + esc(poll.id) + '">' +
+        '<div class="ank-manual-item-hdr">' +
+        '<strong>' + esc(election?.title || poll.electionId) + '</strong>' +
+        '<span class="ank-badge-manual">Elle eklendi</span></div>' +
+        '<p class="ank-manual-meta">' + fmtDate(poll.publishedDate) + ' · ' + esc(topLabel) + '</p>' +
+        renderPrimarySourceCell(poll.publications || []) +
+        '<button type="button" class="ank-btn-text ank-manual-del" data-manual-del="' + esc(poll.id) + '">Sil</button></div>'
+      );
+    }).join('');
+    return (
+      '<div class="panel panel-spaced">' +
+      '<div class="panel-title">Elle eklenen kaynaklar<span class="panel-meta">' + items.length + '</span></div>' +
+      '<p class="panel-note">Bu cihazda saklanır. Kalıcı arşive almak için dışa aktarıp SUNUCU.bat ile bundle\'a ekleyin.</p>' +
+      '<div class="ank-manual-list">' + rows + '</div></div>'
+    );
+  }
+
+  function renderManualSubmitPanel(firmId) {
+    const firm = getFirm(firmId);
+    const elections = getAllElectionOptions();
+    const electionOpts = elections.map(e =>
+      '<option value="' + esc(e.id) + '">' + esc(e.label) + ' (' + fmtDate(e.date) + ')</option>',
+    ).join('');
+    const channelOpts = Object.entries(CHANNEL_META).map(([id, meta]) =>
+      '<option value="' + id + '">' + meta.icon + ' ' + esc(meta.label) + '</option>',
+    ).join('');
+    return (
+      '<div class="panel panel-spaced ank-manual-panel" id="ank-manual-panel">' +
+      '<div class="panel-title">Anket ekle<span class="panel-meta">' + esc(firm?.name || '') + '</span></div>' +
+      '<p class="panel-note">TV programı, X/Twitter paylaşımı veya haber linki — kanıt ekran görüntüsü ekleyebilirsiniz. Kayıt bu cihazda saklanır.</p>' +
+      '<form id="ank-manual-form" class="ank-manual-form" data-firm-id="' + esc(firmId) + '">' +
+      '<div class="ank-manual-grid">' +
+      '<label>Seçim<select name="electionId" id="ank-manual-election" required>' + electionOpts + '</select></label>' +
+      '<label>Yayın tarihi<input type="date" name="publishedDate" required></label>' +
+      '<label>Kanal<select name="channel">' + channelOpts + '</select></label>' +
+      '<label>Yayın yeri (TV/kanal/site)<input type="text" name="outlet" placeholder="Örn: Halk TV, X/@AvrasyaArastirma"></label>' +
+      '<label class="ank-manual-wide">Başlık / açıklama<input type="text" name="title" placeholder="Program adı veya paylaşım metni" required></label>' +
+      '<label class="ank-manual-wide">Kaynak linki<input type="url" name="url" placeholder="https://…"></label>' +
+      '<label class="ank-manual-wide">Kanıt görseli (ekran görüntüsü)<input type="file" name="proofImage" id="ank-manual-proof" accept="image/jpeg,image/png,image/webp,image/gif"></label>' +
+      '</div>' +
+      '<div id="ank-manual-proof-preview" class="ank-proof-preview" hidden></div>' +
+      '<div id="ank-manual-predictions" class="ank-manual-predictions"></div>' +
+      '<label>Not<textarea name="notes" rows="2" placeholder="Örn: Canlı yayında açıklanan son anket"></textarea></label>' +
+      '<div class="ank-manual-actions">' +
+      '<button type="submit" class="ank-btn-research ank-btn-add-poll">Anketi kaydet</button>' +
+      '<button type="button" id="ank-manual-export" class="ank-btn-text">Tüm elle eklenenleri dışa aktar (JSON)</button>' +
+      '<label class="ank-btn-text ank-manual-import"><input type="file" id="ank-manual-import" accept="application/json,.json" hidden>JSON içe aktar</label>' +
+      '</div>' +
+      '<p id="ank-manual-status" class="panel-note" style="min-height:1rem;margin:8px 0 0"></p>' +
+      '</form></div>'
+    );
+  }
+
+  function renderFirmResearchSection(firmId) {
+    const items = getFirmResearchItems(firmId).slice(0, 20);
+    if (!items.length) return '';
+    const listHtml =
+      '<ul class="ank-research-list">' +
+      items.map(it => {
+        const ch = { tv: '📺', youtube: '▶️', social_media: '💬', online_news: '🌐' }[it.channel] || '📎';
+        const date = it.publishedAt ? fmtDate(it.publishedAt) : '—';
+        return (
+          '<li class="ank-research-item">' +
+          '<span style="font-size:10px;color:var(--ink-3)">' + ch + ' ' + date + '</span>' +
+          '<p style="margin:6px 0;color:var(--ink-2);line-height:1.4">' + esc(it.title) + '</p>' +
+          '<a class="ank-src-link" href="' + esc(it.url) + '" target="_blank" rel="noopener noreferrer">Kaynağı aç →</a></li>'
+        );
+      }).join('') +
+      '</ul>';
+    return (
+      '<div class="panel panel-spaced">' +
+      '<div class="panel-title">Tarama kayıtları<span class="panel-meta">' + items.length + ' haber</span></div>' +
+      '<p class="panel-note">Doğrulanmış anket değil — Google News / RSS taramasından gelen başlıklar. TV ve X paylaşımları burada görünebilir.</p>' +
+      listHtml + '</div>'
+    );
+  }
+
   function renderResearchPanel(research) {
     const r = research || getResearchData() || { totalHits: 0, items: [], note: 'Henüz tarama yapılmadı.' };
     const hasRun = r.generatedAt && r.totalHits > 0;
@@ -791,6 +983,24 @@
     const records = ui.profileFirmId ? getFirmCrossElectionRecords(ui.profileFirmId) : [];
     const avg = ui.profileFirmId ? getFirmAverageScore(ui.profileFirmId) : null;
     const covered = records.filter(r => r.hasData && r.kind === 'past').length;
+    const totalPast = records.filter(r => r.kind === 'past').length;
+    const linkedNote = firm?.linkedFirmId
+      ? (() => {
+          const other = getFirm(firm.linkedFirmId);
+          return other
+            ? '<p class="panel-note" style="margin-top:8px">İlişkili kayıt: <strong>' + esc(other.name) + '</strong> — aynı profilde birleştirilir.</p>'
+            : '';
+        })()
+      : '';
+    const gapBanner = covered === 0 && totalPast > 0
+      ? '<div class="ank-banner ank-banner-warn">Bu firma için arşivde henüz az doğrulanmış anket var. TV programları ve X paylaşımları aşağıdaki tarama kayıtlarında görünebilir; kalıcı eklemek için SUNUCU.bat ile tarama veya elle veri girişi gerekir.</div>'
+      : covered > 0 && covered < totalPast * 0.4
+        ? '<div class="ank-banner">Kısmi veri: ' + covered + '/' + totalPast + ' geçmiş seçimde doğrulanmış anket var.</div>'
+        : '';
+    const firmNote = firm?.note ? '<p class="panel-note" style="margin-top:8px">' + esc(firm.note) + '</p>' : '';
+    const researchSection = ui.profileFirmId ? renderFirmResearchSection(ui.profileFirmId) : '';
+    const manualSubmit = ui.profileFirmId ? renderManualSubmitPanel(ui.profileFirmId) : '';
+    const manualList = ui.profileFirmId ? renderManualPollsList(ui.profileFirmId) : '';
 
     const firmBtns = firms.map(f => {
       const active = f.id === ui.profileFirmId ? ' active' : '';
@@ -821,7 +1031,7 @@
             return (
               '<tr><td><strong>' + esc(rec.election.title) + '</strong></td>' +
               '<td>' + fmtDate(rec.election.date) + '</td>' +
-              '<td>' + fmtDate(b.poll.publishedDate) + '</td>' +
+              '<td>' + fmtDate(b.poll.publishedDate) + (b.poll._manual ? ' <span class="ank-badge-manual">Elle</span>' : '') + '</td>' +
               '<td>' + fmtDays(b.acc.days) + '</td>' +
               '<td class="num">' + fmtPct(b.acc.mae) + '</td>' +
               '<td><span class="ank-grade ' + b.grade.cls + '">' + b.grade.letter + '</span> ' +
@@ -867,7 +1077,10 @@
       '<div class="ank-firm-stat"><span class="lbl">Ortalama puan</span><strong>' + (avg != null ? avg + '/100' : '—') + '</strong></div>' +
       '<div class="ank-firm-stat"><span class="lbl">Puan formülü</span><strong>100 − sapma×10</strong></div>' +
       '</div>' +
-      '<p class="panel-note" style="margin:12px 0 0">Her geçmiş seçimde firmaya ait <em>seçime en yakın</em> anket esas alınır. Gelecek seçimlerde puan verilmez.</p></div>' +
+      '<p class="panel-note" style="margin:12px 0 0">Her geçmiş seçimde firmaya ait <em>seçime en yakın</em> anket esas alınır. Gelecek seçimlerde puan verilmez.</p>' +
+      firmNote + linkedNote + '</div>' +
+      manualSubmit + manualList +
+      gapBanner + researchSection +
       '<div class="panel panel-flush"><div class="data-table-wrap"><table class="data-table ank-firm-history-table"><thead><tr>' +
       '<th>Seçim</th><th>Tarih</th><th>Anket tarihi</th><th>Seçime kalan</th><th>Sapma</th><th>Puan</th><th>Kaynak</th>' +
       '</tr></thead><tbody>' + rows + '</tbody></table></div></div></div></div>'
@@ -916,6 +1129,7 @@
       params.election = ui.upcomingElectionId;
     } else if (ui.mode === 'firms' && ui.profileFirmId) {
       params.firm = ui.profileFirmId;
+      if (ui.scrollToManual) params.add = '1';
     }
     window.AT.navigate('anket', params);
   }
@@ -930,8 +1144,11 @@
     }
 
     document.querySelectorAll('.ank-mode-btn').forEach(btn => {
-      btn.classList.toggle('active', btn.dataset.mode === ui.mode);
+      const mode = btn.dataset.mode;
+      btn.classList.toggle('active', mode === ui.mode && mode !== 'add');
     });
+    const addBtn = document.getElementById('ank-add-poll-btn');
+    if (addBtn) addBtn.classList.toggle('active', ui.mode === 'firms' && ui.scrollToManual);
 
     const content = document.getElementById('ank-content');
     if (!content) return;
@@ -942,6 +1159,18 @@
     else content.innerHTML = renderAboutMain();
 
     bindContentEvents(content);
+
+    if (ui.scrollToManual) {
+      ui.scrollToManual = false;
+      setTimeout(() => {
+        const el = document.getElementById('ank-manual-panel');
+        if (el) {
+          el.classList.add('ank-manual-panel-highlight');
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setTimeout(() => el.classList.remove('ank-manual-panel-highlight'), 2500);
+        }
+      }, 120);
+    }
   }
 
   async function isLocalServerUp() {
@@ -962,11 +1191,12 @@
   }
 
   function guessFirm(title) {
-    const lower = title.toLowerCase();
-    if (/özk[ıi]raz|ozkiraz|kemal özk/i.test(lower)) {
-      return DATA.firms.find(f => f.id === 'ozkiraz') || null;
+    for (const [id, re] of Object.entries(FIRM_MATCH)) {
+      if (re.test(title)) return DATA.firms.find(f => f.id === id) || null;
     }
+    const lower = title.toLowerCase();
     for (const f of DATA.firms) {
+      if (SKIP_TOKEN_FIRMS.has(f.id)) continue;
       const name = f.name.toLowerCase();
       if (lower.includes(name)) return f;
       const token = name.split(/\s+/)[0];
@@ -1105,6 +1335,204 @@
     }
   }
 
+  function findElectionById(id) {
+    return [...(DATA.elections || []), ...(DATA.upcomingElections || [])].find(e => e.id === id);
+  }
+
+  function buildManualPredictionFields(electionId) {
+    const el = document.getElementById('ank-manual-predictions');
+    if (!el) return;
+    const election = findElectionById(electionId);
+    const targets = election?.results || election?.targets || [];
+    if (!targets.length) {
+      el.innerHTML = '<p class="panel-note">Bu seçim için oran alanı yok (isteğe bağlı not yeterli).</p>';
+      return;
+    }
+    el.innerHTML =
+      '<p class="panel-note" style="margin:0 0 8px">Anket oranları (boş bırakılabilir)</p>' +
+      '<div class="ank-manual-grid">' +
+      targets.map(t =>
+        '<label><span class="ank-dot" style="background:' + (t.color || '#888') + '"></span> ' +
+        esc(t.label) +
+        '<input type="number" name="pred-' + esc(t.id) + '" min="0" max="100" step="0.1" placeholder="%"></label>',
+      ).join('') +
+      '</div>';
+  }
+
+  function readProofImage(file) {
+    return new Promise((resolve, reject) => {
+      if (!file) return resolve(null);
+      if (file.size > MAX_PROOF_IMAGE_BYTES) {
+        reject(new Error('Görsel en fazla ' + Math.round(MAX_PROOF_IMAGE_BYTES / 1000000) + ' MB olabilir'));
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = () => resolve(reader.result);
+      reader.onerror = () => reject(new Error('Görsel okunamadı'));
+      reader.readAsDataURL(file);
+    });
+  }
+
+  function exportManualPolls() {
+    const data = loadManualPolls();
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'anket-manuel-kaynaklar-' + new Date().toISOString().slice(0, 10) + '.json';
+    a.click();
+    URL.revokeObjectURL(a.href);
+  }
+
+  function importManualPolls(file) {
+    return file.text().then(raw => {
+      const parsed = JSON.parse(raw);
+      if (!Array.isArray(parsed)) throw new Error('Geçersiz dosya');
+      const existing = loadManualPolls();
+      const seen = new Set(existing.map(p => p.id));
+      let added = 0;
+      for (const poll of parsed) {
+        if (!poll?.id || seen.has(poll.id)) continue;
+        existing.push(poll);
+        seen.add(poll.id);
+        added++;
+      }
+      saveManualPolls(existing);
+      return added;
+    });
+  }
+
+  function deleteManualPoll(id) {
+    saveManualPolls(loadManualPolls().filter(p => p.id !== id));
+  }
+
+  async function handleManualSubmit(form) {
+    const status = document.getElementById('ank-manual-status');
+    const firmId = form.dataset.firmId;
+    const fd = new FormData(form);
+    const electionId = fd.get('electionId');
+    const publishedDate = fd.get('publishedDate');
+    const title = String(fd.get('title') || '').trim();
+    if (!electionId || !publishedDate || !title) {
+      if (status) status.textContent = 'Seçim, tarih ve başlık zorunlu.';
+      return;
+    }
+    const election = findElectionById(String(electionId));
+    const targets = election?.results || election?.targets || [];
+    const predictions = [];
+    for (const t of targets) {
+      const raw = fd.get('pred-' + t.id);
+      if (raw === null || raw === '') continue;
+      const percent = parseFloat(raw);
+      if (!Number.isFinite(percent)) continue;
+      predictions.push({ targetId: t.id, percent });
+    }
+    let proofImage = null;
+    try {
+      proofImage = await readProofImage(form.querySelector('#ank-manual-proof')?.files?.[0]);
+    } catch (e) {
+      if (status) status.textContent = e.message || String(e);
+      return;
+    }
+    const pub = {
+      id: 'manual-pub-' + Date.now(),
+      channel: String(fd.get('channel') || 'other'),
+      outlet: String(fd.get('outlet') || 'Kullanıcı kaynağı').trim() || 'Kullanıcı kaynağı',
+      title,
+      publishedAt: publishedDate,
+      url: String(fd.get('url') || '').trim(),
+      isPrimary: true,
+    };
+    if (proofImage) pub.proofImage = proofImage;
+    const poll = {
+      id: 'manual-' + Date.now() + '-' + Math.random().toString(36).slice(2, 7),
+      electionId: String(electionId),
+      firmId,
+      publishedDate: String(publishedDate),
+      scope: targets.length ? 'candidate' : 'party',
+      predictions,
+      publications: [pub],
+      sourceLabel: 'Elle eklenen kaynak',
+      notes: String(fd.get('notes') || '').trim(),
+      _manual: true,
+      _addedAt: new Date().toISOString(),
+    };
+    const all = loadManualPolls();
+    all.push(poll);
+    saveManualPolls(all);
+    if (status) status.textContent = 'Kaydedildi — profil tablosunda görünür.';
+    form.reset();
+    const preview = document.getElementById('ank-manual-proof-preview');
+    if (preview) {
+      preview.hidden = true;
+      preview.innerHTML = '';
+    }
+    buildManualPredictionFields(String(electionId));
+    paint();
+  }
+
+  function initManualForm(content) {
+    const form = content.querySelector('#ank-manual-form');
+    if (!form || form.dataset.bound) return;
+    form.dataset.bound = '1';
+    const electionSel = form.querySelector('#ank-manual-election');
+    const dateInput = form.querySelector('[name="publishedDate"]');
+    if (dateInput && !dateInput.value) dateInput.value = new Date().toISOString().slice(0, 10);
+    if (electionSel) {
+      buildManualPredictionFields(electionSel.value);
+      electionSel.addEventListener('change', () => buildManualPredictionFields(electionSel.value));
+    }
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      handleManualSubmit(form);
+    });
+    const proofInput = form.querySelector('#ank-manual-proof');
+    const preview = content.querySelector('#ank-manual-proof-preview');
+    if (proofInput && preview) {
+      proofInput.addEventListener('change', () => {
+        const file = proofInput.files?.[0];
+        if (!file) {
+          preview.hidden = true;
+          preview.innerHTML = '';
+          return;
+        }
+        readProofImage(file).then(dataUrl => {
+          preview.hidden = false;
+          preview.innerHTML = '<img src="' + dataUrl + '" alt="Önizleme">';
+        }).catch(err => {
+          preview.hidden = true;
+          const status = document.getElementById('ank-manual-status');
+          if (status) status.textContent = err.message || String(err);
+          proofInput.value = '';
+        });
+      });
+    }
+    const exportBtn = content.querySelector('#ank-manual-export');
+    if (exportBtn) exportBtn.addEventListener('click', exportManualPolls);
+    const importInput = content.querySelector('#ank-manual-import');
+    if (importInput) {
+      importInput.addEventListener('change', () => {
+        const file = importInput.files?.[0];
+        if (!file) return;
+        importManualPolls(file).then(added => {
+          const status = document.getElementById('ank-manual-status');
+          if (status) status.textContent = added + ' kayıt içe aktarıldı.';
+          paint();
+        }).catch(err => {
+          const status = document.getElementById('ank-manual-status');
+          if (status) status.textContent = 'İçe aktarma hatası: ' + (err.message || err);
+        });
+        importInput.value = '';
+      });
+    }
+    content.querySelectorAll('[data-manual-del]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (!confirm('Bu elle eklenen kaydı silmek istiyor musunuz?')) return;
+        deleteManualPoll(btn.dataset.manualDel);
+        paint();
+      });
+    });
+  }
+
   function bindContentEvents(content) {
     content.querySelectorAll('[data-el]').forEach(btn => {
       btn.addEventListener('click', () => {
@@ -1153,10 +1581,21 @@
         startResearchScan(days);
       });
     }
+    initManualForm(content);
   }
 
   function initFromParams(params) {
     params = params || {};
+    if (params.add === '1') {
+      ui.mode = 'firms';
+      ui.scrollToManual = true;
+      ui.profileFirmId = params.firm || null;
+      ui.electionId = null;
+      ui.upcomingElectionId = null;
+      ui.firmId = null;
+      return;
+    }
+    ui.scrollToManual = false;
     ui.mode = ['archive', 'upcoming', 'firms', 'about'].includes(params.mode) ? params.mode : 'archive';
     ui.view = params.view || 'compare';
     ui.firmId = null;
@@ -1170,6 +1609,7 @@
       ui.upcomingElectionId = null;
     } else if (ui.mode === 'firms') {
       ui.profileFirmId = params.firm || null;
+      ui.scrollToManual = params.add === '1';
       ui.electionId = null;
       ui.upcomingElectionId = null;
     } else {
@@ -1211,12 +1651,13 @@
       '<h1>Anket firmaları</h1>' +
       '<p class="lede">Kamuoyu araştırma şirketlerinin seçim öncesi paylaşımlarını resmi YSK sonuçlarıyla karşılaştırın. Her paylaşımın kaynağına tıklayarak ulaşın.</p>' +
       '<p class="ank-meta" id="ank-meta"></p></header>' +
-      (window.AT.renderDataFreshness ? window.AT.renderDataFreshness() : '') +
+      (renderAnketMetaLine()) +
       (window.AT.renderContextNotice ? window.AT.renderContextNotice('anket') : '') +
       '<nav class="ank-mode-nav" aria-label="Anket modu">' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'archive' ? ' active' : '') + '" data-mode="archive">Geçmiş seçimler</button>' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'upcoming' ? ' active' : '') + '" data-mode="upcoming">Gelecek seçimler</button>' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'firms' ? ' active' : '') + '" data-mode="firms">Firma profilleri</button>' +
+      '<button type="button" class="ank-mode-btn ank-mode-btn-add" id="ank-add-poll-btn">Anket ekle</button>' +
       '<button type="button" class="ank-mode-btn' + (ui.mode === 'about' ? ' active' : '') + '" data-mode="about">Hakkında</button>' +
       '</nav>' +
       '<div id="ank-content"></div>' +
@@ -1225,7 +1666,16 @@
 
     container.querySelectorAll('.ank-mode-btn').forEach(btn => {
       btn.addEventListener('click', () => {
-        ui.mode = btn.dataset.mode;
+        if (btn.id === 'ank-add-poll-btn') {
+          ui.mode = 'firms';
+          ui.scrollToManual = true;
+          if (!ui.profileFirmId && DATA.firms?.length) {
+            ui.profileFirmId = DATA.firms[0].id;
+          }
+        } else {
+          ui.mode = btn.dataset.mode;
+          ui.scrollToManual = false;
+        }
         syncUrl();
       });
     });
