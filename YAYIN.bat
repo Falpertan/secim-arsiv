@@ -2,6 +2,7 @@
 chcp 65001 >nul
 cd /d "%~dp0"
 set "SRC=%~dp0"
+if "%SRC:~-1%"=="\" set "SRC=%SRC:~0,-1%"
 set "DEST=C:\Users\Fatih\AppData\Local\Temp\secim-arsiv-deploy"
 set "REPO=https://github.com/Falpertan/secim-arsiv.git"
 
@@ -31,7 +32,7 @@ if not exist "%DEST%\.git" (
 )
 
 echo  Dosyalar kopyalaniyor...
-powershell -NoProfile -ExecutionPolicy Bypass -File "%SRC%tools\deploy_sync.ps1" -Source "%SRC%" -Dest "%DEST%"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%SRC%\tools\deploy_sync.ps1" -Source "%SRC%" -Dest "%DEST%"
 if errorlevel 1 (
   echo  HATA: kopyalama basarisiz.
   pause

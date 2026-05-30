@@ -133,9 +133,6 @@
         </p>
       </header>
 
-      ${window.AT.renderDataFreshness ? window.AT.renderDataFreshness() : ''}
-      ${window.AT.renderContextNotice ? window.AT.renderContextNotice('uyumsuzluk') : ''}
-
       <div class="uyumsuzluk-sekmeler">
         <button class="uyumsuzluk-sekme" data-sekme="A">
           <span class="sekme-num">A</span>

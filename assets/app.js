@@ -33,6 +33,7 @@
     { id: 'bolge',         label: 'Bölge profili',        num: '07', module: 'bolge',         section: 'analiz' },
     { id: 'vekil',         label: 'Vekil dağılımı',       num: '08', module: 'vekil',         section: 'analiz' },
     { id: 'anket',         label: 'Anket firmaları',      num: '09', module: 'anket',         section: 'analiz' },
+    { id: 'harita',        label: 'Değişim haritası',     num: '10', module: 'harita',        section: 'analiz' },
     { id: 'baslangic',     label: 'Başlangıç rehberi',    num: '?',  module: 'baslangic',     section: 'bilgi' },
     { id: 'metodoloji',    label: 'Metodoloji',           num: 'i',  module: 'metodoloji',    section: 'bilgi' },
     { id: 'hakkinda',      label: 'Hakkında',             num: 'ii', module: 'hakkinda',      section: 'bilgi' },
