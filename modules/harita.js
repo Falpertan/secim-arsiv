@@ -299,9 +299,13 @@
 
     const geojson = cache.geojson;
     const bbox = computeBbox(geojson);
-    const padding = 10;
+    const padding = 12;
     const W = 900;
-    const H = 480;
+    const latMid = (bbox.miny + bbox.maxy) / 2;
+    const cosLat = Math.cos((latMid * Math.PI) / 180);
+    const H = Math.round(
+      W * ((bbox.maxy - bbox.miny) / ((bbox.maxx - bbox.minx) * cosLat)) * 0.92
+    );
 
     function project(lng, lat) {
       const x = ((lng - bbox.minx) / (bbox.maxx - bbox.minx)) * (W - 2 * padding) + padding;
