@@ -31,7 +31,19 @@
         </p>
       </header>
 
-      <a class="rehber-teaser focus-ring" href="#/baslangic">
+      <a class="rehber-teaser focus-ring" href="promo/" target="_blank" rel="noopener noreferrer">
+        <span class="rehber-teaser-etiket">Tanıtım</span>
+        <span class="rehber-teaser-metin"><strong>Tanıtım sayfası</strong> — siteyi ilk kez görecekler, basın ve sosyal paylaşım için özet.</span>
+        <span class="rehber-teaser-ok">↗</span>
+      </a>
+
+      <a class="rehber-teaser focus-ring" href="https://paranindegeri.com/" target="_blank" rel="noopener noreferrer" style="margin-top:var(--space-3)">
+        <span class="rehber-teaser-etiket">AlperTan™ · Diğer proje</span>
+        <span class="rehber-teaser-metin"><strong>Paranın Değeri</strong> (paranindegeri.com) — enflasyon hesaplama, satın alma gücü ve 81 il yaşam maliyeti.</span>
+        <span class="rehber-teaser-ok">↗</span>
+      </a>
+
+      <a class="rehber-teaser focus-ring" href="#/baslangic" style="margin-top:var(--space-3)">
         <span class="rehber-teaser-etiket">İlk ziyaret</span>
         <span class="rehber-teaser-metin">Siteye yeni misiniz? <strong>5 dakikalık başlangıç rehberi</strong> — hangi modülden başlayacağınızı gösterir.</span>
         <span class="rehber-teaser-ok">→</span>

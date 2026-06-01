@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Türkiye Seçim Arşivi — 2018–2024 seçim verisi, il ve ilçe bazında</title>
+<meta name="description" content="Bağımsız, ücretsiz, reklamsız seçim arşivi. 13 seçim, 81 il, 973 ilçe. YSK ve TÜİK kaynaklı trend, karşılaştırma, demografi ve değişim haritası.">
+<meta property="og:title" content="Türkiye Seçim Arşivi">
+<meta property="og:description" content="2018–2024 arası 13 seçimin il ve ilçe bazında sonuçları — tarafsız, açık, ücretsiz.">
+<meta property="og:url" content="https://secimarsivi.com/promo/">
+<meta property="og:image" content="https://secimarsivi.com/promo/twitter-kapak-1200x630.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="../favicons/favicon-32x32.png" sizes="32x32">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --paper: #f5f1e8;
+    --paper-2: #ebe5d6;
+    --paper-3: #ddd5c0;
+    --ink: #1a1814;
+    --ink-2: #3a342b;
+    --ink-3: #6b6253;
+    --line: #c8bfa8;
+    --gold: #a07820;
+    --blue: #1f4d6e;
+    --green: #2d6b3f;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --max: 1080px;
+    --nav-h: 64px;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--paper);
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--blue); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ─── Nav ─── */
+  .nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    height: var(--nav-h);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    background: rgba(245, 241, 232, 0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-brand {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .nav-brand:hover { text-decoration: none; }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-2);
+  }
+  .nav-links a { color: inherit; text-decoration: none; }
+  .nav-links a:hover { color: var(--ink); }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 18px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .btn-primary {
+    background: var(--ink);
+    color: var(--paper) !important;
+    border-color: var(--ink);
+  }
+  .btn-primary:hover { background: var(--ink-2); }
+  .btn-outline {
+    background: transparent;
+    color: var(--ink) !important;
+    border-color: var(--line);
+  }
+  .btn-outline:hover { background: var(--paper-2); }
+
+  /* ─── Hero ─── */
+  .hero {
+    position: relative;
+    overflow: hidden;
+    padding: 72px 24px 80px;
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  .hero-harita {
+    position: absolute;
+    right: -4%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(48%, 420px);
+    height: 85%;
+    background-color: var(--gold);
+    opacity: 0.1;
+    mask-image: url('turkiye-siluet.png');
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-image: url('turkiye-siluet.png');
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    pointer-events: none;
+  }
+  .hero > *:not(.hero-harita) { position: relative; z-index: 1; }
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 16px;
+  }
+  .hero h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.25rem);
+    line-height: 1.12;
+    font-weight: 600;
+    max-width: 14ch;
+    margin-bottom: 20px;
+  }
+  .hero-lede {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--ink-2);
+    max-width: 520px;
+    margin-bottom: 32px;
+  }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 40px; }
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 28px;
+  }
+  .stat {
+    padding: 0 28px;
+    border-left: 1px solid var(--line);
+  }
+  .stat:first-child { padding-left: 0; border-left: none; }
+  .stat-val {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .stat-lbl {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-3);
+    margin-top: 4px;
+  }
+
+  /* ─── Sections ─── */
+  .section {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 56px 24px;
+  }
+  .section-alt { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+  .section-head { margin-bottom: 32px; }
+  .section-head h2 {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .section-head p { color: var(--ink-2); max-width: 640px; }
+
+  /* ─── Feature cards (paranindegeri tarzı) ─── */
+  .kart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  .kart {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 28px 24px;
+    transition: box-shadow 0.15s, border-color 0.15s;
+  }
+  .section-alt .kart { background: #fdfaf2; }
+  .kart:hover {
+    border-color: rgba(160, 120, 32, 0.4);
+    box-shadow: 0 4px 20px rgba(26, 24, 20, 0.06);
+  }
+  .kart-ikon { font-size: 28px; margin-bottom: 12px; line-height: 1; }
+  .kart h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .kart p { font-size: 14px; color: var(--ink-2); line-height: 1.55; margin-bottom: 16px; }
+  .kart-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--blue);
+  }
+
+  /* ─── Modül listesi ─── */
+  .modul-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .modul {
+    padding: 14px 16px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: var(--paper);
+  }
+  .modul-num { font-size: 10px; font-weight: 700; color: var(--gold); margin-bottom: 4px; }
+  .modul-ad { font-weight: 600; font-size: 14px; }
+  .modul-beta { font-size: 10px; color: var(--blue); font-weight: 600; }
+
+  /* ─── Kardeş proje ─── */
+  .kardes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 28px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: linear-gradient(135deg, #fdfaf2 0%, var(--paper-2) 100%);
+  }
+  .kardes-metin { max-width: 560px; }
+  .kardes-metin strong { font-family: var(--font-display); font-size: 18px; display: block; margin-bottom: 6px; }
+  .kardes-metin p { font-size: 14px; color: var(--ink-2); }
+
+  /* ─── Güven ─── */
+  .guven-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+  }
+  .guven-item h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .guven-item p { font-size: 13px; color: var(--ink-2); line-height: 1.55; }
+
+  /* ─── Footer ─── */
+  .footer {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 40px 24px 56px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-3);
+  }
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .footer-brand {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .footer-links { display: flex; flex-wrap: wrap; gap: 16px; }
+  .footer-links a { color: var(--ink-2); text-decoration: none; font-weight: 500; }
+  .footer-links a:hover { color: var(--ink); }
+
+  @media (max-width: 720px) {
+    .nav-links { display: none; }
+    .hero-harita { opacity: 0.06; width: 70%; right: -20%; }
+    .stat { padding: 12px 16px; border-left: none; border-top: 1px solid var(--line); width: 50%; }
+    .hero-stats { gap: 0; }
+    .stat:first-child { border-top: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a class="nav-brand" href="../">Türkiye Seçim Arşivi</a>
+  <div class="nav-links">
+    <a href="#moduller">Modüller</a>
+    <a href="#hakkimizda">Hakkında</a>
+    <a href="#iletisim">İletişim</a>
+    <a class="btn btn-primary" href="../#/home">Siteye gir →</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-harita" aria-hidden="true"></div>
+  <p class="eyebrow">Açık seçim arşivi · 2018 — 2024</p>
+  <h1>Türkiye'nin son 13 seçimini tek arşivde inceleyin.</h1>
+  <p class="hero-lede">
+    81 il, 973 ilçe. Cumhurbaşkanlığından mahalli idarelere — YSK ve TÜİK kaynaklı,
+    tarafsız dil, reklam yok, kayıt yok.
+  </p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="../#/baslangic">Başlangıç rehberi →</a>
+    <a class="btn btn-outline" href="../#/arsiv">Arşive git</a>
+  </div>
+  <div class="hero-stats">
+    <div class="stat"><div class="stat-val">13</div><div class="stat-lbl">seçim</div></div>
+    <div class="stat"><div class="stat-val">81</div><div class="stat-lbl">il</div></div>
+    <div class="stat"><div class="stat-val">973</div><div class="stat-lbl">ilçe</div></div>
+    <div class="stat"><div class="stat-val">7</div><div class="stat-lbl">yıl demografi</div></div>
+  </div>
+</header>
+
+<section class="section section-alt" id="neden">
+  <div class="section-head">
+    <h2>Neyi çözer?</h2>
+    <p>Seçim sonuçları dağınık PDF'lerde, haber grafiklerinde ve resmi portallarda ayrı ayrı durur. Bu arşiv hepsini aynı dilde, aynı ölçekte bir araya getirir.</p>
+  </div>
+  <div class="kart-grid">
+    <article class="kart">
+      <div class="kart-ikon">🗳️</div>
+      <h3>Arşiv &amp; trend</h3>
+      <p>13 seçimin listesi, katılım, ilçe detayı; parti oy hareketi ve bölgesel ısı haritası.</p>
+      <a class="kart-link" href="../#/arsiv">Arşive git →</a>
+    </article>
+    <article class="kart">
+      <div class="kart-ikon">⚖️</div>
+      <h3>Karşılaştırma</h3>
+      <p>İki ilçe, iki seçim veya tek ilçenin geçmişi — yan yana, aynı eksende.</p>
+      <a class="kart-link" href="../#/karsilastirma">Karşılaştır →</a>
+    </article>
+    <article class="kart">
+      <div class="kart-ikon">🗺️</div>
+      <h3>Değişim haritası</h3>
+      <p>81 ilde seçmen artışı, katılım, demografi ve parti oy kayması — tıklanabilir harita.</p>
+      <a class="kart-link" href="../#/harita">Haritayı aç →</a>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="moduller">
+  <div class="section-head">
+    <h2>Modüller</h2>
+    <p>Ana modüller veri keşfi için; ileri analiz modülleri desen ve sapma aramak için.</p>
+  </div>
+  <div class="modul-grid">
+    <div class="modul"><div class="modul-num">01</div><div class="modul-ad">Arşiv</div></div>
+    <div class="modul"><div class="modul-num">02</div><div class="modul-ad">Uyumsuzluk</div></div>
+    <div class="modul"><div class="modul-num">03</div><div class="modul-ad">Trend</div></div>
+    <div class="modul"><div class="modul-num">04</div><div class="modul-ad">Karşılaştırma</div></div>
+    <div class="modul"><div class="modul-num">05</div><div class="modul-ad">Demografi</div></div>
+    <div class="modul"><div class="modul-num">06</div><div class="modul-ad">Senaryo</div></div>
+    <div class="modul"><div class="modul-num">07</div><div class="modul-ad">Bölge profili</div></div>
+    <div class="modul"><div class="modul-num">08</div><div class="modul-ad">Vekil dağılımı</div></div>
+    <div class="modul"><div class="modul-num">09</div><div class="modul-ad">Anket firmaları <span class="modul-beta">beta</span></div></div>
+    <div class="modul"><div class="modul-num">10</div><div class="modul-ad">Değişim haritası</div></div>
+  </div>
+  <p style="margin-top:24px;">
+    <a class="btn btn-primary" href="../#/home">Tüm modülleri keşfet →</a>
+  </p>
+</section>
+
+<section class="section section-alt">
+  <div class="kardes">
+    <div class="kardes-metin">
+      <strong>Paranın Değeri</strong>
+      <p>AlperTan™ çatısı altında kardeş proje: enflasyon hesaplama, satın alma gücü ve 81 il yaşam maliyeti tahmini.</p>
+    </div>
+    <a class="btn btn-outline" href="https://paranindegeri.com/" target="_blank" rel="noopener noreferrer">paranindegeri.com ↗</a>
+  </div>
+</section>
+
+<section class="section" id="hakkimizda">
+  <div class="section-head">
+    <h2>Bağımsız ve tarafsız</h2>
+    <p>Gönüllü bir arşiv projesi; ticari değil, siyasi kampanya aracı değil.</p>
+  </div>
+  <div class="guven-list">
+    <div class="guven-item">
+      <h4>Veri kaynakları</h4>
+      <p>YSK seçim sonuçları, TÜİK ADNKS demografisi, Resmi Gazete vekil dağılımı. Ham kaynaklar kamuya açıktır.</p>
+    </div>
+    <div class="guven-item">
+      <h4>Ne iddia etmez?</h4>
+      <p>Seçim hilesi kanıtı sunmaz. Uyumsuzluk modülü istatistiksel sapmaları listeler; yorum size aittir.</p>
+    </div>
+    <div class="guven-item">
+      <h4>Ücretsiz erişim</h4>
+      <p>Kayıt yok, reklam yok. Veri düzeltmesi ve basın talepleri için iletişim kanalı açık.</p>
+    </div>
+  </div>
+  <p style="margin-top:28px; font-size:14px; color:var(--ink-2);">
+    Basın özeti: <a href="basin-ozeti.html">1 sayfalık PDF/yazdır</a>
+    · Metodoloji: <a href="../#/metodoloji">site içi</a>
+  </p>
+</section>
+
+<section class="section section-alt" id="iletisim">
+  <div class="section-head">
+    <h2>İletişim</h2>
+    <p>Veri hatası, anket kaynağı, basın veya genel sorular.</p>
+  </div>
+  <p style="margin-bottom:16px;">
+    <a class="btn btn-outline" href="mailto:secimarsivi@gmail.com">secimarsivi@gmail.com</a>
+    &nbsp;
+    <a class="btn btn-outline" href="../#/iletisim">İletişim sayfası →</a>
+  </p>
+  <p style="font-size:13px; color:var(--ink-3);">Gönüllü proje — yanıt süresi garanti edilmez.</p>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">AlperTan™ · Türkiye Seçim Arşivi</div>
+      <div>v1.0 · Bağımsız, açık, tarafsız</div>
+    </div>
+    <div class="footer-links">
+      <a href="../#/home">Ana site</a>
+      <a href="../#/hakkinda">Hakkında</a>
+      <a href="../#/metodoloji">Metodoloji</a>
+      <a href="https://github.com/Falpertan/secim-arsiv/issues" target="_blank" rel="noopener">Hata bildir</a>
+    </div>
+  </div>
+  <div>© 2026 · CC BY-NC 4.0 (ticari kullanım için izin gerekir)</div>
+</footer>
+
+</body>
+</html>
